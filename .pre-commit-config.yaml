@@ -1,0 +1,46 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+        exclude: '\.Rd'
+      - id: check-yaml
+      - id: check-added-large-files
+        args: [--maxkb=10240]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.6.0
+    hooks:
+      - id: autopep8
+        args: ["--max-line-length=120", "-i"]
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0
+    hooks:
+      - id: python-use-type-annotations
+  - repo: https://github.com/lorenzwalthert/precommit
+    rev: v0.3.0
+    hooks:
+    - id: style-files
+      args: [--style_pkg=styler, --style_fun=tidyverse_style]
+    - id: lintr
+      args: [--warn_only]
+      verbose: true
+    - id: readme-rmd-rendered
+    - id: parsable-R
+    - id: no-browser-statement
+# enable only for Python projects with a dev-installed pylint
+#  - repo: local
+#    hooks:
+#      - id: pylint
+#        name: pylint
+#        entry: pylint
+#        language: system
+#        types: [python]
+#        args: ["--fail-under=7.0","--max-line-length=120"]

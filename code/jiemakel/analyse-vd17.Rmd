@@ -1,0 +1,310 @@
+---
+title: "VD17 analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+
+# Overall summary
+
+VD17 has `r p(vd17_a %>% distinct(record_number) %>% count() %>% pull(n))` records in total.
+
+## Field code usage overview
+
+```{r field_code_usage_overview}
+vd17_field_code_usage_stats <- vd17_c %>%
+  group_by(field_code) %>%
+  summarize(records = n_distinct(record_number), n = n(), .groups = "drop") %>%
+  compute() %>%
+  left_join(
+    vd17_a %>%
+      inner_join(in_fbs) %>%
+      group_by(field_code) %>%
+      summarize(fbs_records = n_distinct(record_number), fbs_n = n(), .groups = "drop")
+  ) %>%
+  mutate(vals_per_rec = n / records, vals_per_fbs_rec = fbs_n / fbs_records) %>%
+  left_join(
+    vd17_c %>%
+      count(record_number, field_code) %>%
+      filter(n > 1L) %>%
+      ungroup() %>%
+      count(field_code, name = "recs_with_mult_vals") %>%
+      compute()
+  ) %>%
+  left_join(
+    vd17_a %>%
+      inner_join(in_fbs) %>%
+      count(record_number, field_code) %>%
+      filter(n > 1L) %>%
+      ungroup() %>%
+      count(field_code, name = "fbs_recs_with_mult_vals")
+  ) %>%
+  arrange(field_code) %>%
+  replace_na(list(fbs_records = 0, fbs_n = 0, recs_with_mult_vals = 0, fbs_recs_with_mult_vals = 0)) %>%
+  compute()
+```
+
+In total, `r p(vd17_field_code_usage_stats %>% count() %>% pull(n))` distinct PICA+ fields are used in VD17.
+
+```{r field_code_usage_overview_table}
+vd17_field_code_usage_stats %>%
+  mutate(field_code = str_c('<a name="', field_code, '"></a>', field_code)) %>%
+  gt() %>%
+  fmt_number(where(is.numeric), decimals = 0) %>%
+  fmt_number(vals_per_rec, decimals = 2, drop_trailing_zeros = TRUE) %>%
+  fmt_number(vals_per_fbs_rec, decimals = 2, drop_trailing_zeros = TRUE) %>%
+  fmt_markdown(field_code)
+```
+
+## Field code usage overview by subfield
+
+```{r field_subfield_code_usage_overview}
+vd17_subfield_code_example_vals <- vd17_c %>%
+  distinct(field_code, subfield_code, value) %>%
+  compute() %>%
+  group_by(field_code, subfield_code) %>%
+  slice_sample(n = 7) %>%
+  summarize(e_vals = str_flatten(value, collapse = "|"), .groups = "drop") %>%
+  compute()
+
+vd17_subfield_code_dist_vals <- vd17_c %>%
+  distinct(field_code, subfield_code, value) %>%
+  count(field_code, subfield_code, name = "dist_vals") %>%
+  compute()
+
+vd17_subfield_code_usage_stats <- vd17_c %>%
+  group_by(field_code, subfield_code) %>%
+  summarize(records = n_distinct(record_number), n = n(), .groups = "drop") %>%
+  compute() %>%
+  left_join(
+    vd17_a %>%
+      inner_join(in_fbs) %>%
+      group_by(field_code, subfield_code) %>%
+      summarize(fbs_records = n_distinct(record_number), fbs_n = n(), .groups = "drop")
+  ) %>%
+  mutate(vals_per_rec = n / records, vals_per_fbs_rec = fbs_n / fbs_records) %>%
+  left_join(
+    vd17_c %>%
+      count(record_number, field_code, subfield_code) %>%
+      filter(n > 1L) %>%
+      ungroup() %>%
+      count(field_code, subfield_code, name = "recs_with_mult_vals") %>%
+      compute()
+  ) %>%
+  left_join(
+    vd17_a %>%
+      inner_join(in_fbs) %>%
+      count(record_number, field_code, subfield_code) %>%
+      filter(n > 1L) %>%
+      ungroup() %>%
+      count(field_code, subfield_code, name = "fbs_recs_with_mult_vals")
+  ) %>%
+  replace_na(list(fbs_records = 0, fbs_n = 0, recs_with_mult_vals = 0, fbs_recs_with_mult_vals = 0)) %>%
+  left_join(vd17_subfield_code_dist_vals, by = c("field_code", "subfield_code")) %>%
+  left_join(vd17_subfield_code_example_vals, by = c("field_code", "subfield_code")) %>%
+  relocate(field_code, subfield_code, records, dist_vals, e_vals) %>%
+  arrange(field_code, subfield_code) %>%
+  compute()
+
+rm(vd17_subfield_code_example_vals, vd17_subfield_code_dist_vals)
+```
+
+In total, `r p(vd17_subfield_code_usage_stats %>% count() %>% pull(n))` distinct PICA+ field+subfield combinations are used in VD17.
+
+```{r subfield_code_usage_overview_table}
+vd17_subfield_code_usage_stats %>%
+  mutate(subfield_code = str_c('<a name="', field_code, "$", subfield_code, '"></a>', field_code, "$", subfield_code)) %>%
+  gt(groupname_col = "field_code") %>%
+  fmt_number(where(is.numeric), decimals = 0) %>%
+  fmt_number(vals_per_rec, decimals = 2, drop_trailing_zeros = TRUE) %>%
+  fmt_number(vals_per_fbs_rec, decimals = 2, drop_trailing_zeros = TRUE) %>%
+  fmt_markdown(subfield_code)
+```
+
+```{r}
+library(googlesheets4)
+#
+# gs4_create(name = "vd17_field_usage", sheets = list("field_code"=vd17_field_code_usage_stats,"subfield_code"=vd17_subfield_code_usage_stats))
+# write_sheet(vd17_field_code_usage_stats,ss="1brWclkuD3PwXmDei4dkYaWzxXIN_19hVy_PkfAwrctk",sheet="field_code")
+# write_sheet(vd17_subfield_code_usage_stats,ss="1brWclkuD3PwXmDei4dkYaWzxXIN_19hVy_PkfAwrctk",sheet="subfield_code")
+```
+
+# Temporal overview
+
+## Overall
+
+```{r}
+vd17_c %>%
+  filter(field_code == "011@", subfield_code == "a") %>%
+  mutate(year = as.integer(value)) %>%
+  filter(year >= 1600, year <= 1700) %>%
+  collect() %>%
+  left_join(in_fbs) %>%
+  replace_na(list(in_fbs = FALSE)) %>%
+  mutate(in_fbs = if_else(in_fbs, "FBS", "VD17"), in_fbs = fct_relevel(in_fbs, "VD17")) %>%
+  ggplot(aes(x = year, fill = in_fbs)) +
+  geom_bar(width = 1) +
+  labs(fill = NULL) +
+  scale_x_continuous(breaks = seq(1000, 2000, by = 20)) +
+  scale_y_continuous(breaks = seq(0, 10000, by = 500)) +
+  theme_hsci_discrete() +
+  theme(legend.justification = c(0, 1), legend.position = c(0.02, 0.98), legend.background = element_blank(), legend.box.just = "bottom", legend.key = element_blank(), legend.box = "horizontal")
+```
+
+## By genre
+
+### VD17 as a whole
+
+#### Absolute
+
+```{r}
+vd17_c %>%
+  filter(field_code == "044S", subfield_code == "9") %>%
+  collect() %>%
+  left_join(
+    vd17_044s_raw %>%
+      filter(field_code == "150") %>%
+      select(genre = value, value = ppn) %>%
+      mutate(genre = str_replace_all(genre, ":.*", "")) %>%
+      collect(),
+    by = c("value")
+  ) %>%
+  select(record_number, genre) %>%
+  left_join(vd17_c %>%
+    filter(field_code == "011@", subfield_code == "a") %>%
+    select(record_number, year = value) %>%
+    mutate(year = as.integer(year)) %>%
+    filter(year >= 1600, year <= 1700) %>%
+    collect(),
+  by = c("record_number")
+  ) %>%
+  mutate(genre = fct_lump_n(genre, 12)) %>%
+  ggplot(aes(x = year, fill = genre)) +
+  geom_bar(width = 1) +
+  labs(fill = NULL) +
+  scale_x_continuous(breaks = seq(1000, 2000, by = 20)) +
+  scale_y_continuous(breaks = seq(0, 10000, by = 500)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom")
+```
+
+#### Proportional
+
+```{r}
+vd17_c %>%
+  filter(field_code == "044S", subfield_code == "9") %>%
+  collect() %>%
+  left_join(vd17_044s_raw %>%
+    filter(field_code == "150") %>%
+    select(genre = value, value = ppn) %>%
+    collect(),
+  by = c("value")
+  ) %>%
+  mutate(genre = str_replace(genre, ":.*", "")) %>%
+  select(record_number, genre) %>%
+  left_join(vd17_c %>%
+    filter(field_code == "011@", subfield_code == "a") %>%
+    select(record_number, year = value) %>%
+    mutate(year = as.integer(year)) %>%
+    filter(year >= 1600, year <= 1700) %>%
+    collect(),
+  by = c("record_number")
+  ) %>%
+  mutate(genre = fct_lump_n(genre, 12)) %>%
+  ggplot(aes(x = year, fill = genre)) +
+  geom_bar(width = 1, position = "fill") +
+  labs(fill = NULL) +
+  scale_x_continuous(breaks = seq(1000, 2000, by = 20)) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), breaks = seq(0, 1, by = 0.1)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom")
+```
+
+### FBS subset
+
+#### Absolute
+
+```{r}
+fbs_a %>%
+  filter(field_code == "044S", subfield_code == "9") %>%
+  left_join(vd17_044s_raw %>%
+    filter(field_code == "150") %>%
+    select(genre = value, value = ppn),
+  by = c("value")
+  ) %>%
+  mutate(genre = str_replace_all(genre, ":.*", "")) %>%
+  select(record_number, genre) %>%
+  left_join(fbs_a %>%
+    filter(field_code == "011@", subfield_code == "a") %>%
+    select(record_number, year = value) %>%
+    mutate(year = as.integer(year)) %>%
+    filter(year >= 1600, year <= 1700),
+  by = c("record_number")
+  ) %>%
+  count(year, genre) %>%
+  ungroup() %>%
+  collect() %>%
+  mutate(genre = fct_lump_n(genre, 11, w = n)) %>%
+  group_by(year, genre) %>%
+  summarize(n = sum(n), .groups = "drop") %>%
+  complete(year, genre, fill = list(n = 0)) %>%
+  ggplot(aes(x = year, y = n)) +
+  geom_step() +
+  labs(fill = NULL) +
+  scale_x_continuous(breaks = seq(1000, 2000, by = 40)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom") +
+  facet_wrap(~genre, scales = "free_y")
+```
+
+#### Proportional
+
+```{r}
+fbs_a %>%
+  filter(field_code == "044S", subfield_code == "9") %>%
+  left_join(vd17_044s_raw %>%
+    filter(field_code == "150") %>%
+    select(genre = value, value = ppn),
+  by = c("value")
+  ) %>%
+  mutate(genre = str_replace_all(genre, ":.*", "")) %>%
+  select(record_number, genre) %>%
+  left_join(fbs_a %>%
+    filter(field_code == "011@", subfield_code == "a") %>%
+    select(record_number, year = value) %>%
+    mutate(year = as.integer(year)) %>%
+    filter(year >= 1600, year <= 1700),
+  by = c("record_number")
+  ) %>%
+  count(year, genre) %>%
+  ungroup() %>%
+  collect() %>%
+  mutate(genre = fct_lump_n(genre, 12, w = n)) %>%
+  group_by(year, genre) %>%
+  summarize(n = sum(n), .groups = "drop") %>%
+  complete(year, genre, fill = list(n = 0)) %>%
+  ggplot(aes(x = year, y = n, fill = genre)) +
+  geom_col(width = 1, position = "fill") +
+  labs(fill = NULL) +
+  scale_x_continuous(breaks = seq(1000, 2000, by = 20)) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), breaks = seq(0, 1, by = 0.1)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom")
+```
