@@ -2,6 +2,7 @@ library(tidyverse)
 library(here)
 library(DBI)
 library(RMariaDB)
+library(googlesheets4)
 
 con <- dbConnect(
   drv = MariaDB(),
@@ -22,26 +23,60 @@ vd17_c <- tbl(con, "vd17_c")
 vd17_id_a <- tbl(con, "vd17_id_a")
 vd17_id_c <- tbl(con, "vd17_id_c")
 
-vd17_old_id_to_id_map <- vd17_a %>%
-  filter(field_code == "007Y", subfield_code == "0", !str_detect(value, sql("CHR(0)"))) %>%
-  inner_join(vd17_id_a, by = c("record_number")) %>%
-  select(old_vd17_id = value, vd17_id) %>%
-  collect()
+fbs_gnds_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "vd17_authors_GND", col_types = "c") %>% relocate(Name)
 
-fbs <- read_csv(here("data/input/vd17_2022-03-19.csv"), guess_max = Inf, lazy = TRUE) %>%
-  left_join(vd17_old_id_to_id_map, by = c("id" = "old_vd17_id")) %>%
-  mutate(vd17_id = coalesce(vd17_id, id)) %>%
-  left_join(vd17_id_a %>% collect(), by = c("vd17_id")) %>%
-  relocate(record_number, vd17_id, aut, title, subtitle, publicationDate, genre, workLanguage, originalLanguage, publisherPlace, normalizedPlace, publisherName)
+try(dbExecute(con, "DROP TABLE IF EXISTS fbs_gnds_a"))
+fbs_gnds_a <- fbs_gnds_gs %>%
+  select(Name, GND = `Old GND`) %>%
+  union(fbs_gnds_gs %>% filter(!is.na(`Old GND`)) %>% select(Name, GND = `Old GND`)) %>%
+  mutate(GND = str_c("gnd/", GND)) %>%
+  copy_to(con, ., name = "fbs_gnds_a", unique_indexes = c("GND"))
 
-rm(vd17_old_id_to_id_map)
+fbs_record_numbers_a <- vd17_a %>%
+  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+  distinct(record_number)
 
-in_fbs <- fbs %>%
-  select(record_number) %>%
-  mutate(in_fbs = TRUE) %>%
-  copy_to(con, ., name = "in_fbs")
-
-fbs_a <- vd17_a %>% inner_join(in_fbs)
+fbs_a <- vd17_a %>% inner_join(fbs_record_numbers_a)
 
 vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
   copy_to(con, ., name = "vd17_044s_raw")
+
+vd17_normalized_years_a <- vd17_a %>%
+  filter(field_code == "011@") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  mutate(normalized_year = as.integer(a))
+
+vd17_normalized_years_c <- vd17_c %>%
+  filter(field_code == "011@", subfield_code == "a") %>%
+  mutate(normalized_year = as.integer(value)) %>%
+  select(record_number, normalized_year)
+
+vd17_normalized_locs_a <- vd17_a %>%
+  filter(field_code == "033D") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+vd17_normalized_locs_c <- vd17_c %>%
+  filter(field_code == "033D") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+vd17_normalized_langs_a <- vd17_a %>%
+  filter(field_code == "010@") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+vd17_normalized_langs_c <- vd17_c %>%
+  filter(field_code == "010@") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+vd17_titles_a <- vd17_a %>%
+  filter(field_code == "021A") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+vd17_titles_c <- vd17_c %>%
+  filter(field_code == "021A") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+
+# vd17_wide_a <- vd17_a %>%
+#  select(record_number,field_code:value) %>%
+#  mutate(value=str_replace_all(value,sql("CHR(0)"),"_")) %>%
+#  pivot_wider(id_cols=record_number,names_from=field_code:subfield_code,values_from=value,values_fn=~str_flatten(.,collapse="|")) %>%
+#  compute(name="vd17_wide_a")
