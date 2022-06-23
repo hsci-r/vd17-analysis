@@ -145,6 +145,7 @@ nt3_fbs <- nontranslated_fbs%>%
   arrange(desc(n))%>%
   slice(1:5)
 
+
 ggplot(NULL, aes(x=year, fill=genre)) + 
   geom_bar(data=nt1_fbs)+
   geom_bar(data=nt2_fbs)+
@@ -270,6 +271,7 @@ participants2 <- ggplot(cumulative_frequencies_mem, aes(x=year, y=cum_frequency)
 
 ggarrange(participants1,participants2, 
           ncol = 2, nrow = 1)
+
 
 fbs_num%>%
   select(genre,year)%>%
