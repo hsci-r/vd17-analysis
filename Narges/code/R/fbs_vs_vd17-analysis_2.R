@@ -180,6 +180,7 @@ write.csv(translator_fbs, "translators_german.csv")
 #identifying female primary authors
 
 gnd_gender <- read_csv(("C:/Users/azizi/Documents/GitHub/vd17-analysis/Narges/data/gnd_gender.csv"), guess_max = Inf, lazy = TRUE)
+primary_fbs <- select (primary_fbs, -7)
 primary_gender_fbs <- merge(primary_fbs,gnd_gender,by="record_number")
 primary_gender_fbs <- primary_gender_fbs[!duplicated(primary_gender_fbs), ]
 
