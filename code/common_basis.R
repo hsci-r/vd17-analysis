@@ -11,7 +11,6 @@ con <- dbConnect(
   user = "vd17",
   password = "vd17",
   bigint = "integer",
-  validationInterval = 10,
   load_data_local_infile = TRUE,
   autocommit = TRUE,
   reconnect = TRUE
@@ -27,13 +26,15 @@ fbs_gnds_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", s
 
 try(dbExecute(con, "DROP TABLE IF EXISTS fbs_gnds_a"))
 fbs_gnds_a <- fbs_gnds_gs %>%
-  select(Name, GND = `Old GND`) %>%
+  select(Name, GND) %>%
   union(fbs_gnds_gs %>% filter(!is.na(`Old GND`)) %>% select(Name, GND = `Old GND`)) %>%
   mutate(GND = str_c("gnd/", GND)) %>%
   copy_to(con, ., name = "fbs_gnds_a", unique_indexes = c("GND"))
 
-fbs_record_numbers_a <- vd17_a %>%
-  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+fbs_links <- vd17_a %>%
+  inner_join(fbs_gnds_a, by = c("value" = "GND"))
+
+fbs_record_numbers_a <- fbs_links %>%
   distinct(record_number)
 
 fbs_a <- vd17_a %>% inner_join(fbs_record_numbers_a)
