@@ -45,16 +45,18 @@ vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
 vd17_normalized_years_a <- vd17_a %>%
   filter(field_code == "011@") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  mutate(normalized_year = as.integer(a))
+  mutate(normalized_year = as.integer(a)) %>%
+  compute(unique_indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_years_c <- vd17_c %>%
-  filter(field_code == "011@", subfield_code == "a") %>%
-  mutate(normalized_year = as.integer(value)) %>%
-  select(record_number, normalized_year)
+  filter(field_code == "011@") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  mutate(normalized_year = as.integer(a))
 
 vd17_normalized_locs_a <- vd17_a %>%
   filter(field_code == "033D") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  compute(unique_indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_locs_c <- vd17_c %>%
   filter(field_code == "033D") %>%
@@ -62,7 +64,8 @@ vd17_normalized_locs_c <- vd17_c %>%
 
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  compute(unique_indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_langs_c <- vd17_c %>%
   filter(field_code == "010@") %>%
@@ -70,7 +73,8 @@ vd17_normalized_langs_c <- vd17_c %>%
 
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  compute(unique_indexes = list(c("record_number", "field_number")))
 
 vd17_titles_c <- vd17_c %>%
   filter(field_code == "021A") %>%
