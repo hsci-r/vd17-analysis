@@ -1,0 +1,38 @@
+---
+title: "FBS number of publications analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+```{r}
+fbs_record_numbers_a %>%
+  left_join(vd17_normalized_years_a)
+```
+
+```{r}
+fbs_record_numbers_a %>%
+  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  group_by(normalized_year) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop") %>%
+  ggplot(aes(x = normalized_year, y = records)) +
+  geom_step() +
+  theme_hsci_discrete()
+```
