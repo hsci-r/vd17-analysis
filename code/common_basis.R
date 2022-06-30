@@ -18,9 +18,9 @@ con <- dbConnect(
 dbExecute(con, "SET default_storage_engine=Aria")
 
 vd17_a <- tbl(con, "vd17_a")
-vd17_c <- tbl(con, "vd17_c")
+# vd17_c <- tbl(con, "vd17_c")
 vd17_id_a <- tbl(con, "vd17_id_a")
-vd17_id_c <- tbl(con, "vd17_id_c")
+# vd17_id_c <- tbl(con, "vd17_id_c")
 
 fbs_gnds_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "vd17_authors_GND", col_types = "c") %>% relocate(Name)
 
@@ -56,37 +56,37 @@ vd17_normalized_years_a <- vd17_a %>%
   mutate(normalized_year = as.integer(a)) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-vd17_normalized_years_c <- vd17_c %>%
-  filter(field_code == "011@") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  mutate(normalized_year = as.integer(a))
+# vd17_normalized_years_c <- vd17_c %>%
+#  filter(field_code == "011@") %>%
+#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+#  mutate(normalized_year = as.integer(a))
 
 vd17_normalized_locs_a <- vd17_a %>%
   filter(field_code == "033D") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-vd17_normalized_locs_c <- vd17_c %>%
-  filter(field_code == "033D") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+# vd17_normalized_locs_c <- vd17_c %>%
+#  filter(field_code == "033D") %>%
+#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
 
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-vd17_normalized_langs_c <- vd17_c %>%
-  filter(field_code == "010@") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+# vd17_normalized_langs_c <- vd17_c %>%
+#  filter(field_code == "010@") %>%
+#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
 
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-vd17_titles_c <- vd17_c %>%
-  filter(field_code == "021A") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+# vd17_titles_c <- vd17_c %>%
+#  filter(field_code == "021A") %>%
+#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
 
 # vd17_wide_a <- vd17_a %>%
 #  select(record_number,field_code:value) %>%
