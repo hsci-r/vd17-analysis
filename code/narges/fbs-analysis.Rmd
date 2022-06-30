@@ -21,16 +21,49 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
+```{r}
+fbs_links_a
+```
+
 # FBS publications by year
 The below graph depicts the number of publications by FBS members by year
 
 ```{r}
-fbs_record_numbers_a %>%
+new_fbs <- fbs_record_numbers_a %>%
   left_join(vd17_normalized_years_a, by = c("record_number")) %>%
-  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
   group_by(normalized_year) %>%
   summarize(records = n_distinct(record_number), .groups = "drop") %>%
-  ggplot(aes(x = normalized_year, y = records)) +
-  geom_step() +
-  theme_hsci_discrete()
+  mutate(phase=case_when(
+    normalized_year>= 1617 & normalized_year< 1625 ~ "phase 1",
+    normalized_year>= 1625 & normalized_year< 1650 ~ "phase 2",
+    normalized_year>= 1650 ~ "phase 3"
+  ))
+
+new_fbs
 ```
+
+```{r}
+fbs_gnds_local <- fbs_gnds_a %>% collect()
+```
+
+
+```{python}
+gender={}
+for i in r.fbs_gnds_local['GND'].unique():
+    gender[i]=''
+    
+#extracting the gender of each gnd from API    
+j=0
+for i in gender:
+    if j%200==0:
+        print(j)
+    try:
+        json_url=urlopen("https://lobid.org/gnd/search?q="+i+"&format=json")
+        data = json.loads(json_url.read())
+        gender[i]=data['member'][0]['gender'][0]['label']
+    except Exception as ex:
+        print(i,ex)
+    j+=1
+```
+
