@@ -31,13 +31,21 @@ fbs_gnds_a <- fbs_gnds_gs %>%
   mutate(GND = str_c("gnd/", GND)) %>%
   copy_to(con, ., name = "fbs_gnds_a", unique_indexes = c("GND"))
 
-fbs_links <- vd17_a %>%
-  inner_join(fbs_gnds_a, by = c("value" = "GND"))
+fbs_links_a <- vd17_a %>%
+  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a) %>%
+  pivot_wider(
+    id_cols = c(record_number, field_number, field_code),
+    values_from = value, names_from = subfield_code
+  ) %>%
+  compute(unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code"))
 
-fbs_record_numbers_a <- fbs_links %>%
+fbs_record_numbers_a <- fbs_links_a %>%
   distinct(record_number)
 
-fbs_a <- vd17_a %>% inner_join(fbs_record_numbers_a)
+fbs_a <- vd17_a %>%
+  inner_join(fbs_record_numbers_a)
 
 vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
   copy_to(con, ., name = "vd17_044s_raw")
