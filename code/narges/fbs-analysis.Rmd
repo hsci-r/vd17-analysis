@@ -34,36 +34,55 @@ new_fbs <- fbs_record_numbers_a %>%
   filter(normalized_year >= 1617, normalized_year <= 1682) %>%
   group_by(normalized_year) %>%
   summarize(records = n_distinct(record_number), .groups = "drop") %>%
-  mutate(phase=case_when(
-    normalized_year>= 1617 & normalized_year< 1625 ~ "phase 1",
-    normalized_year>= 1625 & normalized_year< 1650 ~ "phase 2",
-    normalized_year>= 1650 ~ "phase 3"
+  mutate(phase = case_when(
+    normalized_year >= 1617 & normalized_year < 1625 ~ "phase 1",
+    normalized_year >= 1625 & normalized_year < 1650 ~ "phase 2",
+    normalized_year >= 1650 ~ "phase 3"
   ))
 
 new_fbs
 ```
 
+## Gender enrichment for FBS members
+
+```{r install_python_packages}
+reticulate::py_install("pandas")
+```
+
+
+First, for Python access to work, we need to copy the remote table to a local one in R.
+
 ```{r}
 fbs_gnds_local <- fbs_gnds_a %>% collect()
 ```
 
+But then, we can just access the R objects from Python cells through the object `r`.
 
 ```{python}
-gender={}
-for i in r.fbs_gnds_local['GND'].unique():
-    gender[i]=''
-    
-#extracting the gender of each gnd from API    
+from urllib.request import urlopen
+import json
+import pandas as pd
+
+genders=[]
+
+#extracting the gender of each gnd from API
 j=0
-for i in gender:
+for id in r.fbs_gnds_local['GND']:
     if j%200==0:
         print(j)
     try:
-        json_url=urlopen("https://lobid.org/gnd/search?q="+i+"&format=json")
+        json_url=urlopen("https://lobid.org/gnd/search?q="+id+"&format=json")
         data = json.loads(json_url.read())
-        gender[i]=data['member'][0]['gender'][0]['label']
+        genders.append((id,data['member'][0]['gender'][0]['label']))
     except Exception as ex:
         print(i,ex)
     j+=1
+
+r.genders=pd.DataFrame(genders, columns = ["GND","gender"])
 ```
 
+```{r}
+genders %>%
+  count(gender) %>%
+  arrange(desc(n))
+```
