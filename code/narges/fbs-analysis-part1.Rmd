@@ -1,0 +1,129 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+# FBS publications by year
+The below plot depicts the number of publications (plus cumulative distribution) by FBS members by year.
+
+```{r}
+publications_fbs <- fbs_record_numbers_a %>%
+  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
+  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
+  filter(length((normalized_year==4)))%>%
+  group_by(normalized_year) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop") %>%
+  mutate(phase = case_when(
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 ~ "phase 3"
+  ))
+
+
+ggplot(publications_fbs, aes(x=normalized_year,y=records,color=phase))+
+  geom_step()+
+  xlab("Year") + ylab("Number of publications")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+cumulative_frequencies_pub <- publications_fbs %>% 
+  arrange(normalized_year) %>% 
+  mutate(cum_frequency=cumsum(records))
+
+ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) + 
+  geom_step()+
+  xlab("Year") + ylab("Number of publications (cumulative distribution)")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+```
+# FBS genres by year
+The below plot depicts the top 5 genres of FBS publications by year.
+
+
+```{r}
+genres_fbs_a <- fbs_record_numbers_a %>%
+  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
+  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
+  filter(length((normalized_year==4)))%>%
+  left_join(vd17_genres_a, by = c("record_number"))
+
+fbs_genres_local <- genres_fbs_a %>% collect()
+
+phase_fbs_genres <- fbs_genres_local%>%
+  select(record_number,normalized_year,genre)%>%
+  distinct(record_number,normalized_year,genre)%>%
+  na.omit(fbs_genres_local)%>%
+  group_by(normalized_year) %>%
+  count(genre)%>%
+  arrange(desc(n))%>%
+  mutate(phase = case_when(
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 ~ "phase 3"
+  ))
+
+phase_fbs_genres %>% write_csv(here("fbs_genres.csv"))
+
+phase_fbs_genres%>%
+  slice(1:5)%>%
+  ggplot(aes(x=normalized_year,y=n,fill=genre))+
+  geom_col()+
+  xlab("Year") + ylab("Top 5 genres of FBS publications")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(legend.position="bottom",
+        legend.key.width=unit(0.2, "cm"))+
+  geom_text(aes(label = n), color = "white", size = 1.5, position = position_stack(vjust = 0.7)) 
+```
+
+# FBS translations by year
+The below plot depicts the number of translated and non-translated publications by year.
+
+```{r}
+language_fbs_a <- fbs_record_numbers_a %>%
+  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
+  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
+  filter(length((normalized_year==4)))%>%
+  left_join(vd17_normalized_langs_a, by = c("record_number"))
+
+language_fbs_a_local <- language_fbs_a %>% 
+  collect()
+
+language_fbs_a_local$type <- is.na(language_fbs_a_local$original_language)
+language_fbs_a_local$type[language_fbs_a_local$type == "FALSE"] <- "translated"
+language_fbs_a_local$type[language_fbs_a_local$type == "TRUE"] <- "non_translated"
+
+
+language_fbs_a_local%>%
+  select(normalized_year,type)%>%
+  group_by(normalized_year) %>%
+  count(type)%>%
+  arrange(desc(n))%>%
+  ggplot(aes(x=normalized_year,y=n, fill=type)) + 
+  geom_col()+
+  labs(y = "Translated and non-translated publications", x= "Years", lintype = "Legend")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(legend.position="bottom")+
+  geom_text(aes(label = n), color = "black", size = 1.5, position = position_stack(vjust = 0.7)) 
+```
+

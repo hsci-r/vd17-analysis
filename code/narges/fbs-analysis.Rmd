@@ -21,27 +21,6 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
-```{r}
-fbs_links_a
-```
-
-# FBS publications by year
-The below graph depicts the number of publications by FBS members by year
-
-```{r}
-new_fbs <- fbs_record_numbers_a %>%
-  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
-  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
-  group_by(normalized_year) %>%
-  summarize(records = n_distinct(record_number), .groups = "drop") %>%
-  mutate(phase = case_when(
-    normalized_year >= 1617 & normalized_year < 1625 ~ "phase 1",
-    normalized_year >= 1625 & normalized_year < 1650 ~ "phase 2",
-    normalized_year >= 1650 ~ "phase 3"
-  ))
-
-new_fbs
-```
 
 ## Gender enrichment for FBS members
 
@@ -54,6 +33,7 @@ First, for Python access to work, we need to copy the remote table to a local on
 
 ```{r}
 fbs_gnds_local <- fbs_gnds_a %>% collect()
+#fbs_gnds_local %>% write_csv(here("fbs.csv"))
 ```
 
 But then, we can just access the R objects from Python cells through the object `r`.

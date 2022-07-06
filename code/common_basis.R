@@ -1,8 +1,17 @@
+library(googlesheets4)
 library(tidyverse)
 library(here)
+library(ggplot2)
+library(gghsci)
+library(tidyr)
+library(dplyr)
 library(DBI)
 library(RMariaDB)
-library(googlesheets4)
+library(readxl)
+library(patchwork)
+library(cowplot)
+library(ggpubr)                             
+library(data.table)  
 
 con <- dbConnect(
   drv = MariaDB(),
@@ -56,6 +65,13 @@ vd17_normalized_years_a <- vd17_a %>%
   mutate(normalized_year = as.integer(a)) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
+vd17_genres_a <- vd17_a %>%
+  filter(field_code == "044S") %>%
+  pivot_wider(id_cols = record_number:field_number,
+              values_from = value, names_from =subfield_code)%>%
+  mutate(genre = str_replace_all(a[!is.na(a)],":.*",""))%>%
+  compute(unique_indexes = list(c("record_number", "field_number")))
+
 # vd17_normalized_years_c <- vd17_c %>%
 #  filter(field_code == "011@") %>%
 #  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
@@ -73,6 +89,8 @@ vd17_normalized_locs_a <- vd17_a %>%
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  mutate(publication_language = a[!is.na(a)])%>%
+  mutate(original_language = c[!is.na(c)])%>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 # vd17_normalized_langs_c <- vd17_c %>%
