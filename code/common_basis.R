@@ -10,8 +10,8 @@ library(RMariaDB)
 library(readxl)
 library(patchwork)
 library(cowplot)
-library(ggpubr)                             
-library(data.table)  
+library(ggpubr)
+library(data.table)
 
 con <- dbConnect(
   drv = MariaDB(),
@@ -31,17 +31,16 @@ vd17_a <- tbl(con, "vd17_a")
 vd17_id_a <- tbl(con, "vd17_id_a")
 # vd17_id_c <- tbl(con, "vd17_id_c")
 
-fbs_gnds_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "vd17_authors_GND", col_types = "c") %>% relocate(Name)
+fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "FBS_master_metadata", col_types = "c") %>% relocate(Name)
 
-try(dbExecute(con, "DROP TABLE IF EXISTS fbs_gnds_a"))
-fbs_gnds_a <- fbs_gnds_gs %>%
-  select(Name, GND) %>%
-  union(fbs_gnds_gs %>% filter(!is.na(`Old GND`)) %>% select(Name, GND = `Old GND`)) %>%
+try(dbExecute(con, "DROP TABLE IF EXISTS fbs_a"), silent = TRUE)
+
+fbs_metadata_a <- fbs_metadata_gs %>%
   mutate(GND = str_c("gnd/", GND)) %>%
-  copy_to(con, ., name = "fbs_gnds_a", unique_indexes = c("GND"))
+  copy_to(con, ., name = "fbs_a", unique_indexes = c("GND"))
 
 fbs_links_a <- vd17_a %>%
-  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+  inner_join(fbs_metadata_a, by = c("value" = "GND")) %>%
   select(record_number, field_number) %>%
   inner_join(vd17_a) %>%
   pivot_wider(
@@ -53,7 +52,7 @@ fbs_links_a <- vd17_a %>%
 fbs_record_numbers_a <- fbs_links_a %>%
   distinct(record_number)
 
-fbs_a <- vd17_a %>%
+fbs_records_a <- vd17_a %>%
   inner_join(fbs_record_numbers_a)
 
 vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
@@ -67,9 +66,11 @@ vd17_normalized_years_a <- vd17_a %>%
 
 vd17_genres_a <- vd17_a %>%
   filter(field_code == "044S") %>%
-  pivot_wider(id_cols = record_number:field_number,
-              values_from = value, names_from =subfield_code)%>%
-  mutate(genre = str_replace_all(a[!is.na(a)],":.*",""))%>%
+  pivot_wider(
+    id_cols = record_number:field_number,
+    values_from = value, names_from = subfield_code
+  ) %>%
+  mutate(genre = str_replace_all(a[!is.na(a)], ":.*", "")) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 # vd17_normalized_years_c <- vd17_c %>%
@@ -89,8 +90,7 @@ vd17_normalized_locs_a <- vd17_a %>%
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  mutate(publication_language = a[!is.na(a)])%>%
-  mutate(original_language = c[!is.na(c)])%>%
+  rename(publication_language = a, original_language = c) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 # vd17_normalized_langs_c <- vd17_c %>%
