@@ -1783,8 +1783,8 @@ year</a></li>
 <pre><code>here() starts at C:/Users/azizi/Documents/GitHub/vd17-analysis
 Registered S3 methods overwritten by &#39;dbplyr&#39;:
   method         from
-  print.tbl_lazy     
-  print.tbl_sql      
+  print.tbl_lazy
+  print.tbl_sql
 -- Attaching packages ------------------------------- tidyverse 1.3.1 --
 v ggplot2 3.3.6     v purrr   0.3.4
 v tibble  3.1.7     v dplyr   1.0.9
@@ -1809,7 +1809,7 @@ The following object is masked from ‘package:cowplot’:
 
 Registered S3 method overwritten by &#39;data.table&#39;:
   method           from
-  print.data.table     
+  print.data.table
 data.table 1.14.2 using 2 threads (see ?getDTthreads).  Latest news: r-datatable.com
 
 Attaching package: ‘data.table’
@@ -1851,7 +1851,7 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 <!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogT25lIG9yIG1vcmUgcGFyc2luZyBpc3N1ZXMsIHNlZSBgcHJvYmxlbXMoKWAgZm9yIGRldGFpbHNcblJlZ2lzdGVyZWQgUzMgbWV0aG9kcyBvdmVyd3JpdHRlbiBieSAnaHRtbHRvb2xzJzpcbiAgbWV0aG9kICAgICAgICAgICAgICAgZnJvbSAgICAgICAgIFxuICBwcmludC5odG1sICAgICAgICAgICB0b29sczpyc3R1ZGlvXG4gIHByaW50LnNoaW55LnRhZyAgICAgIHRvb2xzOnJzdHVkaW9cbiAgcHJpbnQuc2hpbnkudGFnLmxpc3QgdG9vbHM6cnN0dWRpb1xuIn0= -->
 <pre><code>Warning: One or more parsing issues, see `problems()` for details
 Registered S3 methods overwritten by &#39;htmltools&#39;:
-  method               from         
+  method               from
   print.html           tools:rstudio
   print.shiny.tag      tools:rstudio
   print.shiny.tag.list tools:rstudio</code></pre>
@@ -1889,11 +1889,11 @@ ggplot(publications_fbs, aes(x=normalized_year,y=records,color=phase))+
 <!-- rnb-plot-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5jdW11bGF0aXZlX2ZyZXF1ZW5jaWVzX3B1YiA8LSBwdWJsaWNhdGlvbnNfZmJzICU+JSBcbiAgYXJyYW5nZShub3JtYWxpemVkX3llYXIpICU+JSBcbiAgbXV0YXRlKGN1bV9mcmVxdWVuY3k9Y3Vtc3VtKHJlY29yZHMpKVxuXG5nZ3Bsb3QoY3VtdWxhdGl2ZV9mcmVxdWVuY2llc19wdWIsIGFlcyh4PW5vcm1hbGl6ZWRfeWVhciwgeT1jdW1fZnJlcXVlbmN5KSkgKyBcbiAgZ2VvbV9zdGVwKCkrXG4gIHhsYWIoXCJZZWFyXCIpICsgeWxhYihcIk51bWJlciBvZiBwdWJsaWNhdGlvbnMgKGN1bXVsYXRpdmUgZGlzdHJpYnV0aW9uKVwiKStcbiAgc2NhbGVfeF9jb250aW51b3VzKGJyZWFrcyA9IHNlcSgxMDAwLCAyMDAwLCBieSA9IDUpKStcbiAgdGhlbWUoYXhpcy50ZXh0Lng9ZWxlbWVudF90ZXh0KGFuZ2xlPTkwLGhqdXN0PTEsdmp1c3Q9MC41KSlcbmBgYCJ9 -->
 <pre class="r"><code>
-cumulative_frequencies_pub &lt;- publications_fbs %&gt;% 
-  arrange(normalized_year) %&gt;% 
+cumulative_frequencies_pub &lt;- publications_fbs %&gt;%
+  arrange(normalized_year) %&gt;%
   mutate(cum_frequency=cumsum(records))
 
-ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) + 
+ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) +
   geom_step()+
   xlab(&quot;Year&quot;) + ylab(&quot;Number of publications (cumulative distribution)&quot;)+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
@@ -1969,7 +1969,7 @@ publications by year.</p>
   filter(length((normalized_year==4)))%&gt;%
   left_join(vd17_normalized_langs_a, by = c(&quot;record_number&quot;))
 
-language_fbs_a_local &lt;- language_fbs_a %&gt;% 
+language_fbs_a_local &lt;- language_fbs_a %&gt;%
   collect()
 
 language_fbs_a_local$type &lt;- is.na(language_fbs_a_local$original_language)
@@ -1982,7 +1982,7 @@ language_fbs_a_local%&gt;%
   group_by(normalized_year) %&gt;%
   count(type)%&gt;%
   arrange(desc(n))%&gt;%
-  ggplot(aes(x=normalized_year,y=n, fill=type)) + 
+  ggplot(aes(x=normalized_year,y=n, fill=type)) +
   geom_col()+
   labs(y = &quot;Translated and non-translated publications&quot;, x= &quot;Years&quot;, lintype = &quot;Legend&quot;)+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
