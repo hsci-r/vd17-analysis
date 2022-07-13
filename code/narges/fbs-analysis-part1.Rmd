@@ -21,109 +21,292 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
-# FBS publications by year
+```{r}
+vd17_contributors1_a_local <-vd17_contributors1_a %>%
+  collect()
+vd17_contributors2_a_local <-vd17_contributors2_a %>%
+  collect()
+vd17_contributors3_a_local <-vd17_contributors3_a %>%
+  collect()
+vd17_contributors4_a_local <-vd17_contributors4_a %>%
+  collect()
+
+vd17_contributors_a_local <-rbind(vd17_contributors1_a_local,vd17_contributors2_a_local,vd17_contributors3_a_local,vd17_contributors4_a_local)
+```
+
+```{r}
+vd17_dedicatees1_a_local <-vd17_dedicatees1_a %>%
+  collect()
+vd17_dedicatees2_a_local <-vd17_dedicatees2_a %>%
+  collect()
+vd17_dedicatees3_a_local <-vd17_dedicatees3_a %>%
+  collect()
+
+vd17_dedicatees_a_local <-rbind(vd17_dedicatees1_a_local,vd17_dedicatees2_a_local,vd17_dedicatees3_a_local)
+
+```
+
+
+```{r}
+vd17_contributors_dedicatees <- rbind(vd17_contributors_a_local,vd17_dedicatees_a_local)
+
+vd17_contributors_dedicatees <- vd17_contributors_dedicatees %>%
+  distinct(record_number)
+
+fbs_record_numbers_gnd_local <- fbs_links_a %>%
+  collect()%>%
+  select(record_number,6)
+
+colnames(fbs_record_numbers_gnd_local) <- c('record_number','GND')
+
+fbs_record_numbers_gnd_local <- fbs_record_numbers_gnd_local %>%
+  distinct(record_number,GND)
+
+fbs_contributors_dedicatees <- fbs_record_numbers_gnd_local %>%
+  inner_join(vd17_contributors_dedicatees, by = c("record_number"))
+
+vd17_normalized_years_local <- vd17_normalized_years_a %>%
+  collect()
+
+```
+
+# FBS publications by year for members (not contributors_dedicatees)
 The below plot depicts the number of publications (plus cumulative distribution) by FBS members by year.
 
 ```{r}
-publications_fbs <- fbs_record_numbers_a %>%
-  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
-  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
-  filter(length((normalized_year==4)))%>%
+publications_fbs <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)
+
+publications_fbs <- publications_fbs[!publications_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+
+pub_fbs <-publications_fbs %>%
   group_by(normalized_year) %>%
   summarize(records = n_distinct(record_number), .groups = "drop") %>%
   mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
     normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
     normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
-    normalized_year >= 1668 ~ "phase 3"
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
   ))
 
-
-ggplot(publications_fbs, aes(x=normalized_year,y=records,color=phase))+
+  ggplot(pub_fbs,aes(x=normalized_year, y=records, color = phase)) + 
   geom_step()+
   xlab("Year") + ylab("Number of publications")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
-cumulative_frequencies_pub <- publications_fbs %>% 
+cumulative_frequencies_pub <- pub_fbs %>% 
   arrange(normalized_year) %>% 
-  mutate(cum_frequency=cumsum(records))
+  mutate(cum_frequency=cumsum(records))%>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
 
-ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) + 
+
+ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) +
   geom_step()+
-  xlab("Year") + ylab("Number of publications (cumulative distribution)")+
+  xlab("Year") + ylab("Publications (cumulative distribution)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
 ```
+# FBS publications by year for members (all)
+The below plot depicts the number of publications (plus cumulative distribution) by FBS members by year.
+
+```{r}
+publications_fbs_all <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)
+
+pub_fbs_all <-publications_fbs_all %>%
+  group_by(normalized_year) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop") %>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
+
+  ggplot(pub_fbs_all,aes(x=normalized_year, y=records, color = phase)) + 
+  geom_step()+
+  xlab("Year") + ylab("Number of publications (all)")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+cumulative_frequencies_pub_all <- pub_fbs_all %>% 
+  arrange(normalized_year) %>% 
+  mutate(cum_frequency=cumsum(records))%>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
+
+
+ggplot(cumulative_frequencies_pub_all, aes(x=normalized_year, y=cum_frequency)) +
+  geom_step()+
+  xlab("Year") + ylab("Publications (all-cumulative distribution)")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+```
+# FBS members by year
+The below plot depicts the number of members of FBS by year.
+```{r}
+members_fbs <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)
+
+members_fbs <- members_fbs[!members_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+
+mem_fbs <-members_fbs %>%
+  group_by(normalized_year) %>%
+  summarize(records = n_distinct(GND), .groups = "drop") %>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
+
+  ggplot(mem_fbs,aes(x=normalized_year, y=records, color = phase)) + 
+  geom_step()+
+  xlab("Year") + ylab("Number of members")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
+
+# FBS members by year (all)
+The below plot depicts the number of members of FBS by year.
+```{r}
+members_fbs_all <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)
+
+mem_fbs_all <-members_fbs_all %>%
+  group_by(normalized_year) %>%
+  summarize(records = n_distinct(GND), .groups = "drop") %>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
+
+  ggplot(mem_fbs_all,aes(x=normalized_year, y=records, color = phase)) + 
+  geom_step()+
+  xlab("Year") + ylab("Number of members (all)")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+```
+
+
 # FBS genres by year
-The below plot depicts the top 5 genres of FBS publications by year.
+The below plot depicts the top genre of FBS publications by year.
 
 
 ```{r}
-genres_fbs_a <- fbs_record_numbers_a %>%
-  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
-  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
-  filter(length((normalized_year==4)))%>%
-  left_join(vd17_genres_a, by = c("record_number"))
+vd17_genres_local <- vd17_genres_a %>%
+  collect()
 
-fbs_genres_local <- genres_fbs_a %>% collect()
+genres_fbs <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(vd17_genres_local, by = c("record_number"))
 
-phase_fbs_genres <- fbs_genres_local%>%
+genres_fbs <- genres_fbs[!genres_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+
+phase_genres_fbs <- genres_fbs%>%
   select(record_number,normalized_year,genre)%>%
   distinct(record_number,normalized_year,genre)%>%
-  na.omit(fbs_genres_local)%>%
+  na.omit(genres_fbs)%>%
   group_by(normalized_year) %>%
   count(genre)%>%
   arrange(desc(n))%>%
   mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
     normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
     normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
-    normalized_year >= 1668 ~ "phase 3"
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
   ))
 
-phase_fbs_genres %>% write_csv(here("fbs_genres.csv"))
+phase_genres_fbs %>% write_csv(here("fbs_genres.csv"))
 
-phase_fbs_genres%>%
-  slice(1:5)%>%
+phase_genres_fbs%>%
+  slice(1:1)%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre))+
   geom_col()+
-  xlab("Year") + ylab("Top 5 genres of FBS publications")+
+  xlab("Year") + ylab("Top genre of FBS by year")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
   theme(legend.position="bottom",
-        legend.key.width=unit(0.2, "cm"))+
-  geom_text(aes(label = n), color = "white", size = 1.5, position = position_stack(vjust = 0.7)) 
+        legend.key.width=unit(0.15, "cm"))+
+  geom_text(aes(label = n), color = "black", size = 1, position = position_stack(vjust = 0.9)) 
 ```
 
-# FBS translations by year
-The below plot depicts the number of translated and non-translated publications by year.
+# FBS genres by year (all)
+The below plot depicts the top genre of FBS publications by year.
 
 ```{r}
-language_fbs_a <- fbs_record_numbers_a %>%
-  left_join(vd17_normalized_years_a, by = c("record_number")) %>%
-  filter(normalized_year >= 1617, normalized_year <= 1682) %>%
-  filter(length((normalized_year==4)))%>%
-  left_join(vd17_normalized_langs_a, by = c("record_number"))
 
-language_fbs_a_local <- language_fbs_a %>% 
-  collect()
+genres_fbs_all <- fbs_record_numbers_gnd_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(vd17_genres_local, by = c("record_number"))
 
-language_fbs_a_local$type <- is.na(language_fbs_a_local$original_language)
-language_fbs_a_local$type[language_fbs_a_local$type == "FALSE"] <- "translated"
-language_fbs_a_local$type[language_fbs_a_local$type == "TRUE"] <- "non_translated"
-
-
-language_fbs_a_local%>%
-  select(normalized_year,type)%>%
+phase_genres_fbs_all <- genres_fbs_all%>%
+  select(record_number,normalized_year,genre)%>%
+  distinct(record_number,normalized_year,genre)%>%
+  na.omit(genres_fbs_all)%>%
   group_by(normalized_year) %>%
-  count(type)%>%
+  count(genre)%>%
   arrange(desc(n))%>%
-  ggplot(aes(x=normalized_year,y=n, fill=type)) + 
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))
+
+phase_genres_fbs_all %>% write_csv(here("fbs_genres_all.csv"))
+
+phase_genres_fbs_all%>%
+  slice(1:1)%>%
+  ggplot(aes(x=normalized_year,y=n,fill=genre))+
   geom_col()+
-  labs(y = "Translated and non-translated publications", x= "Years", lintype = "Legend")+
+  xlab("Year") + ylab("Top genre of FBS by year (all)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
-  theme(legend.position="bottom")+
-  geom_text(aes(label = n), color = "black", size = 1.5, position = position_stack(vjust = 0.7)) 
+  theme(legend.position="bottom",
+        legend.key.width=unit(0.15, "cm"))+
+  geom_text(aes(label = n), color = "black", size = 1, position = position_stack(vjust = 0.9)) 
 ```
 
