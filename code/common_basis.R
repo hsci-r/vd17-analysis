@@ -53,7 +53,8 @@ fbs_links_a <- vd17_a %>%
     id_cols = c(record_number, field_number, field_code),
     values_from = value, names_from = subfield_code
   ) %>%
-  compute(unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code"))
+  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
+  compute(unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
 
 fbs_record_numbers_a <- fbs_links_a %>%
   distinct(record_number)
@@ -155,6 +156,7 @@ vd17_normalized_langs_a <- vd17_a %>%
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  rename(title = `a`) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 # vd17_titles_c <- vd17_c %>%
