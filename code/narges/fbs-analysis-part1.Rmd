@@ -21,65 +21,53 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
-```{r}
-vd17_contributors1_a_local <-vd17_contributors1_a %>%
-  collect()
-vd17_contributors2_a_local <-vd17_contributors2_a %>%
-  collect()
-vd17_contributors3_a_local <-vd17_contributors3_a %>%
-  collect()
-vd17_contributors4_a_local <-vd17_contributors4_a %>%
-  collect()
 
-vd17_contributors_a_local <-rbind(vd17_contributors1_a_local,vd17_contributors2_a_local,vd17_contributors3_a_local,vd17_contributors4_a_local)
+```{r}
+fbs_links_local <- fbs_links_a %>% 
+  filter(
+    !role %in% c("ctb","oth","dte"),
+    !role2 %in% c("BeiträgerIn","Beiträger","Mitwirkende","WidmungsempfängerIn","Widmungsempfänger")) %>% 
+  inner_join(fbs_metadata_a %>% select(GND,Member_number_new,First_name_new,Last_name_new,Society_name_new)) %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_titles_a %>% select(record_number,title)) %>%
+  select(-field_number) %>%
+  relocate(vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2) %>% 
+  collect() %>%
+  select(where(~!all(is.na(.x))))
+
+fbs_links_local <- select (fbs_links_local, c('record_number','vd17_id','title','Member_number_new','First_name_new', 'Last_name_new','Society_name_new','GND','role2','field_code'))
 ```
-
 ```{r}
-vd17_dedicatees1_a_local <-vd17_dedicatees1_a %>%
-  collect()
-vd17_dedicatees2_a_local <-vd17_dedicatees2_a %>%
-  collect()
-vd17_dedicatees3_a_local <-vd17_dedicatees3_a %>%
-  collect()
+fbs_links_local_all <- fbs_links_a %>% 
+  inner_join(fbs_metadata_a %>% select(GND,Member_number_new,First_name_new,Last_name_new,Society_name_new)) %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_titles_a %>% select(record_number,title)) %>%
+  select(-field_number) %>%
+  relocate(vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2) %>% 
+  collect() %>%
+  select(where(~!all(is.na(.x))))
 
-vd17_dedicatees_a_local <-rbind(vd17_dedicatees1_a_local,vd17_dedicatees2_a_local,vd17_dedicatees3_a_local)
-
+fbs_links_local_all <- select (fbs_links_local_all, c('record_number','vd17_id','title','Member_number_new','First_name_new', 'Last_name_new','Society_name_new','GND','role2','field_code'))
 ```
-
-
 ```{r}
-vd17_contributors_dedicatees <- rbind(vd17_contributors_a_local,vd17_dedicatees_a_local)
-
-vd17_contributors_dedicatees <- vd17_contributors_dedicatees %>%
-  distinct(record_number)
-
-fbs_record_numbers_gnd_local <- fbs_links_a %>%
-  collect()%>%
-  select(record_number,6)
-
-colnames(fbs_record_numbers_gnd_local) <- c('record_number','GND')
-
-fbs_record_numbers_gnd_local <- fbs_record_numbers_gnd_local %>%
-  distinct(record_number,GND)
-
-fbs_contributors_dedicatees <- fbs_record_numbers_gnd_local %>%
-  inner_join(vd17_contributors_dedicatees, by = c("record_number"))
-
 vd17_normalized_years_local <- vd17_normalized_years_a %>%
   collect()
-
+vd17_genres_local <- vd17_genres_a %>%
+  collect()
+vd17_normalized_langs_local <- vd17_normalized_langs_a %>%
+  collect()
 ```
+
 
 # FBS publications by year for members (not contributors_dedicatees)
 The below plot depicts the number of publications (plus cumulative distribution) by FBS members by year.
 
 ```{r}
-publications_fbs <- fbs_record_numbers_gnd_local %>%
+publications_fbs <- fbs_links_local %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
-  filter(nchar(normalized_year)==4)
-
-publications_fbs <- publications_fbs[!publications_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+  filter(nchar(normalized_year)==4)%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code)
 
 pub_fbs <-publications_fbs %>%
   group_by(normalized_year) %>%
@@ -94,7 +82,7 @@ pub_fbs <-publications_fbs %>%
 
   ggplot(pub_fbs,aes(x=normalized_year, y=records, color = phase)) + 
   geom_step()+
-  xlab("Year") + ylab("Number of publications")+
+  xlab("Year") + ylab("Publications(not contributors_dedicatees)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -113,7 +101,7 @@ cumulative_frequencies_pub <- pub_fbs %>%
 
 ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) +
   geom_step()+
-  xlab("Year") + ylab("Publications (cumulative distribution)")+
+  xlab("Year") + ylab("Publications-CD (not contributors_dedicatees)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -123,10 +111,11 @@ ggplot(cumulative_frequencies_pub, aes(x=normalized_year, y=cum_frequency)) +
 The below plot depicts the number of publications (plus cumulative distribution) by FBS members by year.
 
 ```{r}
-publications_fbs_all <- fbs_record_numbers_gnd_local %>%
+publications_fbs_all <- fbs_links_local_all %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
-  filter(nchar(normalized_year)==4)
+  filter(nchar(normalized_year)==4)%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code)
 
 pub_fbs_all <-publications_fbs_all %>%
   group_by(normalized_year) %>%
@@ -141,7 +130,7 @@ pub_fbs_all <-publications_fbs_all %>%
 
   ggplot(pub_fbs_all,aes(x=normalized_year, y=records, color = phase)) + 
   geom_step()+
-  xlab("Year") + ylab("Number of publications (all)")+
+  xlab("Year") + ylab("Publications (all)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -160,21 +149,24 @@ cumulative_frequencies_pub_all <- pub_fbs_all %>%
 
 ggplot(cumulative_frequencies_pub_all, aes(x=normalized_year, y=cum_frequency)) +
   geom_step()+
-  xlab("Year") + ylab("Publications (all-cumulative distribution)")+
+  xlab("Year") + ylab("Publications-CD (all)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
 ```
-# FBS members by year
+# FBS members by year (not contributors_dedicatees)
 The below plot depicts the number of members of FBS by year.
 ```{r}
-members_fbs <- fbs_record_numbers_gnd_local %>%
+members_fbs <- fbs_links_local %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
-  filter(nchar(normalized_year)==4)
+  filter(nchar(normalized_year)==4)%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new, Last_name_new,Society_name_new,GND,role2,field_code)
 
-members_fbs <- members_fbs[!members_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+
+members_fbs %>%
+  write_csv(here("fbs_members(not contributors_dedicatees).csv"))
 
 mem_fbs <-members_fbs %>%
   group_by(normalized_year) %>%
@@ -189,7 +181,7 @@ mem_fbs <-members_fbs %>%
 
   ggplot(mem_fbs,aes(x=normalized_year, y=records, color = phase)) + 
   geom_step()+
-  xlab("Year") + ylab("Number of members")+
+  xlab("Year") + ylab("Members (not contributors_dedicatees)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -199,10 +191,15 @@ mem_fbs <-members_fbs %>%
 # FBS members by year (all)
 The below plot depicts the number of members of FBS by year.
 ```{r}
-members_fbs_all <- fbs_record_numbers_gnd_local %>%
+members_fbs_all <- fbs_links_local_all %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
-  filter(nchar(normalized_year)==4)
+  filter(nchar(normalized_year)==4)%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code)
+
+
+members_fbs_all %>%
+  write_csv(here("fbs_members_all.csv"))
 
 mem_fbs_all <-members_fbs_all %>%
   group_by(normalized_year) %>%
@@ -217,7 +214,7 @@ mem_fbs_all <-members_fbs_all %>%
 
   ggplot(mem_fbs_all,aes(x=normalized_year, y=records, color = phase)) + 
   geom_step()+
-  xlab("Year") + ylab("Number of members (all)")+
+  xlab("Year") + ylab("Members (all)")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -225,21 +222,20 @@ mem_fbs_all <-members_fbs_all %>%
 ```
 
 
-# FBS genres by year
+# FBS genres by year (not contributors_dedicatees)
 The below plot depicts the top genre of FBS publications by year.
 
 
 ```{r}
-vd17_genres_local <- vd17_genres_a %>%
-  collect()
 
-genres_fbs <- fbs_record_numbers_gnd_local %>%
+genres_fbs <- fbs_links_local %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
-  left_join(vd17_genres_local, by = c("record_number"))
+  left_join(vd17_genres_local, by = c("record_number"))%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,genre)
 
-genres_fbs <- genres_fbs[!genres_fbs$GND %in% fbs_contributors_dedicatees$GND, , drop = FALSE]
+genres_fbs %>% write_csv(here("fbs_genres(not contributors_dedicatees).csv"))
 
 phase_genres_fbs <- genres_fbs%>%
   select(record_number,normalized_year,genre)%>%
@@ -256,16 +252,16 @@ phase_genres_fbs <- genres_fbs%>%
     normalized_year > 1682 ~ "> 1682"
   ))
 
-phase_genres_fbs %>% write_csv(here("fbs_genres.csv"))
 
 phase_genres_fbs%>%
   slice(1:1)%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre))+
   geom_col()+
-  xlab("Year") + ylab("Top genre of FBS by year")+
+  xlab("Year") + ylab("Genre_no_contributor_dedicatee")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
-  theme(legend.position="bottom",
+  theme(legend.position="right",
         legend.key.width=unit(0.15, "cm"))+
   geom_text(aes(label = n), color = "black", size = 1, position = position_stack(vjust = 0.9)) 
 ```
@@ -275,11 +271,14 @@ The below plot depicts the top genre of FBS publications by year.
 
 ```{r}
 
-genres_fbs_all <- fbs_record_numbers_gnd_local %>%
+genres_fbs_all <- fbs_links_local_all %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
-  left_join(vd17_genres_local, by = c("record_number"))
+  left_join(vd17_genres_local, by = c("record_number"))%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,genre)
+
+genres_fbs_all %>% write_csv(here("fbs_genres_all.csv"))
 
 phase_genres_fbs_all <- genres_fbs_all%>%
   select(record_number,normalized_year,genre)%>%
@@ -296,17 +295,119 @@ phase_genres_fbs_all <- genres_fbs_all%>%
     normalized_year > 1682 ~ "> 1682"
   ))
 
-phase_genres_fbs_all %>% write_csv(here("fbs_genres_all.csv"))
-
 phase_genres_fbs_all%>%
   slice(1:1)%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre))+
   geom_col()+
-  xlab("Year") + ylab("Top genre of FBS by year (all)")+
+  xlab("Year") + ylab("Genre_all")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
-  theme(legend.position="bottom",
+  theme(legend.position="right",
         legend.key.width=unit(0.15, "cm"))+
   geom_text(aes(label = n), color = "black", size = 1, position = position_stack(vjust = 0.9)) 
 ```
+
+
+```{r}
+ger_translation_fbs <- fbs_links_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(vd17_normalized_langs_local, by = c("record_number"))%>%
+  filter(publication_language=="ger",!is.na(original_language))%>%
+  left_join(vd17_genres_local, by = c("record_number"))%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,original_language,intermediary_language,publication_language,genre)
+
+ger_translation_fbs %>% write_csv(here("german_translation_fbs(not contributors_dedicatees).csv"))
+```
+
+```{r}
+ger_translation_fbs_all <- fbs_links_local_all %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(vd17_normalized_langs_local, by = c("record_number"))%>%
+  filter(publication_language=="ger",!is.na(original_language))%>%
+  left_join(vd17_genres_local, by = c("record_number"))%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,original_language,intermediary_language,publication_language,genre)
+
+ger_translation_fbs_all %>% write_csv(here("all_german_translation_fbs.csv"))
+```
+#Genre of FBS German-translations (all)
+The below plot depicts the frequency of genres of FBS translations which are in German.
+```{r}
+genre_translation_fbs_all <- ger_translation_fbs_all%>%
+  select(record_number,normalized_year,genre)%>%
+  distinct(record_number,normalized_year,genre)%>%
+  na.omit(ger_translation_fbs_all)%>%
+  group_by(genre) %>%
+  count(genre)%>%
+  arrange(desc(n))
+
+wordcloud(words = genre_translation_fbs_all$genre, freq = genre_translation_fbs_all$n, min.freq = 1,
+          colors = brewer.pal(10,"Paired"), random.order=FALSE, scale = c(1, 0.4))
+```
+#Original language of FBS German-translations (all)
+The below plot depicts the frequency of original_language of FBS translations which are in German.
+```{r}
+o_language_translation_fbs_all <- ger_translation_fbs_all%>%
+  select(record_number,normalized_year,original_language)%>%
+  distinct(record_number,normalized_year,original_language)%>%
+  na.omit(ger_translation_fbs_all)%>%
+  group_by(original_language) %>%
+  count(original_language)%>%
+  arrange(desc(n))
+
+wordcloud(words = o_language_translation_fbs_all$original_language, freq = o_language_translation_fbs_all$n, min.freq = 1,
+          colors = brewer.pal(10,"Paired"), random.order=FALSE, scale = c(1, 0.4))
+
+```
+
+```{r}
+primary_authors_translation_fbs_all <- ger_translation_fbs_all %>% 
+  filter(field_code=="028A")
+    
+translators_translation_fbs_all <- ger_translation_fbs_all %>% 
+  filter(field_code=="028C",role2 %in% c("ÜbersetzerIn","Übersetzer"))  
+
+primary_authors_translation_fbs_all %>% write_csv(here("all_fbs_primary_authors_ger_translations.csv"))
+
+translators_translation_fbs_all %>% write_csv(here("all_fbs_translators_ger_translations.csv"))
+```
+
+#Translated vs Non-Translated member publications_fbs (all)
+The below plot depicts the Translated vs Non-Translated member publications of FBS.
+
+```{r}
+trans_vs_non_trans <- fbs_links_local_all %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(vd17_normalized_langs_local, by = c("record_number"))%>%
+  select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,original_language,publication_language)
+
+
+trans_vs_non_trans$type <- is.na(trans_vs_non_trans$original_language)
+
+trans_vs_non_trans$type[trans_vs_non_trans$type == "FALSE"] <- "Translated"
+trans_vs_non_trans$type[trans_vs_non_trans$type == "TRUE"] <- "Non-Translated"
+
+trans_vs_non_trans%>%
+distinct(record_number,normalized_year,type)%>%
+select(normalized_year,type)%>%
+group_by(normalized_year)%>%
+count(type)%>%
+arrange(desc(n))%>%
+ggplot(aes(x=normalized_year,y=n, fill=type)) + 
+geom_col()+
+labs(y = "Translated vs Non-Translated", x= "Years")+
+scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+theme_hsci_discrete()+
+theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+theme(legend.position="bottom",
+        legend.key.width=unit(0.15, "cm"))+
+geom_text(aes(label = n), color = "black", size = 1.1, position = position_stack(vjust = 0.9)) 
+```
+
 

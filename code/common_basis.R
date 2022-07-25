@@ -17,6 +17,7 @@ library(data.table)
 library(ggpubr)                             
 library(data.table) 
 library(stringi)
+library(wordcloud)
 #>>>>>>> Stashed changes
 
 con <- dbConnect(
@@ -80,55 +81,6 @@ vd17_genres_a <- vd17_a %>%
   mutate(genre = str_replace_all(a[!is.na(a)], ":.*", "")) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-#all contributors
-
-cont=c("BeiträgerIn","Beiträger","MitwirkendeR")
-
-vd17_contributors1_a <- vd17_a %>%
-  filter(field_code == "028C",subfield_code == "4",value=="ctb") %>%
-  select(record_number)%>%
-  distinct(record_number)
-
-vd17_contributors2_a <- vd17_a %>%
-  filter(field_code == "028G",subfield_code == "4",value=="ctb") %>%
-  select(record_number)%>%
-  distinct(record_number)
-
-vd17_contributors3_a <- vd17_a %>%
-  filter(field_code == "028C",subfield_code == "4",value=="oth") %>%
-  select(record_number)%>%
-  inner_join(vd17_a %>%
-               filter(field_code == "028C",subfield_code == "B",value %in% cont) %>%
-               select(record_number),
-             by=c("record_number"))%>%
-  distinct(record_number)
-
-vd17_contributors4_a <- vd17_a %>%
-  filter(field_code == "028G",subfield_code == "4",value=="oth") %>%
-  select(record_number)%>%
-  inner_join(vd17_a %>%
-               filter(field_code == "028G",subfield_code == "B",value %in% cont) %>%
-               select(record_number),
-             by=c("record_number"))%>%
-  distinct(record_number)
-
-#all dedicatees
-
-vd17_dedicatees1_a <- vd17_a %>%
-  filter(field_code == "028C",subfield_code == "4",value=="dte") %>%
-  select(record_number)%>%
-  distinct(record_number)
-
-vd17_dedicatees2_a <- vd17_a %>%
-  filter(field_code == "028G",subfield_code == "4",value=="dte") %>%
-  select(record_number)%>%
-  distinct(record_number)
-
-vd17_dedicatees3_a <- vd17_a %>%
-  filter(field_code == "029F",subfield_code == "4",value=="dte") %>%
-  select(record_number)%>%
-  distinct(record_number)
-
 # vd17_normalized_years_c <- vd17_c %>%
 #  filter(field_code == "011@") %>%
 #  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
@@ -146,7 +98,7 @@ vd17_normalized_locs_a <- vd17_a %>%
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  rename(publication_language = a, original_language = c) %>%
+  rename(publication_language = a, original_language = c, intermediary_language = b) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 # vd17_normalized_langs_c <- vd17_c %>%
