@@ -1,0 +1,67 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+```{r}
+all_gnd_vd17 <- vd17_a %>%
+  filter(subfield_code=="7")%>%
+  select(record_number,field_code, value)%>%
+  mutate(GND=value)%>%
+  distinct(GND)%>%
+  collect()%>%
+  write_csv(here("all_gnd_vd17.csv"))
+```
+
+```{r install_python_packages}
+reticulate::py_install("pandas")
+```
+
+
+```{python}
+from urllib.request import urlopen
+import json
+import pandas as pd
+
+genders=[]
+
+#extracting the gender of each gnd from API
+j=0
+for id in r.all_gnd_vd17['GND']:
+    if j%10000==0:
+        print(j)
+    try:
+        json_url=urlopen("https://lobid.org/gnd/search?q="+id+"&format=json")
+        data = json.loads(json_url.read())
+        for mem in data['member']:
+            if 'gender' in mem:
+              genders.append((id,mem['gender'][0]['label']))
+    except Exception as ex:
+        print(id,ex)
+    j+=1
+
+r.genders=pd.DataFrame(genders, columns = ["GND","gender"])
+```
+
+```{r}
+genders %>% write_csv(here("all_genders_vd17.csv"))
+```
+
