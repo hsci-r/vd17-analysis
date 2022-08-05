@@ -166,7 +166,7 @@ members_fbs <- fbs_links_local %>%
 
 
 members_fbs %>%
-  write_csv(here("fbs_members(not contributors_dedicatees).csv"))
+  write_xlsx(here("fbs_members(not contributors_dedicatees).xlsx"))
 
 mem_fbs <-members_fbs %>%
   group_by(normalized_year) %>%
@@ -199,7 +199,7 @@ members_fbs_all <- fbs_links_local_all %>%
 
 
 members_fbs_all %>%
-  write_csv(here("fbs_members_all.csv"))
+  write_xlsx(here("fbs_members_all.xlsx"))
 
 mem_fbs_all <-members_fbs_all %>%
   group_by(normalized_year) %>%
@@ -235,7 +235,7 @@ genres_fbs <- fbs_links_local %>%
   left_join(vd17_genres_local, by = c("record_number"))%>%
   select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,genre)
 
-genres_fbs %>% write_csv(here("fbs_genres(not contributors_dedicatees).csv"))
+genres_fbs %>% write_xlsx(here("fbs_genres(not contributors_dedicatees).xlsx"))
 
 phase_genres_fbs <- genres_fbs%>%
   select(record_number,normalized_year,genre)%>%
@@ -278,7 +278,7 @@ genres_fbs_all <- fbs_links_local_all %>%
   left_join(vd17_genres_local, by = c("record_number"))%>%
   select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,genre)
 
-genres_fbs_all %>% write_csv(here("fbs_genres_all.csv"))
+genres_fbs_all %>% write_xlsx(here("fbs_genres_all.xlsx"))
 
 phase_genres_fbs_all <- genres_fbs_all%>%
   select(record_number,normalized_year,genre)%>%
@@ -319,7 +319,7 @@ ger_translation_fbs <- fbs_links_local %>%
   left_join(vd17_genres_local, by = c("record_number"))%>%
   select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,original_language,intermediary_language,publication_language,genre)
 
-ger_translation_fbs %>% write_csv(here("german_translation_fbs(not contributors_dedicatees).csv"))
+ger_translation_fbs %>% write_xlsx(here("german_translation_fbs(not contributors_dedicatees).xlsx"))
 ```
 
 ```{r}
@@ -332,7 +332,7 @@ ger_translation_fbs_all <- fbs_links_local_all %>%
   left_join(vd17_genres_local, by = c("record_number"))%>%
   select (record_number,normalized_year,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,role2,field_code,original_language,intermediary_language,publication_language,genre)
 
-ger_translation_fbs_all %>% write_csv(here("all_german_translation_fbs.csv"))
+ger_translation_fbs_all %>% write_xlsx(here("all_german_translation_fbs.xlsx"))
 ```
 #Genre of FBS German-translations (all)
 The below plot depicts the frequency of genres of FBS translations which are in German.
@@ -369,11 +369,12 @@ primary_authors_translation_fbs_all <- ger_translation_fbs_all %>%
   filter(field_code=="028A")
     
 translators_translation_fbs_all <- ger_translation_fbs_all %>% 
-  filter(field_code=="028C",role2 %in% c("ÜbersetzerIn","Übersetzer"))  
+  filter(field_code=="028C",role2 %in% c("ÜbersetzerIn","Übersetzer",NA))  
 
-primary_authors_translation_fbs_all %>% write_csv(here("all_fbs_primary_authors_ger_translations.csv"))
+primary_authors_translation_fbs_all %>%
+  write_xlsx(here("all_fbs_primary_authors_ger_translations.xlsx"))
 
-translators_translation_fbs_all %>% write_csv(here("all_fbs_translators_ger_translations.csv"))
+translators_translation_fbs_all %>% write_xlsx(here("all_fbs_translators_ger_translations.xlsx"))
 ```
 
 #Translated vs Non-Translated member publications_fbs (all)

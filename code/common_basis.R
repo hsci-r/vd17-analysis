@@ -8,6 +8,7 @@ library(dplyr)
 library(DBI)
 library(RMariaDB)
 library(readxl)
+library(writexl)
 library(patchwork)
 library(cowplot)
 #<<<<<<< Updated upstream
