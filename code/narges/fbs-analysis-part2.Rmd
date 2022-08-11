@@ -1,0 +1,199 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+
+```{r}
+fbs_links_local <- fbs_links_a %>% 
+  filter(
+    !role %in% c("ctb","oth","dte"),
+    !role2 %in% c("BeiträgerIn","Beiträger","Mitwirkende","WidmungsempfängerIn","Widmungsempfänger")) %>% 
+  inner_join(fbs_metadata_a %>% select(GND,Member_number_new,First_name_new,Last_name_new,Society_name_new,DOD_new)) %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_titles_a %>% select(record_number,title)) %>%
+  select(-field_number) %>%
+  relocate(vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,DOD_new,GND,role2) %>% 
+  collect() %>%
+  select(where(~!all(is.na(.x))))
+
+fbs_links_local <- select (fbs_links_local, c('record_number','vd17_id','title','Member_number_new','First_name_new', 'Last_name_new','Society_name_new','GND','DOD_new','role2','field_code'))
+```
+
+```{r}
+vd17_normalized_years_local <- vd17_normalized_years_a %>%
+  collect()
+```
+
+
+# Top 20 authors by their publications (not contributors_dedicatees)
+
+```{r}
+publications_fbs <- fbs_links_local %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))%>%
+  select (record_number,normalized_year,phase,vd17_id,title,Member_number_new,First_name_new,Last_name_new,Society_name_new,GND,DOD_new,role2,field_code)
+
+top_authors_fbs <-publications_fbs %>%
+  group_by(GND) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop")%>%
+  arrange(desc(records))%>%
+  slice(1:20)
+
+top_authors_fbs %>%
+  write_xlsx(here("top_authors_fbs.xlsx"))
+
+top_20_fbs <- publications_fbs %>%
+  inner_join(top_authors_fbs, by = c("GND"))%>%
+  select(c(-records))
+
+#top_20_fbs %>%
+  #write_xlsx(here("top_20_fbs.xlsx"))
+
+```
+
+#This code is for extracting and replacing the titles which are different in few characters (I had problem in running Python in R, so I run that in Jupyter Notebook)
+
+```{r install_python_packages}
+#reticulate::py_install("pandas")
+#reticulate::py_install("sentence-transformers")
+```
+
+```{python}
+#from sentence_transformers import SentenceTransformer, util
+#import pandas as pd
+#import csv
+#import warnings
+#warnings.filterwarnings("ignore")
+
+#model = SentenceTransformer('distilbert-base-nli-mean-tokens')
+#top_20 = pd.read_excel(r'top_20_fbs.xlsx')
+#top_20 = pd.DataFrame(top_20)
+
+#titles1={}
+#titles2={}
+#for index,row in top_20.iterrows():
+    #titles1[index]=row['title']
+    #titles2[index]=row['title']
+    
+#for id1 in titles1:
+    #for id2 in titles2:
+        #sentences = [titles1[id1], titles2[id2]]
+        #sentence_embeddings = model.encode(sentences)
+        #if util.pytorch_cos_sim(sentence_embeddings[0], sentence_embeddings[1]) > 0.98:
+            #top_20.loc[id2,'title']=titles1[id1]
+            
+#top_20.to_excel("top_20_fbs.xlsx")
+```
+
+
+```{r}
+top_20 <- read_xlsx(here("top_20_fbs.xlsx"))
+
+top_20$complete_name <- paste(top_20$First_name_new,top_20$Last_name_new)
+
+top_authors_fbs_name <-top_20 %>%
+  group_by(complete_name) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop")%>%
+  arrange(desc(records))
+
+top_authors_fbs_gnd <-top_20 %>%
+  group_by(GND) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop")%>%
+  arrange(desc(records))
+
+wordcloud(words = top_authors_fbs_name$complete_name, freq = top_authors_fbs_name$records, min.freq = 1,
+          colors = brewer.pal(10,"Paired"), random.order=FALSE, scale = c(1.1, 0.7))
+wordcloud(words = top_authors_fbs_gnd$GND, freq = top_authors_fbs_gnd$records, min.freq = 1,
+          colors = brewer.pal(10,"Paired"), random.order=FALSE, scale = c(1.1, 0.5))
+
+```
+
+
+```{r}
+
+vd17_links <- vd17_a %>%
+  filter(str_detect(value, 'gnd'))%>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a) %>%
+  pivot_wider(
+    id_cols = c(record_number, field_number, field_code),
+    values_from = value, names_from = subfield_code
+  ) %>%
+  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
+  compute(unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))%>%
+  filter(
+    !role %in% c("ctb","oth","dte"),
+    !role2 %in% c("BeiträgerIn","Beiträger","Mitwirkende","WidmungsempfängerIn","Widmungsempfänger"))%>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_titles_a %>% select(record_number,title)) %>%
+  select(-field_number) %>%
+  relocate(vd17_id,title,GND,role2) %>% 
+  collect() %>%
+  select(where(~!all(is.na(.x))))
+
+vd17_links <- select (vd17_links, c('record_number','vd17_id','title','GND','role2','field_code'))
+
+```
+
+```{r}
+publications_vd17 <- vd17_links %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  mutate(phase = case_when(
+    normalized_year < 1617 ~ "< 1617",
+    normalized_year >= 1617 & normalized_year <= 1650 ~ "phase 1",
+    normalized_year >= 1651 & normalized_year <= 1667 ~ "phase 2",
+    normalized_year >= 1668 & normalized_year <= 1682 ~ "phase 3",
+    normalized_year > 1682 ~ "> 1682"
+  ))%>%
+  select (record_number,normalized_year,phase,vd17_id,title,GND,role2,field_code)
+
+top_authors_vd17 <-publications_vd17 %>%
+  group_by(GND) %>%
+  summarize(records = n_distinct(record_number), .groups = "drop")%>%
+  arrange(desc(records))%>%
+  slice(1:20)
+
+top_authors_vd17 %>%
+  write_xlsx(here("top_authors_vd17.xlsx"))
+
+top_20_vd17 <- publications_vd17 %>%
+  inner_join(top_authors_vd17, by = c("GND"))%>%
+  select(c(-records))
+
+```
+#For vd17, extracting the similar titles with sentence embedding took around 1 day so, I stopped the program.
+
+
+
+
+
+
