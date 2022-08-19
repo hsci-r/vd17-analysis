@@ -1,0 +1,36 @@
+---
+title: "VD17 master link data evaluation"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+```{r}
+library(googlesheets4)
+fbs_links_a %>%
+  inner_join(fbs_gnds_a) %>%
+  inner_join(fbs_metadata_a %>% select(member_number = Member_number_new, First_name_new, Last_name_new, Society_name_new)) %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_titles_a %>% select(record_number, title)) %>%
+  left_join(fbs_links_of_interest_a %>%
+    select(record_number, field_number, field_code) %>%
+    mutate(currently_included = TRUE)) %>%
+  replace_na(list(currently_included = FALSE)) %>%
+  arrange(desc(currently_included), vd17_id, member_number) %>%
+  relocate(currently_included, vd17_id, title, member_number, GND, First_name_new, Last_name_new, Society_name_new, role, role2, field_code) %>%
+  collect() %>%
+  sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data")
+```

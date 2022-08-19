@@ -121,3 +121,26 @@ vd17_titles_a <- vd17_a %>%
 #  mutate(value=str_replace_all(value,sql("CHR(0)"),"_")) %>%
 #  pivot_wider(id_cols=record_number,names_from=field_code:subfield_code,values_from=value,values_fn=~str_flatten(.,collapse="|")) %>%
 #  compute(name="vd17_wide_a")
+
+fbs_links_of_interest_a <- fbs_links_a %>%
+  filter(
+    field_code %in% c("028A", "028B", "028C"),
+    is.na(role) | !role %in% c("ctb", "oth", "dte"),
+    is.na(role2) | !role2 %in% c(
+      "AdressatIn",
+      "ErwähnteR",
+      "GefeierteR",
+      "Mitglied eines Ausschusses, der akademische Grade vergibt",
+      "Normerlassende Gebietskörperschaft",
+      "Praeses",
+      "RespondentIn",
+      "Sonstige Person, Familie und Körperschaft",
+      "VerfasserIn eines Vorworts",
+      "VerfasserIn von ergänzendem Text",
+      "VerfasserIn von Zusatztexten",
+      "VertragspartnerIn",
+      "WidmendeR",
+      "WidmungsempfängerIn",
+      "ZensorIn"
+    )
+  )
