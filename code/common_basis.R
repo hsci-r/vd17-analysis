@@ -7,19 +7,22 @@ library(tidyr)
 library(dplyr)
 library(DBI)
 library(RMariaDB)
-library(readxl)
-library(writexl)
 library(patchwork)
 library(cowplot)
-#<<<<<<< Updated upstream
 library(ggpubr)
 library(data.table)
-#=======
-library(ggpubr)                             
-library(data.table) 
-library(stringi)
-library(wordcloud)
-#>>>>>>> Stashed changes
+
+unnest_cross <- function(data, cols, ...) {
+  .df_out <- data
+  .cols <- tidyselect::eval_select(rlang::enquo(cols), data)
+  purrr::walk(
+    .cols,
+    function(col) {
+      .df_out <<- unnest(.df_out, {{ col }}, ...)
+    }
+  )
+  .df_out
+}
 
 con <- dbConnect(
   drv = MariaDB(),
@@ -44,11 +47,21 @@ fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU
 try(dbExecute(con, "DROP TABLE IF EXISTS fbs_a"), silent = TRUE)
 
 fbs_metadata_a <- fbs_metadata_gs %>%
+  copy_to(con, ., name = "fbs_metadata_a", unique_indexes = c("GND"))
+
+fbs_gnds_a <- fbs_metadata_a %>%
+  select(Member_number_new, GND) %>%
+  union(
+    fbs_metadata_a %>%
+      select(Member_number_new, GND = alternate_GND)
+  ) %>%
+  filter(!is.na(GND)) %>%
+  rename(member_number = Member_number_new) %>%
   mutate(GND = str_c("gnd/", GND)) %>%
-  copy_to(con, ., name = "fbs_a", unique_indexes = c("GND"))
+  copy_to(con, ., name = "fbs_gnds_a", unique_indexes = list(c("GND", "member_number")))
 
 fbs_links_a <- vd17_a %>%
-  inner_join(fbs_metadata_a, by = c("value" = "GND")) %>%
+  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
   select(record_number, field_number) %>%
   inner_join(vd17_a) %>%
   pivot_wider(
@@ -74,7 +87,7 @@ vd17_normalized_years_a <- vd17_a %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
 vd17_genres_a <- vd17_a %>%
-  filter(field_code == "044S") %>%
+  filter(field_code == "044S", value != " ") %>%
   pivot_wider(
     id_cols = record_number:field_number,
     values_from = value, names_from = subfield_code
@@ -82,39 +95,26 @@ vd17_genres_a <- vd17_a %>%
   mutate(genre = str_replace_all(a[!is.na(a)], ":.*", "")) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
 
-# vd17_normalized_years_c <- vd17_c %>%
-#  filter(field_code == "011@") %>%
-#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-#  mutate(normalized_year = as.integer(a))
-
 vd17_normalized_locs_a <- vd17_a %>%
   filter(field_code == "033D") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  compute(unique_indexes = list(c("record_number", "field_number")))
-
-# vd17_normalized_locs_c <- vd17_c %>%
-#  filter(field_code == "033D") %>%
-#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+  collect() %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
+  unnest_cross(p:z, keep_empty = TRUE) %>%
+  copy_to(con, ., name = "vd17_normalized_locs_a", indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  collect() %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
   rename(publication_language = a, original_language = c, intermediary_language = b) %>%
-  compute(unique_indexes = list(c("record_number", "field_number")))
-
-# vd17_normalized_langs_c <- vd17_c %>%
-#  filter(field_code == "010@") %>%
-#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
+  unnest_cross(publication_language:intermediary_language, keep_empty = TRUE) %>%
+  copy_to(con, ., name = "vd17_normalized_langs_a", indexes = list(c("record_number", "field_number")))
 
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
   rename(title = `a`) %>%
   compute(unique_indexes = list(c("record_number", "field_number")))
-
-# vd17_titles_c <- vd17_c %>%
-#  filter(field_code == "021A") %>%
-#  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code)
 
 # vd17_wide_a <- vd17_a %>%
 #  select(record_number,field_code:value) %>%
