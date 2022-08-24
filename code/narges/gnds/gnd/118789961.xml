@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118789961</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604113811.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118789961</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118789961</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">0000 0004 5475 8685</subfield>
+      <subfield code="2">isni</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">n 80056870</subfield>
+      <subfield code="2">lccn</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">40174477</subfield>
+      <subfield code="2">viaf</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">Q160424</subfield>
+      <subfield code="2">wikidata</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118789961</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118789961</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089910657</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118789961</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119782510</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4111724-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">16.1p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">n</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pavel</subfield>
+      <subfield code="c">Mnich Cassinsky, Diakon</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Levita</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Levita, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Warnefridi</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warnefridi, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paullus</subfield>
+      <subfield code="c">Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Diakonus, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warnefrid, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Diakonus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paul</subfield>
+      <subfield code="c">Warnefrid</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Casinensis</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Warnefridus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paolo</subfield>
+      <subfield code="c">il Diacono</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paolo</subfield>
+      <subfield code="c">Varnefrido</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paul</subfield>
+      <subfield code="c">the Deacon</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warnefridus, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paul</subfield>
+      <subfield code="c">le Diacre</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Epitomator</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warnefried, Paul</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Aquilegiensis</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Foroiuliensis</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paul</subfield>
+      <subfield code="c">von Friaul</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Winfried, Paul</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Warnfried</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Varnefrid</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Diaconus, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Diacono, Paolo</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paolo</subfield>
+      <subfield code="c">Diacono</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Forojuliensis</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">Winfridus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Winfridus, Paulus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus Winfridus</subfield>
+      <subfield code="c">Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paulus</subfield>
+      <subfield code="c">von Friaul</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pavel</subfield>
+      <subfield code="c">Diakon, Mnich Cassinsky</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warnefridus, Paulus</subfield>
+      <subfield code="c">Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Warenfried, Paulus Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Paul Diaconus</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="9">U:Grek</subfield>
+      <subfield code="a">Παύλος</subfield>
+      <subfield code="c">Διάκονος</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="9">U:Cyrl</subfield>
+      <subfield code="9">L:rus</subfield>
+      <subfield code="a">Павел</subfield>
+      <subfield code="c">Дыякан</subfield>
+      <subfield code="d">720-799</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118502026</subfield>
+      <subfield code="0">(DE-588)118502026</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118502026</subfield>
+      <subfield code="a">Alcuinus, Flaccus</subfield>
+      <subfield code="d">735-804</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124577008</subfield>
+      <subfield code="0">(DE-588)124577008</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124577008</subfield>
+      <subfield code="a">Schott, Johann</subfield>
+      <subfield code="d">1477-1548</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100633447</subfield>
+      <subfield code="0">(DE-588)100633447</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100633447</subfield>
+      <subfield code="a">Surgant, Johann Ulrich</subfield>
+      <subfield code="d">1450-1503</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118799452</subfield>
+      <subfield code="0">(DE-588)118799452</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118799452</subfield>
+      <subfield code="a">Surius, Laurentius</subfield>
+      <subfield code="d">1522-1578</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119640619</subfield>
+      <subfield code="0">(DE-588)119640619</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119640619</subfield>
+      <subfield code="a">Cholinus, Maternus</subfield>
+      <subfield code="d">1528-1588</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000258806</subfield>
+      <subfield code="0">(DE-588)25880-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/25880-5</subfield>
+      <subfield code="a">Benediktiner</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004017943</subfield>
+      <subfield code="0">(DE-588)1002981-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1002981-3</subfield>
+      <subfield code="a">Kloster Montecassino</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">720-799</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041554302</subfield>
+      <subfield code="0">(DE-588)4155430-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4155430-9</subfield>
+      <subfield code="a">Geschichtsschreiber</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040399028</subfield>
+      <subfield code="0">(DE-588)4039902-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4039902-3</subfield>
+      <subfield code="a">Mönch</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040401545</subfield>
+      <subfield code="0">(DE-588)4040154-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4040154-6</subfield>
+      <subfield code="a">Montecassino</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PMA</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LThK</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">CSGL</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Tusculum-Lexikon</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LMA,VI,1825/26</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">WBIS</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Paulus_Diaconus</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Historiae miscellae a Landulpho Sagaci auctae libri viginti quattuor</subfield>
+      <subfield code="f">1569</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Historiae miscellae a Landulpho Sagaci auctae libri viginti quattuor</subfield>
+      <subfield code="f">1603</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Epitome</subfield>
+      <subfield code="f">1839</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Epitome</subfield>
+      <subfield code="f">1975</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Eutropius: Eutropii ... Paulique Diaconi ... De inclytis totius Italiae provinciae ac R*</subfield>
+      <subfield code="f">1512</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Eutropius: Eutropii ... Paulique Diaconi ... De inclytis totius Italiae provinciae ac R*</subfield>
+      <subfield code="f">1513</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De Gestis romanorum libri VIII.</subfield>
+      <subfield code="f">1531</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Sophronius &lt;Hierosolymitanus&gt;: Die Historia von der hl. Büsserin Maria Egyptiaar</subfield>
+      <subfield code="f">1609</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">HOMILIAE, SIVE CONCIONES PRAESTANTISSIMORVM ECCLESIAE CATHOLICAE DOCTORVM IN TOTIVS ... 1569. (VD16 P 1058)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Omeliarius doctorum de tempore (Omeliarius doctorum de sanctis )[Hrsg.v.(Joannes Uolricus ... 1505. (VD16 P 1050)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De fide trinitatis. 1506. (VD16 P 1051)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">HOMILIAE, HOC EST, SERMONES SIVE conciones ad populum, praestantissimorum ecclesiae ... 1539. (VD16 P 1056)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Homilie hoc est Conciones populares sanctissimorum ecclesie doctorum Hieronymi Ambrosij ... 1516. (VD16 P 1053)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">HOMILIAE SEV MAVIS SERMONES SIVE conciones ad populum, praestantissimorum ecclesiae ... 1530. (VD16 P 1055)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">PHOMILIAE, SIVE CONCIONES PRAESTANTISSIMORVM ECCLESIAE CATHOLICAE DOCTORVM, IN TOTIVS ... 1576. (VD16 P 1059)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">HOMILIAE SIVE CONCIONES PRAESTANTISSIMORVM ECCLESIAE CATHOLICAE DOCTORVM, PRIMVM AB ... 1557. (VD16 P 1057)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Langobard. Benediktiner (OSB) und Geschichtsschreiber</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Paulus &lt;Diaconus&gt;</subfield>
+      <subfield code="0">(DE-588a)118789961</subfield>
+    </datafield>
+  </record>

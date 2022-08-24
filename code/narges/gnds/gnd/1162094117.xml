@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1162094117</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20191204180435.0</controlfield>
+    <controlfield tag="008">180702n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1162094117</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1162094117</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1162094117</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1162094117</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Johannis, Onno</subfield>
+      <subfield code="d">-1620</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Johanns, Onno</subfield>
+      <subfield code="d">-1620</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1620</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-15.03.1620</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040581675</subfield>
+      <subfield code="0">(DE-588)4058167-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4058167-6</subfield>
+      <subfield code="a">Student</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040286118</subfield>
+      <subfield code="0">(DE-588)4028611-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4028611-3</subfield>
+      <subfield code="a">Jever</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040666409</subfield>
+      <subfield code="0">(DE-588)4066640-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066640-2</subfield>
+      <subfield code="a">Wittenberg</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040434575</subfield>
+      <subfield code="0">(DE-588)4043457-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4043457-6</subfield>
+      <subfield code="a">Oldenburg (Oldenburg)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040233499</subfield>
+      <subfield code="0">(DE-588)4023349-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023349-2</subfield>
+      <subfield code="a">Hannover</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040230252</subfield>
+      <subfield code="0">(DE-588)4023025-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023025-9</subfield>
+      <subfield code="a">Halle (Saale)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040666409</subfield>
+      <subfield code="0">(DE-588)4066640-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066640-2</subfield>
+      <subfield code="a">Wittenberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schaller, Wolfgang: Rector Academiae Wittebergensis, Wolfgangus Schaller, Freibergensis, Philosoph. ac Medic. D. et Prof. Publ. Quum Anaxagorae Philosopho, qui tum aliis districtus erat negotiis, quidam nunciaret, duos eius filios, quos habebat solos, e vivis excessisse ... usus est iuvenis ... Onno Johannis, S.S. Theologiae Studiosus ...</subfield>
+      <subfield code="f">1620</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Jever/Friesland; Schüler in Oldenburg, Hannover und Halle/Saale; Student der Theologie in Wittenberg</subfield>
+    </datafield>
+  </record>

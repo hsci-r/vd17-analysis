@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">117546011</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604120302.0</controlfield>
+    <controlfield tag="008">961014n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">117546011</subfield>
+      <subfield code="0">http://d-nb.info/gnd/117546011</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">173165119</subfield>
+      <subfield code="2">viaf</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">nr97044777</subfield>
+      <subfield code="2">lccn</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">Q111666</subfield>
+      <subfield code="2">wikidata</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)117546011</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)117546011</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)117546011</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4542552-8</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">r</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johann Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Joh. Friedr.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Joh. Frid.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Joannes Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johannes Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Nicolaus</subfield>
+      <subfield code="c">de Pio Zelo</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meyer, Johann Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meyer, Johann Friederich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meyer, Johann Friderich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johannes Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johann Fridrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Johannes Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Joannes Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johann Friederich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Johann Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Jo. Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Jo. Frid.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Jo. Fried.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mäyer, Johann Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mäyer, Joh. Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mäyer, Jo. Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mäyer, Johann Fridrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayer, Johann. Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mäyer, Johann Friederich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Aletophilus</subfield>
+      <subfield code="d">1650-1712</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+      <subfield code="9">v:Holzmann-Bohatta</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Alethophilus</subfield>
+      <subfield code="d">1650-1712</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maier, Johann Fridrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maier, Johannes Fridrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maier, Johann Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maier, Johannes Friedrich</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Joann. Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Jo. Frid.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Joh. Frid.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Johannes Friedericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Jo. Fried.</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayerus, Johann. Fridericus</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ein schwedischer Theologe</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Schwedischer Theologe</subfield>
+      <subfield code="d">1650-1712</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104229535</subfield>
+      <subfield code="0">(DE-588)104229535</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104229535</subfield>
+      <subfield code="a">Mayer, Johann Ulrich</subfield>
+      <subfield code="d">1616-1679</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)130505536</subfield>
+      <subfield code="0">(DE-588)130505536</subfield>
+      <subfield code="0">https://d-nb.info/gnd/130505536</subfield>
+      <subfield code="a">Mayer, Catharina Sabina</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)120471353</subfield>
+      <subfield code="0">(DE-588)120471353</subfield>
+      <subfield code="0">https://d-nb.info/gnd/120471353</subfield>
+      <subfield code="a">Mayer, Johann Abraham</subfield>
+      <subfield code="d">1684-1726</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004815270</subfield>
+      <subfield code="0">(DE-588)2024175-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2024175-6</subfield>
+      <subfield code="a">Christian-Albrechts-Universität zu Kiel</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1650-1712</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">06.12.1650-30.03.1712</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040158829</subfield>
+      <subfield code="0">(DE-588)4015882-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4015882-2</subfield>
+      <subfield code="a">Evangelischer Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041841107</subfield>
+      <subfield code="0">(DE-588)4184110-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4184110-4</subfield>
+      <subfield code="a">Superintendent</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040252434</subfield>
+      <subfield code="0">(DE-588)4025243-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025243-7</subfield>
+      <subfield code="a">Hochschullehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1007410175</subfield>
+      <subfield code="0">(DE-588)7719046-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7719046-4</subfield>
+      <subfield code="a">Selbstverleger</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:1696</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040352064</subfield>
+      <subfield code="0">(DE-588)4035206-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4035206-7</subfield>
+      <subfield code="a">Leipzig</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040220850</subfield>
+      <subfield code="0">(DE-588)4022085-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022085-0</subfield>
+      <subfield code="a">Grimma</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040666409</subfield>
+      <subfield code="0">(DE-588)4066640-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066640-2</subfield>
+      <subfield code="a">Wittenberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040231186</subfield>
+      <subfield code="0">(DE-588)4023118-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023118-5</subfield>
+      <subfield code="a">Hamburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040304817</subfield>
+      <subfield code="0">(DE-588)4030481-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030481-4</subfield>
+      <subfield code="a">Kiel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040219658</subfield>
+      <subfield code="0">(DE-588)4021965-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021965-3</subfield>
+      <subfield code="a">Greifswald</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040573923</subfield>
+      <subfield code="0">(DE-588)4057392-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057392-8</subfield>
+      <subfield code="a">Stettin</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">9</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">188</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">3</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-18</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SAEBI</subfield>
+      <subfield code="5">DE-14</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DBA (uneinheitlich)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">ADB</subfield>
+      <subfield code="u">https://www.deutsche-biographie.de/sfz59504.html#adbcontent</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Johann_Friedrich_Mayer_%28Theologe%29</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Svenskt biografiskt lexikon</subfield>
+      <subfield code="b">Stand: 23.08.2021</subfield>
+      <subfield code="u">https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9211</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gewissens-Marter derer zum Papstthum abgefallenen Lutheraner</subfield>
+      <subfield code="f">1682</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Innhalt derer, Anno 1692 in der Kirche zu St. Jacobi, in Hamburg, gehal*</subfield>
+      <subfield code="f">1692</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Bibliotheca biblica sive Dissertationum de notitia auctorum, pontificio*</subfield>
+      <subfield code="f">1709</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Historia versionis germanicae Bibliorum D. Martini Lutheri ...</subfield>
+      <subfield code="f">1701</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">An dem Begräbniss-Tage Des Unüberwindlichen .... Friederichs, Erben zu *. - s.a.</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Glückwünschungs-Rede an ... Josephum</subfield>
+      <subfield code="f">1699</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aletophili Eilfertiges Send-Schreiben auf der Post Daß die neulichst von denen Herrn Jesuiten zu Erfurth herausgegebene Zerstörung ..</subfield>
+      <subfield code="f">1678</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hrsg. von: Die Heil. Bibel Alt- und Neues Testaments Nach der Uebersetzung D. Martin Luthers</subfield>
+      <subfield code="f">1796</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. ev. Theologe; Student in Leipzig und Straßburg, 1668 Magister; 1672 Prediger in Leipzig und Superintendent in Leisnig; 1674 Dr. theol.; 1678 Superintendent in Grimma; 1684 Prof. theol. in Wittenberg und Pfarrer; 1686 als Hauptpastor an St. Jacobi in Hamburg berufen; 1701 Generalsuperintendent von Schwedisch-Pommern, Ordinarius der Theologischen Fakultät der Universität Greifswald und Superintendent, gleichzeitig Prokanzler (1701-1705 Rektor) der Universität Greifswald und Vorsitzender des Greifswalder Konsistoriums</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Mayer, Johann Friedrich (Theologe, 1650-1712)</subfield>
+      <subfield code="0">(DE-588a)117546011</subfield>
+    </datafield>
+  </record>

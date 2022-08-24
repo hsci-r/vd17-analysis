@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">133971066</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200723101226.0</controlfield>
+    <controlfield tag="008">080220n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">133971066</subfield>
+      <subfield code="0">http://d-nb.info/gnd/133971066</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)133971066</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)133971066</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090274254</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)133971066</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100131190</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-547</subfield>
+      <subfield code="c">DE-547</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">3030</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Fumo, Bartolomeo</subfield>
+      <subfield code="d">-1555</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fumus, Bartholomaeus</subfield>
+      <subfield code="d">-1555</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fumi, Bartolomeo</subfield>
+      <subfield code="d">-1555</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fumi, Bartolommeo</subfield>
+      <subfield code="d">-1555</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fumo, Bartholomeo</subfield>
+      <subfield code="d">-1555</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004047664</subfield>
+      <subfield code="0">(DE-588)1008640-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1008640-7</subfield>
+      <subfield code="a">Dominikaner</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1555</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042494680</subfield>
+      <subfield code="0">(DE-588)4249468-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4249468-0</subfield>
+      <subfield code="a">Inquisitor</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Piacenza</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">547</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth; Archivio Biografico Italiano I 440,209</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Philoteae libri quatuor</subfield>
+      <subfield code="f">1538</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa, quae aurea armilia inscribitur</subfield>
+      <subfield code="f">1550</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa, quae aurea armilia inscribitur</subfield>
+      <subfield code="f">[ca. 1560]</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa aurea armilla nuncupata</subfield>
+      <subfield code="f">1578</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa aurea armilla nuncupata</subfield>
+      <subfield code="f">1583</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa aurea armilla nuncupata</subfield>
+      <subfield code="f">1587</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa aurea armilla nuncupata</subfield>
+      <subfield code="f">1591</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa aurea armilla nuncupata</subfield>
+      <subfield code="f">1627</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa, quae aurea armilia (armilla) inscribitur</subfield>
+      <subfield code="f">s.a.</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Summa, sive aurea armilla</subfield>
+      <subfield code="f">1554</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ital. Dominikaner, General-Inquisitor, Dichter</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Fumo, Bartolomeo</subfield>
+      <subfield code="0">(DE-588a)133971066</subfield>
+    </datafield>
+  </record>

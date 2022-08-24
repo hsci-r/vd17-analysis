@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">124316387</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190129141332.0</controlfield>
+    <controlfield tag="008">030108n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">124316387</subfield>
+      <subfield code="0">http://d-nb.info/gnd/124316387</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)124316387</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)124316387</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)124316387</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">ZZ</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Götsch, Georg</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Goetschius, Georg</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Goetschius, Georgius</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Goetsch, Georg</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Goetsche, Georg</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Götsche, Georg</subfield>
+      <subfield code="d">1627-1691</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1142430642</subfield>
+      <subfield code="0">(DE-588)1142430642</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1142430642</subfield>
+      <subfield code="a">Trendelenburg, Euphrosyna</subfield>
+      <subfield code="d">-1708</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Tochter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1627-1691</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr unsicher</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1652</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040573923</subfield>
+      <subfield code="0">(DE-588)4057392-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057392-8</subfield>
+      <subfield code="a">Stettin</subfield>
+      <subfield code="4">ortc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#characteristicPlace</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Ort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040020843</subfield>
+      <subfield code="0">(DE-588)4002084-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4002084-8</subfield>
+      <subfield code="a">Anklam</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">9</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Volschovius, Joachim:  De usucapionibus . - 1651</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Volschovius, Joachim: Programma, Quo Magnificum Dn. Rectorem, Viros admodum Reverendos ... Dominos Consiliarios Regios ... Cives &amp; Studiosos Nomine Facultatis Iuridicae Joachimus Volschovius ... Ad Inauguralem Disputationem Quam ... Georgius Goetschius ... . - 1652</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Volschovius, Joachim: De evictionibus et duplae stipulatione. - 1652</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Jurist; Defendent an der Univ. Greifswald; Ratsherr, 1673 Bürgermeister in Anklam</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Götsch, Georg</subfield>
+      <subfield code="0">(DE-588a)124316387</subfield>
+    </datafield>
+  </record>

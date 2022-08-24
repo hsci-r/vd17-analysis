@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">115881611</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190722193301.0</controlfield>
+    <controlfield tag="008">971121n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">115881611</subfield>
+      <subfield code="0">http://d-nb.info/gnd/115881611</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)115881611</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)115881611</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)115881611</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0012</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ferber, Friedrich</subfield>
+      <subfield code="d">1621-1676</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ferber, Fridericus</subfield>
+      <subfield code="d">1621-1676</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ferberus, Fridericus</subfield>
+      <subfield code="d">1621-1676</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1621-1676</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Weinmann, Johann: De propositione, bona opera sunt necessaria ad salutem, theses theologicae. - 1645</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Epithalamia Viro Qua Reverendo, qua Doctissimo, M. Friderico Ferbero ... - 1650</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Acclamatio votiva, qua viro ... Georgio Sigismundo Führero, ab Heimendorf ... - 1666</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">geb. in Lauf bei Nürnberg; Respondent in Altdorf; Evang. Theologe; 1649 Pastor in Tennenlohe und Eltersdorf, 1651 in Kalchreuth, 1657 an St. Egidien und 1664 an St. Lorenz in Nürnberg</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Ferber, Friedrich</subfield>
+      <subfield code="0">(DE-588a)115881611</subfield>
+    </datafield>
+  </record>

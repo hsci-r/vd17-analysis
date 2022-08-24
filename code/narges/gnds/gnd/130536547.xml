@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">130536547</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20180116114454.0</controlfield>
+    <controlfield tag="008">051117n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">130536547</subfield>
+      <subfield code="0">http://d-nb.info/gnd/130536547</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)130536547</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)130536547</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)130536547</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1601</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Frey, Anna Maria</subfield>
+      <subfield code="d">1641-1669</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Frey-Krug, Anna Maria</subfield>
+      <subfield code="d">1641-1669</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Frey, Anna-Maria</subfield>
+      <subfield code="d">1641-1669</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Krug, Anna Maria</subfield>
+      <subfield code="d">1641-1669</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Krug, Anna-Maria</subfield>
+      <subfield code="d">1641-1669</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104074523</subfield>
+      <subfield code="0">(DE-588)104074523</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104074523</subfield>
+      <subfield code="a">Frey, Johann Jakob</subfield>
+      <subfield code="d">1636-1720</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehemann</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1052466729</subfield>
+      <subfield code="0">(DE-588)1052466729</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1052466729</subfield>
+      <subfield code="a">Frey, Johann Rudolf</subfield>
+      <subfield code="d">1659-1738</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1641-1669</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gernler, Lucas: Christliche Leich-predigt/ Von Gebürlicher Betraurung der Todten. Gehalten in der Pfarkirchen bey St. Leonhard in Basel/ Sontags den 14. Novemb. Anno 1669. Bey Bestattung der ... Anna-Maria-Krugin; Deß Ehrwürdigen ... Johann-Jacob Freyen/ Dieners am Wort Gottes daselbsten/ ehelicher Haußfrawen. - 1669</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+      <subfield code="a">Internat. biogr. Index</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ehefrau von Johann Jacob Frey, Basler Pastor</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Frey, Anna-Maria</subfield>
+      <subfield code="0">(DE-588a)130536547</subfield>
+    </datafield>
+  </record>

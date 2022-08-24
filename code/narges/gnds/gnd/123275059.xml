@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">123275059</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220525003107.0</controlfield>
+    <controlfield tag="008">011015n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">123275059</subfield>
+      <subfield code="0">http://d-nb.info/gnd/123275059</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)123275059</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)123275059</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)105348805X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1243972947</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)123275059</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Pollich, Peter Paul</subfield>
+      <subfield code="d">1648-1715</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pollichius, Petrus Paulus</subfield>
+      <subfield code="d">1648-1715</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pollick, Peter Paul</subfield>
+      <subfield code="d">1648-1715</subfield>
+      <subfield code="5">DE-18</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)120084872</subfield>
+      <subfield code="0">(DE-588)120084872</subfield>
+      <subfield code="0">https://d-nb.info/gnd/120084872</subfield>
+      <subfield code="a">Pollich, Maria Magdalena</subfield>
+      <subfield code="d">1654-1690</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1101498315</subfield>
+      <subfield code="0">(DE-588)1101498315</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1101498315</subfield>
+      <subfield code="a">Pollich, Johann Philipp</subfield>
+      <subfield code="d">1693-1757</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1648-1715</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-14.05.1715</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Magister</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042137063</subfield>
+      <subfield code="0">(DE-588)4213706-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4213706-8</subfield>
+      <subfield code="a">Lisberg</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04053863X</subfield>
+      <subfield code="0">(DE-588)4053863-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053863-1</subfield>
+      <subfield code="a">Schweinfurt</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA I 970,375</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Supellex epistolica Uffenbachii et Wolfiorum = Katalog der Uffenbach-Wolfschen Briefsammlung / hrsg. u. bearb. von Nilüfer Krüger. - Hamburg : Hauswedell, 1978. 2 Bde. - (Katalog der Handschriften der Staats- und Universitätsbibliothek Hamburg ; 8)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Röser, Jacob: Disp. philol. tertiam et ultiam de morte Iudae, proditoris Christi</subfield>
+      <subfield code="f">1668</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Röser, Jacob: Disp. philol. tertiam et ultimam de morte Iudae, proditoris Christi</subfield>
+      <subfield code="f">1674</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pollich, Peter P.: Christ-begieriger Sterbens-Sinn in den Himmel zu Christo hin</subfield>
+      <subfield code="f">1695</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pollich, Peter P.: Christliche Todes-Gedanken auß d. XI. C. S. Jo. v. 25. ..</subfield>
+      <subfield code="f">1696</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pollich, Peter P.: Frommer Christen Trost wider das Leiden dieser Zeit</subfield>
+      <subfield code="f">1703</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pollich, Peter P.: Leopoldina Corona Cadens ...</subfield>
+      <subfield code="f">1705</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pollich, Peter P.: Christen-Staat einer frommen Seele</subfield>
+      <subfield code="f">1713</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Evangelischer Theologe; Student in Wittenberg; Prediger in Niederwehren; 1684 in Oberndorf; 1690 Diakon und 1709 Oberpfarrer in Schweinfurt</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Pollich, Peter Paul</subfield>
+      <subfield code="0">(DE-588a)123275059</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118801902</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220714105623.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118801902</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118801902</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118801902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118801902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090037902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118801902</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4114746-7</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8157</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">19.1dp</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Thevet, André</subfield>
+      <subfield code="d">1516-1590</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Thevetus, Andreas</subfield>
+      <subfield code="d">1516-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Thevet, F. A.</subfield>
+      <subfield code="d">1516-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theuet, André</subfield>
+      <subfield code="d">1516-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theuet, F. A.</subfield>
+      <subfield code="d">1516-1590</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1516-1590</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr auch mit 1502 oder 1504 angegeben</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.XX.1516-23.11.1590</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040179176</subfield>
+      <subfield code="0">(DE-588)4017917-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4017917-5</subfield>
+      <subfield code="a">Forschungsreisender</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041464028</subfield>
+      <subfield code="0">(DE-588)4146402-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4146402-3</subfield>
+      <subfield code="a">Botaniker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040797848</subfield>
+      <subfield code="0">(DE-588)4079784-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4079784-3</subfield>
+      <subfield code="a">Angoulême</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040446603</subfield>
+      <subfield code="0">(DE-588)4044660-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044660-8</subfield>
+      <subfield code="a">Paris</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M/Reg.; LoC-NA</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">BnF</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand:</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Cosmographie du Levant</subfield>
+      <subfield code="f">1554</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: La cosmographie universelle</subfield>
+      <subfield code="f">1575</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Histoire de plus illustre et scavans hommes de leurs siecles</subfield>
+      <subfield code="f">1670</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Histoire des plus illustres et scavans hommes de leurs siecles</subfield>
+      <subfield code="f">1671</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Histoire des plus illustres et scavans hommes de leurs siecles</subfield>
+      <subfield code="f">1695</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Cosmographie de Levant</subfield>
+      <subfield code="f">1556</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Les singularités de la France antartique</subfield>
+      <subfield code="f">1558</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Histoire dell'India america</subfield>
+      <subfield code="f">1561</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Cosmographia Orientis</subfield>
+      <subfield code="f">1617</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thevet, André: Cosmographie de Levant</subfield>
+      <subfield code="f">1985</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Franz. Mönch u. Reisender</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Thevet, André</subfield>
+      <subfield code="0">(DE-588a)118801902</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118645617</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220721175612.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118645617</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118645617</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118645617</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118645617</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)108917697X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089720726</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)171952987</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)171952987</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118645617</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4080139-1</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XS</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">4.7p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">28p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">p</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Tarentinus</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">grc</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">of Tarent</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">of Tarentum</subfield>
+      <subfield code="d">v430-v345</subfield>
+      <subfield code="9">v:LCauth</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Philosophus</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Pythagoreer</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Pythagoricus</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Sohn des Hestiaios</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">Sohn des Mnesagoras</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Archytas, Tarentinus</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ps.-Archita</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ps.-Archytas</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo Archita</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Archita</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Archytas</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Archytas</subfield>
+      <subfield code="c">Philosophus</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archita</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archita</subfield>
+      <subfield code="c">di Taranto</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archita</subfield>
+      <subfield code="c">Filosofo Pitagorico</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archita</subfield>
+      <subfield code="c">Matematico</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archyta</subfield>
+      <subfield code="c">di Taranto</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tarentum, Archytas &#152;of&#156;</subfield>
+      <subfield code="d">v430-v345</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Archytas</subfield>
+      <subfield code="c">von Tarent</subfield>
+      <subfield code="d">v430-v345</subfield>
+      <subfield code="9">v:R:RAK-ÖB</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">v430-v345</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr ca.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">v04-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">v03-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)94058333X</subfield>
+      <subfield code="0">(DE-588)4333306-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4333306-0</subfield>
+      <subfield code="a">Pythagoreer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040459683</subfield>
+      <subfield code="0">(DE-588)4045968-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045968-8</subfield>
+      <subfield code="a">Physiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041708369</subfield>
+      <subfield code="0">(DE-588)4170836-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4170836-2</subfield>
+      <subfield code="a">Musikwissenschaftler</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040269558</subfield>
+      <subfield code="0">(DE-588)4026955-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4026955-3</subfield>
+      <subfield code="a">Ingenieur</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040379450</subfield>
+      <subfield code="0">(DE-588)4037945-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4037945-0</subfield>
+      <subfield code="a">Mathematiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VPe</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">TITAN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Thes. ling. Graec.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">PAN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Lex. alt Welt</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand: 21.08.2013</subfield>
+      <subfield code="u">http://de.wikipedia.org/wiki/Archytas_von_Tarent</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pythagoras: Pythagore et la philosophie Pythagoriicienne contentant les fragments de Phil*</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Archytas &lt;Tarentinus&gt;: Archytae Fragmentum peri tēs mathēmatikēs</subfield>
+      <subfield code="f">1707</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Archytas &lt;Tarentinus&gt;: Fragmenta ek tu peri sophias et aliis scriptis</subfield>
+      <subfield code="f">1688</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Archytas &lt;Tarentinus&gt;: Ek tu peri mathēmatikēs</subfield>
+      <subfield code="f">1557</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schmidt, Jo. Andreas: Archytam Tarentinum Dissertatione ..</subfield>
+      <subfield code="f">1683</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Griech. Mathematiker u. Philosoph, Pythagoreer</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Archytas &lt;Tarentinus&gt;</subfield>
+      <subfield code="0">(DE-588a)118645617</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Archytas &lt;Tarentinus&gt;</subfield>
+      <subfield code="0">(DE-588a)171952987</subfield>
+    </datafield>
+  </record>

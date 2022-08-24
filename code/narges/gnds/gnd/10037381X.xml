@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">10037381X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220310173931.0</controlfield>
+    <controlfield tag="008">900615n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">10037381X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/10037381X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)10037381X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)10037381X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)10037381X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">7.14p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Dal Maino, Giasone</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Ambrogio J. &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mainius, Jason</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mainius, Iason</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Iason &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Giasone &#152;del&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maynus, Gasonis</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Iason</subfield>
+      <subfield code="c">de Maino</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayno, Iason &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Giasone</subfield>
+      <subfield code="c">del Maino</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Del Maino, Giasone</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Giasone &#152;dal&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">DalMaino, Giasone</subfield>
+      <subfield code="d">1435-1519</subfield>
+      <subfield code="9">v:RAK alt</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">DelMaino, Giasone</subfield>
+      <subfield code="d">1435-1519</subfield>
+      <subfield code="9">v:RAK alt</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mainus, Jason</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Giasone dal</subfield>
+      <subfield code="d">1435-1519</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Giasone &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maynus, Iason</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maino, Jason &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Giasone</subfield>
+      <subfield code="c">de Maino</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Giasone</subfield>
+      <subfield code="c">dal Maino</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Jason</subfield>
+      <subfield code="c">de Mayno</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mayno, Jason &#152;de&#156;</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Maynus, Jason</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mainius, Iasonius</subfield>
+      <subfield code="d">1435-1519</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100033237</subfield>
+      <subfield code="0">(DE-588)100033237</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100033237</subfield>
+      <subfield code="a">Belloni, Niccolò</subfield>
+      <subfield code="d">-1552</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119629771</subfield>
+      <subfield code="0">(DE-588)119629771</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119629771</subfield>
+      <subfield code="a">Breul, Heinrich</subfield>
+      <subfield code="d">1536-1596</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)115684719</subfield>
+      <subfield code="0">(DE-588)115684719</subfield>
+      <subfield code="0">https://d-nb.info/gnd/115684719</subfield>
+      <subfield code="a">Carcassona, Antonio Angelo</subfield>
+      <subfield code="d">-1586</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119655098</subfield>
+      <subfield code="0">(DE-588)119655098</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119655098</subfield>
+      <subfield code="a">Dionysius, Adamantius</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Portius, Christophorus</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Vadi, Benedetto</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118683527</subfield>
+      <subfield code="0">(DE-588)118683527</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118683527</subfield>
+      <subfield code="a">Feyerabend, Sigmund</subfield>
+      <subfield code="d">1528-1590</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)120649233</subfield>
+      <subfield code="0">(DE-588)120649233</subfield>
+      <subfield code="0">https://d-nb.info/gnd/120649233</subfield>
+      <subfield code="a">Kirchner, Hermann</subfield>
+      <subfield code="d">1562-1620</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119790572</subfield>
+      <subfield code="0">(DE-588)119790572</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119790572</subfield>
+      <subfield code="a">P.L.F.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119643847</subfield>
+      <subfield code="0">(DE-588)119643847</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119643847</subfield>
+      <subfield code="a">Colardus, Johannes</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004063848</subfield>
+      <subfield code="0">(DE-588)1011210-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1011210-8</subfield>
+      <subfield code="a">Università degli studi di Padova</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">v:Professor</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1435-1519</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04044970X</subfield>
+      <subfield code="0">(DE-588)4044970-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044970-1</subfield>
+      <subfield code="a">Pavia</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040442950</subfield>
+      <subfield code="0">(DE-588)4044295-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044295-0</subfield>
+      <subfield code="a">Padua</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040461513</subfield>
+      <subfield code="0">(DE-588)4046151-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4046151-8</subfield>
+      <subfield code="a">Pisa</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041159128</subfield>
+      <subfield code="0">(DE-588)4115912-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4115912-3</subfield>
+      <subfield code="a">Pesaro</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04044970X</subfield>
+      <subfield code="0">(DE-588)4044970-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044970-1</subfield>
+      <subfield code="a">Pavia</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">RAK § 314,F</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">4ELRAKm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth: Maino, Giasone dal; LUI: Giasone &lt;del Maino&gt;; LMA,V,308: Jason &lt;de Mayno&gt;</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura super titulo Institutionum de actionibus</subfield>
+      <subfield code="f">1506</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura super titulo Institutionum de actionibus</subfield>
+      <subfield code="f">1510</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura super titulo Institutionum de actionibus</subfield>
+      <subfield code="f">1510-1521</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura ... super nodoso Titulo de actionibus in Institutionibus Iusti*</subfield>
+      <subfield code="f">1523</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura ... super nodoso Titulo de actionibus in Institutionibus Iusti*</subfield>
+      <subfield code="f">1536</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura ... super nodoso Titulo de actionibus in Institutionibus Iusti*</subfield>
+      <subfield code="f">1539</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Commentaria super titulo de actionibus institut. accurate castigata</subfield>
+      <subfield code="f">1541</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lectura super nodoso titulo de actionibus in Institutionibus</subfield>
+      <subfield code="f">1543</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">In Titulum de Actionibus Commentaria</subfield>
+      <subfield code="f">1546</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ad Alexandrum Pont. Max. Mediolanensem Principis nomine oratio</subfield>
+      <subfield code="f">1559</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De divisionibus actionum commentarius. 1571. (VD16 M 248)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">NOTABILIVM APOPHTHEGMATVM SIVE SINGVLARIVM ... I.V. DOctoris D. Iasonis de Mayno ... 1596. (VD16 M 253)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Portius, Christophorus: D· CHRISTOPHORI Portii Papiensis, Iureconsulti clarissimi, super tres priores Institutionũ ... 1547. (VD16 P 4365)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Portius, Christophorus: D· CHRISTOPHORI Portii Papiensis, Iureconsulti clarissimi, super tres priores Institutionũ ... 1548. (VD16 P 4366)</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2="4">
+      <subfield code="a">Maino, Giasone dal</subfield>
+      <subfield code="d">1435-1519</subfield>
+      <subfield code="9">v:1435-1519</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Dal Maino, Giasone</subfield>
+      <subfield code="0">(DE-588a)10037381X</subfield>
+    </datafield>
+  </record>

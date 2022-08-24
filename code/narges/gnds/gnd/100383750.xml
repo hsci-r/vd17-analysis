@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">100383750</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220311163412.0</controlfield>
+    <controlfield tag="008">900615n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100383750</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100383750</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100383750</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100383750</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)172300029</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)172300029</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100383750</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Pagi, Antoine</subfield>
+      <subfield code="d">1624-1699</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pagius, Antonius</subfield>
+      <subfield code="d">1624-1699</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pagi, Anton</subfield>
+      <subfield code="d">1624-1699</subfield>
+      <subfield code="9">v:Bautz</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pagi, Antonius</subfield>
+      <subfield code="d">1624-1699</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pagi, Antonio</subfield>
+      <subfield code="d">1624-1699</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pagus, Antonius</subfield>
+      <subfield code="d">1624-1699</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">31.03.1624-05.06.1699</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1624-1699</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)94652243X</subfield>
+      <subfield code="0">(DE-588)4398113-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4398113-6</subfield>
+      <subfield code="a">Kirchenhistoriker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)94652243X</subfield>
+      <subfield code="0">(DE-588)4398113-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4398113-6</subfield>
+      <subfield code="a">Kirchenhistoriker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040250989</subfield>
+      <subfield code="0">(DE-588)4025098-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025098-2</subfield>
+      <subfield code="a">Historiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Rognes</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040008606</subfield>
+      <subfield code="0">(DE-588)4000860-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000860-5</subfield>
+      <subfield code="a">Aix-en-Provence</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Onkel von François Pagi ; Franziskaner</subfield>
+      <subfield code="5">CH-ZuETHN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: LCAuth / DNB-Normdaten (Info DNB: Frankreich ; Geburtsort: Rognes Sterbeort: Aix-en-Provence ; Beruf(e) Katholischer Theologe Kirchenhistoriker ; Franz. kath. Geistlicher und Kirchenhistoriker; Franziskaner (OFM)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Critica historico-chronologica in universos Annales ecclesiasticos Cardin. ..</subfield>
+      <subfield code="f">1705</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Critica historico-chronologica in universos Annales ecclesiasticos Cardin. ..</subfield>
+      <subfield code="f">1727</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dissertatio Hypatica, seu de consulibus Caesareis</subfield>
+      <subfield code="f">1682</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De periodo graeco romana</subfield>
+      <subfield code="f">1716</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dissertatio hypatica seu de consulibus Caesareis</subfield>
+      <subfield code="f">1682</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Diss. chronologica de periodo Graeco Romana</subfield>
+      <subfield code="f">1716</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dissertatio chronologica de periodo Graeco Romana ..</subfield>
+      <subfield code="f">1705</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Franz. kath. Geistlicher und Kirchenhistoriker; Franziskaner (OFM)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Kirchenhistoriker</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Pagi, Antoine</subfield>
+      <subfield code="0">(DE-588a)100383750</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Pagi, Antoine</subfield>
+      <subfield code="0">(DE-588a)172300029</subfield>
+    </datafield>
+  </record>

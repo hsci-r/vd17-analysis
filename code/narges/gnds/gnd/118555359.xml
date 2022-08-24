@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118555359</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220309171343.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118555359</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118555359</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118555359</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118555359</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118555359</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)185805728</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4026521-3</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-ES</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Ignacio</subfield>
+      <subfield code="c">de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignace</subfield>
+      <subfield code="c">St.</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignaz</subfield>
+      <subfield code="c">von Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+      <subfield code="9">v:M</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">von Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+      <subfield code="9">v:M</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Iñigo L.</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignace</subfield>
+      <subfield code="c">Saint</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Guipuscoa, Iñigo &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Iñigo</subfield>
+      <subfield code="c">de Guipuscoa</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Iñigo</subfield>
+      <subfield code="c">de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Sanctus</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignacio</subfield>
+      <subfield code="c">San</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">de Loiola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">of Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignatius &#152;of&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loiola, Ignatius</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lojola, Ignatius</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Loiola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Lojola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Iñigo &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignace &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignacio de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Oñar y Loyola, Iñigo L.</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Recalde, Iñigo L. &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lojola, Iniggo &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lojola, Ignatz &#152;von&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignatius &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignacio &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignace</subfield>
+      <subfield code="c">de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">López de Loyola, Iñigo</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">López Oñaz y Loyola, Iñigo</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignatius &#152;von&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Jgnacio</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignace</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignazio</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Iñigo</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Iñigo López de Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Lojole̜</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Inigo</subfield>
+      <subfield code="c">de Guipuscoa</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Saint</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignatius</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignazio</subfield>
+      <subfield code="c">di Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loiola, Ignatius &#152;von&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignace</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignatz &#152;von&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignacije</subfield>
+      <subfield code="c">od Loyole</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Iniggo &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignacije</subfield>
+      <subfield code="c">y Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignác</subfield>
+      <subfield code="c">Loyola</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignác</subfield>
+      <subfield code="c">Loyolai</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ignác</subfield>
+      <subfield code="c">Szent</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Loyolai</subfield>
+      <subfield code="c">Szent Ignác</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loiola, Ignatio</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Ignaz &#152;von&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Loyola, Inigo López &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Loyola</subfield>
+      <subfield code="c">San Ignacio de</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Recalde, Inigo López &#152;de&#156;</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">López de Recalde, Inigo</subfield>
+      <subfield code="d">1491-1556</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)11869295X</subfield>
+      <subfield code="0">(DE-588)11869295X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/11869295X</subfield>
+      <subfield code="a">Borja, Francisco &#152;de&#156;</subfield>
+      <subfield code="d">1510-1572</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Paul III.</subfield>
+      <subfield code="c">Papst</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:Papst; VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000800929</subfield>
+      <subfield code="0">(DE-588)80092-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/80092-2</subfield>
+      <subfield code="a">Jesuiten</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">31.05.1491-31.07.1556</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1491-1556</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042430577</subfield>
+      <subfield code="0">(DE-588)4243057-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4243057-4</subfield>
+      <subfield code="a">Ordensgründer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)941297063</subfield>
+      <subfield code="0">(DE-588)4341248-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4341248-8</subfield>
+      <subfield code="a">Loyola</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040504719</subfield>
+      <subfield code="0">(DE-588)4050471-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050471-2</subfield>
+      <subfield code="a">Rom</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Maschinell verknuepft mit DBL-Retro-Titeldaten</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: DNB-Normdaten (Info DNB: Beruf: Theologe ; Land: Spanien ; weitere Angaben: span. kath. Theologe, Ordensgründer der Jesuiten)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Enc. univ.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GND</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Apophthegmata Sacra</subfield>
+      <subfield code="f">1662</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Centuria Sacrarum Apophthegmatum</subfield>
+      <subfield code="f">1666</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Scintillae ... sive Apophthegmata Sacra</subfield>
+      <subfield code="f">1705</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Scintillae ... sive Apophthegmata Sacra</subfield>
+      <subfield code="f">1709</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Scintillae ... sive Apophthegmata Sacra</subfield>
+      <subfield code="f">1711</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Apophthegmata Sacra</subfield>
+      <subfield code="f">1711</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Exercitia Spiritualia</subfield>
+      <subfield code="f">1563</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Exercitia Spiritualia</subfield>
+      <subfield code="f">1582</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Exercitia Spiritualia</subfield>
+      <subfield code="f">1606</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;de Loyola&gt;: Exercitia Spiritualia</subfield>
+      <subfield code="f">1615</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: EXERCITIA SPIRITVALIA IGNATII DE Loyola. ... .  1600.  (VD16 I 56)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: REGVLAE SOCIETATIS IESV..  1599.  (VD16 I 50)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: .  1599.  (VD16 ZV 17400)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: REGVLAE SOCIETATIS IESV..  1584.  (VD16 I 49)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: .  1592.  (VD16 ZV 8515)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: EXERCITIA SPIRITVALIA Ignatij de Loyola..  1582.  (VD16 I 55)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: REGVLAE SOCIETATIS IESV..  1599.  (VD16 I 51)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: EXERCITIA SPIRITVALIA: R. ADMODVM IN Christo patre nostro, M. Ignatio de Loyola, ...  1563.  (VD16 I 54)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: REGVLAE SOCIETATIS IESV..  1580.  (VD16 I 47)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignacio &lt;de Loyola&gt;: Regel der Societet Jesu..  1592.  (VD16 I 52)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Span. kath. Theologe, Ordensgründer der Jesuiten</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ordensgründer, Spanien</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Ignacio &lt;de Loyola&gt;</subfield>
+      <subfield code="0">(DE-588a)118555359</subfield>
+    </datafield>
+  </record>

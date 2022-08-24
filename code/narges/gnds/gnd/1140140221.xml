@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1140140221</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20171005112543.0</controlfield>
+    <controlfield tag="008">170920n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1140140221</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1140140221</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1140140221</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1140140221</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Gerschow, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">2</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gerschovia, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gerschovius, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gerson, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+      <subfield code="9">v:falsche Namensform?</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Werdermann, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+      <subfield code="4">nasp</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#LaterNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spaeterer Name</subfield>
+      <subfield code="e">Spaeterer Name</subfield>
+      <subfield code="9">v:1. Ehename</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Beck, Regina</subfield>
+      <subfield code="d">-1618</subfield>
+      <subfield code="4">nasp</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#LaterNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spaeterer Name</subfield>
+      <subfield code="e">Spaeterer Name</subfield>
+      <subfield code="9">v:2. Ehename</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1618</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Todesjahr ca.</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">9</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Tochter von Timotheus Gerschow/Gerschovius, Witwe von (1.) Joachim Werdermann, (2.) Heinrich Beck</subfield>
+    </datafield>
+  </record>

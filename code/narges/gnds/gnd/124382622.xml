@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">124382622</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20180730124128.0</controlfield>
+    <controlfield tag="008">030130n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">124382622</subfield>
+      <subfield code="0">http://d-nb.info/gnd/124382622</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)124382622</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)124382622</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)124382622</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0014</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Bose, Joachim Dietrich</subfield>
+      <subfield code="d">1676-1742</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bose, Joachim Dieterich &#152;von&#156;</subfield>
+      <subfield code="d">1676-1742</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104249706</subfield>
+      <subfield code="0">(DE-588)104249706</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104249706</subfield>
+      <subfield code="a">Bose, Joachim Christoph</subfield>
+      <subfield code="d">1632-1680</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1057951560</subfield>
+      <subfield code="0">(DE-588)1057951560</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1057951560</subfield>
+      <subfield code="a">Bose, Magdalene Elisabeth</subfield>
+      <subfield code="d">1683-1734</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116355801X</subfield>
+      <subfield code="0">(DE-588)116355801X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116355801X</subfield>
+      <subfield code="a">Bose, Carl Gottlob &#152;von&#156;</subfield>
+      <subfield code="d">1711-1773</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1676-1742</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">09.05.1676-14.01.1742</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)959203311</subfield>
+      <subfield code="0">(DE-588)4593637-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4593637-7</subfield>
+      <subfield code="a">Schleinitz</subfield>
+      <subfield code="g">Landkreis Meißen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Gustav Adolf Pönicke (Hrsg.): Album der Rittergüter und Schlösser im Königreiche Sachsen II. Section</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Das in Thränen zerfliessende Kindliche Hertz ... . - 1680</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Inspektor der Fürstenschule zu Meißen. - Herr auf Schleinitz, Petzschwitz, Graupzig, Gödelitz, Seegeritz und Burkersdorf. - Hat sich, wie auch sein Sohn, Carl Gottlob, besondere Verdienste um die Schleinitzer Schloßbibliothek erworben. Er bestimmte die Bibliothek als Fideikommiss und gestattet deren Benutzung allen Gelehrten.</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Tochter: Magdalene Elisabeth von Bose (04.03.1703–05.06.1763)</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Bose, Joachim Dietrich</subfield>
+      <subfield code="0">(DE-588a)124382622</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">041512367</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20170201125328.0</controlfield>
+    <controlfield tag="008">880701n||azznnbabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4151236-4</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4151236-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)041512367</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4151236-4</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4151236-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-384</subfield>
+      <subfield code="c">DE-384</subfield>
+      <subfield code="9">r:DE-384</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1250</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">2.3</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">16.2</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">s</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">saz</subfield>
+      <subfield code="b">saf</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="a">090</subfield>
+      <subfield code="9">d:2</subfield>
+      <subfield code="9">t:2009-08-27</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="150" ind1=" " ind2=" ">
+      <subfield code="a">Einblattdruck</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041359526</subfield>
+      <subfield code="0">(DE-588)4135952-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4135952-5</subfield>
+      <subfield code="a">Quelle</subfield>
+      <subfield code="4">obal</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermGeneral</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff allgemein</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040131343</subfield>
+      <subfield code="0">(DE-588)4013134-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013134-8</subfield>
+      <subfield code="a">Druckwerk</subfield>
+      <subfield code="4">obal</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermGeneral</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff allgemein</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04071280X</subfield>
+      <subfield code="0">(DE-588)4071280-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4071280-1</subfield>
+      <subfield code="a">Flugblatt</subfield>
+      <subfield code="4">vbal</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedTerm</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Verwandter Begriff</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">RDA: Als Formbegriff für die Art des Inhalts nach RDA 7.2.1.3, D-A-CH zugelassen</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M, RSWK, 3. Aufl., Anl. 6</subfield>
+    </datafield>
+    <datafield tag="677" ind1=" " ind2=" ">
+      <subfield code="a">Ein Druck, der nur aus einem ungefalzten Bogen oder Teilbogen besteht und einseitig oder gelegentlich auch zweiseitig bedruckt ist (RDA AH-007).</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Für Druckwerke vorwiegend aus der Zeit vor dem 20. Jahrhundert. Für einzelne Einblattdrucke; nicht für spätere Sammlungen (Reprints, Mikroformen) von Einblattdrucken (RDA AH-007).</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">s</subfield>
+      <subfield code="a">Einblattdruck</subfield>
+      <subfield code="0">(DE-588c)4151236-4</subfield>
+    </datafield>
+  </record>

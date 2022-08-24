@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">12901513X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201218160919.0</controlfield>
+    <controlfield tag="008">040512n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">12901513X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/12901513X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)12901513X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)12901513X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)12901513X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100680747</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-75</subfield>
+      <subfield code="c">DE-75</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Utzinger, Alexander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Itzinger, Alexander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Izinger, Alexander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Uzingerus, Alexander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Utzinger, Neander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Uzingerus, Neander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ülzinger, Alexander</subfield>
+      <subfield code="d">-1591</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1100394850</subfield>
+      <subfield code="0">(DE-588)1100394850</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1100394850</subfield>
+      <subfield code="a">Metzner, Eva</subfield>
+      <subfield code="d">1577-1650</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Tochter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1591</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04168513X</subfield>
+      <subfield code="0">(DE-588)4168513-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4168513-1</subfield>
+      <subfield code="a">Magister</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04052793X</subfield>
+      <subfield code="0">(DE-588)4052793-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4052793-1</subfield>
+      <subfield code="a">Schmalkalden</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DBA I 1299,133-134</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wendehorst, A.: Die Stifte in Schmalkalden und Römhild. - Berlin, 1996, S. 79</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Notwendige errinnerung von dem Abfalle ... - 1588</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Vom Exorcismo. - 1583</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schrift-Rettung wider die neue Frechheit der Papisten. - 1580</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Christlicher Sendbrieff an alle fromme Christen ... - 1588</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Christlicher Sendbrieff An alle from[m]e Christen die umb der Evangelischen Warheit willen verfolget, geplaget und verjaget werden. - 1622 [erschienen] 1623</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Notwendige errinnerung Von dem grossen Abfalle vnd geringer bestendigkeit so sich newlich ...  1588.  (VD16 U 413)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Vom schlimmen losen Bettlers Mantel des Wienischen Scherers zu WuertzBurgk newlich als ...  1588.  (VD16 U 423)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Christlicher Sendbrieff An alle from̃e Christen die jtzo vmb der Euangelischen warheit willen ...  1589.  (VD16 U 409)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Proceß DEs Juengsten Gerichts mit seinen Vrteilen vnd execution vom Herrn Jesu Christo ...  1589.  (VD16 U 414)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Schrifft rettung. Wider newe Fraecheit der Papisten welche vnuerschampt das lesterliche ...  1580.  (VD16 U 415)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Christlicher Sendbrieff An alle from̃e Christen die jtzo vmb der Euangelischen warheit willen ...  1588.  (VD16 U 406)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Kurtze vnd richtige Antwort auff zwo Fragen von der Geuatterschafft. Die Erste: OB ein ...  1575.  (VD16 U 412)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Vom EXORCISMO. Das der nicht notwendig Sondern mit Gott vnd gutem Gewissen von ...  1583.  (VD16 U 421)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Christlicher Sendbrieff An alle from̃e Christen die jtzo vmb der Euangelischen warheit willen ...  1588.  (VD16 U 407)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Utzinger, Alexander: Hochverursachte vnd gleich genotdrengte Gegen Antwort vnnd Defensionsschrifft M. ...  1589.  (VD16 U 410)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. ev. Theologe; Prediger und Stiftspfarrer im Stift Schmalkalden (Säkularkanonikerstift des Bistums Würzburg) von 1575 (Nachfolger von Mag. Andreas Gleichmann) bis zu seinem Tod; mindestens seit 1579 Stiftsdekan</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Utzinger, Alexander</subfield>
+      <subfield code="0">(DE-588a)12901513X</subfield>
+    </datafield>
+  </record>

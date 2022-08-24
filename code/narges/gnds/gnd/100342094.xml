@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">100342094</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220311161259.0</controlfield>
+    <controlfield tag="008">900615n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100342094</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100342094</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100342094</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100342094</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100342094</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)7619035-3</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Stengel, Carl</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Carolus, F.</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Carolus</subfield>
+      <subfield code="c">Frater</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Stengelius, K. P.</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Stengel, Carolus</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Stengel, Karl</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Stengelius, Carolus</subfield>
+      <subfield code="d">1581-1663</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000258806</subfield>
+      <subfield code="0">(DE-588)25880-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/25880-5</subfield>
+      <subfield code="a">Benediktiner</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1581-1663</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04000273X</subfield>
+      <subfield code="0">(DE-588)4000273-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000273-1</subfield>
+      <subfield code="a">Abt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1015613217</subfield>
+      <subfield code="0">(DE-588)7760792-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7760792-2</subfield>
+      <subfield code="a">Anhausen</subfield>
+      <subfield code="g">Herbrechtingen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040036146</subfield>
+      <subfield code="0">(DE-588)4003614-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003614-5</subfield>
+      <subfield code="a">Augsburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">ADB: Stengel, Karl</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Das Leben und Wunderwerk des heiligen Augspurger Bischoffs Simperti</subfield>
+      <subfield code="f">1616</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Der weltberuehmbten kayserlichen Freyen und deß H. Rö. Reichs Statt Augspurg ..</subfield>
+      <subfield code="f">1620</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Commentarius rerum gestarum sanctissimi Apostolorum principis Petri</subfield>
+      <subfield code="f">1620</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Erklärung der lauretanischen Litaney</subfield>
+      <subfield code="f">1637</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Stengel, Georg: Geistliche Fewrflam deß Hertzens ..</subfield>
+      <subfield code="f">1638</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Artes feliciter et innocentes bellandi ac debellandi</subfield>
+      <subfield code="f">1646</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Commentarius rerum Augustanarum ab urbe condita ad nostra usque tempora</subfield>
+      <subfield code="f">1647</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Unsers L.H. Jesu Christi ... Stammenbuch</subfield>
+      <subfield code="f">1649</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Tractat vom Antichrist</subfield>
+      <subfield code="f">1654</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Benediktiner, Abt zu Brentz-Ahusen (Anhausen an der Brenz) und Augsburg, St. Ulrich und Afra</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2="4">
+      <subfield code="a">Stengel, Karl</subfield>
+      <subfield code="d">1581-1663</subfield>
+      <subfield code="9">v:1581-1663</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Stengel, Carl</subfield>
+      <subfield code="0">(DE-588a)100342094</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">103099352</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20181107151014.0</controlfield>
+    <controlfield tag="008">950217n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">103099352</subfield>
+      <subfield code="0">http://d-nb.info/gnd/103099352</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)103099352</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)103099352</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)103099352</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">v</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Horn, Theodor</subfield>
+      <subfield code="d">1661-1736</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Horn, Theodorus</subfield>
+      <subfield code="d">1661-1736</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornius, Theodor</subfield>
+      <subfield code="d">1661-1736</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornius, Theodorus</subfield>
+      <subfield code="d">1661-1736</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Horn, Andreas</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater, Pfarrer</subfield>
+      <subfield code="9">Z:1626-</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)121361535</subfield>
+      <subfield code="0">(DE-588)121361535</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121361535</subfield>
+      <subfield code="a">Horn, Andreas</subfield>
+      <subfield code="d">1580-1656</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Großvater</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1143162595</subfield>
+      <subfield code="0">(DE-588)1143162595</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1143162595</subfield>
+      <subfield code="a">Academia Gryphiswaldensis</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1661-1736</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">25.02.1661-07.03.1736</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040252434</subfield>
+      <subfield code="0">(DE-588)4025243-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025243-7</subfield>
+      <subfield code="a">Hochschullehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041992520</subfield>
+      <subfield code="0">(DE-588)4199252-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4199252-0</subfield>
+      <subfield code="a">Rektor</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04168513X</subfield>
+      <subfield code="0">(DE-588)4168513-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4168513-1</subfield>
+      <subfield code="a">Magister</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041452585</subfield>
+      <subfield code="0">(DE-588)4145258-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4145258-6</subfield>
+      <subfield code="a">Bibliothekar</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1074316193</subfield>
+      <subfield code="0">(DE-588)1074316193</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1074316193</subfield>
+      <subfield code="a">Rappin</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040219658</subfield>
+      <subfield code="0">(DE-588)4021965-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021965-3</subfield>
+      <subfield code="a">Greifswald</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040578607</subfield>
+      <subfield code="0">(DE-588)4057860-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057860-4</subfield>
+      <subfield code="a">Stralsund</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040219658</subfield>
+      <subfield code="0">(DE-588)4021965-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021965-3</subfield>
+      <subfield code="a">Greifswald</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1680-1683</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040666409</subfield>
+      <subfield code="0">(DE-588)4066640-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066640-2</subfield>
+      <subfield code="a">Wittenberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1683-1690?</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040219658</subfield>
+      <subfield code="0">(DE-588)4021965-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021965-3</subfield>
+      <subfield code="a">Greifswald</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1690-1736</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">HBZ</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">9</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Maschinell verknuepft mit DBL-Retro-Titeldaten</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">ADB</subfield>
+      <subfield code="u">https://www.deutsche-biographie.de/sfz33835.html#adbcontent</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Album Academiae Vitebergensis, Jüngere Reihe, T. 2</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia (Liste der Rektoren der Universität Greifswald)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Exercitatio Academica, qua maximam partem ea, quae De Philippi Arabis, Augusti, Fide Christiana Cardinalis Baronius disputat ... - 1693</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Philosoph; Schüler in Stralsund; Student in Greifswald (1680 imm.) und Wittenberg (1683 imm., 1683 Magister); ab 1690 Professor an der Univ. Greifswald, 1703, 1714 und 1717 Univ.-Rektor; auch Bibliothekar der Univ.-Bibliothek</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Horn, Theodor</subfield>
+      <subfield code="0">(DE-588a)103099352</subfield>
+    </datafield>
+  </record>

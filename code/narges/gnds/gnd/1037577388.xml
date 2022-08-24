@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1037577388</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190822134757.0</controlfield>
+    <controlfield tag="008">130726n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1037577388</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1037577388</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1037577388</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1037577388</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-Ha33</subfield>
+      <subfield code="c">DE-Ha33</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-GB</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">r</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Barker, Christopher</subfield>
+      <subfield code="b">III.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Barker, Christopher</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1175479187</subfield>
+      <subfield code="0">(DE-588)1175479187</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1175479187</subfield>
+      <subfield code="a">Bill, John</subfield>
+      <subfield code="4">bezb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionalRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung beruflich</subfield>
+      <subfield code="e">Beziehung beruflich</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1193201527</subfield>
+      <subfield code="0">(DE-588)1193201527</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1193201527</subfield>
+      <subfield code="a">John Bill and Christopher Barker</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">ca. 1640-1680</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040130916</subfield>
+      <subfield code="0">(DE-588)4013091-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013091-5</subfield>
+      <subfield code="a">Drucker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040743357</subfield>
+      <subfield code="0">(DE-588)4074335-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4074335-4</subfield>
+      <subfield code="a">London</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1640-1680</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)043275494</subfield>
+      <subfield code="0">(DE-588)4327549-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4327549-7</subfield>
+      <subfield code="a">Shrewsbury</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1642-1643</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040672050</subfield>
+      <subfield code="0">(DE-588)4067205-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4067205-0</subfield>
+      <subfield code="a">York</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1642-1643</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040901300</subfield>
+      <subfield code="0">(DE-588)4090130-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4090130-0</subfield>
+      <subfield code="a">Bristol</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1643-1645</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040856445</subfield>
+      <subfield code="0">(DE-588)4085644-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4085644-6</subfield>
+      <subfield code="a">Exeter</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1645-1646</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">BBTI</subfield>
+      <subfield code="u">http://bbti.bodleian.ox.ac.uk/details?traderid=3760</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Plomer 1</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Mellot/Queval: Répertoire ... (2004), S. 48</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Drucke nach 1660 vermutlich nicht mehr. Er übertrug laut Plomer seine Anteile an der gemeinsamen Druckerei mit John Bill jährlich für £ 100 an Joshua[?] Kirton, Samuel Mearne, Thomas Roycroft, George Sawbridge und [...] Hills</subfield>
+    </datafield>
+  </record>

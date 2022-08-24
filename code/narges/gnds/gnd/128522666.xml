@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">128522666</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20160224010116.0</controlfield>
+    <controlfield tag="008">031120n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">128522666</subfield>
+      <subfield code="0">http://d-nb.info/gnd/128522666</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)128522666</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)128522666</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)128522666</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-14</subfield>
+      <subfield code="c">DE-14</subfield>
+      <subfield code="9">r:DE-600</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Weltz, Christian Heinrich</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Weltz, Christianus Heinricus</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Weltz, Christian H.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Weltz, Christianus Henricus</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)123335515</subfield>
+      <subfield code="0">(DE-588)123335515</subfield>
+      <subfield code="0">https://d-nb.info/gnd/123335515</subfield>
+      <subfield code="a">Weltz, Eleonora Sophia</subfield>
+      <subfield code="d">1668-1703</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1688</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04201591X</subfield>
+      <subfield code="0">(DE-588)4201591-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4201591-1</subfield>
+      <subfield code="a">Doktor</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040047997</subfield>
+      <subfield code="0">(DE-588)4004799-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4004799-4</subfield>
+      <subfield code="a">Bauherr</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">188</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Mundt</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dissertatio inauguralis juridica de juribus [iuribus] particular*. - [1688?]</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">aus Erfurt; Oberbauherr, Juris utriusque Dr.</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Weltz, Christian Heinrich</subfield>
+      <subfield code="0">(DE-588a)128522666</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">116885890</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220801153113.0</controlfield>
+    <controlfield tag="008">960517n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">116885890</subfield>
+      <subfield code="0">http://d-nb.info/gnd/116885890</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)116885890</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)116885890</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)116885890</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)10020905X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">27.20p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">24.3p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">r</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Mentzel, Christian</subfield>
+      <subfield code="d">1622-1701</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Mentzelius, Christianus</subfield>
+      <subfield code="d">1622-1701</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Menzelius, Christianus</subfield>
+      <subfield code="d">1622-1701</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Apollo</subfield>
+      <subfield code="d">1622-1701</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004377923</subfield>
+      <subfield code="0">(DE-588)1083230-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1083230-0</subfield>
+      <subfield code="a">Academia Naturae Curiosorum</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">v:Mitglied, Matrikelnummer 57</subfield>
+      <subfield code="9">Z:1675-</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">15.06.1622-17.01.1701</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:abweichendes Geburtsdatum: 22.06.1622</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1622-1701</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041464028</subfield>
+      <subfield code="0">(DE-588)4146402-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4146402-3</subfield>
+      <subfield code="a">Botaniker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042741378</subfield>
+      <subfield code="0">(DE-588)4274137-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4274137-3</subfield>
+      <subfield code="a">Sinologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040110397</subfield>
+      <subfield code="0">(DE-588)4011039-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4011039-4</subfield>
+      <subfield code="a">Danzig</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040933970</subfield>
+      <subfield code="0">(DE-588)4093397-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4093397-0</subfield>
+      <subfield code="a">Fürstenwalde/Spree</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040057283</subfield>
+      <subfield code="0">(DE-588)4005728-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4005728-8</subfield>
+      <subfield code="a">Berlin</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Deutsche Biographie</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Kurtze Chinesische Chronologia</subfield>
+      <subfield code="f">1696</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Centuriae plantarum circa ... Gedanum</subfield>
+      <subfield code="f">1650</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Sylloge minutiarum lexici Latino-Sinico-Characteristici ....</subfield>
+      <subfield code="f">1685</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lapis Bononiensis in obscuro lucens</subfield>
+      <subfield code="f">1675</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Kurze Chinesische Chronologie oder Zeit-Register aller Chinesischen Kayser</subfield>
+      <subfield code="f">1696</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lexicon plantarum polyglotton universale</subfield>
+      <subfield code="f">1715</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pinax botanōnymos polyglōttos Katholikos</subfield>
+      <subfield code="f">1682</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Botaniker, Mediziner, Sinologe; Leibarzt des Kurfürsten von Brandenburg</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Arzt, Naturwissenschaftler, Deutschland</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Mentzel, Christian</subfield>
+      <subfield code="0">(DE-588a)116885890</subfield>
+    </datafield>
+  </record>

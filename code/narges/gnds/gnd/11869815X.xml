@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">11869815X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220605140217.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">11869815X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/11869815X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)11869815X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)11869815X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)119807238</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119807238</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)11869815X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)12821001X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4094091-3</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-GB</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">4.7p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">n</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">t</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Grosseteste, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grosseteste, R.</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossetestus, R.</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Grossetestus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossoteste, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossoteste, R.</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Grossoteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossatesta, R.</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Rubertus</subfield>
+      <subfield code="c">Lincolniensis</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Linconiensis, Robertus G.</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Linconiensis"</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grosseteste, Roberto</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Roberto</subfield>
+      <subfield code="c">Grosseteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossoteste, Roberto</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Roberto</subfield>
+      <subfield code="c">Grossoteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Roberto</subfield>
+      <subfield code="c">Grossatesta</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossoteste, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grossoteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossatesta, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grossatesta</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grosstête, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grosstête</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Greathead</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grosthead</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grossestus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grossa</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grostest, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Grostest</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grostest, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grostest</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Capito</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Capito, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Capito</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Grosseteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossetestus, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossatesta, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Grossatesta</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Robertus</subfield>
+      <subfield code="c">Grosseteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lincolniensis, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Lincolniensis</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lincolniensis, Rubertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lincolinensis, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Lincolinensis</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Linconiensis</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">of Lincoln</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grossatesta, Roberto</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grosseteste, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grosseteste</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="c">Grosse-Tête</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grosskopf, Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="c">Megacephalus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Capito, Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robert</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Robertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Rubertus</subfield>
+      <subfield code="d">1168-1253</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118637649</subfield>
+      <subfield code="0">(DE-588)118637649</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118637649</subfield>
+      <subfield code="a">Albertus</subfield>
+      <subfield code="c">Magnus, Heiliger</subfield>
+      <subfield code="d">1193-1280</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Ambrosius Traversari</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118679694</subfield>
+      <subfield code="0">(DE-588)118679694</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118679694</subfield>
+      <subfield code="a">Dionysius</subfield>
+      <subfield code="c">Areopagita</subfield>
+      <subfield code="d">ca. 5./6. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Ficino, Marsiglio</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Hugo</subfield>
+      <subfield code="c">von Saint-Victor</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Saracenus</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118557955</subfield>
+      <subfield code="0">(DE-588)118557955</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118557955</subfield>
+      <subfield code="a">Johannes</subfield>
+      <subfield code="c">Scotus Eriugena</subfield>
+      <subfield code="d">810-877</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Thomas</subfield>
+      <subfield code="c">von Aquino</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119848805</subfield>
+      <subfield code="0">(DE-588)119848805</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119848805</subfield>
+      <subfield code="a">Thomas</subfield>
+      <subfield code="c">von Vercelli</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Stöberl, Andreas</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1168-1253</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr ca., auch 1175</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040069494</subfield>
+      <subfield code="0">(DE-588)4006949-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4006949-7</subfield>
+      <subfield code="a">Bischof</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Stradbook/Sulfolk</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PMA</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Tusculum-Lexikon</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LThK; Potth.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LMA,VII,905/06</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Grosseteste, Robertus: Libellus Linconiensis de phisicis lineis, angulis et figuris, per *</subfield>
+      <subfield code="f">1503</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Grosseteste, Robertus: Ruberti Linconiensis bonarum artiusque optimi interpretis Opuscu*</subfield>
+      <subfield code="f">1514</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Habes accuratissime lector Aristotelis Posteriorium opus ac eius luculenti*</subfield>
+      <subfield code="f">1514</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Posteriorum libri qui modo concili mendosique visebantur</subfield>
+      <subfield code="f">1537</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Grosseteste, Robert: Epistolae</subfield>
+      <subfield code="f">1861</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Grosseteste, Robert: Carmina Anglo-Normannica</subfield>
+      <subfield code="f">1852</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamenta duodecim Patriarcharum, filiorum Jacob, ad filios suos</subfield>
+      <subfield code="f">1765</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamentum duodecim Patriarcharum. - [ca. 1520]</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamentum duodecim Patriarcharum, filiorum Jacob</subfield>
+      <subfield code="f">1532</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamentum duodecim Patriarcharum</subfield>
+      <subfield code="f">1549</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dionysius Areopagita: Opera. 1502-1503. (VD16 D 1848)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Robertus Grosseteste: LIBELLVS LINCONIENSIS DE PHISICIS LINEIS ANGVLIS ET FIGVRIS PFR QVAS OMNES ACCIONES ... 1503. (VD16 R 2677)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamenta duodecim patriarcharum. 1532. (VD16 T 575)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Testamẽta duodecim Patriarcharũ filiorum Jacob. e greco in latinũ versa Roberto ... 1520. (VD16 T 574)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Engl. Philosoph und Theologe; Bischof von Lincoln</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Grosseteste, Robertus</subfield>
+      <subfield code="0">(DE-588a)11869815X</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Grosseteste, Robert</subfield>
+      <subfield code="0">(DE-588a)11869815X</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Robertus Grosseteste</subfield>
+      <subfield code="0">(DE-588a)119807238</subfield>
+    </datafield>
+  </record>

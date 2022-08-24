@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">117509280</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20211102155311.0</controlfield>
+    <controlfield tag="008">960916n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">117509280</subfield>
+      <subfield code="0">http://d-nb.info/gnd/117509280</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)117509280</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)117509280</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)117509280</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)123264634</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0008</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+      <subfield code="c">XA-LV</subfield>
+      <subfield code="c">XA-EE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Fischer, Johann</subfield>
+      <subfield code="d">1636-1705</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fischer, Johannes</subfield>
+      <subfield code="d">1636-1705</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fischerus, Johannes</subfield>
+      <subfield code="d">1636-1705</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">J. F.</subfield>
+      <subfield code="d">1636-1705</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">J. F. L.</subfield>
+      <subfield code="d">1636-1705</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Alethophilus, Christianus</subfield>
+      <subfield code="d">1636-1705</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1636-1705</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr auch 1626 oder 1633</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040364836</subfield>
+      <subfield code="0">(DE-588)4036483-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036483-5</subfield>
+      <subfield code="a">Lübeck</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04036934X</subfield>
+      <subfield code="0">(DE-588)4036934-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036934-1</subfield>
+      <subfield code="a">Magdeburg</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04036075X</subfield>
+      <subfield code="0">(DE-588)4036075-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036075-1</subfield>
+      <subfield code="a">Livland</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040128040</subfield>
+      <subfield code="0">(DE-588)4012804-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4012804-0</subfield>
+      <subfield code="a">Dorpat</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04050042X</subfield>
+      <subfield code="0">(DE-588)4050042-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050042-1</subfield>
+      <subfield code="a">Riga</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04036934X</subfield>
+      <subfield code="0">(DE-588)4036934-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036934-1</subfield>
+      <subfield code="a">Magdeburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">NDB</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">ADB</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Zedler</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">http://de.wikipedia.org/wiki/Johann_Fischer_%28Theologe%29</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Svenskt biografiskt lexikon</subfield>
+      <subfield code="b">Stand: 02.11.2021</subfield>
+      <subfield code="u">https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14152</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Baxter, Richard: Die nothwendige Lehre von der Verläugnung unser selbst. - 1697</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Evang. Theologe; Generalsuperintendent von Livland; Prokanzler der Univ. Dorpat</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Fischer, Johann</subfield>
+      <subfield code="0">(DE-588a)117509280</subfield>
+    </datafield>
+  </record>

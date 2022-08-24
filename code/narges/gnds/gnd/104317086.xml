@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">104317086</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220729102047.0</controlfield>
+    <controlfield tag="008">970108n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">104317086</subfield>
+      <subfield code="0">http://d-nb.info/gnd/104317086</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)104317086</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)104317086</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)104317086</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0103</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Jahn, Andreas</subfield>
+      <subfield code="d">1611-1676</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1046208012</subfield>
+      <subfield code="0">(DE-588)1046208012</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1046208012</subfield>
+      <subfield code="a">Jahn, Magdalena</subfield>
+      <subfield code="d">1625-1654</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:erste Ehefrau</subfield>
+      <subfield code="9">Z:1648-</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)121492532</subfield>
+      <subfield code="0">(DE-588)121492532</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121492532</subfield>
+      <subfield code="a">Jahn, Dorothea Maria</subfield>
+      <subfield code="d">1639-1667</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:zweite Ehefrau</subfield>
+      <subfield code="9">Z:1656-</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1611-1676</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04123488X</subfield>
+      <subfield code="0">(DE-588)4123488-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4123488-1</subfield>
+      <subfield code="a">Kanzler</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042602394</subfield>
+      <subfield code="0">(DE-588)4260239-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4260239-7</subfield>
+      <subfield code="a">Belgern</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041114175</subfield>
+      <subfield code="0">(DE-588)4111417-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4111417-6</subfield>
+      <subfield code="a">Lübben (Spreewald)</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reusner, Jeremias: Disputatio Inauguralis Iuridica De Notariis Eorumque Instrumentis. - 1647</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Jurist und Staatsmann; Student in Wittenberg (1634 und 1647 imm.), 1647 Liz. jur. in Wittenberg; 1640 Advokat am Konsistorium Wittenberg; 1643 Protonotarius am kurf. Hofgericht Wittenberg; 1651 Stadtsyndikus in Guben sowie Assessor am kurf. Landgericht Niederlausitz; 1653 kursächs. Rat, Assessor am Konsistorium Niederlausitz und Landvogt des Markgrafentums Niederlausitz; 1654 Oberamtskanzler der Niederlausitz, 1666 Oberamtsrat der Niederlausitz, 1668 Konsistorialrat</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Jahn, Andreas</subfield>
+      <subfield code="0">(DE-588a)104317086</subfield>
+    </datafield>
+  </record>

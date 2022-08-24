@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">121275094</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20170120154328.0</controlfield>
+    <controlfield tag="008">990729n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">121275094</subfield>
+      <subfield code="0">http://d-nb.info/gnd/121275094</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)121275094</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)121275094</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)121275094</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-576</subfield>
+      <subfield code="c">DE-576</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1031</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Staphorst, Nicholas</subfield>
+      <subfield code="d">1642-1702</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Staphorst, Nicolaus</subfield>
+      <subfield code="d">1642-1702</subfield>
+      <subfield code="9">v:DBA</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Staphorst, Nikolaus</subfield>
+      <subfield code="d">1642-1702</subfield>
+      <subfield code="9">v:DBA</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Staphorstius, Nicolaus</subfield>
+      <subfield code="d">1642-1702</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)051285789</subfield>
+      <subfield code="0">(DE-588)16131905-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/16131905-1</subfield>
+      <subfield code="a">Collegium Medicorum</subfield>
+      <subfield code="g">London</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">v:Chemielehrer</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1642-1702</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr ca.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040098362</subfield>
+      <subfield code="0">(DE-588)4009836-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4009836-9</subfield>
+      <subfield code="a">Chemiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040231186</subfield>
+      <subfield code="0">(DE-588)4023118-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023118-5</subfield>
+      <subfield code="a">Hamburg</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040743357</subfield>
+      <subfield code="0">(DE-588)4074335-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4074335-4</subfield>
+      <subfield code="a">London</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">NUC, BLC</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pharmacopoeia collegii Londinensis. - 1701</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Rauwolff, Leonhard: Dr. Leonhart Rauwolf's journey into eastern countries : viz. Syria, P*</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Rauwolf, Leonhard: Dr. Leonhart Rauwolff's journey into the Eastern countries, viz. Syria*</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Rauwolf, Leonhard: Dr. Leonhart Rauwolf's journey into eastern countries : viz. Syria, Pa*</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Rauwolf, Leonhard: Leonhart Rauwolff's Itinerary into the Eastern Countries, as Syria, *. - 1693</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Rauwolf, Leonhard: Journey into the eastern countries, viz. Syria, Palestine, Armenia &amp;c.. - 1738</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Officina chymica Londin., s. exacta notitia medicamentorum spagyrico*. - 1686</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Staphorst, Nicholas</subfield>
+      <subfield code="0">(DE-588a)121275094</subfield>
+    </datafield>
+  </record>

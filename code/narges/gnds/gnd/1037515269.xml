@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">1037515269</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220217135454.0</controlfield>
+    <controlfield tag="008">130726n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1037515269</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1037515269</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1037515269</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1037515269</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">2.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">r</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Heil, Arnold</subfield>
+      <subfield code="d">1657-1720</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Heyl, Arnold</subfield>
+      <subfield code="d">1657-1720</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Heill, Arnold</subfield>
+      <subfield code="d">1657-1720</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037515145</subfield>
+      <subfield code="0">(DE-588)1037515145</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037515145</subfield>
+      <subfield code="a">Heil, Johann Sibert</subfield>
+      <subfield code="d">1637-</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1657-1720</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">15.07.1657-22.12.1720</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:Todesdatum: vor 22.12.1720</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041383435</subfield>
+      <subfield code="0">(DE-588)4138343-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4138343-6</subfield>
+      <subfield code="a">Verleger</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+      <subfield code="9">Z:1684-17XX</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041309480</subfield>
+      <subfield code="0">(DE-588)4130948-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4130948-0</subfield>
+      <subfield code="a">Buchhändler</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:-1720</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040371247</subfield>
+      <subfield code="0">(DE-588)4037124-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4037124-4</subfield>
+      <subfield code="a">Mainz</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040144917</subfield>
+      <subfield code="0">(DE-588)4014491-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4014491-4</subfield>
+      <subfield code="a">Ellwangen (Jagst)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:vor 1679-1686</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040043916</subfield>
+      <subfield code="0">(DE-588)4004391-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4004391-5</subfield>
+      <subfield code="a">Bamberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1687-1720</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Benzing, Josef: Die deutschen Verleger des 16. und 17. Jahrhunderts. - In: Archiv für Geschichte des Buchwesens, Band 18 (1977), Spalte 1077-1322, hier Spalte 1162</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Paisey, David: Deutsche Buchdrucker, Buchhändler und Verleger 1701-1750. - Wiesbaden, 1988. - Seite 100</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">DbA</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Hofbuchhändler und akademischer Buchhändler in Bamberg</subfield>
+    </datafield>
+  </record>

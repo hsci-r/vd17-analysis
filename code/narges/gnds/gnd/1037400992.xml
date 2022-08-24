@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1037400992</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220128104456.0</controlfield>
+    <controlfield tag="008">130724n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1037400992</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1037400992</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1037400992</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1037400992</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-25</subfield>
+      <subfield code="c">DE-25</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1140</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">ZZ</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">h</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Braitmayer, Ludwig</subfield>
+      <subfield code="d">1569-1620</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Breitmeyer, Ludwig</subfield>
+      <subfield code="d">1569-1620</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Braitmeyer, Ludwig</subfield>
+      <subfield code="d">1569-1620</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Braitmaier, Ludwig</subfield>
+      <subfield code="d">1569-1620</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1569-1620</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)004850777</subfield>
+      <subfield code="0">(DE-588)2028422-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2028422-6</subfield>
+      <subfield code="a">Bittenfeld</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Genannt im Wikipedia-Artikel zu Lucas Osiander, dem Älteren</subfield>
+      <subfield code="u">http://de.wikipedia.org/wiki/Lucas_Osiander_der_%C3%84ltere</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Pfarrer in Bittenfeld, verheiratet mit Catharina, der Tochter von Lucas Osiander, dem Älteren</subfield>
+    </datafield>
+  </record>

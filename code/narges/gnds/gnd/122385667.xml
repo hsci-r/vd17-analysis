@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">122385667</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201104095303.0</controlfield>
+    <controlfield tag="008">000927n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">122385667</subfield>
+      <subfield code="0">http://d-nb.info/gnd/122385667</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)122385667</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)122385667</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)122385667</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-576</subfield>
+      <subfield code="c">DE-576</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">2214</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+      <subfield code="c">XA-SK</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, Johann</subfield>
+      <subfield code="d">1610-1610</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, Johannes</subfield>
+      <subfield code="d">1610-1610</subfield>
+      <subfield code="9">v:WBIS</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, János</subfield>
+      <subfield code="d">1610-1610</subfield>
+      <subfield code="9">v:WBIS</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircherus, Johannes</subfield>
+      <subfield code="d">1610-1610</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, Iohannes</subfield>
+      <subfield code="d">1610-1610</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, Ioannes</subfield>
+      <subfield code="d">1610-1610</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kircher, Joannes</subfield>
+      <subfield code="d">1610-1610</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1610-1610</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:gestorben nach 1650</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-02.08.1610</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041585895</subfield>
+      <subfield code="0">(DE-588)4158589-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4158589-6</subfield>
+      <subfield code="a">Gymnasiallehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041992520</subfield>
+      <subfield code="0">(DE-588)4199252-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4199252-0</subfield>
+      <subfield code="a">Rektor</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041652118</subfield>
+      <subfield code="0">(DE-588)4165211-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4165211-3</subfield>
+      <subfield code="a">Konvertit</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Magister</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040611477</subfield>
+      <subfield code="0">(DE-588)4061147-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4061147-4</subfield>
+      <subfield code="a">Tübingen</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041178416</subfield>
+      <subfield code="0">(DE-588)4117841-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4117841-5</subfield>
+      <subfield code="a">Neusohl</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040784908</subfield>
+      <subfield code="0">(DE-588)4078490-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4078490-3</subfield>
+      <subfield code="a">Tirnau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA I 650,337-338;II 705,287-288</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">CSBA 288,432</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Ungarisches Biographisches Archiv 339,248-249</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">ADB</subfield>
+      <subfield code="u">https://www.deutsche-biographie.de/sfz41070.html#adbcontent</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Johann_Kircher</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Anti-Dorscheus, sive Conversionis ad fidem catholicam causae M. Joannis Kircheri Tubinga-Wirtembergici defensae. - 1653</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Kircher, Johann: Fünffzehen Fragen  Das  Gewissen  unnd  waren  Glauben betreffent. - 1652</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">LoC-NA, Sigel: Das evang. Württ., LThK</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Theologe; Student in Tübingen; Prediger in Württemberg; wirkte dann in Oberungarn; 1637 Schulrektor in Neusohl; konvertierte 1638 zum Katholizismus</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Kircher, Johann</subfield>
+      <subfield code="0">(DE-588a)122385667</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1172481024</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190205091925.0</controlfield>
+    <controlfield tag="008">181129n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1172481024</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1172481024</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1172481024</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1172481024</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">ZZ</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ziesemer, Maria</subfield>
+      <subfield code="d">1606-1674</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">2</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pfeil, Maria</subfield>
+      <subfield code="d">1606-1674</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+      <subfield code="9">v:Geburtsname</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)12047090X</subfield>
+      <subfield code="0">(DE-588)12047090X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/12047090X</subfield>
+      <subfield code="a">Ziesemer, Georg</subfield>
+      <subfield code="d">1595-1669</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehemann</subfield>
+      <subfield code="9">Z:1633-1669</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1606-1674</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">21.12.1606-12.03.1674</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040573923</subfield>
+      <subfield code="0">(DE-588)4057392-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057392-8</subfield>
+      <subfield code="a">Stettin</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040573923</subfield>
+      <subfield code="0">(DE-588)4057392-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057392-8</subfield>
+      <subfield code="a">Stettin</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">9</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lipenius, Martin: Ad exequias Mariae Pfeiliae, Georgii Ziesemers relictae viduae, MDCLXXIV. X. April. solenniter in templo Jacobaeo condendae. - 1674</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Tochter von Gabriel Pfeil und Anna geb. Finck. Am 17. Januar 1633 Eheschließung mit dem Ratskämmerer Georg Ziesemer in Stettin</subfield>
+    </datafield>
+  </record>

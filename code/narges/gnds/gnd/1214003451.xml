@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1214003451</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20211018154206.0</controlfield>
+    <controlfield tag="008">200717n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1214003451</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1214003451</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1214003451</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1214003451</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1841</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Roth, Reinhard</subfield>
+      <subfield code="d">1624-1703</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rohdius, Reinhard</subfield>
+      <subfield code="d">1624-1703</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Roth, Reinhard Philipp</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Dexbach, Anna Catharina</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1624-1703</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsdatum nachgerechnet</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1646-1685</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)943321115</subfield>
+      <subfield code="0">(DE-588)4363111-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4363111-3</subfield>
+      <subfield code="a">Pfalzfeld</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Diehl W., Hassia Sacra, Bd. 7, S. 177 - Quellen und Forschungen zur hessischen Geschichte, 153, S.391, 447, 595 - Nassauer Annalen, 31, 2, S. 144-145 - Arbeitsgemeinschaft Landesgeschichte und Volkskunde Koblenz, 6-7, S. 149 - Dulheuer W., Ahnenliste, S. 42 - St. Goarshausen Einwohnerliste von 1696 - Marburger Sippenbuch/17/198</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">König Davids Und aller Frommen Christen Hertzens-Trost, höhestes Erb-Gut und grössester Reichthumb : Erkläret und beschrieben Bey Ansehnlicher, Christlicher und Volckreichen Begräbnüß Der Ehr- und Viel-Tugendsamen Frawen Margaretae Dorotheae Gebohrnen Asclepin, Des Wohl-Ehrenfesten, Vor-Achtbarn und Wolgelarten Herrn Balthasaris Horstii, Fürstl. Heßischen Zoll-Bedienten zu S. Goar und wolbestelten Apotheckern, Vielgeliebten Haußfrawen ... Darmstadt, Abel, 1661 [Beiträger]</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Pfarrer. Die Quellen sind nicht eindeutig: ein Reinhard Roth aus Romrod oder Dachsenhausen, um ca. 1621-1622 geboren, studiert in Marburg und heiratet am 17.10.1645 Anna Catharina Dexbach ebenda. Pfarrer in Ems (1646-1650 ), in Langenbach, in Skt. Goarshausen, als Definitor tätig, stirbt am 15.02.1703. Laut anderen Quellen ist ein Reinhard Roth aus Marburg (?) 1660-1678 Pfarrer in Pfalzfeld, 1678 Pfarrer in Skt. Goarshausen und Definitor. Laut Nassauer Annalen zieht er 1702 nach Kordörf, und stirbt ebenda den 12.07.1715. Vermutlich eine und dieselbe Person. In der Skt. Goarshausen-Einwohnerliste von 1696 ist Reinhard Roth, Pfarrherr, 72 Jahre alt: der Auszug nach Kordörf und das zweite Sterbedatum wohl von dem Sohn Reinhart Philipp Roth (1676 in Marburg immatr. dann ab 1682 selbst Pfarrer in Pfalzfeld).</subfield>
+    </datafield>
+  </record>

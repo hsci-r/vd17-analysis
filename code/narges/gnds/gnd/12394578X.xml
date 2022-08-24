@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">12394578X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200904171807.0</controlfield>
+    <controlfield tag="008">020719n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">12394578X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/12394578X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)12394578X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)12394578X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)12394578X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4709320-1</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">2214</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">7.14p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hoffer, Johann</subfield>
+      <subfield code="d">1534-1583</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hoffer, Johannes</subfield>
+      <subfield code="d">1534-1583</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofferus, Ioannes</subfield>
+      <subfield code="d">1534-1583</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofer, Johann</subfield>
+      <subfield code="d">1534-1583</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofer, Johannes</subfield>
+      <subfield code="d">1534-1583</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofferus, Johannes</subfield>
+      <subfield code="d">1534-1583</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)123945836</subfield>
+      <subfield code="0">(DE-588)123945836</subfield>
+      <subfield code="0">https://d-nb.info/gnd/123945836</subfield>
+      <subfield code="a">Hoffer, Johann</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Finzel, Hiob</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)12123147X</subfield>
+      <subfield code="0">(DE-588)12123147X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/12123147X</subfield>
+      <subfield code="a">Crusius, Paul</subfield>
+      <subfield code="d">1525-1572</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Langer, Johannes</subfield>
+      <subfield code="c">der Jüngere</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116691379</subfield>
+      <subfield code="0">(DE-588)116691379</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116691379</subfield>
+      <subfield code="a">Maius, Michael</subfield>
+      <subfield code="d">1530-1572</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Moninger, Johannes</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116608609</subfield>
+      <subfield code="0">(DE-588)116608609</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116608609</subfield>
+      <subfield code="a">Rosa, Johann</subfield>
+      <subfield code="d">1532-1572</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Sauer, Melchior</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)133436713</subfield>
+      <subfield code="0">(DE-588)133436713</subfield>
+      <subfield code="0">https://d-nb.info/gnd/133436713</subfield>
+      <subfield code="a">Seyfried, Georg</subfield>
+      <subfield code="d">1531-1566</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124408494</subfield>
+      <subfield code="0">(DE-588)124408494</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124408494</subfield>
+      <subfield code="a">Strigel, Victorinus</subfield>
+      <subfield code="d">1524-1569</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Cracov, Georg</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1534-1583</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">06.07.1534-24.10.1583</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04123488X</subfield>
+      <subfield code="0">(DE-588)4123488-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4123488-1</subfield>
+      <subfield code="a">Kanzler</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040252434</subfield>
+      <subfield code="0">(DE-588)4025243-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025243-7</subfield>
+      <subfield code="a">Hochschullehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040103250</subfield>
+      <subfield code="0">(DE-588)4010325-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4010325-0</subfield>
+      <subfield code="a">Coburg</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040335348</subfield>
+      <subfield code="0">(DE-588)4033534-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4033534-3</subfield>
+      <subfield code="a">Kulmbach</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04028557X</subfield>
+      <subfield code="0">(DE-588)4028557-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4028557-1</subfield>
+      <subfield code="a">Jena</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040216527</subfield>
+      <subfield code="0">(DE-588)4021652-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021652-4</subfield>
+      <subfield code="a">Gotha</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040103250</subfield>
+      <subfield code="0">(DE-588)4010325-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4010325-0</subfield>
+      <subfield code="a">Coburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04002170X</subfield>
+      <subfield code="0">(DE-588)4002170-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4002170-1</subfield>
+      <subfield code="a">Ansbach</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA I 551,186-190;II 600,9 und I 551,1 (uneinheitlich)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Descriptio inclytae urbis Franciae Kitthingae, sitae in ripa Moeni. - 1556</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johann: Poemata quaedam. - 1558</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johann: Icones Catecheseos, et virtutum ac vitiorum illustratae numeris. - 1557</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: POEMAta quaedam IohanNIS HOFFERI DEDIcata nobilitate generis, uirtute et eruditione ... 1558. (VD16 H 4124)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: DE NVPTIIS ILLVSTRISSIMI HEROIS AC PRINCIPIS, DOMINI IOHANNIS FRIDERICI II. DVCIS ... 1555. (VD16 H 4123)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: EPITHALAMION SCRIPTVM CLARISSIMO VIRO, DOMINO FRIDERICO BERNBECK CIVITATIS KITTHINGENSIS ... 1555. (VD16 H 4114)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: ELEGIA GRAECA IOHANNIS HOFFERI, DE NVPTIIS OPTIMI ET DOCTISSIMI VIRI MAGISTRI IOHANNIS ... 1556. (VD16 H 4113)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: DE OBITV CLARISSIMI VIRI IOANNIS STIGELII CARMEN IOANnis Hofferi Coburgensis, Iuris ... 1562. (VD16 ZV 8059)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: ICONES CATECHESEOS, ET VIRTVTVM AC VItiorum illustratae numeris IOHANNIS HOFFERI ... 1557. (VD16 H 4115)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: ICONES CATECHESEOS, ET VIRTVTVM AC uitiorum illustratae numeris. IOHANNIS HOFFERI ... 1560. (VD16 H 4118)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: ICONES CATECHESEOS, ET VIRTVTVM AC uitiorum illustratae numeris. IOHANNIS HOFFERI ... 1558. (VD16 H 4117)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: ICONES CATECHESEOS. ET VIRTVTVM AC uitiorum illustratae numeris. IOHANNIS HOFFERI ... 1558. (VD16 H 4116)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hoffer, Johannes: DESCRIPTIO INCLYTAE VRBIS FRANCIAE KITTHINGAE, SITAE IN RIPA MOENI, AEDITA PER ... 1556. (VD16 H 4112)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Jurist und Staatsmann; 1549 in Wittenberg immatr., 1554 Magister; Dr. jur in Poitou; 1561 Prof. jur. in Jena, dann bis 1567 Rat bei Herzog Johann Friedrich II. von Sachsen-Gotha; 1570 Rat in Coburg, dann Kanzler in Brandenburg-Ansbach</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Hoffer, Johann</subfield>
+      <subfield code="0">(DE-588a)12394578X</subfield>
+    </datafield>
+  </record>

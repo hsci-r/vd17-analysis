@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">129238082</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220411104341.0</controlfield>
+    <controlfield tag="008">040722n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">129238082</subfield>
+      <subfield code="0">http://d-nb.info/gnd/129238082</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">Q21089187</subfield>
+      <subfield code="2">wikidata</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)129238082</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)129238082</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1157893929</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)129238082</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)134461878</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-101c)310151872</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">2220</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">m</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Meyer, Peter</subfield>
+      <subfield code="d">1620-1677</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meier, Peter</subfield>
+      <subfield code="d">1620-1677</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meyer, ...</subfield>
+      <subfield code="d">1620-1677</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Meier, ...</subfield>
+      <subfield code="d">1620-1677</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1620-1677</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:ca.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1657</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">ca. Mitte 17. Jh.</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04032009X</subfield>
+      <subfield code="0">(DE-588)4032009-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4032009-1</subfield>
+      <subfield code="a">Komponist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040408418</subfield>
+      <subfield code="0">(DE-588)4040841-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4040841-3</subfield>
+      <subfield code="a">Musiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Organist</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041727932</subfield>
+      <subfield code="0">(DE-588)4172793-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4172793-9</subfield>
+      <subfield code="a">Organist</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040231186</subfield>
+      <subfield code="0">(DE-588)4023118-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023118-5</subfield>
+      <subfield code="a">Hamburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA, RISM</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Peter_Meier_(Komponist)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Des edlen Dafnis aus Cimbrien besungene Florabella</subfield>
+      <subfield code="f">1651/1666</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">&#152;Des&#156; Edlen Dafnis aus Cimbrien besungene Florabella</subfield>
+      <subfield code="f">1651</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Komponist, Ratsmusikus in Hamburg</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2021-04-20</subfield>
+      <subfield code="b">a-CH-BeUB e-xDE-601</subfield>
+      <subfield code="a">Bitte Satz überprüfen: Instrumente: Banjo und Singstimme und abweichender Name Meyer, Peter Banju gehören wohl zu Peter Banjo Meyer, 1944- gnd/135736323 (Wikipedia). Im Weiteren gibt es wohl eine Dublette zu Meier, Peter gnd/1157893929? Vielen Dank und Grüsse aus Bern</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2021-05-07</subfield>
+      <subfield code="b">a-DE-601-FE-P-di e-xDE-12-musik e-xDE-384-FE e-xDE-101-FE e-xDE-601-FE e-xDE-605-FE e-xDE-603-FE e-xCH-SgKBLR e-xCH-ChKBLR e-CH-AaAKBLR e-LI-VaLIL FLLB e-xDE-611 e-xDE-188-FE e-DE-634-FE e-xDE-521-FE e-DE-Y3-FE e-AT-NOELB e-xAT-OBV e-xDE-1-FE e-xDE-1-GKD e-xCH-001821-6 e-xDE-576 e-xCH-ZuSLS-FE</subfield>
+      <subfield code="a">Bitte prüfen Sie Ihre verknüpften Titel</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2021-05-17</subfield>
+      <subfield code="b">a-DE-101-FE e-xDE-101-Musik</subfield>
+      <subfield code="a">Bitte übernehmen. Vielen Dank!</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Meyer, Peter</subfield>
+      <subfield code="0">(DE-588a)129238082</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">122210255</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20161222101426.0</controlfield>
+    <controlfield tag="008">000718n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">122210255</subfield>
+      <subfield code="0">http://d-nb.info/gnd/122210255</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)122210255</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)122210255</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)122210255</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0547</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Wiehe, Maria &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wiehe, Marie &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wiehe, Marta &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+      <subfield code="9">v:falsche Namensform</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bendeleben, Maria &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bendeleben, Marta &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Witzleben, Maria &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Witzleben, Marta &#152;von&#156;</subfield>
+      <subfield code="d">1551-1603</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1551-1603</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-17.05.1603</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)965615308</subfield>
+      <subfield code="0">(DE-588)4707549-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4707549-1</subfield>
+      <subfield code="a">Bendeleben</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041921585</subfield>
+      <subfield code="0">(DE-588)4192158-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4192158-6</subfield>
+      <subfield code="a">Laucha an der Unstrut- Burgscheidungen</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gölner, Jacob: Wischtüchlein Das ist: Eine Christliche Leichpredigt ... . - 1604</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Tochter des Seiffart von Bendeleben; ab ca. 1568 Ehefrau des Dietrich von Witzleben; ab ca. 1577 Ehefrau des Christoph von Wiehe, Erbsasse in Burgscheidungen</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Wiehe, Maria /von</subfield>
+      <subfield code="0">(DE-588a)122210255</subfield>
+    </datafield>
+  </record>

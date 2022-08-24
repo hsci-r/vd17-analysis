@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">050581988</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20180924114119.0</controlfield>
+    <controlfield tag="008">920916n||aznnnaabn          o| ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">5058198-3</subfield>
+      <subfield code="0">http://d-nb.info/gnd/5058198-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)050581988</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)5058198-3</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1088872425</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)5058198-3</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1601</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DXDE</subfield>
+      <subfield code="c">XA-DE-BY</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kio</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="110" ind1="1" ind2=" ">
+      <subfield code="a">Nürnberg</subfield>
+      <subfield code="b">Stadtrat</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtrat</subfield>
+      <subfield code="g">Nürnberg</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040427420</subfield>
+      <subfield code="0">(DE-588)4042742-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4042742-0</subfield>
+      <subfield code="a">Nürnberg</subfield>
+      <subfield code="4">adue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#hierarchicalSuperiorOfTheCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ueberordnung</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Nürnberg / Stadtrat</subfield>
+      <subfield code="0">(DE-588b)5058198-3</subfield>
+    </datafield>
+  </record>

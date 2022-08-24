@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1037532910</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20181120103614.0</controlfield>
+    <controlfield tag="008">130726n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1037532910</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1037532910</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1037532910</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1037532910</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)119603934</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119603934</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1051302544</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1031</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">t</subfield>
+      <subfield code="u">r</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Albrecht, Lorenz</subfield>
+      <subfield code="d">15XX-1604</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Albertus, Laurentius</subfield>
+      <subfield code="d">15XX-1604</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Albrecht, Laurentius</subfield>
+      <subfield code="d">15XX-1604</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Albrecht, Laurentz</subfield>
+      <subfield code="d">15XX-1604</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Albrecht, Laurenz</subfield>
+      <subfield code="d">15XX-1604</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)103753123X</subfield>
+      <subfield code="0">(DE-588)103753123X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/103753123X</subfield>
+      <subfield code="a">Jauch, Samuel</subfield>
+      <subfield code="d">-1625</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Schwiegersohn</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1004501617</subfield>
+      <subfield code="0">(DE-588)6146307-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/6146307-3</subfield>
+      <subfield code="a">Lorenz Albrecht Erben</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">v:Nachfolgeinstitution der Druckerei</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">15XX-1604</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Todesjahr ca.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040130916</subfield>
+      <subfield code="0">(DE-588)4013091-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013091-5</subfield>
+      <subfield code="a">Drucker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+      <subfield code="9">Z:1599-1604</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041468015</subfield>
+      <subfield code="0">(DE-588)4146801-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4146801-6</subfield>
+      <subfield code="a">Buchdrucker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041383435</subfield>
+      <subfield code="0">(DE-588)4138343-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4138343-6</subfield>
+      <subfield code="a">Verleger</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:1587-1604</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041309480</subfield>
+      <subfield code="0">(DE-588)4130948-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4130948-0</subfield>
+      <subfield code="a">Buchhändler</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:1586?-1604</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040364836</subfield>
+      <subfield code="0">(DE-588)4036483-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036483-5</subfield>
+      <subfield code="a">Lübeck</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1586-1604</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04050610X</subfield>
+      <subfield code="0">(DE-588)4050610-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050610-1</subfield>
+      <subfield code="a">Rostock</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Benzing (Drucker), S. 302; VD 16</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Catalogus aliquot librorum apud Laurentium Alberti bibliopolam ... venalium. 1599. (VD16 ZV 356)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Catalogus librorum qui reperiuntur in bibliotheca Laurentii Alberti ... venales. 1591. (VD16 ZV 355)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Botero, Giovanni: Joannis Boteri Benesii AMPHITHEATRIDION. HOC EST, PARVVM AMPHITHEATRVM, CVI PAVCA ... 1600. (VD16 B 6810)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Glaser, Peter: Ein New Lehr trost Beicht vñ Gebetbuechlein Allen betruebten vnd angefochtenen ... 1594. (VD16 G 2192)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Meusel, Simon: Ein Trostreich Betbuechlein vnnd Geistlicher Fewerzeug fuer alle matte vnd kalte ... 1591. (VD16 M 5065)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Muret, Marc Antoine: M.A. Mureti IVVENILIA, ... . 1590. (VD16 M 6839)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Petersen, Johannes: Chronica Oder Zeitbuch der Lande zu Holsten Stormarn Ditmarschen vnd Wagern Wer dieselben ... 1599. (VD16 P 1695)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reinke de Vos. 1592. (VD16 R 998)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Seit 1586 als Buchführer in Lübeck, ab 1599 auch als Drucker; ließ auch in Rostock und Schleswig drucken</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Albrecht, Lorenz</subfield>
+      <subfield code="0">(DE-588a)119603934</subfield>
+    </datafield>
+  </record>

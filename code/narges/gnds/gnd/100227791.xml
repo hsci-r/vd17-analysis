@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">100227791</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220311163419.0</controlfield>
+    <controlfield tag="008">900615n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100227791</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100227791</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100227791</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100227791</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100227791</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)1012293815</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="u">v</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Pflacher, Moses</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Flacher, Moses</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pflacher, Moyses</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pflacher, Moyse</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pflacherus, Moses</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pflacherus, Moses ‎</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pflacher, Moyse ‎</subfield>
+      <subfield code="d">1549-1598</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Andreae, Jakob</subfield>
+      <subfield code="c">der Ältere</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100347320</subfield>
+      <subfield code="0">(DE-588)100347320</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100347320</subfield>
+      <subfield code="a">Tradel, Georg</subfield>
+      <subfield code="d">1530-1598</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.XX.1549-01.08.1598</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1549-1598</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr ca.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">ca. 1549-1598</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#associatedDate</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Kuchen</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040300609</subfield>
+      <subfield code="0">(DE-588)4030060-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030060-2</subfield>
+      <subfield code="a">Kaufbeuren</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16; LABI-BW-WLB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">LABI-BW-BLB</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Pfarrerbuch Bayerisch-Schwaben; Hd 2</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GND</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Catechismus-Predigten</subfield>
+      <subfield code="f">1600</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Predigt vom Unkraut des Zwingl. und Calvinischen Irrthums</subfield>
+      <subfield code="f">1584</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Weinthewre</subfield>
+      <subfield code="f">1589</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Analysis typica omnium cum veteris tum novi testamenti librorum historic*</subfield>
+      <subfield code="f">1595</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Analysis typica omnium cum veteris tum novi testamenti librorum historic*</subfield>
+      <subfield code="f">1606</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Andreae, Jacob: Disp. de bonis operibus</subfield>
+      <subfield code="f">1572</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Catechismus Uthi Wisse Predicninger pa huart Huffuodstycke</subfield>
+      <subfield code="f">1610</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Andreae, Jakob &lt;der Ältere&gt;: Disputatio DE IVRE VOCANDI MINISTROS ECCLESIAE. ... PRAESIDE REVERENDO ET CLARISSIMO ...  1585.  (VD16 A 2586)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Die gantze Lehr Vom Tod vnd Absterben des Menschen in ein richtige ordnung kurtz ...  1589.  (VD16 P 2388)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Weinthewre. Oder Bericht auß Gottes Wort woher vnd auß was Vrsachen dise jetzige ...  1589.  (VD16 P 2393)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: ANALYSIS TYPICA Omnium cùm veteris tum noui Testamenti Historicorum librorum, ad ...  1587.  (VD16 P 2379)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: ANALYSIS TYPICA Omnium cùm veteris tum noui Testamenti Librorum Historicorum: ad ...  1587.  (VD16 P 2378)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Catechismus. DVrch weilund den Ehrwuerdigen vnd Hochgelehrten Herrn Mosen Pflachern der ...  1600.  (VD16 P 2391)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Christliche Predigt Von bruederlicher Versoenung auff den 6. Sontag Trinitatis dises ...  1588.  (VD16 P 2381)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Die gantze Lehr Vom Tod vnd Absterben deß Menschen in ein richtige Ordnung kurtz ...  1582.  (VD16 P 2387)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Andreae, Jakob &lt;der Ältere&gt;: DISPVTATIO DE BONIS OPERIBVS. ... PRAESIDE ... IACOBO ANDREAE, SACROSANCTAE THEOLOGIAE ...  1572.  (VD16 A 2569)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pflacher, Moses: Leichpredig: Vber dem toedtlichen abgang des Hoch vnd Wolgebornen Herrn ... Anthonij der ...  1573.  (VD16 P 2392)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Student in Tübingen; Pfarrer in Ortenburg, Kempten; Dt. evang. Theologe</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. evang. Theologe</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Pflacher, Moses</subfield>
+      <subfield code="0">(DE-588a)100227791</subfield>
+    </datafield>
+  </record>

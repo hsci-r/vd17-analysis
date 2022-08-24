@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">129412457</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20171115004823.0</controlfield>
+    <controlfield tag="008">040923n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">129412457</subfield>
+      <subfield code="0">http://d-nb.info/gnd/129412457</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)129412457</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)129412457</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1062750330</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)129412457</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-14</subfield>
+      <subfield code="c">DE-14</subfield>
+      <subfield code="9">r:DE-600</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Günther, Johann</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Günther, Johannes</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Günther, Johan</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Güntheri, Joannis</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Güntherus, Johannes</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Güntherus, Joannes</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Güntherus, Johan.</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Guntherus, Johannes</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gunther, Johann</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gunther, Johannes</subfield>
+      <subfield code="d">1577-1644</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1577-1644</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041585895</subfield>
+      <subfield code="0">(DE-588)4158589-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4158589-6</subfield>
+      <subfield code="a">Gymnasiallehrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041992415</subfield>
+      <subfield code="0">(DE-588)4199241-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4199241-6</subfield>
+      <subfield code="a">Klassischer Philologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041992520</subfield>
+      <subfield code="0">(DE-588)4199252-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4199252-0</subfield>
+      <subfield code="a">Rektor</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04168513X</subfield>
+      <subfield code="0">(DE-588)4168513-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4168513-1</subfield>
+      <subfield code="a">Magister</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041332210</subfield>
+      <subfield code="0">(DE-588)4133221-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4133221-0</subfield>
+      <subfield code="a">Oleśnica</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040181227</subfield>
+      <subfield code="0">(DE-588)4018122-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4018122-4</subfield>
+      <subfield code="a">Frankfurt (Oder)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040082520</subfield>
+      <subfield code="0">(DE-588)4008252-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008252-0</subfield>
+      <subfield code="a">Brieg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schickfuß, Jakob: Disputatio Philosophica Logica De Universalibus. - 1602</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Novis Honoribus ... Dn. Joannis Güntheri Olsnensis Silesii In Illustri Bregeo Graecae Linguae Professoris ... - 1605</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Felici Nuptiarum auspicio Clarissimi Et Praestantissimi Viri Dn. M. Joannis Güntheri ... - 1607</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Tit. Herrn Martin Güttners Fürstl. Stiffts Verwalters Nahmens Tag ... - 1637</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Philologe und Pädagoge; Student in Frankfurt (Oder); Griechisch-Lehrer und Direktor am Gymnasium in Brieg</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Günther, Johann</subfield>
+      <subfield code="0">(DE-588a)129412457</subfield>
+    </datafield>
+  </record>

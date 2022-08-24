@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118577468</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220309171334.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118577468</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118577468</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118577468</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118577468</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118577468</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)160297133</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)158237102</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)128042389</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)126094667</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4037458-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">16.5p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">4.7p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">p</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Mark Aurel</subfield>
+      <subfield code="c">Römisches Reich, Kaiser</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">lat</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="9">L:fre</subfield>
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="5">CH-GND</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="9">L:eng</subfield>
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Emperor of the Roman Empire</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="5">CH-GND</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Kaiser</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurèle</subfield>
+      <subfield code="c">Empereur</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc</subfield>
+      <subfield code="c">Aurel</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Römisches Reich, Kaiser</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Philosophus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Philosophus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antoninus</subfield>
+      <subfield code="c">Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco</subfield>
+      <subfield code="c">Aurelio Antonous</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos</subfield>
+      <subfield code="c">Antōnios</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurel, Marc</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Aoleliu</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="9">v:Chines.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Aoleiliu</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="9">v:Chines.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Awrelyws</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="9">v:Kasach.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Avrelyws</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="9">v:Kasach.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="d">121-180</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Marcus Aurelius, Antoninus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninos Autokrator, Markos</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Severus Antoninus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Antonin</subfield>
+      <subfield code="c">Empereur</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurele Antonin</subfield>
+      <subfield code="c">Empereur</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc-Aurèle</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antoninus</subfield>
+      <subfield code="c">Philosophus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Antōninos</subfield>
+      <subfield code="c">Autokrator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Antōninos</subfield>
+      <subfield code="c">Autokratōr</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">M. Antoninus</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Philosoph</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurel</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus</subfield>
+      <subfield code="c">Aurelius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Annius</subfield>
+      <subfield code="c">Verus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Annius</subfield>
+      <subfield code="c">Catilius Severus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius Antoninus, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Antoninus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco</subfield>
+      <subfield code="c">Aurelio</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus</subfield>
+      <subfield code="c">Aurel</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco Aurelio</subfield>
+      <subfield code="c">Antonino</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco</subfield>
+      <subfield code="c">Filosofo Stoico</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco</subfield>
+      <subfield code="c">Imperatore Romano</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Annius Verus, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninus, Marcus A.</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninus, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Aurel</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninus, Marcus Aurelius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc-Aurèle</subfield>
+      <subfield code="c">de Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus</subfield>
+      <subfield code="c">Antoninus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelio, Marco</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurel, Mark</subfield>
+      <subfield code="c">Kaiser des Römischen Reichs</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurel, Mark</subfield>
+      <subfield code="c">Emperor of the Roman Empire</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurèle, Marc</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Antōninos</subfield>
+      <subfield code="c">Kaiser des Römischen Reichs</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antoninus</subfield>
+      <subfield code="c">Kaiser des Römischen Reichs</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius Antonius, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antonius, Marcus Aurelius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Avrelij Antonin</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius Antoninus, Marcus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Aurel</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Avrelii</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marek Aureliusz</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurel</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antoninus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninus, Marcus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos Antoninos</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco Aurelio</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markus Aʹurelyus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markus Orelyus</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marks Aurelijs</subfield>
+      <subfield code="c">Emperor of Rome</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Avrelij</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Aurel</subfield>
+      <subfield code="c">Kaiser des Römischen Reichs</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus</subfield>
+      <subfield code="c">Antonius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurel</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurèle, Marc</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="c">Römischer Kaiser</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurèle</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Aurel</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antoninus, Marcus Aurelius</subfield>
+      <subfield code="c">Emperor of the Roman Empire</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurèle</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius Antoninus</subfield>
+      <subfield code="c">Kaiser des Römischen Reichs</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Aurelius</subfield>
+      <subfield code="c">Römischer Kaiser</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Aurel</subfield>
+      <subfield code="c">Emperor of the Roman Empire</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius, Marcus</subfield>
+      <subfield code="c">Emperor of the Roman Empire</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Aurelius Antoninus, Marcus</subfield>
+      <subfield code="c">Empereur de l'Empire Romain</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Markos</subfield>
+      <subfield code="c">Antonios</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mark Anthony</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antonius</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marco Aurelio</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antonin, Marc</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antonius</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antonius, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Antonin, Marcus</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc Antonin</subfield>
+      <subfield code="c">Empire Romain, Empereur</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marcus Antoninus</subfield>
+      <subfield code="c">Imperium Romanum, Imperator</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Marc-Aurele</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118532111</subfield>
+      <subfield code="0">(DE-588)118532111</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118532111</subfield>
+      <subfield code="a">Faustina</subfield>
+      <subfield code="b">II.</subfield>
+      <subfield code="c">Römisches Reich, Kaiserin</subfield>
+      <subfield code="d">130-176</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118503383</subfield>
+      <subfield code="0">(DE-588)118503383</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118503383</subfield>
+      <subfield code="a">Antigonus</subfield>
+      <subfield code="c">Carystius</subfield>
+      <subfield code="d">ca. v3. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119106345</subfield>
+      <subfield code="0">(DE-588)119106345</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119106345</subfield>
+      <subfield code="a">Antoninus</subfield>
+      <subfield code="c">Liberalis</subfield>
+      <subfield code="d">ca. 2. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118645471</subfield>
+      <subfield code="0">(DE-588)118645471</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118645471</subfield>
+      <subfield code="a">Apollonius</subfield>
+      <subfield code="c">Dyscolus</subfield>
+      <subfield code="d">ca. 2. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Holzmann, Wilhelm</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119682508</subfield>
+      <subfield code="0">(DE-588)119682508</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119682508</subfield>
+      <subfield code="a">Geßner, Andreas</subfield>
+      <subfield code="d">1513-1559</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Gesner, Konrad</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119731983</subfield>
+      <subfield code="0">(DE-588)119731983</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119731983</subfield>
+      <subfield code="a">K.O.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">121-180</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Lebensdaten nach Pauly neu</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">01-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041141237</subfield>
+      <subfield code="0">(DE-588)4114123-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4114123-4</subfield>
+      <subfield code="a">Kaiser</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">3</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-18</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">TITAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Weitere Ansetzungen aus LCAuth übernommen</subfield>
+      <subfield code="5">01.04.2005 be/ssob/ich</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Ansetzung 700 nach Kl. Pauly</subfield>
+      <subfield code="5">15.04.1991/bestub/kst</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: LCAuth/KIDS</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Lex. alte Welt</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: De vita sua</subfield>
+      <subfield code="f">1626</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: De seipso ...</subfield>
+      <subfield code="f">1680</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: Pensées morales</subfield>
+      <subfield code="f">1659</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: Pensées morales</subfield>
+      <subfield code="f">1681</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: M. Aurelius Antonius, the Roman *</subfield>
+      <subfield code="f">1634</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: M. Aurelius Antoninus, the Roman*</subfield>
+      <subfield code="f">1635</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: Unterhaltungen mit sich selbst. - s.a.</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;: Vita, gesti costumi, discorsi, e*</subfield>
+      <subfield code="f">1600</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;</subfield>
+      <subfield code="f">1634</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;</subfield>
+      <subfield code="f">1635</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus: M. ANTONINI IMPERATORIS ROMANI, ET PHILOSOPHI De seipso seu vita sua Libri XII. Graecè et ... 1558. (VD16 M 963)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus: M. ANTONINI IMPERATORIS ROMANI, ET PHILOSOPHI De seipso seu vita sua Libri XII. Graecè et ... 1559. (VD16 M 964)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Marcus Aurelius Antoninus: Mirabilium narrationum congeries. 1590. (VD16 M 966)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Römischer Kaiser seit 161</subfield>
+    </datafield>
+    <datafield tag="700" ind1="0" ind2="4">
+      <subfield code="9">U:Hans</subfield>
+      <subfield code="a">奥勒留</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="700" ind1="0" ind2="4">
+      <subfield code="9">U:Arab</subfield>
+      <subfield code="9">L:kaz</subfield>
+      <subfield code="a">ماركوس اۆرەليۋس</subfield>
+      <subfield code="d">121-180</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Marcus Aurelius Antoninus &lt;Imperium Romanum, Imperator&gt;</subfield>
+      <subfield code="0">(DE-588a)118577468</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Mark Aurel &lt;Römisches Reich, Kaiser&gt;</subfield>
+      <subfield code="0">(DE-588a)118577468</subfield>
+    </datafield>
+  </record>

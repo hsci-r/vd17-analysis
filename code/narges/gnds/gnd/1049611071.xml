@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1049611071</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20141231003543.0</controlfield>
+    <controlfield tag="008">140404n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1049611071</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1049611071</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1049611071</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1049611071</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DXDE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kiz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">r</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Typographia Reichiana</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Officina Reichiana</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124250211</subfield>
+      <subfield code="0">(DE-588)124250211</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124250211</subfield>
+      <subfield code="a">Reich, Jacob</subfield>
+      <subfield code="d">1635-1690</subfield>
+      <subfield code="4">besi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#owner</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Besitzer</subfield>
+      <subfield code="e">Besitzer</subfield>
+      <subfield code="9">v:Eigentümer</subfield>
+      <subfield code="9">Z:1671-1679</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124250211</subfield>
+      <subfield code="0">(DE-588)124250211</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124250211</subfield>
+      <subfield code="a">Reich, Jacob</subfield>
+      <subfield code="d">1635-1690</subfield>
+      <subfield code="4">besi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#owner</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Besitzer</subfield>
+      <subfield code="e">Besitzer</subfield>
+      <subfield code="9">v:Eigentümer</subfield>
+      <subfield code="9">Z:1684-1790</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037522508</subfield>
+      <subfield code="0">(DE-588)1037522508</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037522508</subfield>
+      <subfield code="a">Gilberti, Matthäus</subfield>
+      <subfield code="4">besi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#owner</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Besitzer</subfield>
+      <subfield code="e">Besitzer</subfield>
+      <subfield code="9">v:Eigentümer</subfield>
+      <subfield code="9">Z:1679-1684</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037522508</subfield>
+      <subfield code="0">(DE-588)1037522508</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037522508</subfield>
+      <subfield code="a">Gilberti, Matthäus</subfield>
+      <subfield code="4">bete</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#contributingPerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beteiligte</subfield>
+      <subfield code="e">Beteiligte</subfield>
+      <subfield code="9">v:Faktor</subfield>
+      <subfield code="9">Z:1671-1679</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1671-1690</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfEstablishmentAndTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041333330</subfield>
+      <subfield code="0">(DE-588)4133333-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4133333-0</subfield>
+      <subfield code="a">Druckerei</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04031541X</subfield>
+      <subfield code="0">(DE-588)4031541-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4031541-1</subfield>
+      <subfield code="a">Königsberg</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">Benzing (Drucker), S. 261 (Pascha Mense); der Königsberger Prof. Jakob Reich kaufte 1671 die Druckerei von Pascha Mense</subfield>
+    </datafield>
+  </record>

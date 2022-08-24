@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118769197</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604085349.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118769197</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118769197</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118769197</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118769197</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)186607695</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)186607695</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118769197</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)127850783</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4108385-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">d</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Wimpina, Konrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Koch, Konrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+      <subfield code="4">nawi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#realIdentity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirklicher Name</subfield>
+      <subfield code="e">Wirklicher Name</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wimpina, Conrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conradus</subfield>
+      <subfield code="c">ex Fais</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Koch, Conrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conradus</subfield>
+      <subfield code="c">Wimpina</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Winpin, Conradus</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">aus Buchheim</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wimpana, Conrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wimpine-Buchensis de Fagis, Conradus</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Buchensis de Fagis, Conradus W.-</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Winpine-Buchensis, Conrad &#152;de&#156;</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fagis, Cunradus &#152;ex&#156;</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fagis, Conradus &#152;ex&#156;</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">aus Buchheim bei Wimpfen</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conradus</subfield>
+      <subfield code="c">de Wimpina</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conradus</subfield>
+      <subfield code="c">Coci de Fagis</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">de Wimpfen</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">Fils de Koch</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">Wympna</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Konrad</subfield>
+      <subfield code="c">Wimpina</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Konrad</subfield>
+      <subfield code="c">von Wimpfen</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Konrad</subfield>
+      <subfield code="c">Koch von Wimpfen</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wimping, Konrad</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wimpina, Conradus</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Winpina, Conradus</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Koch, Konrad (Theologe)</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Conrad</subfield>
+      <subfield code="c">Wimpina</subfield>
+      <subfield code="d">1460-1531</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118622110</subfield>
+      <subfield code="0">(DE-588)118622110</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118622110</subfield>
+      <subfield code="a">Thomas</subfield>
+      <subfield code="c">von Aquin, Heiliger</subfield>
+      <subfield code="d">1225-1274</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118505114</subfield>
+      <subfield code="0">(DE-588)118505114</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118505114</subfield>
+      <subfield code="a">Augustinus, Aurelius</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">354-430</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Fabricius, Georg</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119667878</subfield>
+      <subfield code="0">(DE-588)119667878</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119667878</subfield>
+      <subfield code="a">Fabricius, Jakob</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:Meißen; VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118575449</subfield>
+      <subfield code="0">(DE-588)118575449</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118575449</subfield>
+      <subfield code="a">Luther, Martin</subfield>
+      <subfield code="d">1483-1546</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119760142</subfield>
+      <subfield code="0">(DE-588)119760142</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119760142</subfield>
+      <subfield code="a">Mergenthal, Hans &#152;von&#156;</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119545950</subfield>
+      <subfield code="0">(DE-588)119545950</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119545950</subfield>
+      <subfield code="a">Reineck, Reiner</subfield>
+      <subfield code="d">1541-1595</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)117522864</subfield>
+      <subfield code="0">(DE-588)117522864</subfield>
+      <subfield code="0">https://d-nb.info/gnd/117522864</subfield>
+      <subfield code="a">Reusner, Elias</subfield>
+      <subfield code="d">1555-1612</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100069983</subfield>
+      <subfield code="0">(DE-588)100069983</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100069983</subfield>
+      <subfield code="a">Reusner, Nikolaus</subfield>
+      <subfield code="d">1545-1602</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100256236</subfield>
+      <subfield code="0">(DE-588)100256236</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100256236</subfield>
+      <subfield code="a">Rörer, Georg</subfield>
+      <subfield code="d">1492-1557</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104161728</subfield>
+      <subfield code="0">(DE-588)104161728</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104161728</subfield>
+      <subfield code="a">Bugenhagen, Johann</subfield>
+      <subfield code="d">1527-1594</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.XX.146X-16.06.1531</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1460-1531</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr auch 1464, unklar</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Prof.  Dr. theol.</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041992520</subfield>
+      <subfield code="0">(DE-588)4199252-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4199252-0</subfield>
+      <subfield code="a">Rektor</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040086062</subfield>
+      <subfield code="0">(DE-588)4008606-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008606-9</subfield>
+      <subfield code="a">Buchen (Odenwald)</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040017559</subfield>
+      <subfield code="0">(DE-588)4001755-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4001755-2</subfield>
+      <subfield code="a">Amorbach</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040352064</subfield>
+      <subfield code="0">(DE-588)4035206-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4035206-7</subfield>
+      <subfield code="a">Leipzig</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040181227</subfield>
+      <subfield code="0">(DE-588)4018122-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4018122-4</subfield>
+      <subfield code="a">Frankfurt (Oder)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">3</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SAEBI</subfield>
+      <subfield code="5">DE-14</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B, M, ADB, NUC, BN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Bio-Bibliographien Mark Brandenburg mit Berlin-Cölln 1506-1640</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Sectarum errorum, hallutinationum et schismatum, ab onigine ferme Christian*</subfield>
+      <subfield code="f">1528</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Scriptorum insignium qui in Lipsiensi, Wittenbergensi, Francofurdiana ad V.*</subfield>
+      <subfield code="f">1839</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Epithoma circa Sentent. lib.</subfield>
+      <subfield code="f">1508</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Farrago Miscellaneorum</subfield>
+      <subfield code="f">1531</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Oratio habita Berlinii in ede dive virginis Marie, dum illic sacris initiar*</subfield>
+      <subfield code="f">1513</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Oratio gratulatoria pro Reverendissimo D. D. Melchiar. Episcopo Brixinensi,*</subfield>
+      <subfield code="f">1503</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Oratio habita ad Reverendissimum D. D. Raymundum Cardinalem Gurtzensem ... *</subfield>
+      <subfield code="f">1503</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Orationum sive Sermonum liber unus</subfield>
+      <subfield code="f">1531</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Conrad: Sectarum errorum, hallutinationum et schismatum, ab origine ferme Christian*</subfield>
+      <subfield code="f">1528</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gegen die bekanntnus M. Luthers auff den yetzigen Reychßtag zu Augspurg ... Christenlich *</subfield>
+      <subfield code="f">1530</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: Oratio habita ad Reuerẽdissimũ ĩ christo patrem et dñm.dñm Raymundũ Tituli sancte ...  1503.  (VD16 K 1523)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: Responsio et Apologia Conradi Wimpine cõtra laconismũ cuiusda\[m] medici \[pro] ...  1503.  (VD16 K 1532)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Thomas &lt;von Aquino&gt;: Opusculum beati Thome de sacramento eucharistie ad modum decem predicamẽtorũ ad petitionẽ ...  1508.  (VD16 T 1029)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Augustinus, Aurelius: De mirabilius sacre scripture: Tres mirabiles ... libri: ... [Hrsg.v.Konrad Koch].  1512.  (VD16 A 4298)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: Apologeticus in sacretheologie defensione\[m] Aduersus eos qui nixi sunt eidem fontem ...  1501.  (VD16 ZV 9040)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: .  1508.  (VD16 ZV 9043)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: De nobilitate caelestis corporis.  1503.  (VD16 ZV 9042)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: FARRAGO MISCELLANEORVM CONRADI VVIMPINAE A FAGIS, eximij bonarum artium,philosophiae at\[que] ...  1531.  (VD16 K 1529)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: De diuina prouidentia: contra mũdi sapientũ circa hãc varia \[et] mirabilia erramẽta. ...  1516.  (VD16 K 1512)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Koch, Konrad: Oratio habita in Exceptione Reuerendissimi in Christo patris et dñi dñi Raymundi ...  1503.  (VD16 K 1521)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Stud. Univ. Leipzig; Magister ebd. (1485); Bacc. theol. u. Lehrer Univ. Leipzig (ab 1491); Rektor ebd. (1494); Promotion Univ. Leipzig (1503); Gründungsrektor der Univ. Frankfurt/O. (1506); Prof. theol. ebd.; Reformationsgegner (Thesenreihe gegen Luther, 1518); Teilnahme am Augsburger Reichstag (1530); gestorben im Kloster Amorbach; Ansetzung unter dem überwiegend bekannteren Pseud.</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">SWD</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Wimpina, Konrad</subfield>
+      <subfield code="0">(DE-588a)118769197</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Wimpina, Konrad</subfield>
+      <subfield code="0">(DE-588a)186607695</subfield>
+    </datafield>
+  </record>

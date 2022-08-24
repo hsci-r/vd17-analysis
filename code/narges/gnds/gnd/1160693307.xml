@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1160693307</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20191204180159.0</controlfield>
+    <controlfield tag="008">180607n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1160693307</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1160693307</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1160693307</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1160693307</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Rietmann, Heinrich</subfield>
+      <subfield code="d">1648-1722</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rietmannus, Henricus</subfield>
+      <subfield code="d">1648-1722</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1648-1722</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041494679</subfield>
+      <subfield code="0">(DE-588)4149467-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4149467-2</subfield>
+      <subfield code="a">Diakon</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040350886</subfield>
+      <subfield code="0">(DE-588)4035088-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4035088-5</subfield>
+      <subfield code="a">Lehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)981015670</subfield>
+      <subfield code="0">(DE-588)7540658-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7540658-5</subfield>
+      <subfield code="a">Respondent</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040519937</subfield>
+      <subfield code="0">(DE-588)4051993-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4051993-4</subfield>
+      <subfield code="a">Schaffhausen</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040374467</subfield>
+      <subfield code="0">(DE-588)4037446-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4037446-4</subfield>
+      <subfield code="a">Marburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041927796</subfield>
+      <subfield code="0">(DE-588)4192779-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4192779-5</subfield>
+      <subfield code="a">Neunkirch</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040870685</subfield>
+      <subfield code="0">(DE-588)4087068-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4087068-6</subfield>
+      <subfield code="a">Beggingen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040519937</subfield>
+      <subfield code="0">(DE-588)4051993-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4051993-4</subfield>
+      <subfield code="a">Schaffhausen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040885984</subfield>
+      <subfield code="0">(DE-588)4088598-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4088598-7</subfield>
+      <subfield code="a">Büsingen am Hochrhein</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042331013</subfield>
+      <subfield code="0">(DE-588)4233101-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4233101-8</subfield>
+      <subfield code="a">Illnau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Stadtarchiv Schaffhausen</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pauli, Reinhold: Disputationum Theologicarum Ad Walenburchiorum Compendium controversiarum particularium Qvarta Ad Caput III. &amp; IV. De Sacra Scriptura, Et Libris Canonicis Et Apocryphis</subfield>
+      <subfield code="f">1673</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Heinrich Rietmann (1648-1722), wirkte nach seinem Theologiestudium in Marburg seit 1676 vorerst als Diakon in Neunkirch; er wurde 1683 Pfarrer in Beggingen, 1688 Lehrer an der lateinischen Schule in Schaffhausen und Seelsorger in Büsingen und 1691 Pfarrer in Illnau, um schließlich 1699 als Ortsgeistlicher nach Neunkirch zurückzukehren</subfield>
+    </datafield>
+  </record>

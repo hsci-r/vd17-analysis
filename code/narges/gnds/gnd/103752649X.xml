@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">103752649X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20211115094613.0</controlfield>
+    <controlfield tag="008">130726n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">103752649X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/103752649X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)103752649X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)103752649X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8157</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">r</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Schlegel, Johann Georg</subfield>
+      <subfield code="d">1654-1716</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schlegel, Joannes Georgius</subfield>
+      <subfield code="d">1654-1716</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schlögl, Johann Georg</subfield>
+      <subfield code="d">1654-1716</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schlegl, Johann Georg</subfield>
+      <subfield code="d">1654-1716</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037508254</subfield>
+      <subfield code="0">(DE-588)1037508254</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037508254</subfield>
+      <subfield code="a">Schwendimann, Wolfgang</subfield>
+      <subfield code="d">1678-1734</subfield>
+      <subfield code="4">bezb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionalRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung beruflich</subfield>
+      <subfield code="e">Beziehung beruflich</subfield>
+      <subfield code="9">v:Nachfolger</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)100450313X</subfield>
+      <subfield code="0">(DE-588)6146183-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/6146183-0</subfield>
+      <subfield code="a">Klosterdruckerei</subfield>
+      <subfield code="g">Sankt Gallen</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">Z:1689-1691</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)108020959X</subfield>
+      <subfield code="0">(DE-588)108020959X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/108020959X</subfield>
+      <subfield code="a">Johann Georg Schlegel</subfield>
+      <subfield code="g">Firma</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1654-1716</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040130916</subfield>
+      <subfield code="0">(DE-588)4013091-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013091-5</subfield>
+      <subfield code="a">Drucker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040630048</subfield>
+      <subfield code="0">(DE-588)4063004-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4063004-3</subfield>
+      <subfield code="a">Verlag</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04051594X</subfield>
+      <subfield code="0">(DE-588)4051594-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4051594-1</subfield>
+      <subfield code="a">Sankt Gallen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1689-1691</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040660095</subfield>
+      <subfield code="0">(DE-588)4066009-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066009-6</subfield>
+      <subfield code="a">Wien</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1693-1716</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Reske, 2015, S. 888 u. 1069</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Benzing (Drucker), S. 404, 493</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Paisey, S. 226</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Geb. in Schwyz; 1689-1691 als Faktor für die Klosterdruckerei Sankt Gallen tätig, ab 1693 Universitätsbuchdrucker in Wien; Nachfolger in Wien: sein Cousin Wolfgang Schwendimann</subfield>
+    </datafield>
+  </record>

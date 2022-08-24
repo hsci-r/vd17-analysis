@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">1019764988</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20180925175439.0</controlfield>
+    <controlfield tag="008">120214n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1019764988</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1019764988</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1019764988</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1019764988</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089672810</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1055578889</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)1019764988</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-Mb112</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0012</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+      <subfield code="c">XA-AT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">d</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Daniel</subfield>
+      <subfield code="c">Brixen, Bischof</subfield>
+      <subfield code="d">1582-1628</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zeno, Daniel</subfield>
+      <subfield code="d">1582-1628</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zen, Daniel</subfield>
+      <subfield code="d">1582-1628</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1582-1628</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-24.09.1628</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040069494</subfield>
+      <subfield code="0">(DE-588)4006949-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4006949-7</subfield>
+      <subfield code="a">Bischof</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042090695</subfield>
+      <subfield code="0">(DE-588)4209069-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4209069-6</subfield>
+      <subfield code="a">Dompropst</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)949675075</subfield>
+      <subfield code="0">(DE-588)4441540-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4441540-0</subfield>
+      <subfield code="a">Dekan</subfield>
+      <subfield code="g">Kirche</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)942806654</subfield>
+      <subfield code="0">(DE-588)4356844-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4356844-0</subfield>
+      <subfield code="a">Vigo di Fassa</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040083063</subfield>
+      <subfield code="0">(DE-588)4008306-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008306-8</subfield>
+      <subfield code="a">Brixen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040330435</subfield>
+      <subfield code="0">(DE-588)4033043-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4033043-6</subfield>
+      <subfield code="a">Krems an der Donau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040082164</subfield>
+      <subfield code="0">(DE-588)4008216-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008216-7</subfield>
+      <subfield code="a">Breslau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040448282</subfield>
+      <subfield code="0">(DE-588)4044828-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044828-9</subfield>
+      <subfield code="a">Passau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040083063</subfield>
+      <subfield code="0">(DE-588)4008306-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008306-8</subfield>
+      <subfield code="a">Brixen</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Mortzfeld, Peter: Katalog der graphischen Porträts in der Herzog-August-Bibliothek Wolfenbüttel, A 25570</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Maier, Jacob: Assertiones Philosophicae De Quinque Generalibus Viventium Potentiis. - 1605</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus dem ladinischen Fassa-Tal; Studium in Dillingen; 1609  Dr. theol; 1610 Priesterweihe in Brixen, begleitete 1611  die Tiroler Erzherzogin Anna, Braut des Kaisers Matthias, nach Wien; 1615 Ehrenkaplan des Fürstbischofs  Karl von Österreich, zugleich  Dekanalpfarrer zu Krems/Donau u. Kanonikus zu Breslau u.  Passau; 1627 zum Fürstbischof gewählt</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Zen, Daniel</subfield>
+      <subfield code="0">(DE-588a)1019764988</subfield>
+    </datafield>
+  </record>

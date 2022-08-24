@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1224851102</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210111172434.0</controlfield>
+    <controlfield tag="008">210111n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1224851102</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1224851102</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1224851102</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1224851102</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ellingrod, Johann Heinrich</subfield>
+      <subfield code="d">1648-1702</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ellingrodt, Johann Heinrich</subfield>
+      <subfield code="d">1648-1702</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ellingrodt, Johannes Henricus</subfield>
+      <subfield code="d">1648-1702</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ellingrod, Johannes Henricus</subfield>
+      <subfield code="d">1648-1702</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1034720783</subfield>
+      <subfield code="0">(DE-588)1034720783</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1034720783</subfield>
+      <subfield code="a">Ellingerodt, Laurentius</subfield>
+      <subfield code="d">1619-1679</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1648-1702</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Lebensdaten ca.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04003660X</subfield>
+      <subfield code="0">(DE-588)4003660-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003660-1</subfield>
+      <subfield code="a">Aurich</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)987232932</subfield>
+      <subfield code="0">(DE-588)7597856-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7597856-8</subfield>
+      <subfield code="a">Remels</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Muchall K. A., Laurentius Ellingrod</subfield>
+      <subfield code="u">https://vereine.genealogy.net/UG/pdf/Ellingrod.pdf</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De Positivâ Animarum a corporibus post Mortem Separatione et naturali Immortalitate In Illustrissima ad Albim Academia Sub Præsidio... Dni. M. Pauli Linsii, Marpurg. Hassi... Publicè disputabit Johannes Henricus Ellingrod, Aurica Frisius. Ad diem 28. Januar. M.DC.LXXIV. H.L.Q.C.</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Aurich, Sohn des ev. Geistlichen Laurentius Ellingrod, Immatr. am 20.05.1671 in Königsberg, am 11.10.1673 in Wittenberg, Mag. Phil. am 29.04.1674, Pfarrer an der St.-Martin Kirche in Remels von 1674 bis 1702. Heiratet am 19.03.1676 Anna Margaretha Welms, Tochter des Ratsherren und Apotheker zu Aurich Johann W.</subfield>
+    </datafield>
+  </record>

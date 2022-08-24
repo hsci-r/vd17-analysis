@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">116298642</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220323003103.0</controlfield>
+    <controlfield tag="008">951123n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">116298642</subfield>
+      <subfield code="0">http://d-nb.info/gnd/116298642</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)116298642</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)116298642</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1055733299</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)116298642</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-BE</subfield>
+      <subfield code="c">XA-ES</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Bournonville, Alexandre Hyppolyte Balthasar &#152;de&#156;</subfield>
+      <subfield code="d">1616-1690</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bournonville, Alexandre Hyppolyte Balthasar &#152;de&#156;</subfield>
+      <subfield code="c">II.</subfield>
+      <subfield code="d">1616-1690</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bournonville, Alexander &#152;von und zu&#156;</subfield>
+      <subfield code="d">1616-1690</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1019322640</subfield>
+      <subfield code="0">(DE-588)1019322640</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1019322640</subfield>
+      <subfield code="a">Bournonville, Alexandre &#152;de&#156;</subfield>
+      <subfield code="d">1585-1656</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1616-1690</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:abweichendes Geburtsjahr: 1620</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)94658351X</subfield>
+      <subfield code="0">(DE-588)4398978-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4398978-0</subfield>
+      <subfield code="a">Feldmarschall</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040004643</subfield>
+      <subfield code="0">(DE-588)4000464-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000464-8</subfield>
+      <subfield code="a">Adel</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041884620</subfield>
+      <subfield code="0">(DE-588)4188462-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4188462-0</subfield>
+      <subfield code="a">Vizekönig</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041158350</subfield>
+      <subfield code="0">(DE-588)4115835-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4115835-0</subfield>
+      <subfield code="a">Pamplona</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand: 18.03.2022</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Alexandre_II._de_Bournonville</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Bournonville, Alexandre Hyppolyte Balthasar /de</subfield>
+      <subfield code="0">(DE-588a)116298642</subfield>
+    </datafield>
+  </record>

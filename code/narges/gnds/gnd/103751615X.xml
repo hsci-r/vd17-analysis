@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">103751615X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220617231846.0</controlfield>
+    <controlfield tag="008">130726n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">103751615X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/103751615X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)103751615X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)103751615X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">2.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">r</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Gebhard, Johann</subfield>
+      <subfield code="d">1628-1687</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gebhardt, Johann</subfield>
+      <subfield code="d">1628-1687</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gebhard, Hans</subfield>
+      <subfield code="d">1628-1687</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gebhardt, Hans</subfield>
+      <subfield code="d">1628-1687</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gebhardus, Johannes</subfield>
+      <subfield code="d">1628-1687</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037526007</subfield>
+      <subfield code="0">(DE-588)1037526007</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037526007</subfield>
+      <subfield code="a">Amelung, Johann Georg</subfield>
+      <subfield code="d">1649-1702</subfield>
+      <subfield code="4">bezb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionalRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung beruflich</subfield>
+      <subfield code="e">Beziehung beruflich</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1004503237</subfield>
+      <subfield code="0">(DE-588)6146174-X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/6146174-X</subfield>
+      <subfield code="a">Johann Gebhard Erben</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+      <subfield code="9">v:Nachfolgeinstitution der Druckerei</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1628-1687</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.XX.1628-02.06.1687</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:Todesdatum vor 02.06.1687</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041468015</subfield>
+      <subfield code="0">(DE-588)4146801-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4146801-6</subfield>
+      <subfield code="a">Buchdrucker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+      <subfield code="9">Z:1659-1687</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040130916</subfield>
+      <subfield code="0">(DE-588)4013091-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013091-5</subfield>
+      <subfield code="a">Drucker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:1659-1687</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041383435</subfield>
+      <subfield code="0">(DE-588)4138343-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4138343-6</subfield>
+      <subfield code="a">Verleger</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+      <subfield code="9">Z:1659-1687</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)004238354</subfield>
+      <subfield code="0">(DE-588)1039397-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1039397-3</subfield>
+      <subfield code="a">Muggendorf</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040427420</subfield>
+      <subfield code="0">(DE-588)4042742-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4042742-0</subfield>
+      <subfield code="a">Nürnberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Errichtung einer Druckerei scheiterte</subfield>
+      <subfield code="9">Z:1659</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040050564</subfield>
+      <subfield code="0">(DE-588)4005056-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4005056-7</subfield>
+      <subfield code="a">Bayreuth</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1659-1687</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040050564</subfield>
+      <subfield code="0">(DE-588)4005056-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4005056-7</subfield>
+      <subfield code="a">Bayreuth</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA</subfield>
+      <subfield code="b">II 431, 405</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Reske</subfield>
+      <subfield code="b">2. Auflage 2015, Seite 104-105</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">nach Johann Gebhards Tod wurde die Druckerei von seiner Tochter Esther und ihrem Mann an Johann Georg Amelung verkauft, der seit 1687 hier als Faktor gearbeitet hatte; noch 1690 nutzten die Erben für ihre Firmierung die Wendung "Gebhard Schriften" bzw. "Literis Gebhardianis"</subfield>
+    </datafield>
+  </record>

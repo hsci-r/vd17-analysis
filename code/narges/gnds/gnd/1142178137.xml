@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1142178137</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220321133841.0</controlfield>
+    <controlfield tag="008">171024n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1142178137</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1142178137</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1142178137</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1142178137</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">CH-BeUB</subfield>
+      <subfield code="c">CH-BeUB</subfield>
+      <subfield code="9">r:CH-BeUB</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">3030</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">u</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">wit</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="t">Repertorium morale</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="t">Dictionarium morale</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="t">Dictionarium biblicum</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="t">Repertorium morale utriusque Testamenti</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="t">Dictionarius</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119521504</subfield>
+      <subfield code="0">(DE-588)119521504</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119521504</subfield>
+      <subfield code="a">Berchorius, Petrus</subfield>
+      <subfield code="d">1290-1362</subfield>
+      <subfield code="4">aut1</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#firstAuthor</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Verfasserschaft1</subfield>
+      <subfield code="e">Verfasserschaft1</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Lex. MA</subfield>
+    </datafield>
+  </record>

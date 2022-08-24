@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">116459328</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220310174529.0</controlfield>
+    <controlfield tag="008">960205n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">116459328</subfield>
+      <subfield code="0">http://d-nb.info/gnd/116459328</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)116459328</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)116459328</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)116459328</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)102207267</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100281303</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">d</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Feller, Joachim Friedrich</subfield>
+      <subfield code="d">1673-1726</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">J. F. F. F. W. G. S.</subfield>
+      <subfield code="d">1673-1726</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Feller, Joachim Fridrich</subfield>
+      <subfield code="d">1673-1726</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fellerus, Joachimus Fridericus</subfield>
+      <subfield code="d">1673-1726</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fellerus, Ioachimus Fridericus</subfield>
+      <subfield code="d">1673-1726</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116459301</subfield>
+      <subfield code="0">(DE-588)116459301</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116459301</subfield>
+      <subfield code="a">Feller, Joachim</subfield>
+      <subfield code="d">1638-1691</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1673-1726</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">20.12.1673-15.02.1726</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:abweichendes Geburtsdatum 30.09.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040250989</subfield>
+      <subfield code="0">(DE-588)4025098-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025098-2</subfield>
+      <subfield code="a">Historiker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041565819</subfield>
+      <subfield code="0">(DE-588)4156581-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4156581-2</subfield>
+      <subfield code="a">Genealoge</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040028658</subfield>
+      <subfield code="0">(DE-588)4002865-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4002865-3</subfield>
+      <subfield code="a">Archivar</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040352064</subfield>
+      <subfield code="0">(DE-588)4035206-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4035206-7</subfield>
+      <subfield code="a">Leipzig</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040233499</subfield>
+      <subfield code="0">(DE-588)4023349-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023349-2</subfield>
+      <subfield code="a">Hannover</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040651053</subfield>
+      <subfield code="0">(DE-588)4065105-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4065105-8</subfield>
+      <subfield code="a">Weimar</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DBA I 312,370</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Niceron, Jean Pierre: Nachrichten von den Begebenheiten und Schriften berümter Gelehrten, Bd. 15 (1757), S. 201-205</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Des K. Gr. Brit. Chur- und fürstlichen Braunschw.-Lüneburgischen ..</subfield>
+      <subfield code="f">1717</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Monumenta varia inedita</subfield>
+      <subfield code="f">1714</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Monumenta inedita</subfield>
+      <subfield code="f">1718</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Leibniz, Gottfried Wilhelm: Leibnitiana Otium Hanoveranum</subfield>
+      <subfield code="f">1718</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Leibniz, Gottfried Wilhelm: Leibnitiana Otium Hanoveranum</subfield>
+      <subfield code="f">1737</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Stieler, Kaspar von: Teutsche Secretariat-Kunst</subfield>
+      <subfield code="f">1726</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Birken, Sigismund von: Königlich- auch Chur- und Fürstlich Sächsischer Helden-Saal</subfield>
+      <subfield code="f">1734</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Des königlichen Groß-Britannischen, Chur- und fürstlichen ..</subfield>
+      <subfield code="f">1717</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Monumentorum ineditorum variis que linguis conscriptorum, historiam inprimis ..</subfield>
+      <subfield code="f">1718</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Historiker; Sekretär bei Leibniz in Hannover; ab 1704 Kanzleisekretär und Archivsekretär in Weimar</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Feller, Joachim Friedrich</subfield>
+      <subfield code="0">(DE-588a)116459328</subfield>
+    </datafield>
+  </record>

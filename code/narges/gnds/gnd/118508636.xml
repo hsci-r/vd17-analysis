@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118508636</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220311162745.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118508636</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118508636</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118508636</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118508636</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118508636</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)127257489</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)126031770</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4005422-6</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto Francesco Romolo</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto Francesco Romolo</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmin, Robert</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto</subfield>
+      <subfield code="c">Santo</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Romulus, Franciscus</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Torti, Matteo</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tortus, Matthaeus</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Forti, Matteo</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Rob.</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Robertus</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmino</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmin, Robert Franz Romulus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmin</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmin, Robert</subfield>
+      <subfield code="c">saint</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmin, Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmin</subfield>
+      <subfield code="c">Kardinal</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmin, Robert Francis</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Belarminus, Robertus</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Robert</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Robertus</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Robertus</subfield>
+      <subfield code="c">Cardinalis</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Robertus Franciscus Romulus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarminus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ballarmīnūs, Rūbārtūs</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pellarminos</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Robertus Bellarminus</subfield>
+      <subfield code="c">Sanctus</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bell., Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmine</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmini, Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmini, Roberto</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmini, Robertus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmine</subfield>
+      <subfield code="c">Saint</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bellarmino</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmino, Roberto Francesco</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Belarminio, Roberto</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminus, Robertus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarmine, Robert</subfield>
+      <subfield code="c">saint</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Franciscus Romulus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bellarminius, Robertus</subfield>
+      <subfield code="c">Heiliger</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Belarminio, Roberto</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Belljarmin</subfield>
+      <subfield code="c">Kardinal</subfield>
+      <subfield code="d">1542-1621</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Cervini, Cinthia</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Mutter</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119698617</subfield>
+      <subfield code="0">(DE-588)119698617</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119698617</subfield>
+      <subfield code="a">Hansonius, Peter</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119281457</subfield>
+      <subfield code="0">(DE-588)119281457</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119281457</subfield>
+      <subfield code="a">Hotman, François</subfield>
+      <subfield code="d">1524-1590</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119716305</subfield>
+      <subfield code="0">(DE-588)119716305</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119716305</subfield>
+      <subfield code="a">Hueber, Johannes Christoph</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119728788</subfield>
+      <subfield code="0">(DE-588)119728788</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119728788</subfield>
+      <subfield code="a">Kiening, Matthaeus</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)138452180</subfield>
+      <subfield code="0">(DE-588)138452180</subfield>
+      <subfield code="0">https://d-nb.info/gnd/138452180</subfield>
+      <subfield code="a">Sartorius, Johannes</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:Arnsberg; VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119604108</subfield>
+      <subfield code="0">(DE-588)119604108</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119604108</subfield>
+      <subfield code="a">Alciato, Andreas</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119615320</subfield>
+      <subfield code="0">(DE-588)119615320</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119615320</subfield>
+      <subfield code="a">B.C.P.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119641828</subfield>
+      <subfield code="0">(DE-588)119641828</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119641828</subfield>
+      <subfield code="a">Ciotti, Giovanni Battista</subfield>
+      <subfield code="d">1564-1635</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119641836</subfield>
+      <subfield code="0">(DE-588)119641836</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119641836</subfield>
+      <subfield code="a">Ciotto, Giovanni Battista</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100093876</subfield>
+      <subfield code="0">(DE-588)100093876</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100093876</subfield>
+      <subfield code="a">Cujas, Jacques</subfield>
+      <subfield code="d">1522-1590</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000800929</subfield>
+      <subfield code="0">(DE-588)80092-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/80092-2</subfield>
+      <subfield code="a">Jesuiten</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1542-1621</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">04.10.1542-17.09.1621</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04163313X</subfield>
+      <subfield code="0">(DE-588)4163313-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4163313-1</subfield>
+      <subfield code="a">Kardinal</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)043175813</subfield>
+      <subfield code="0">(DE-588)4317581-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4317581-8</subfield>
+      <subfield code="a">Kirchenlehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042494680</subfield>
+      <subfield code="0">(DE-588)4249468-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4249468-0</subfield>
+      <subfield code="a">Inquisitor</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040399028</subfield>
+      <subfield code="0">(DE-588)4039902-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4039902-3</subfield>
+      <subfield code="a">Mönch</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04024055X</subfield>
+      <subfield code="0">(DE-588)4024055-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4024055-1</subfield>
+      <subfield code="a">Heiliger</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041152115</subfield>
+      <subfield code="0">(DE-588)4115211-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4115211-6</subfield>
+      <subfield code="a">Montepulciano</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040504719</subfield>
+      <subfield code="0">(DE-588)4050471-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050471-2</subfield>
+      <subfield code="a">Rom</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040504719</subfield>
+      <subfield code="0">(DE-588)4050471-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050471-2</subfield>
+      <subfield code="a">Rom</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">3</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-18</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">WBIS</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Robert_Bellarmin</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Apologia pro responsione sua ad librum Jacobi (Angliae) Regis, ..</subfield>
+      <subfield code="f">1610</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Appendix ad libros de cultu imaginum. 1600. (VD16 B 1615)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">CONTRADICTIONES DOCTORVM NVNC-ROMANE ECCLESIAE. JNDICE ET TESTE ROBERTO BELLARMINO ... 1597. (VD16 B 1608)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De arte bene moriendi</subfield>
+      <subfield code="f">1620</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De scriptoribus ecclesiasticis liber unus</subfield>
+      <subfield code="f">1645</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dichiaratione della dottrina christiana</subfield>
+      <subfield code="f">1720</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Disputatio de primatu episcopi Rom. 1585. (VD16 K 510)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Disputationes ... de controversiis Christianae fidei adversus huius temporis haereticos. 1590. (VD16 B 1611)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Disputationes de controversiis christianae fidei. 1598. (VD16 B 1609)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Disputationes de controversiis christianae fidei. 1598. (VD16 B 1610)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">DISPVTATIONVM ROBERTI BELLARMINI POLITIANI, SOCIETATIS IESV. DE CONTROVERSIIS ... 1593. (VD16 ZV 21333)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">DISPVTATIONVM ROBERTI BELLARMINI POLITIANI E SOCIETATE IESV, DE CONTROVERSIIS ... 1597. (VD16 ZV 21218)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Dottrina christiana ..</subfield>
+      <subfield code="f">1614</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">INSTITVTIONES LINGVAE HEBRAICAE, EX OPTIMIS QVIBVSQVE AVCTORIBVS COLLECTAE, ET QVANTA ... 1580. (VD16 B 1616)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">RESPONSIO AD PRAECIPVA capita Apologiae, QVAE FALSO CATHOLIca inscribitur, pro ... 1588. (VD16 B 1625)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Risposta ... a due libretti</subfield>
+      <subfield code="f">1606</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Risposta ... al trattato dei sette theologi di Venetia</subfield>
+      <subfield code="f">1606</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Italienischer katholischer Theologe; Kardinal von "Santa Maria in Via"</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2="7">
+      <subfield code="a">Bellarmino, Roberto Francesco Romolo</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="2">naf</subfield>
+      <subfield code="9">v:Saint, ;1542-1621</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Bellarmino, Roberto</subfield>
+      <subfield code="0">(DE-588a)118508636</subfield>
+    </datafield>
+  </record>

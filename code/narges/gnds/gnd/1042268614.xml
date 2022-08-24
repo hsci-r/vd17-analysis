@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1042268614</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220211091036.0</controlfield>
+    <controlfield tag="008">130925n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1042268614</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1042268614</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1042268614</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1042268614</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-29</subfield>
+      <subfield code="c">DE-29</subfield>
+      <subfield code="9">r:DE-29</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8157</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DK</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Clasenius, Nathanael</subfield>
+      <subfield code="d">1580-16XX</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Clasen, Nathan</subfield>
+      <subfield code="d">1580-16XX</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Clasenius, Nathanael Guilhelmi</subfield>
+      <subfield code="d">1580-16XX</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Claesz, Nathanael</subfield>
+      <subfield code="d">1580-16XX</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Claessenius, Nathanael</subfield>
+      <subfield code="d">1580-16XX</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000361461</subfield>
+      <subfield code="0">(DE-588)36146-X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/36146-X</subfield>
+      <subfield code="a">Universität Basel</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1580-16XX</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040541444</subfield>
+      <subfield code="0">(DE-588)4054144-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4054144-7</subfield>
+      <subfield code="a">Seeland</subfield>
+      <subfield code="g">Dänemark, Insel</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040046176</subfield>
+      <subfield code="0">(DE-588)4004617-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4004617-5</subfield>
+      <subfield code="a">Basel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040201376</subfield>
+      <subfield code="0">(DE-588)4020137-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4020137-5</subfield>
+      <subfield code="a">Genf</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040741184</subfield>
+      <subfield code="0">(DE-588)4074118-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4074118-7</subfield>
+      <subfield code="a">Leiden</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17/29</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlage (Dissertation)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Basler Matrikel, Bd. 3, S. 101, Nr. 106</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theses medicae de nephritico dolore.</subfield>
+      <subfield code="f">1609</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Medizinstudent aus Seeland in Dänemark, 1609 Respondent in Basel; wohl ein Sohn des reformierten Prädikanten Nicolai (Gulielmus) of Guilliam Claesz, gest. 1615; Student: 07.01.1603 Genf; 28.03.1608 Leyden; in Basel: 1609 stud. med.; 08.06.1609 dr. med.</subfield>
+    </datafield>
+  </record>

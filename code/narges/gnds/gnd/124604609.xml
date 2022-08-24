@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">124604609</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20131218011432.0</controlfield>
+    <controlfield tag="008">030417n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">124604609</subfield>
+      <subfield code="0">http://d-nb.info/gnd/124604609</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)124604609</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)124604609</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1035136732</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1034694804</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)124604609</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Schulenburg, Georg &#152;von der&#156;</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schulenburg-Beetzendorf, Georg &#152;von der&#156;</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schulenburg-Beetzendorf, Georg &#152;von der&#156;</subfield>
+      <subfield code="c">der Reiche</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schulenburg-Beetzendorf, Jürgen &#152;von der&#156;</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Beetzendorf, Georg von der Schulenburg-</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Beetzendorf, Jürgen von der Schulenburg-</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Schulenburg, Jürgen &#152;von der&#156;</subfield>
+      <subfield code="d">1535-1619</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)121480216</subfield>
+      <subfield code="0">(DE-588)121480216</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121480216</subfield>
+      <subfield code="a">Schulenburg, Lucie &#152;von der&#156;</subfield>
+      <subfield code="d">1542-1621</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1535-1619</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">31.08.1535-20.04.1619</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040554090</subfield>
+      <subfield code="0">(DE-588)4055409-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4055409-0</subfield>
+      <subfield code="a">Soldat</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040985504</subfield>
+      <subfield code="0">(DE-588)4098550-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4098550-7</subfield>
+      <subfield code="a">Wittingen-Knesebeck</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04008065X</subfield>
+      <subfield code="0">(DE-588)4008065-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008065-1</subfield>
+      <subfield code="a">Braunschweig</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04008065X</subfield>
+      <subfield code="0">(DE-588)4008065-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008065-1</subfield>
+      <subfield code="a">Braunschweig</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">NDSBIO</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Danneil, Johann Friedrich: Das Geschlecht der von der Schulenburg</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">BBL (2006), S. 638</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 08/32, 5084</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Wagner, Johann: Pia &amp; salutaris fragilitatis humanae consideratio. Das ist: Gottselige und heilsame Betrachtung/ der nichtigkeit un[d] fluchtigkeit menschliches lebens ... - 1619</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Setzte sich mit seiner Frau Lucia von Veltheim im Braunschweiger Stadtteil Hagen zur Ruhe; hatte entscheidenden Anteil an der Abwehr des Überfalls durch Herzog Julius auf die Stadt im Oktober 1605; zusammen mit seiner Gattin in der Katharinenkirche beigesetzt</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Schulenburg, Georg /von der</subfield>
+      <subfield code="0">(DE-588a)124604609</subfield>
+    </datafield>
+  </record>

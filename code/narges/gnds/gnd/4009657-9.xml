@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040096572</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210728074802.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4009657-9</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4009657-9</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">2940213</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 010 04 49</subfield>
+      <subfield code="e">E 010 04 49</subfield>
+      <subfield code="f">N 052 37 21</subfield>
+      <subfield code="g">N 052 37 21</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2940213</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E010.080470</subfield>
+      <subfield code="e">E010.080470</subfield>
+      <subfield code="f">N052.622639</subfield>
+      <subfield code="g">N052.622639</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2940213</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040096572</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4009657-9</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)2006907-8</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)10309580-9</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-101c)320354407</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)2006907-8</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4009657-9</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-NI</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">435937</subfield>
+      <subfield code="9">d:3</subfield>
+      <subfield code="9">t:2007-01-01</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Celle</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Celle</subfield>
+      <subfield code="b">Magistrat</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Magistrat</subfield>
+      <subfield code="g">Celle</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Celle</subfield>
+      <subfield code="b">Oberstadtdirektor</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Oberstadtdirektor</subfield>
+      <subfield code="g">Celle</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Celle</subfield>
+      <subfield code="b">Hauptamt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Hauptamt</subfield>
+      <subfield code="g">Celle</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Stadt Celle</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Zelle</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Cellis</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Celle an der Aar</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Celle</subfield>
+      <subfield code="g">Niedersachsen</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orts-Mü. 28</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006 1.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GDK</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orbis Latinus</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 24.02.2020</subfield>
+      <subfield code="u">https://www.celle.de</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Kreisstadt des gleichnamigen Landkreises, 1292 anstelle der 990 urkundl. erwähnten (vor 1249) Stadt Altencelle neu angelegt, 1301 Stadtrecht</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Celle</subfield>
+      <subfield code="0">(DE-588c)4009657-9</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Celle</subfield>
+      <subfield code="0">(DE-588b)2006907-8</subfield>
+    </datafield>
+  </record>

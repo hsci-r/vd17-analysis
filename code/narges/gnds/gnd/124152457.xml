@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">124152457</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201202003129.0</controlfield>
+    <controlfield tag="008">021022n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">124152457</subfield>
+      <subfield code="0">http://d-nb.info/gnd/124152457</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)124152457</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)124152457</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089875614</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)124152457</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Wettstein, Johann Rudolf</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wetstenius, Johannes Rodolfus</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wetstenius, Joh. Rod.</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wetstenius, Joh. Rodolfus</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wettstein, Johann Rudolph</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wetstenius, Johannes Rudolphus</subfield>
+      <subfield code="d">1680-1740</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100704514</subfield>
+      <subfield code="0">(DE-588)100704514</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100704514</subfield>
+      <subfield code="a">Wettstein, Johann Rudolf</subfield>
+      <subfield code="d">1647-1711</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1201900360</subfield>
+      <subfield code="0">(DE-588)1201900360</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1201900360</subfield>
+      <subfield code="a">Wettstein, Ursula</subfield>
+      <subfield code="d">1656-1738</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Mutter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1680-1740</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">24.12.1680-18.04.1740</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1697</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+      <subfield code="9">v:m.a.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040046176</subfield>
+      <subfield code="0">(DE-588)4004617-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4004617-5</subfield>
+      <subfield code="a">Basel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)958239843</subfield>
+      <subfield code="0">(DE-588)4576243-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4576243-0</subfield>
+      <subfield code="a">Läufelfingen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">möglicherweise verwandt mit Johann Rudolf Wettstein (1594-1666 oder 1614-1684 oder 1647-1711); Respondent an der Univ. Basel</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Basler Matrikel, Bd. 4, S. 257 (Nr. 1511)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Basilea Reformata 2002, S. 333</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Historisches Familienlexikon der Schweiz</subfield>
+      <subfield code="b">Stand: 25.11.2020</subfield>
+      <subfield code="u">http://www.hfls.ch/humo-gen/family/1/F79708/I235995/</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Stroux Genealogien</subfield>
+      <subfield code="b">Stand: 25.11.2020</subfield>
+      <subfield code="u">https://www.stroux.org/patriz_f/stQV_f/WsC_f.pdf</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hofmann, Johann Jakob: Disputatio Historica-Philosophica De Hospitalitate</subfield>
+      <subfield code="f">1697</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Sohn des Johann Rudolf Wettstein (1647-1711) u. der Ursula Mangold (1656-1738); ab 1727 verheiratet mit Susanna Stähelin (1695-1755); 1694 stud. phil. (3.12.1695 b.a., 17.8.1697 m.a.) u. 1697 stud. theol. (6.6.1701 disp. theol., 6.7.1701 SMC) in Basel, 1703-1713 Pfarrer am Waisenhaus in Basel, 1713-1717 Gemeiner Helfer in Basel, 1717-1740 Pfarrer in Läufelfingen</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Wettstein, Johann Rudolf</subfield>
+      <subfield code="0">(DE-588a)124152457</subfield>
+    </datafield>
+  </record>

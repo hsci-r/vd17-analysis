@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">119171902</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220721175822.0</controlfield>
+    <controlfield tag="008">940823n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">119171902</subfield>
+      <subfield code="0">http://d-nb.info/gnd/119171902</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)119171902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)119171902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089748558</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)119638134</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119638134</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119171902</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4348863-8</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">SBREDDE-101</subfield>
+      <subfield code="c">SBREDDE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XS</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">27.20p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">p</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">t</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Cassius</subfield>
+      <subfield code="c">Iatrosophista</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">grc</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Cassius</subfield>
+      <subfield code="c">Iatrosophistes</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Kassios</subfield>
+      <subfield code="c">Iatrosophistes</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Cassius</subfield>
+      <subfield code="c">Medicus</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Kassios</subfield>
+      <subfield code="c">Iatrosophista</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Cassius</subfield>
+      <subfield code="c">Felix</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Kasios</subfield>
+      <subfield code="d">ca. 2./3. Jh.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">ca. 2./3. Jh.</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#associatedDate</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">01-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">02-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">TITAN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">PAN; Thes. ling. Graec.; Lex. alte Welt</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cassius Iatrosophista: Naturales et medicinales quaestiones LXXXIIII. (VD16 C 1436)</subfield>
+      <subfield code="f">1562</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Aristotelus, Alexandru te kai Kasiu problēmata syn Theophrastiōn tinōn...</subfield>
+      <subfield code="f">1585</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="b">Quaestiones medicae et problemata physica; Griech. Arzt</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cassius &lt;Iatrosophista&gt;: Kassiu iatrosophistu, kai Theophylaktu tu Simokatu Problēmata*</subfield>
+      <subfield code="f">1653</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cassius &lt;Iatrosophista&gt;: De Animalibus medicae Quaestiones</subfield>
+      <subfield code="f">1541</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cassius &lt;Iatrosophista&gt;: Iatrikai aporiai kai problēmata peri zoon kai tetrapodōn</subfield>
+      <subfield code="f">1541</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Cassius &lt;Iatrosophista&gt;</subfield>
+      <subfield code="0">(DE-588a)119171902</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Cassius Iatrosophista</subfield>
+      <subfield code="0">(DE-588a)119638134</subfield>
+    </datafield>
+  </record>

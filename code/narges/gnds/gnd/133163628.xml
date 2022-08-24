@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">133163628</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20180517153319.0</controlfield>
+    <controlfield tag="008">070712n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">133163628</subfield>
+      <subfield code="0">http://d-nb.info/gnd/133163628</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)133163628</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)133163628</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)133163628</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0023</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">ZZ</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Redecker, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Redeker, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Henning, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+      <subfield code="9">v:Name aus erster Ehe</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Henningus, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblatt, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+      <subfield code="4">nafr</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Frueherer Name</subfield>
+      <subfield code="e">Frueherer Name</subfield>
+      <subfield code="9">v:Geburtsname</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblatts, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblat, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblats, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblads, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlblad, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kohlbladt, Lucia</subfield>
+      <subfield code="d">1634-1664</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)128683236</subfield>
+      <subfield code="0">(DE-588)128683236</subfield>
+      <subfield code="0">https://d-nb.info/gnd/128683236</subfield>
+      <subfield code="a">Henning, Christoph</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Erster Ehemann</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100870619</subfield>
+      <subfield code="0">(DE-588)100870619</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100870619</subfield>
+      <subfield code="a">Redecker, Heinrich Rudolph</subfield>
+      <subfield code="d">1626-1680</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Zweiter Ehemann</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1153717409</subfield>
+      <subfield code="0">(DE-588)1153717409</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1153717409</subfield>
+      <subfield code="a">Redecker, Anna Christina</subfield>
+      <subfield code="d">1656-1718</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Tochter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1634-1664</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040304817</subfield>
+      <subfield code="0">(DE-588)4030481-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030481-4</subfield>
+      <subfield code="a">Kiel</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gewalt, Johann Friedrich: Hochzeitliche Glückwünschungs Ode Bey dem erfreulichem Vermählungs Feste Des ... Hn. Heinrich Rudolph Redekern/ Beyder Rechten Doctoris und der weitberühmten Universität zu Rostock Weltkündigen Professoris ... - 1662</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Sperlingh, Petrus: Traur-Gedancken über Dem wiewol allzufrühen/ doch seeligem Tode Der Edlen/ VielEhr und Tugendreichen Fr. Lucia Kohlblatts ... . - 1664</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ehefrau von Christoph Henning, Doktor der Medizin und in weiterer Ehe (ab 1662) Frau von Heinrich Rudolph Redecker, Jurist und Prof. an der Univ. Rostock.</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Redecker, Lucia</subfield>
+      <subfield code="0">(DE-588a)133163628</subfield>
+    </datafield>
+  </record>

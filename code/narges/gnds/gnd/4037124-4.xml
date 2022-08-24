@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040371247</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210726210908.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4037124-4</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4037124-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">2874225</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 008 27 91</subfield>
+      <subfield code="e">E 008 27 91</subfield>
+      <subfield code="f">N 049 98 41</subfield>
+      <subfield code="g">N 049 98 41</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2874225</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E008.475277</subfield>
+      <subfield code="e">E008.475277</subfield>
+      <subfield code="f">N050.644722</subfield>
+      <subfield code="g">N050.644722</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2874225</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040371247</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4037124-4</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)2018680-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)2018680-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4037124-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-RP</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">e</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">434351</subfield>
+      <subfield code="9">d:4</subfield>
+      <subfield code="9">t:2007-01-01</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Mainz</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Stadtvorstand</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Amt für Öffentlichkeitsarbeit</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Abteilung Statistik und Wahlen</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Kulturdezernat und Amt für Öffentlichkeitsarbeit</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Gemeinderat</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Militärregierung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Gemeinderäthlicher Ausschuß</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Munizipal-Rath</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Stadtverordneten-Versammlung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Oberbürgermeister</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Service des Affaires Publiques</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Public Relations Office</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Mainz</subfield>
+      <subfield code="b">Pressestelle</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Großherzogliche Bürgermeisterei Mainz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Bürgermeisterei Mainz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Hessische Bürgermeisterei Mainz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mogontiacum</subfield>
+      <subfield code="9">v:röm.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mogonus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Moguntiacum</subfield>
+      <subfield code="9">v:röm.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Magenza</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Maguncia</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Moguncja</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mayence</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mayntz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Meyntz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Landeshauptstadt Mainz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Moguntia</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mäyntz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Meintz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Stadt Mainz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Maience</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mayence</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M 1.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006 1.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orts-Mü. 28</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GeoNames</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 13.03.2018</subfield>
+      <subfield code="u">https://www.mainz.de</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Hauptstadt von Rheinland-Pfalz u. Verw.-Sitz des Landkreises Mainz-Bingen, bald nach 15 v.Chr. Römerlager, 297 Stadt</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Bis 1961/62: Städt. Presseamt; 1963-1970: Presseamt; ab 1.11.1970: Amt für Öffentlichkeitsarbeit</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Mainz</subfield>
+      <subfield code="0">(DE-588c)4037124-4</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Mainz</subfield>
+      <subfield code="0">(DE-588b)2018680-0</subfield>
+    </datafield>
+  </record>

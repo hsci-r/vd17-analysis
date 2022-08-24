@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">94391812X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220722135251.0</controlfield>
+    <controlfield tag="008">950118n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">5122266-8</subfield>
+      <subfield code="0">http://d-nb.info/gnd/5122266-8</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)94391812X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)5122266-8</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)5122266-8</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9002</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-TH</subfield>
+      <subfield code="c">XA-DXDE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">6.3a</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kiz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="u">z</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Illustre zu Gotha</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Illustre Gotha</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium zu Gotha</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Gotha</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Gothanum</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Illustre Gothanum</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Hochfürstliches Gymnasium</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Fürstliches Gymnasium</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Herzogliches Gymnasium</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Herzogliche Landesschule zu Gotha</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)955450896</subfield>
+      <subfield code="0">(DE-588)5306770-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/5306770-8</subfield>
+      <subfield code="a">Gymnasium Ernestinum zu Gotha</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+      <subfield code="e">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="a">Lateinschule</subfield>
+      <subfield code="g">Gotha</subfield>
+      <subfield code="4">vorg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#precedingCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Vorgaenger</subfield>
+      <subfield code="e">Vorgaenger</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">21.12.1524-XX.XX.1859</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfEstablishmentAndTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040226484</subfield>
+      <subfield code="0">(DE-588)4022648-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022648-7</subfield>
+      <subfield code="a">Gymnasium</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040216527</subfield>
+      <subfield code="0">(DE-588)4021652-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021652-4</subfield>
+      <subfield code="a">Gotha</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040511847</subfield>
+      <subfield code="0">(DE-588)4051184-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4051184-4</subfield>
+      <subfield code="a">Sachsen-Gotha</subfield>
+      <subfield code="4">geow</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#spatialAreaOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsraum</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand: 21.07.2022</subfield>
+      <subfield code="u">https://de.wikipedia.org/w/index.php?oldid=220501522</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Gymnasium &lt;Gotha&gt;</subfield>
+      <subfield code="0">(DE-588b)5122266-8</subfield>
+    </datafield>
+  </record>

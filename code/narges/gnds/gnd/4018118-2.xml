@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040181189</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220524120151.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4018118-2</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4018118-2</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">2925533</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 008 41 03</subfield>
+      <subfield code="e">E 008 41 03</subfield>
+      <subfield code="f">N 050 06 55</subfield>
+      <subfield code="g">N 050 06 55</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2925533</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E008.684166</subfield>
+      <subfield code="e">E008.684166</subfield>
+      <subfield code="f">N050.115277</subfield>
+      <subfield code="g">N050.115277</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2925533</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040181189</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4018118-2</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1092221298</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1085178153</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1072891670</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)2028282-5</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)16276815-1</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)2028282-5</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4018118-2</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1270</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-HE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">d</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">e</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">434164</subfield>
+      <subfield code="9">d:4</subfield>
+      <subfield code="9">t:2007-01-01</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Stadtverordnetenversammlung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Presse- und Informationsamt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Presseamt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Pressestelle</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Pressestelle</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Städtische Pressestelle</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Stadtverwaltung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtverwaltung</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Rat der Stadt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Rat der Stadt</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Stadtverordnetenvorsteher</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtverordnetenvorsteher</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Parlament</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Arbeitsgruppe Strukturplanung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Öffentlichkeitsreferat</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtverordnetenversammlung</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">AG Öffentlichkeitsarbeit</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Hauptamt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Hauptamt</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Stadtparlament</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Bürgermeister</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtparlament</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">AG Öffentlichkeitsarbeit</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Stadtkanzlei</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtkanzlei</subfield>
+      <subfield code="g">Frankfurt am Main</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Stadt Frankfurt am Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Freie Stadt Frankfurt</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt</subfield>
+      <subfield code="g">Main</subfield>
+      <subfield code="4">ngkd</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ehemalige Vorzugsbenennung GKD</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt (Main)</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Groß-Frankfurt</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckfurt</subfield>
+      <subfield code="g">Mayn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckfurth</subfield>
+      <subfield code="g">Mayn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franconovurd</subfield>
+      <subfield code="9">v:794</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfort</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francfort</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Phrankphurtē</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franqfûrt</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt-na-Majne</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofort</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francoforte</subfield>
+      <subfield code="g">Meno</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurti ad Moenum</subfield>
+      <subfield code="9">v:Vorlage</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurti</subfield>
+      <subfield code="g">Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurti</subfield>
+      <subfield code="g">Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurtum ad Moenum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurtum</subfield>
+      <subfield code="g">Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurtum</subfield>
+      <subfield code="g">Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Helenopolis</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt a. M.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt a.M.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francfort-sur-le-Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt am Mayn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofurtum ad Mogum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckenfurt am Meyn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfort on the Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt-na-Maǐni</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt-na-Maǐne</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francoforte sul Meno</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckfurt am Mayn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt</subfield>
+      <subfield code="g">Main</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francofordia ad Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franconovada</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckfort am Meyn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Franckfurt am Meyn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Mæno Franckofurtensis</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Maeno Franckofurtensis</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Traiectum ad Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Trajectum ad Moenum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Francfurt am Mayn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Moenofrancofurtano</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurtas prie Maino</subfield>
+      <subfield code="9">v:lit</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt nad Menem</subfield>
+      <subfield code="9">v:pol</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt nad Mohanom</subfield>
+      <subfield code="9">v:slo</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt nad Mohanem</subfield>
+      <subfield code="9">v:cze</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">PRNQPWRṬ D-MYYN</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frainkfurṭ</subfield>
+      <subfield code="9">v:aus dem Urdu</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frānkfurṭ</subfield>
+      <subfield code="9">v:aus dem Urdu</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Frankfūrṭ</subfield>
+      <subfield code="9">v:aus dem Urdu</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="9">U:Arab</subfield>
+      <subfield code="9">L:urd</subfield>
+      <subfield code="a">فرینکفرٹ</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="9">U:Arab</subfield>
+      <subfield code="9">L:urd</subfield>
+      <subfield code="a">فرانکفرٹ</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="9">U:Arab</subfield>
+      <subfield code="9">L:urd</subfield>
+      <subfield code="a">فرنکفورٹ</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMi</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Buchbesitz: HAAB Weimar</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Provenienzmerkmal</subfield>
+      <subfield code="b">Stempel</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orts-Mü. 28</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006 2.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Geo-Du.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GeoNames</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth/GND</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 11.10.2019</subfield>
+      <subfield code="u">https://www.frankfurt.de/</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Stadt (vor 1200) im Regierungsbezirk Darmstadt, röm. Kastelle u. Zivilsiedlung, merowing. Siedlung u. Pfalz 794 urkundl. erwähnt</subfield>
+    </datafield>
+    <datafield tag="751" ind1=" " ind2="4">
+      <subfield code="a">פרנקפורט דמיין</subfield>
+      <subfield code="9">U:Hebr</subfield>
+    </datafield>
+    <datafield tag="751" ind1=" " ind2="4">
+      <subfield code="a">フランクフルト</subfield>
+      <subfield code="9">U:Jpan</subfield>
+      <subfield code="g">マイン</subfield>
+    </datafield>
+    <datafield tag="751" ind1=" " ind2="4">
+      <subfield code="a">פרנקפורט דמיין</subfield>
+      <subfield code="9">U:Hebr</subfield>
+      <subfield code="9">L:yid</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="0">(DE-588c)4018118-2</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Frankfurt &lt;Main&gt;</subfield>
+      <subfield code="0">(DE-588b)2028282-5</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">102261148</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220311162145.0</controlfield>
+    <controlfield tag="008">920624n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">102261148</subfield>
+      <subfield code="0">http://d-nb.info/gnd/102261148</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)102261148</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)102261148</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)102261148</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119654423</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119654237</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Dietrich, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dieterich, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dietrich, Balthasar</subfield>
+      <subfield code="c">der Jüngere</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dieterich, Balthasar</subfield>
+      <subfield code="c">der Jüngere</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dieterici, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dietericus, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodoricus, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodoricus, Balthasarus</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodoricus, Baldassarus</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Balthasar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Balthasarus</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Baldassarus</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Baldassar</subfield>
+      <subfield code="d">-1585</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)142898902</subfield>
+      <subfield code="0">(DE-588)142898902</subfield>
+      <subfield code="0">https://d-nb.info/gnd/142898902</subfield>
+      <subfield code="a">Dietrich, Balthasar</subfield>
+      <subfield code="d">1525-1595</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118555340</subfield>
+      <subfield code="0">(DE-588)118555340</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118555340</subfield>
+      <subfield code="a">Ignatius</subfield>
+      <subfield code="c">Antiochenus</subfield>
+      <subfield code="d">-110</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118870874</subfield>
+      <subfield code="0">(DE-588)118870874</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118870874</subfield>
+      <subfield code="a">Moller, Martin</subfield>
+      <subfield code="d">1547-1606</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:Kropstädt; VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124639240</subfield>
+      <subfield code="0">(DE-588)124639240</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124639240</subfield>
+      <subfield code="a">Suevus, Sigismund</subfield>
+      <subfield code="d">1526-1596</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116713550</subfield>
+      <subfield code="0">(DE-588)116713550</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116713550</subfield>
+      <subfield code="a">Sabinus, Georg</subfield>
+      <subfield code="d">1508-1560</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)121252256</subfield>
+      <subfield code="0">(DE-588)121252256</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121252256</subfield>
+      <subfield code="a">Bernavus, Paulus</subfield>
+      <subfield code="d">1553-1614</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119632187</subfield>
+      <subfield code="0">(DE-588)119632187</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119632187</subfield>
+      <subfield code="a">Buchholzer, Abraham</subfield>
+      <subfield code="d">1529-1584</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119708957</subfield>
+      <subfield code="0">(DE-588)119708957</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119708957</subfield>
+      <subfield code="a">Heusler, Paul</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)128473460</subfield>
+      <subfield code="0">(DE-588)128473460</subfield>
+      <subfield code="0">https://d-nb.info/gnd/128473460</subfield>
+      <subfield code="a">Ludovicus, Laurentius</subfield>
+      <subfield code="d">1536-1594</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100308279</subfield>
+      <subfield code="0">(DE-588)100308279</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100308279</subfield>
+      <subfield code="a">Meister, Joachim</subfield>
+      <subfield code="d">1532-1587</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124721346</subfield>
+      <subfield code="0">(DE-588)124721346</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124721346</subfield>
+      <subfield code="a">Mylius, Martin</subfield>
+      <subfield code="d">1542-1611</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:Görlitz; VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119696096</subfield>
+      <subfield code="0">(DE-588)119696096</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119696096</subfield>
+      <subfield code="a">Hachelberg, Johannes</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119793997</subfield>
+      <subfield code="0">(DE-588)119793997</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119793997</subfield>
+      <subfield code="a">Praetorius, Wenzeslaus</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119675609</subfield>
+      <subfield code="0">(DE-588)119675609</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119675609</subfield>
+      <subfield code="a">Franz, Paul</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119677970</subfield>
+      <subfield code="0">(DE-588)119677970</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119677970</subfield>
+      <subfield code="a">Fritsch, Anton</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119678055</subfield>
+      <subfield code="0">(DE-588)119678055</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119678055</subfield>
+      <subfield code="a">Fritsch, Thomas</subfield>
+      <subfield code="d">1525-1601</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)11971230X</subfield>
+      <subfield code="0">(DE-588)11971230X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/11971230X</subfield>
+      <subfield code="a">Hoffmann, Sebastian</subfield>
+      <subfield code="d">1551-1605</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119725177</subfield>
+      <subfield code="0">(DE-588)119725177</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119725177</subfield>
+      <subfield code="a">Justus, Michael</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119752190</subfield>
+      <subfield code="0">(DE-588)119752190</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119752190</subfield>
+      <subfield code="a">Manlius, Christoph</subfield>
+      <subfield code="d">1546-1575</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1585</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041585895</subfield>
+      <subfield code="0">(DE-588)4158589-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4158589-6</subfield>
+      <subfield code="a">Gymnasiallehrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040214419</subfield>
+      <subfield code="0">(DE-588)4021441-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021441-2</subfield>
+      <subfield code="a">Görlitz</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040214419</subfield>
+      <subfield code="0">(DE-588)4021441-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021441-2</subfield>
+      <subfield code="a">Görlitz</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040214419</subfield>
+      <subfield code="0">(DE-588)4021441-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021441-2</subfield>
+      <subfield code="a">Görlitz</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DbA I 237,91</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Schlesisches Pfarrerbuch, Bd. 9 (2016), S. 32</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Vergilius Maro, Publius: Res Virgiliana</subfield>
+      <subfield code="f">1585</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Vergilius Maro, Publius: Res Virgiliana</subfield>
+      <subfield code="f">1594</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana</subfield>
+      <subfield code="f">1585</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgilianae</subfield>
+      <subfield code="f">1594</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana</subfield>
+      <subfield code="f">1589</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana</subfield>
+      <subfield code="f">1589</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Diluvium Nohae.  1578.  (VD16 D 1508)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana. Hoc est: PHRASES, EPITHETA, DESCRIPTIONES ET SIMILITVDINES LIBRIS V. ...  1594.  (VD16 D 1510)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana. Hoc est: Phrases et Epitheta. Collecta à Baldassaro Theodoro ...  1585.  (VD16 ZV 17034)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana. HOC EST: Phrases et Epitheta tribus libris COLLECTA, à Baldassaro ...  1589.  (VD16 D 1509)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Coniugio ERVDITIONE ET VIRTVTE ORNATISSIMI VIRI, VENCESLAI PRAETORII Pelrzimouini, ...  1577.  (VD16 ZV 16662)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ignatius &lt;von Antiochien&gt;: Die Episteln Des heiligen Merters Jgnatij des Ertzbischoffs zu Antiochia in Syrien. ... ...  1578.  (VD16 I 66)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schwabe, Sigismund: Cometen Was sie fuer grosse Wunder vnd schreckliche ding zu bedeuten vnd ...  1578.  (VD16 S 4536)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Diluvium Nohae</subfield>
+      <subfield code="f">1578</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Res Virgiliana. Hoc est: Phrases &amp; Epitheta</subfield>
+      <subfield code="f">1585</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Nuptialia DOCTISS. ET REVERENDO VIRO DN.M. ELIAE, REVERENDI VIRI DN. BALDASSARI Primarij ...  1579.  (VD16 ZV 11825)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Memoriae SVAVISSIMI PVERVLI IOHANNIS SEBASTIANI, SEBASTIANI F. HOFFMANI. Carmina ...  1582.  (VD16 ZV 10854)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. Pädagoge und Poet; ab 1577 Gymnasiallehrer in Görlitz</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Dietrich, Balthasar</subfield>
+      <subfield code="0">(DE-588a)102261148</subfield>
+    </datafield>
+  </record>

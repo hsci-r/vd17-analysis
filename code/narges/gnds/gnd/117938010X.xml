@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">117938010X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190318135221.0</controlfield>
+    <controlfield tag="008">190228n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">117938010X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/117938010X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)117938010X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)117938010X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">AT-DBSBG</subfield>
+      <subfield code="c">AT-DBSBG</subfield>
+      <subfield code="9">r:AT-OBV</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1401</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-AT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Lainpacher, Hyacinth</subfield>
+      <subfield code="d">-1704</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">ger</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lainpacher, Hyacinthus</subfield>
+      <subfield code="d">-1704</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lainpacher, Hyazinth</subfield>
+      <subfield code="d">-1704</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004046625</subfield>
+      <subfield code="0">(DE-588)1008455-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1008455-1</subfield>
+      <subfield code="a">Augustiner-Eremiten</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1704</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Bacc.</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041371844</subfield>
+      <subfield code="0">(DE-588)4137184-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4137184-7</subfield>
+      <subfield code="a">Geistlicher</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041303229</subfield>
+      <subfield code="0">(DE-588)4130322-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4130322-2</subfield>
+      <subfield code="a">Prediger</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042685567</subfield>
+      <subfield code="0">(DE-588)4268556-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4268556-4</subfield>
+      <subfield code="a">Prior</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041052587</subfield>
+      <subfield code="0">(DE-588)4105258-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4105258-4</subfield>
+      <subfield code="a">Salzburg-Mülln</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041052587</subfield>
+      <subfield code="0">(DE-588)4105258-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4105258-4</subfield>
+      <subfield code="a">Salzburg-Mülln</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041049098</subfield>
+      <subfield code="0">(DE-588)4104909-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4104909-3</subfield>
+      <subfield code="a">Rattenberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040602583</subfield>
+      <subfield code="0">(DE-588)4060258-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4060258-8</subfield>
+      <subfield code="a">Tittmoning</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">RES</subfield>
+      <subfield code="b">Stand:28.02.2019</subfield>
+      <subfield code="u">http://res.icar-us.eu/index.php/Lainpacher,_Hyacinthus_(-1704)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Eine kurtze Lob-Verfassung Deß Heiligen Clara-vallensischen Abbten Und Hönigflissenden Lehrers Bernardi</subfield>
+      <subfield code="b">Welche An dem solemnen Fest-Tag ersterwehnten Heil. Patriarchen in dem ... Cistercienser-Stifft Raittenhaßlach auff der Cantzel vorgetragen ...</subfield>
+      <subfield code="f">1693</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Prior in Mülln und Rattenberg, Subprior in Tittmoning, verstorben am 13.05.1704</subfield>
+    </datafield>
+  </record>

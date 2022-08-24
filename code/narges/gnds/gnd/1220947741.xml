@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">1220947741</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201112164747.0</controlfield>
+    <controlfield tag="008">201106n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1220947741</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1220947741</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1220947741</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1220947741</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-39</subfield>
+      <subfield code="c">DE-39</subfield>
+      <subfield code="9">r:DE-39</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">2214</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-GB</subfield>
+      <subfield code="c">XA-CZ</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">8.4p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Gordon, Adam</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gordoun, Adam</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cordon, Adam</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cordan, Adam</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1015476988</subfield>
+      <subfield code="0">(DE-588)1015476988</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1015476988</subfield>
+      <subfield code="a">Gordon, John</subfield>
+      <subfield code="d">-1649</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Cousin</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118628755</subfield>
+      <subfield code="0">(DE-588)118628755</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118628755</subfield>
+      <subfield code="a">Albrecht</subfield>
+      <subfield code="c">Friedland, Herzog</subfield>
+      <subfield code="d">1583-1634</subfield>
+      <subfield code="4">bezb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionalRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung beruflich</subfield>
+      <subfield code="e">Beziehung beruflich</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1634-1639</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040433757</subfield>
+      <subfield code="0">(DE-588)4043375-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4043375-4</subfield>
+      <subfield code="a">Offizier</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)946583595</subfield>
+      <subfield code="0">(DE-588)4398981-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4398981-0</subfield>
+      <subfield code="a">Oberstleutnant</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">Stand: 12.11.2020</subfield>
+      <subfield code="u">http://www.30jaehrigerkrieg.de/gordon-cordon-adam/</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Kaiserlicher Hauptmann und Obristleutnant schottischer Herkunft; erhielt nach Wallensteins Ermordung ein Besitztum bei Časlau</subfield>
+    </datafield>
+  </record>

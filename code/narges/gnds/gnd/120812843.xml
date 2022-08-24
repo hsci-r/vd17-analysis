@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">120812843</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20191120180347.0</controlfield>
+    <controlfield tag="008">990203n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">120812843</subfield>
+      <subfield code="0">http://d-nb.info/gnd/120812843</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)120812843</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)120812843</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1035076004</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)103490339X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)120812843</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)7849786-3</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">pik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Heinrich</subfield>
+      <subfield code="c">Sachsen-Lauenburg, Herzog</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Heinrich</subfield>
+      <subfield code="c">Bremen, Erzbischof</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Henricus</subfield>
+      <subfield code="c">Archiepiscopus Bremensis</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Henricus</subfield>
+      <subfield code="c">Dux Saxoniae</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Hinricus</subfield>
+      <subfield code="c">Archiepiscopus Bremensis</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sachsen-Lauenburg, Heinrich &#152;von&#156;</subfield>
+      <subfield code="b">III.</subfield>
+      <subfield code="c">Osnabrück, Bischof</subfield>
+      <subfield code="d">1550-1585</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1550-1585</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:exakte Geburts- und Sterbedaten differieren in unterschiedlichen Quellen</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">01.11.1550-22.04.1585</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">11.11.1550-02.05.1585</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">11.11.1550-23.04.1585</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040154718</subfield>
+      <subfield code="0">(DE-588)4015471-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4015471-3</subfield>
+      <subfield code="a">Erzbischof</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)043048765</subfield>
+      <subfield code="0">(DE-588)4304876-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4304876-6</subfield>
+      <subfield code="a">Fürstbischof</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041596765</subfield>
+      <subfield code="0">(DE-588)4159676-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4159676-6</subfield>
+      <subfield code="a">Herzog</subfield>
+      <subfield code="4">adel</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#titleOfNobility</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Adelstitel</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040004643</subfield>
+      <subfield code="0">(DE-588)4000464-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000464-8</subfield>
+      <subfield code="a">Adel</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Administrator des Erzstiftes Bremen, der Hochstifte Osnabrück und Paderborn</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040347117</subfield>
+      <subfield code="0">(DE-588)4034711-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4034711-4</subfield>
+      <subfield code="a">Lauenburg/Elbe</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040439747</subfield>
+      <subfield code="0">(DE-588)4043974-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4043974-4</subfield>
+      <subfield code="a">Osnabrück</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04008146X</subfield>
+      <subfield code="0">(DE-588)4008146-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008146-1</subfield>
+      <subfield code="a">Bremervörde</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040442837</subfield>
+      <subfield code="0">(DE-588)4044283-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044283-4</subfield>
+      <subfield code="a">Paderborn</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">NDSBIO</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">labi-nrw-wes</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand: 21.11.2018</subfield>
+      <subfield code="u">https://de.wikipedia.org/w/index.php?title=Heinrich_von_Sachsen-Lauenburg&amp;oldid=175728128</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">1574 auch Bischof von Osnabrück, 1577-1585 von Paderborn</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Heinrich &lt;Sachsen-Lauenburg, Herzog&gt;</subfield>
+      <subfield code="0">(DE-588a)120812843</subfield>
+    </datafield>
+  </record>

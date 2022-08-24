@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">10413030X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220707165717.0</controlfield>
+    <controlfield tag="008">960321n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">10413030X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/10413030X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)10413030X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)10413030X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)186663676</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)186663676</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)10413030X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4747880-9</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1841</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">24.3p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Jacobus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Diether, Jakob</subfield>
+      <subfield code="d">1522-1590</subfield>
+      <subfield code="4">nawi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#realIdentity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirklicher Name</subfield>
+      <subfield code="e">Wirklicher Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodor, Jacob</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Theodorus</subfield>
+      <subfield code="c">Tabernaemontanus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Tabernaemontanus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dietrich, Jacob</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Dietrich, Jakob</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Diether, Jacob</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jacob T.</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernamontani, Jakob T.</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jacobus T.</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernomontanus, Jacob T.</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Theodorus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Iacobus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Iacobus Theodorus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jakob Theodor</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jacob Theodor</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Jakob Dietrich</subfield>
+      <subfield code="c">von Bergzabern</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Jakob</subfield>
+      <subfield code="d">1522-1590</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jacques Théodore</subfield>
+      <subfield code="d">1522-1590</subfield>
+      <subfield code="9">v:ABF</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernomontanus, Jacobus T.</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tabernaemontanus, Jacobus Theodorus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Theodorus, Jacob</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bergzabern, Jakob Dietrich &#152;von&#156;</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Theodorus</subfield>
+      <subfield code="d">1522-1590</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)108174927X</subfield>
+      <subfield code="0">(DE-588)108174927X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/108174927X</subfield>
+      <subfield code="a">Diether, Johann Jacob</subfield>
+      <subfield code="d">1552-</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1081749393</subfield>
+      <subfield code="0">(DE-588)1081749393</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1081749393</subfield>
+      <subfield code="a">Diether, Philipp Jacob</subfield>
+      <subfield code="d">1554-</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100075657</subfield>
+      <subfield code="0">(DE-588)100075657</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100075657</subfield>
+      <subfield code="a">Basse, Nikolaus</subfield>
+      <subfield code="d">15XX-1601</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124533183</subfield>
+      <subfield code="0">(DE-588)124533183</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124533183</subfield>
+      <subfield code="a">Braun, Nicolaus</subfield>
+      <subfield code="d">1558-1639</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124557066</subfield>
+      <subfield code="0">(DE-588)124557066</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124557066</subfield>
+      <subfield code="a">Wirsung, Christoph</subfield>
+      <subfield code="d">1500-1571</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119619571</subfield>
+      <subfield code="0">(DE-588)119619571</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119619571</subfield>
+      <subfield code="a">Bertram, Anton</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118660381</subfield>
+      <subfield code="0">(DE-588)118660381</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118660381</subfield>
+      <subfield code="a">Bock, Hieronymus</subfield>
+      <subfield code="d">1498-1554</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Goclenius, Rudolf</subfield>
+      <subfield code="c">der Ältere</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119699125</subfield>
+      <subfield code="0">(DE-588)119699125</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119699125</subfield>
+      <subfield code="a">Harnisch, Matthaeus</subfield>
+      <subfield code="d">1535-1596</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Lautenbach, Konrad</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)139218882</subfield>
+      <subfield code="0">(DE-588)139218882</subfield>
+      <subfield code="0">https://d-nb.info/gnd/139218882</subfield>
+      <subfield code="a">Paeonius, Martin</subfield>
+      <subfield code="d">-1573</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119006464</subfield>
+      <subfield code="0">(DE-588)119006464</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119006464</subfield>
+      <subfield code="a">Posthius, Johannes</subfield>
+      <subfield code="d">1537-1597</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1522-1590</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr ca.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041464028</subfield>
+      <subfield code="0">(DE-588)4146402-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4146402-3</subfield>
+      <subfield code="a">Botaniker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04002475X</subfield>
+      <subfield code="0">(DE-588)4002475-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4002475-1</subfield>
+      <subfield code="a">Apotheker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041350278</subfield>
+      <subfield code="0">(DE-588)4135027-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4135027-3</subfield>
+      <subfield code="a">Amtsarzt</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042680522</subfield>
+      <subfield code="0">(DE-588)4268052-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4268052-9</subfield>
+      <subfield code="a">Leibarzt</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040872785</subfield>
+      <subfield code="0">(DE-588)4087278-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4087278-6</subfield>
+      <subfield code="a">Bad Bergzabern</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040239969</subfield>
+      <subfield code="0">(DE-588)4023996-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023996-2</subfield>
+      <subfield code="a">Heidelberg</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+      <subfield code="9">v:oder Neuhausen</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040791343</subfield>
+      <subfield code="0">(DE-588)4079134-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4079134-8</subfield>
+      <subfield code="a">Weißenburg</subfield>
+      <subfield code="g">Elsass</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040669424</subfield>
+      <subfield code="0">(DE-588)4066942-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066942-7</subfield>
+      <subfield code="a">Worms</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)95958529X</subfield>
+      <subfield code="0">(DE-588)4601198-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4601198-5</subfield>
+      <subfield code="a">Neuhausen</subfield>
+      <subfield code="g">Worms</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">NDB/ADB</subfield>
+      <subfield code="u">https://www.deutsche-biographie.de/sfz82454.html#ndbcontent</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Tabernaemontanus</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neu vollkommen Kräuter-Buch</subfield>
+      <subfield code="f">1687</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neu vollkommen Kräuter-Buch ...</subfield>
+      <subfield code="f">1963</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Eicones plantarum, seu stirpium, arborum nempe, fructicum, herbarum, fr*</subfield>
+      <subfield code="f">1590</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neuw Kreuterbuch</subfield>
+      <subfield code="f">1588</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neuw und vollkommenlich Kreuterbuch ...</subfield>
+      <subfield code="f">1613</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neuw und vollkommenlich Kreuterbuch ...</subfield>
+      <subfield code="f">1625</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neuw und vollkommenlich Kreuterbuch</subfield>
+      <subfield code="f">1664</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neuw und vollkommenlich Kreuterbuch</subfield>
+      <subfield code="f">1731</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gewisse Praktik, wie man sich mit Göttlicher Hülff vor der Pestilentz h*</subfield>
+      <subfield code="f">1564</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Regiment Vnd kurtzer Bericht wie man sich in Sterbenslaeuffen da die Pestilentz ... 1581/1582. (VD16 T 831)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Regiment Vnd kurtzer Bericht wie man sich in Sterbenslaeuffen da die Pestilentz ... 1582. (VD16 T 832)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Gewisse Practick Wie man sich mit Goettlicher huelff vor der Pestilentz hueten vnd ... 1564/1582. (VD16 T 819)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: D. IACOBI THEODORI TABERNAEMONTANI Neuw vnd volkommenlich Kreuterbuch Mit schoenen ... 1591. (VD16 T 827)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: D. IACOBI THEODORI TABERNAEMONTANI Neuw vnd volkommenlich Kreuterbuch Mit schoenen ... 1591. (VD16 T 828)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Regiment vnd Rahtschlag wie man der jetzigen gifftigen geschwindẽ Kranckheit hitzigem ... 1568. (VD16 T 834)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Von dem Greyßbacher vnnd von Sanct Peters Brunnen: Beyde inn dem Schwartzwaldt nicht ... 1590. (VD16 T 825)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Wirsung, Christoph: Ein neuwes Artzney Buech Darinn fast alle eusserliche vnd innerliche Glieder deß ... 1577. (VD16 W 3606)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: Ordenliche gewisse vnnd bewerte Cur vnd hilff, für das schmertzlich Seitenstechẽ, ... 1561. (VD16 T 830)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodorus, Jakob: . 1590. (VD16 ZV 14919)</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Theodorus, Jacobus</subfield>
+      <subfield code="0">(DE-588a)10413030X</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Theodorus, Jakob</subfield>
+      <subfield code="0">(DE-588a)186663676</subfield>
+    </datafield>
+  </record>

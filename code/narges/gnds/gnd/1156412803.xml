@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1156412803</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200220150544.0</controlfield>
+    <controlfield tag="008">180419n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1156412803</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1156412803</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1156412803</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1156412803</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Kluck, Johannes Eberhard</subfield>
+      <subfield code="d">1639-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kluckius, Johannes Eberhardus</subfield>
+      <subfield code="d">1639-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kluck, Johann Eberhard</subfield>
+      <subfield code="d">1639-1689</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1639-1689</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1660-</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)004650425</subfield>
+      <subfield code="0">(DE-588)2004661-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2004661-3</subfield>
+      <subfield code="a">Bicken</subfield>
+      <subfield code="g">Herborn</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040239969</subfield>
+      <subfield code="0">(DE-588)4023996-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023996-2</subfield>
+      <subfield code="a">Heidelberg</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04012326X</subfield>
+      <subfield code="0">(DE-588)4012326-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4012326-1</subfield>
+      <subfield code="a">Dillenburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040244555</subfield>
+      <subfield code="0">(DE-588)4024455-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4024455-6</subfield>
+      <subfield code="a">Herborn</subfield>
+      <subfield code="g">Lahn-Dill-Kreis</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040239969</subfield>
+      <subfield code="0">(DE-588)4023996-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023996-2</subfield>
+      <subfield code="a">Heidelberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)996414665</subfield>
+      <subfield code="0">(DE-588)7671702-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7671702-1</subfield>
+      <subfield code="a">Wieblingen</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040135454</subfield>
+      <subfield code="0">(DE-588)4013545-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4013545-7</subfield>
+      <subfield code="a">Edenkoben</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Biundo G., Die Evangelischen Geistlichen der Pfalz, S. 237</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Steinfeld, Johann Melchior: Disputatio theologica De sacramentis in genere</subfield>
+      <subfield code="f">1660</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Imm. in Herborn und Heidelberg (10.10.1657). Respondent in Herborn (1660). Pfarrer in Wieblingen (1661-66) und Edenkoben (1666-89). Gestorben auf der kriegsbedingten Flucht (alt 50 Jahre).</subfield>
+    </datafield>
+  </record>

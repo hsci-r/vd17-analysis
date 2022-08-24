@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">143236229</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20140710125443.0</controlfield>
+    <controlfield tag="008">110113n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">143236229</subfield>
+      <subfield code="0">http://d-nb.info/gnd/143236229</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)143236229</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)143236229</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)143236229</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-Mb112</subfield>
+      <subfield code="c">DE-Mb112</subfield>
+      <subfield code="9">r:DE-Mb112</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0036</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd2</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">d</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">h</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Georg Anton</subfield>
+      <subfield code="c">Worms, Bischof</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Georgius Antonius</subfield>
+      <subfield code="c">Worms, Episcopus</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Georgius Antonius</subfield>
+      <subfield code="c">Wormatiensis, Episcopus</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rodenstein, Georg Anton &#152;von&#156;</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Georg Anton</subfield>
+      <subfield code="c">von Rodenstein</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rothenstein, Georg Anton &#152;von&#156;</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Georg Anton</subfield>
+      <subfield code="c">von Rothenstein</subfield>
+      <subfield code="d">1579-1652</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1579-1652</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">29.09.1579-30.10.1652</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Reichsritter</subfield>
+      <subfield code="4">adel</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#titleOfNobility</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Adelstitel</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040004643</subfield>
+      <subfield code="0">(DE-588)4000464-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000464-8</subfield>
+      <subfield code="a">Adel</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040069494</subfield>
+      <subfield code="0">(DE-588)4006949-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4006949-7</subfield>
+      <subfield code="a">Bischof</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040371247</subfield>
+      <subfield code="0">(DE-588)4037124-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4037124-4</subfield>
+      <subfield code="a">Mainz</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040371247</subfield>
+      <subfield code="0">(DE-588)4037124-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4037124-4</subfield>
+      <subfield code="a">Mainz</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040128423</subfield>
+      <subfield code="0">(DE-588)4012842-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4012842-8</subfield>
+      <subfield code="a">Douai</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040464709</subfield>
+      <subfield code="0">(DE-588)4046470-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4046470-2</subfield>
+      <subfield code="a">Poitiers</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040504719</subfield>
+      <subfield code="0">(DE-588)4050471-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050471-2</subfield>
+      <subfield code="a">Rom</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040549038</subfield>
+      <subfield code="0">(DE-588)4054903-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4054903-3</subfield>
+      <subfield code="a">Siena</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040669424</subfield>
+      <subfield code="0">(DE-588)4066942-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066942-7</subfield>
+      <subfield code="a">Worms</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040561798</subfield>
+      <subfield code="0">(DE-588)4056179-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4056179-3</subfield>
+      <subfield code="a">Speyer</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DBE (Online)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">1594 Nominierung für ein Kanonikat am Speyerer Domstift; Studium seit 1601 in Douai, Poitiers, Rom und Siena; 1610 die Priesterweihe; 1609 Kapitular in Worms und 1622 Kustos; 1612  Kapitular, 1634 Dekan u. 1638 Propst in Mainz; 1622 Dekan in Speyer; 1629 bis 30. Oktober 1652 Bischof von Worms</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Georg Anton &lt;Worms, Bischof&gt;</subfield>
+      <subfield code="0">(DE-588a)143236229</subfield>
+    </datafield>
+  </record>

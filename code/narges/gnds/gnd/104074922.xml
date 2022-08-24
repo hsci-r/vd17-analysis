@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">104074922</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201216134403.0</controlfield>
+    <controlfield tag="008">960108n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">104074922</subfield>
+      <subfield code="0">http://d-nb.info/gnd/104074922</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)104074922</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)104074922</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)104074922</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)129716286</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0015</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">ZZ</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Jentzsch, Elias</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Jentsch, Elias</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Jentzsch, Elia</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Jentsch, Elia</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Jentzschius, Elias</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ientzschius, Elias</subfield>
+      <subfield code="d">1599-1652</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104074906</subfield>
+      <subfield code="0">(DE-588)104074906</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104074906</subfield>
+      <subfield code="a">Jentzsch, Dorothea</subfield>
+      <subfield code="d">1588-1653</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1599-1652</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04136676X</subfield>
+      <subfield code="0">(DE-588)4136676-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4136676-1</subfield>
+      <subfield code="a">Bürgermeister</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041770080</subfield>
+      <subfield code="0">(DE-588)4177008-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4177008-0</subfield>
+      <subfield code="a">Ratsherr</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1067591451</subfield>
+      <subfield code="0">(DE-588)1067591451</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1067591451</subfield>
+      <subfield code="a">Stadtrichter</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040129950</subfield>
+      <subfield code="0">(DE-588)4012995-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4012995-0</subfield>
+      <subfield code="a">Dresden</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">27</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">37</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlagen (uneinheitlich, aber überwiegend "Jentzsch")</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Nuptiis Secundis, Viri Amplissimi, Ac Prudentissimi, Domini Eliae Ientzschii, Reip. Dresd. Consulis Praestantissimi solenniter celebratis, Cum ... Dorothea Beuchling ... Pauli Nicolai, J.U. Doctoris, &amp;c. relicta Vidua, verè secundis ...</subfield>
+      <subfield code="f">1643</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gueinz, Christian: Exercitationum Politicarum Secunda, De Familiis In Genere</subfield>
+      <subfield code="f">1618</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hertzogk, Johann: Jesus Aller Gläubig-harrenden Feste Burg, und Seelen-Bewarnüs, Durch den Mund und Feder Davids im 25. Psalm v. 20. 21. gewiesen, Und bey ansehnlicher volckreicher Begräbnüs Des ... Herrn Eliae Jentschens, Wohlverdienten regierenden Bürgermeisters in der Churf. löblichen Residentz-Stadt und Hauptvestung Dreßden</subfield>
+      <subfield code="f">1652</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+      <subfield code="a">DbA</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Bürgermeister, Ratsherr und Stadtrichter in Dresden; 1615-1616: Studium in Leipzig u. 1616-1621: Wittenberg</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Jentzsch, Elias</subfield>
+      <subfield code="0">(DE-588a)104074922</subfield>
+    </datafield>
+  </record>

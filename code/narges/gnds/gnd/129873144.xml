@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">129873144</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220309170227.0</controlfield>
+    <controlfield tag="008">050321n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">129873144</subfield>
+      <subfield code="0">http://d-nb.info/gnd/129873144</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)129873144</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)129873144</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)129873144</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-7</subfield>
+      <subfield code="c">DE-7</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hoffmann, Johann</subfield>
+      <subfield code="d">1602-1671</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hoffmann, Johannes</subfield>
+      <subfield code="d">1602-1671</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hoffmannus, Johannes</subfield>
+      <subfield code="d">1602-1671</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofmann, Johann</subfield>
+      <subfield code="d">1602-1671</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hofmannus, Johannes</subfield>
+      <subfield code="d">1602-1671</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1602-1671</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040141055</subfield>
+      <subfield code="0">(DE-588)4014105-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4014105-6</subfield>
+      <subfield code="a">Eisfeld</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040103250</subfield>
+      <subfield code="0">(DE-588)4010325-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4010325-0</subfield>
+      <subfield code="a">Coburg</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">70</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Katalog der ... Stolberg'schen Leichenpredigten-Sammlung. Bd. 2. - 1928</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Hubmeyer, Hippolytus: Disputatio XXV. repetitonis ethicorum Nicomachiorum Aristotelis ..</subfield>
+      <subfield code="f">1623</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Finck, Kaspar: Canonum, regularum, proprietatum, consuetudinum, axiomatum, documentorum &amp;c. theologicorum centuriae quartae decuria prima</subfield>
+      <subfield code="f">1626</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Felicissima piorum ex hac miseriarum valle emigratio ..</subfield>
+      <subfield code="f">1657</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Spirituale itinerarium, das ist: Ein geistliches Reis- und Wander-Büchlein ..</subfield>
+      <subfield code="f">1658</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Spirituale Christianorum Gazophylacium ..</subfield>
+      <subfield code="f">1660</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Profundissima misericordiae divinae peccata nobis condonantis abyssus ..</subfield>
+      <subfield code="f">1661</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Flagrantissimum piorum desiderium ..</subfield>
+      <subfield code="f">1663</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Perpetuum charitatis coniugalis monumentum ..</subfield>
+      <subfield code="f">1663</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Verorum Christianorum huius et illius vitae clarissima nec non certissima conditio</subfield>
+      <subfield code="f">1666</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Suavissima in cruce et calamitate consolatio</subfield>
+      <subfield code="f">1666</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Saluberrima et necessaria de cruce &amp; calamitate Christianorum concio sive informatio ..</subfield>
+      <subfield code="f">1667</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schrifftmäßiger Bericht von des heiligen Patriarchen Abrahams 1. müheseliger Pilgrimschafft hier in dieser Zergängligkeit ..</subfield>
+      <subfield code="f">1670</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Jesus medicus omni virtute medicarum genere florens ..</subfield>
+      <subfield code="f">1671</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Memoriae et honori ... Dn. Johannis Maii ..</subfield>
+      <subfield code="f">1671</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Der frommen und betrübten Seelen hertzerquickender Trost ..</subfield>
+      <subfield code="f">1671</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Scharff, Johann: Gottes Wohlthaten, aus den 9, 10, 11, 12. v. des 143. Psalms ..</subfield>
+      <subfield code="f">1673</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">aus Eisfeld; Respondent in Coburg/Franken; Evang. Theologe; Archidiakon in Coburg</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Hoffmann, Johann</subfield>
+      <subfield code="0">(DE-588a)129873144</subfield>
+    </datafield>
+  </record>

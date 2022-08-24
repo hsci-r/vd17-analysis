@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">121683248X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200831095333.0</controlfield>
+    <controlfield tag="008">200831n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">121683248X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/121683248X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)121683248X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)121683248X</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ubelman, Peter</subfield>
+      <subfield code="d">-1666</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ubelmann, Peter</subfield>
+      <subfield code="d">-1666</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ubelman, Petrus</subfield>
+      <subfield code="d">-1666</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Vbelman, Petrus</subfield>
+      <subfield code="d">-1666</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)051060094</subfield>
+      <subfield code="0">(DE-588)16112788-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/16112788-5</subfield>
+      <subfield code="a">Stift Kleve</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-02.05.1666</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1666</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040472337</subfield>
+      <subfield code="0">(DE-588)4047233-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4047233-4</subfield>
+      <subfield code="a">Priester</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040426602</subfield>
+      <subfield code="0">(DE-588)4042660-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4042660-9</subfield>
+      <subfield code="a">Notar</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040327647</subfield>
+      <subfield code="0">(DE-588)4032764-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4032764-4</subfield>
+      <subfield code="a">Kranenburg</subfield>
+      <subfield code="g">Kreis Kleve</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040311562</subfield>
+      <subfield code="0">(DE-588)4031156-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4031156-9</subfield>
+      <subfield code="a">Kleve</subfield>
+      <subfield code="g">Kreis Kleve</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Landesarchiv NRW Abteilung Rheinland: Kleve, Stift, Urkunden Nr. 84 - Scholten R. Die Stadt Cleve: Beiträge zur Geschichte, S. 181</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">[Widmungsempfänger] Resolutiones Pastorales De Praeceptis, Vitiis Capitalibus. Et De Sacramentis. Auctore R D. Jacobo Marchantio, Oppidi Couviniensis Pastore &amp; Decano, S. Theol: Professore, Köln:Henning</subfield>
+      <subfield code="f">1647</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Canon. Dr., Canonicus und Scholaster des Stiftes zu Kleve, 22 Sept. 1640 zum päpstlichen Notar ernannt. Stirbt 1666 als Probst zu Kranenburg.</subfield>
+    </datafield>
+  </record>

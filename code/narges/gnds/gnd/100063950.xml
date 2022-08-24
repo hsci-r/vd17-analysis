@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">100063950</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220310174008.0</controlfield>
+    <controlfield tag="008">900615n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100063950</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100063950</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100063950</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100063950</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090111827</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)175106169</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)175106169</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100063950</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">n</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Johannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cazzialupis, Johannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">de S. Severino</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Casalupis, Johannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cacalupis, Johannes &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Joannes B. &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Johannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Johannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Giovanni Battista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Jean-Baptiste</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Jean-Baptiste</subfield>
+      <subfield code="c">Caccialupi</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Jean-Baptiste</subfield>
+      <subfield code="c">Caccialupi de San-Severino</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">Cazzialupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">Casalupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">Gazalupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Giovanni Battista</subfield>
+      <subfield code="c">Caccialupi</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupis, Johannes B. &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">de Caccialupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severinas, Johannes Baptistus</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severinas, Joannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severinas, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">Caccialupus</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">de Gazalupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Giambattista</subfield>
+      <subfield code="d">1427-1496</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Casalupis, Johannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cacialupis, Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cazzialupis, Johannes B. &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Johannes B. &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Johannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Ioannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severino, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Casalupis, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severino, Johannes Baptista de Sancto</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Ioannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">Cazzalupis</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupi, Johannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Joannes</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Joannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cazzialupis, Joannes B.</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cacialupis, Joannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupi, Giambattista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Johannes Baptista</subfield>
+      <subfield code="c">de Caccialupus</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupis, Johannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Severino, Johannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Caccialupus, Ioannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gazalupis, Ioannes Baptista &#152;de&#156;</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Casalupis, Ioannes Baptista</subfield>
+      <subfield code="d">1427-1496</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118514474</subfield>
+      <subfield code="0">(DE-588)118514474</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118514474</subfield>
+      <subfield code="a">Brant, Sebastian</subfield>
+      <subfield code="d">1458-1521</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104334371</subfield>
+      <subfield code="0">(DE-588)104334371</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104334371</subfield>
+      <subfield code="a">Curtius, Franciscus</subfield>
+      <subfield code="d">1470-1533</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119746948</subfield>
+      <subfield code="0">(DE-588)119746948</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119746948</subfield>
+      <subfield code="a">Loriot, Pierre</subfield>
+      <subfield code="d">-1589</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119695618</subfield>
+      <subfield code="0">(DE-588)119695618</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119695618</subfield>
+      <subfield code="a">Gymnich, Johann</subfield>
+      <subfield code="d">1570-1634</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119839652</subfield>
+      <subfield code="0">(DE-588)119839652</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119839652</subfield>
+      <subfield code="a">Steuermann, Ernst</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1427-1496</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041505077</subfield>
+      <subfield code="0">(DE-588)4150507-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4150507-4</subfield>
+      <subfield code="a">Dozent</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040549038</subfield>
+      <subfield code="0">(DE-588)4054903-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4054903-3</subfield>
+      <subfield code="a">Siena</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040504719</subfield>
+      <subfield code="0">(DE-588)4050471-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050471-2</subfield>
+      <subfield code="a">Rom</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">SWB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Verweisungen ergänzt nach Personennamendatei (PND) und VD16</subfield>
+      <subfield code="5">30.10.1997/bestub/mes</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Ansetzung LCAuth u. andere: Caccialupi, Giovanni Battista, ?-1496</subfield>
+      <subfield code="5">13.10.2010/A100/hpf</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Rep.Font. III,97</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitio Super</subfield>
+      <subfield code="f">1508</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitio C. 1 de feudi cognitione in usibus feu.</subfield>
+      <subfield code="f">1571</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitio l. fratre a fratre ... de condi indebitis</subfield>
+      <subfield code="f">1510</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitio legis omnes populi ff. de justi. et jure</subfield>
+      <subfield code="f">1510</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitio legis cunctos populos ...</subfield>
+      <subfield code="f">1508</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitiones super l. imperium, l. jubere cavere</subfield>
+      <subfield code="f">1507</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Repetitiones decem legum trium. ff. veteris totidem infortiati</subfield>
+      <subfield code="f">1509</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Tractatus de debitoribus</subfield>
+      <subfield code="f">1508</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Solemnis et utilis Repetitio super I. diem functo. ff. de offici*</subfield>
+      <subfield code="f">1508</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Solemnis repetitio I. si qua illustris. C. ad sena. consul. orfi.</subfield>
+      <subfield code="f">1510</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: Commentarii super titulum C. de transactionibus.  1586.  (VD16 C 15)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: TRACTATVVM ET COMMENTARIORVM DE TRANSACTIONIBVS. TOMVS PRIMVS. Confectus ex autoribus ...  1583.  (VD16 ZV 19396)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: De modo studendi in vtro\[que] Jure: cũ noĩb\[us] omniũ scribẽtiũ in iure .  1502.  (VD16 ZV 19794)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Brant, Sebastian: De modo studendi in utroque iure.  1508.  (VD16 B 7052)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: TRACTATUS DE OFFICIO ADVOCATI, DVORVM CLARISSIMORVM IVRISCOMSVLTORVM, Io. BAPTISTAE ...  1589.  (VD16 C 14)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: Commentarii super titulum C. de transactionibus.  1588.  (VD16 C 16)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Brant, Sebastian: Expositiones sive declarationes omnium titulorum iuris.  1514.  (VD16 B 7055)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: De modo studendi in utroque iure.  1597.  (VD16 N 1933)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Caccialupi, Giambattista: Feudorum observationes practicae.  1571.  (VD16 C 7)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Brant, Sebastian: De modo studendi in utroque iure.  1505.  (VD16 B 7051)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ital. Jurist aus San Severino bei Salerno; lehrte die Rechte in Siena, Konsistorialadvokat in Rom</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Caccialupus, Johannes Baptista</subfield>
+      <subfield code="0">(DE-588a)100063950</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Caccialupus, Johannes Baptista</subfield>
+      <subfield code="0">(DE-588a)175106169</subfield>
+    </datafield>
+  </record>

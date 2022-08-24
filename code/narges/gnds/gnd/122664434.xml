@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">122664434</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210729150603.0</controlfield>
+    <controlfield tag="008">010130n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">122664434</subfield>
+      <subfield code="0">http://d-nb.info/gnd/122664434</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)122664434</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)122664434</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)122664434</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0033</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Wasmuth, Nicolaus</subfield>
+      <subfield code="d">-1697</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wasmuth, Gottlieb Nicolaus</subfield>
+      <subfield code="d">-1697</subfield>
+      <subfield code="4">navo</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#FullerFormOfNameOfThePerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Vollstaendiger Name</subfield>
+      <subfield code="e">Vollstaendiger Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wasmuth, N.</subfield>
+      <subfield code="d">-1697</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wasmuth, Nikolaus</subfield>
+      <subfield code="d">-1697</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Wasmuth, Gottlieb Nikolaus</subfield>
+      <subfield code="d">-1697</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1697</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-23.11.1697</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1672</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041585895</subfield>
+      <subfield code="0">(DE-588)4158589-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4158589-6</subfield>
+      <subfield code="a">Gymnasiallehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041279484</subfield>
+      <subfield code="0">(DE-588)4127948-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4127948-7</subfield>
+      <subfield code="a">Schulleiter</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)941357538</subfield>
+      <subfield code="0">(DE-588)4341847-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4341847-8</subfield>
+      <subfield code="a">Pritzwalk</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040224775</subfield>
+      <subfield code="0">(DE-588)4022477-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022477-6</subfield>
+      <subfield code="a">Güstrow</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040417123</subfield>
+      <subfield code="0">(DE-588)4041712-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4041712-8</subfield>
+      <subfield code="a">Neubrandenburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Lehrer an der Gelehrtenschule</subfield>
+      <subfield code="9">Z:1674-</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040539504</subfield>
+      <subfield code="0">(DE-588)4053950-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053950-7</subfield>
+      <subfield code="a">Schwerin</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Konrektor der Domschule</subfield>
+      <subfield code="9">Z:1679-</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042303958</subfield>
+      <subfield code="0">(DE-588)4230395-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4230395-3</subfield>
+      <subfield code="a">Parchim</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Rektor der Gelehrtenschule</subfield>
+      <subfield code="9">Z:1680-1684</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040020843</subfield>
+      <subfield code="0">(DE-588)4002084-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4002084-8</subfield>
+      <subfield code="a">Anklam</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Rektor der Gelehrtenschule</subfield>
+      <subfield code="9">Z:ca. 1685-</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040224775</subfield>
+      <subfield code="0">(DE-588)4022477-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022477-6</subfield>
+      <subfield code="a">Güstrow</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Rektor der Domschule</subfield>
+      <subfield code="9">Z:1694-</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040381978</subfield>
+      <subfield code="0">(DE-588)4038197-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4038197-3</subfield>
+      <subfield code="a">Mecklenburg</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040639975</subfield>
+      <subfield code="0">(DE-588)4063997-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4063997-6</subfield>
+      <subfield code="a">Vorpommern</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">33</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Landesbibliographie MV</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Neubaur, Christian: Mē-'ôt ašer hēśîm YHWH elohîm le-Qayin, h. e. de signo ... - 1673. - Nachdr. der Ausg. Erfurt 1672</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">aus Pritzwalk/Brandenburg; 1672 Defendent an der Univ. Erfurt; (kath. ?) Theologe; Rektor [Gelehrtenschule] / Neubrandenburg, Schwerin, Parchim, Anklam, Güstrow</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Wasmuth, Nicolaus</subfield>
+      <subfield code="0">(DE-588a)122664434</subfield>
+    </datafield>
+  </record>

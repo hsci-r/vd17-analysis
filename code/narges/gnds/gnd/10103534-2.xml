@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">97498065X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200930125426.0</controlfield>
+    <controlfield tag="008">050518n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">10103534-2</subfield>
+      <subfield code="0">http://d-nb.info/gnd/10103534-2</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)97498065X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)10103534-2</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)10103534-2</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-929</subfield>
+      <subfield code="c">DE-929</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0929</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-RP</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">z</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Elbingen</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040657744</subfield>
+      <subfield code="0">(DE-588)4065774-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4065774-7</subfield>
+      <subfield code="a">Westerwaldkreis</subfield>
+      <subfield code="4">obpa</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermPartitive</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff partitiv</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orts-Mü., 28. Aufl.</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Elbingen</subfield>
+      <subfield code="0">(DE-588b)10103534-2</subfield>
+    </datafield>
+  </record>

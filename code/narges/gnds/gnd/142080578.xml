@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">142080578</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220105003104.0</controlfield>
+    <controlfield tag="008">100817n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">142080578</subfield>
+      <subfield code="0">http://d-nb.info/gnd/142080578</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)142080578</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)142080578</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1186314362</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)142080578</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-576</subfield>
+      <subfield code="c">DE-576</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hohenlohe-Gleichen, Siegfried &#152;von&#156;</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gleichen, Siegfried von Hohenlohe-</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hohenlohe und Gleichen, Siegfried</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Siegfried</subfield>
+      <subfield code="c">Hohenlohe-Gleichen, Graf</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hohenlohe-Neuenstein, Siegfried &#152;von&#156;</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hohenlohe, Sigfried &#152;von&#156;</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hohenloe und Gleichen, Sigfried &#152;von&#156;</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Sigisfridus Comes Hohenloius</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hohenloe-Gleichen, Sigfried &#152;von&#156;</subfield>
+      <subfield code="d">1619-1684</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1619-1684</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Abweichendes Geburtsjahr 1618</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">28.08.1619-XX.XX.1684</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040004643</subfield>
+      <subfield code="0">(DE-588)4000464-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000464-8</subfield>
+      <subfield code="a">Adel</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)957917791</subfield>
+      <subfield code="0">(DE-588)4570115-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4570115-5</subfield>
+      <subfield code="a">Oberst</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Stammtafel des mediat. Hauses Hohenlohe, 1883 Taf. IV</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Obrist; Ehemann der Maria verw. Gräfin von Hoditz, geb, Gräfin von Kaunitz, gest. 1674 ; später verheiratet mit Sophia Amalia geb. Pfalz-Gräfin bei Rhein in Bayern, zu Gülich, Cleve u. Berg</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Hohenlohe-Gleichen, Siegfried /von</subfield>
+      <subfield code="0">(DE-588a)142080578</subfield>
+    </datafield>
+  </record>

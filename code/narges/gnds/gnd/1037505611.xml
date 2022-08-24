@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1037505611</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20140916074851.0</controlfield>
+    <controlfield tag="008">130726n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1037505611</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1037505611</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1037505611</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1037505611</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-18</subfield>
+      <subfield code="c">DE-18</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1250</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd6</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">r</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Dreyer, Bernhard Simon</subfield>
+      <subfield code="d">-1725</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037562895</subfield>
+      <subfield code="0">(DE-588)1037562895</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037562895</subfield>
+      <subfield code="a">Reimers, Christian</subfield>
+      <subfield code="c">Witwe</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="e">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1037570189</subfield>
+      <subfield code="0">(DE-588)1037570189</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1037570189</subfield>
+      <subfield code="a">Dreyer, Bernhard Simon</subfield>
+      <subfield code="c">Witwe</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="e">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="a">Königlich privilegierte Buchdruckerei</subfield>
+      <subfield code="g">Altona</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="a">Königlich privilegierte Buchdruckerey</subfield>
+      <subfield code="g">Altona</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1725</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Altona</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1714-1725</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Paisey, S. 46</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Adresse: D 1714-1725</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Heiratete 1714 Christian Reimers Witwe, deren Faktor er war. Seine Witwe führte die Offizin nach seinem Tode fort</subfield>
+    </datafield>
+  </record>

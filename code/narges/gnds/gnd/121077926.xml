@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">121077926</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200902123050.0</controlfield>
+    <controlfield tag="008">990514n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">121077926</subfield>
+      <subfield code="0">http://d-nb.info/gnd/121077926</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)121077926</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)121077926</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)121077926</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Cotler, Andreas</subfield>
+      <subfield code="d">1581-1625</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cotlerus, Andreas</subfield>
+      <subfield code="d">1581-1625</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Cottler, Andreas</subfield>
+      <subfield code="d">1581-1625</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Kottler, Andreas</subfield>
+      <subfield code="d">1581-1625</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116031670</subfield>
+      <subfield code="0">(DE-588)116031670</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116031670</subfield>
+      <subfield code="a">Pappus, Johann</subfield>
+      <subfield code="d">1549-1610</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="e">Relation allgemein</subfield>
+      <subfield code="9">v:Professor</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)007364571</subfield>
+      <subfield code="0">(DE-588)2087372-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2087372-4</subfield>
+      <subfield code="a">Paroisse Saint-Pierre-Le-Jeune</subfield>
+      <subfield code="g">Straßburg</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="e">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">09.01.1581-15.06.1625</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1581-1625</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)964436434</subfield>
+      <subfield code="0">(DE-588)4685187-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4685187-2</subfield>
+      <subfield code="a">Norheim</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Quatzenheim</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Furdenheim</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040907147</subfield>
+      <subfield code="0">(DE-588)4090714-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4090714-4</subfield>
+      <subfield code="a">Dettwiller</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04057878X</subfield>
+      <subfield code="0">(DE-588)4057878-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057878-1</subfield>
+      <subfield code="a">Straßburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">37</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Bopp M.J., Evangelische Geistlicher Elsass Lothringen, n°841</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Norheim bei Bad Münster a. Stein (Pfalz), 1590 nach Aßweiler in die Schule, Stud. in Straßburg, 1601 Bac. M., 1602 Straßburger Predigerseminar (Leitung Pappus), 1602 -1604 Pf. in Quatzenheim und Fürdenheim, 1604-1613 Pf. in Dettweiler, 1613-1618 zweiter, dann 1618-1625 erster Pf. zu Jung-St.Peter Straßburg.</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Cotler, Andreas</subfield>
+      <subfield code="0">(DE-588a)121077926</subfield>
+    </datafield>
+  </record>

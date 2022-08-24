@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118505165</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604114139.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118505165</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118505165</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118505165</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118505165</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1089104308</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118505165</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4003805-1</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">11.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">12.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">p</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">k</subfield>
+      <subfield code="u">m</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Decimus Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">lat</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Decimus M.</subfield>
+      <subfield code="d">310-395</subfield>
+      <subfield code="9">v:R:RAK-WB</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, D. M.</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, D. Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Burdegalensis</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">von Burdigala</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius Burdigalensis, Decimus Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Lehrer der Grammatik</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Lehrer der Rhetorik</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Poeta</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Gallus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Grammaticus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Dichter</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Prinzenerzieher</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Poet</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausone</subfield>
+      <subfield code="c">Poète Bordelais</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonne</subfield>
+      <subfield code="c">de Bourdeaux</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Magnus</subfield>
+      <subfield code="c">Ausonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Magnus Ausonius, Decimus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonne</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausone</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Auson</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Paeonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Peonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Paeonus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonio, Decimo Magno</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Ausonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonio</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Decimus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Decius Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Decius Magnus</subfield>
+      <subfield code="c">Ausonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Decimius Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+      <subfield code="9">v:Wikipedia (dt.)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">Burdigalensis</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="c">von Bordeaux</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausone</subfield>
+      <subfield code="c">de Bordeaux</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonio</subfield>
+      <subfield code="c">Poeta</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Decimus Magnus</subfield>
+      <subfield code="c">Ausonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ausonius, Magnus</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Ausonius</subfield>
+      <subfield code="d">310-395</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119680971</subfield>
+      <subfield code="0">(DE-588)119680971</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119680971</subfield>
+      <subfield code="a">Gallus, F. M.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Crook, Cornelis</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119627361</subfield>
+      <subfield code="0">(DE-588)119627361</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119627361</subfield>
+      <subfield code="a">Bourbon, Nicolas</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118518569</subfield>
+      <subfield code="0">(DE-588)118518569</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118518569</subfield>
+      <subfield code="a">Camerarius, Joachim</subfield>
+      <subfield code="d">1500-1574</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118650130</subfield>
+      <subfield code="0">(DE-588)118650130</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118650130</subfield>
+      <subfield code="a">Aristoteles</subfield>
+      <subfield code="d">v384-v322</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118530666</subfield>
+      <subfield code="0">(DE-588)118530666</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118530666</subfield>
+      <subfield code="a">Erasmus, Desiderius</subfield>
+      <subfield code="d">1466-1536</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118942719</subfield>
+      <subfield code="0">(DE-588)118942719</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118942719</subfield>
+      <subfield code="a">Maximus</subfield>
+      <subfield code="c">Planudes</subfield>
+      <subfield code="d">1260-1310</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118750313</subfield>
+      <subfield code="0">(DE-588)118750313</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118750313</subfield>
+      <subfield code="a">Rufinus</subfield>
+      <subfield code="c">Aquileiensis</subfield>
+      <subfield code="d">345-410</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119055538</subfield>
+      <subfield code="0">(DE-588)119055538</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119055538</subfield>
+      <subfield code="a">Chyträus, Nathan</subfield>
+      <subfield code="d">1543-1598</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100706460</subfield>
+      <subfield code="0">(DE-588)100706460</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100706460</subfield>
+      <subfield code="a">Wolf, Hieronymus</subfield>
+      <subfield code="d">1516-1580</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">310-395</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburts- u. Todesjahr ca.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">03-</subfield>
+      <subfield code="4">datu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#udkCode</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">UDK</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041580168</subfield>
+      <subfield code="0">(DE-588)4158016-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4158016-3</subfield>
+      <subfield code="a">Grammatiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040443000</subfield>
+      <subfield code="0">(DE-588)4044300-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044300-0</subfield>
+      <subfield code="a">Pädagoge</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PMA</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">TITAN;Maschinell verknuepft mit DBL-Retro-Titeldaten</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Röm. Grammatiker, Rhetor und Dichter</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: DNB-Normdaten</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">PAN; Thes. ling. Lat. (1990); Lex. alte Welt; Tusculum-Lexikon; CSGL; M</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Ergänzt nach VIAF/GND</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Apophthegmata. - [ca. 1540]</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Cupido cruci adfixus</subfield>
+      <subfield code="f">1712</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Cupido cruci adfixus</subfield>
+      <subfield code="f">1780</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Ephemeridis carmen I</subfield>
+      <subfield code="f">1782</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Griphus</subfield>
+      <subfield code="f">1583</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Eidyllia duo</subfield>
+      <subfield code="f">1583</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Mosella</subfield>
+      <subfield code="f">1619</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Mosella</subfield>
+      <subfield code="f">1780</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Gedicht von der Mosel</subfield>
+      <subfield code="f">1802</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ausonius, Decimus M.: Mosella</subfield>
+      <subfield code="f">1824</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Suetonius Tranquillus, Caius: De Caesaribus carmina. 1537. (VD16 S 10104)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Christiani hominis institutum. 1570. (VD16 ZV 3143)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Sententiae Publii mimis similes. 1572. (VD16 ZV 3173)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Sententiae. 1541. (VD16 ZV 3160)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Christiani hominis institutum. 1579. (VD16 C 1658)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Publilius Syrus: DICTA GRAECIAE SAPIENtum, Interprete Erasmo Roterodamo. EADEM PER AVSOnium, cum ... 1558. (VD16 S 5936)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">DICTA GRAECIAE SAPIentum, interprete Erasmo Roterodamo. Eadem per Ausonium, cum ... 1533. (VD16 S 5915)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Christiani hominis institutum. 1588. (VD16 C 1668)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Cato, Marcus Porcius: Christiani hominis institutum. 1585. (VD16 ZV 3177)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Beda Venerabilis: Precatio matutina ad omnipotentem deum. 1541. (VD16 B 1432)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Röm. Grammatiker, Rhetor und Dichter</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Ordnung und Zählung der Werke nach der heute noch gültigen Standardausgabe Decimus Magnus Ausonius Burdigalensis, Opuscula, rec. Rudolf Peiper, Stuttgart 1976 (ed. ster. 1886)</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Ausonius, Decimus Magnus</subfield>
+      <subfield code="0">(DE-588a)118505165</subfield>
+    </datafield>
+  </record>

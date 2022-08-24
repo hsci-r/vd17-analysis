@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">100951503</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220310173909.0</controlfield>
+    <controlfield tag="008">910104n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100951503</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100951503</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100951503</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100951503</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090124317</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090301367</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)119737655</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119737655</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100951503</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">n</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">t</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Lanfrancus</subfield>
+      <subfield code="c">de Oriano</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Oriano, Lanfranco</subfield>
+      <subfield code="d">1398-1488</subfield>
+      <subfield code="9">v:WBIS, EDIT 16</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ariadno, Lanfrancus &#152;de&#156;</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Lanfrancus</subfield>
+      <subfield code="c">aus Oriano</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Oriano, Lanfranco &#152;da&#156;</subfield>
+      <subfield code="d">1398-1488</subfield>
+      <subfield code="9">v:d. 1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Lanfranc</subfield>
+      <subfield code="c">d'Oriano</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Oriano, Lanfrancus &#152;de&#156;</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Lanfranco</subfield>
+      <subfield code="c">da Oriano</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Ariadno, Lanfrancus &#152;ab&#156;</subfield>
+      <subfield code="d">1398-1488</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1398-1488</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1563-1592</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+      <subfield code="9">v:Erscheinungsjahre im VD-16</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040290506</subfield>
+      <subfield code="0">(DE-588)4029050-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029050-5</subfield>
+      <subfield code="a">Jurist</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04008213X</subfield>
+      <subfield code="0">(DE-588)4008213-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4008213-1</subfield>
+      <subfield code="a">Brescia</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PMA</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Maschinell eingespielt aus VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Namensansetzung nach PND</subfield>
+      <subfield code="5">26.02.1998/bestub/mes</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Tusculum-Lexikon; LThK; Archivio Biografico Italiano I 717,66-68; BAMA 236,22-23</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Practica iudiciaria</subfield>
+      <subfield code="f">1521</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Aurea et excellens iudicibus, advocatis ... necessaria iudiciaria*</subfield>
+      <subfield code="f">1525</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Practica iudiciaria</subfield>
+      <subfield code="f">1531</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Practica iudiciaria</subfield>
+      <subfield code="f">1534</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Practica iudiciaria</subfield>
+      <subfield code="f">1539</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Practica iudiciaria super cap. quoniam de probationibus Lanfranc*</subfield>
+      <subfield code="f">1592</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Repetitiones</subfield>
+      <subfield code="f">1507</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Repetitiones domini Lanfranci de oriano</subfield>
+      <subfield code="f">1511</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Tractatus de arbitris et Compromissis</subfield>
+      <subfield code="f">1590</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;: Repetitiones, disputationes necnon tractatus</subfield>
+      <subfield code="f">1472</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Göde, Henning: Aurea et admodum singularis repetitio rubricae de causis possessionis et proprietatis. 1563 [1553]. (VD16 G 2480)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;aus Oriano&gt;: AUREA D. LANFRANCI DE ORIANO, I. V. LVMINIS, PRACTICA IVDICIARIA, SVPER CAP. QVONIAM DE ... 1572. (VD16 ZV 17279)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;aus Oriano&gt;: Aurea practica iudiciaria super cap. quoniam de probationib. conscripta. 1573. (VD16 L 266)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;aus Oriano&gt;: PRACTICA IVDICIARIA SVPER CAP. QVONIAM, DE PROBATIONIBVS, LANFRANCI DE ORIANO I.C. ... 1592. (VD16 L 262)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lanfrancus &lt;aus Oriano&gt;: Tractatus de arbitris et compromissis. 1590. (VD16 L 267)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ital. Jurist; Prof. in Padua und Ferrara</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Verf. im VD-16</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Lanfrancus &lt;de Oriano&gt;</subfield>
+      <subfield code="0">(DE-588a)100951503</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Lanfrancus &lt;aus Oriano&gt;</subfield>
+      <subfield code="0">(DE-588a)119737655</subfield>
+    </datafield>
+  </record>

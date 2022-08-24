@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">944532330</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220624164603.0</controlfield>
+    <controlfield tag="008">950530n||azznnaabn          o| ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4377502-0</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4377502-0</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)944532330</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4377502-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4377502-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-CH-BS</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">8.2a</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kio</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="110" ind1="1" ind2=" ">
+      <subfield code="a">Basel</subfield>
+      <subfield code="b">Rat</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Rat der Stadt Basel</subfield>
+    </datafield>
+    <datafield tag="510" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)007476507</subfield>
+      <subfield code="0">(DE-588)2099060-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2099060-1</subfield>
+      <subfield code="a">Basel-Stadt</subfield>
+      <subfield code="b">Grosser Rat</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+      <subfield code="e">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="510" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)000644110</subfield>
+      <subfield code="0">(DE-588)64411-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/64411-0</subfield>
+      <subfield code="a">Basel-Stadt</subfield>
+      <subfield code="b">Regierungsrat</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+      <subfield code="e">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041827597</subfield>
+      <subfield code="0">(DE-588)4182759-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4182759-4</subfield>
+      <subfield code="a">Stadtrat</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040046176</subfield>
+      <subfield code="0">(DE-588)4004617-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4004617-5</subfield>
+      <subfield code="a">Basel</subfield>
+      <subfield code="4">adue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#hierarchicalSuperiorOfTheCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ueberordnung</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Genauere zeitliche Eingrenzung konnte nicht ermittelt werden</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlage</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">historische Körperschaft</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">c</subfield>
+      <subfield code="a">Basel / Rat</subfield>
+      <subfield code="0">(DE-588c)4377502-0</subfield>
+    </datafield>
+  </record>

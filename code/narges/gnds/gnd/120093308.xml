@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">120093308</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604112501.0</controlfield>
+    <controlfield tag="008">980407n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">120093308</subfield>
+      <subfield code="0">http://d-nb.info/gnd/120093308</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)120093308</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)120093308</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090232683</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090675631</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)120093308</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4498051-6</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-384</subfield>
+      <subfield code="c">DE-384</subfield>
+      <subfield code="9">r:DE-384</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">12.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Boaistuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boisteau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bouistuau, Piedro</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bouaystuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaysteau, Peter</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boystuau, Peter</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bouistuau, Pedro</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bouistau, Pedro</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaistuau-Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaystuau-Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boystuau Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre Boaistuau-</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre Boaystuau-</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre Boystuau</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaysteau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaystau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Petrus</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launaeus, Petrus</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bouaistuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launai, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boistuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boisteau-Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre Boisteau-</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boistuau Launai, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boistuau de Launai, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boistuau de Launay, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launai, Pierre Boistuau &#152;de&#156;</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre Boistuau &#152;de&#156;</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bosteau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Chelidonius Tigurinus</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Launay</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Tesserant &#152;de&#156;</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaystuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaistaeus, Petrus</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boaistuau de Launai, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Boystuau, Pierre</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Launay, Pierre &#152;de&#156;</subfield>
+      <subfield code="d">1520-1566</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)11983894X</subfield>
+      <subfield code="0">(DE-588)11983894X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/11983894X</subfield>
+      <subfield code="a">Stella, Michael</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)132294990</subfield>
+      <subfield code="0">(DE-588)132294990</subfield>
+      <subfield code="0">https://d-nb.info/gnd/132294990</subfield>
+      <subfield code="a">Bergen, Gimel</subfield>
+      <subfield code="d">1538-1600</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)11971986X</subfield>
+      <subfield code="0">(DE-588)11971986X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/11971986X</subfield>
+      <subfield code="a">I.V.N.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119798956</subfield>
+      <subfield code="0">(DE-588)119798956</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119798956</subfield>
+      <subfield code="a">R.B.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119848198</subfield>
+      <subfield code="0">(DE-588)119848198</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119848198</subfield>
+      <subfield code="a">Therlanus, Adolf</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119848201</subfield>
+      <subfield code="0">(DE-588)119848201</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119848201</subfield>
+      <subfield code="a">Therlanus, Hermann</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)121650723</subfield>
+      <subfield code="0">(DE-588)121650723</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121650723</subfield>
+      <subfield code="a">Utenhove, Karl &#152;von&#156;</subfield>
+      <subfield code="d">1536-1600</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119866889</subfield>
+      <subfield code="0">(DE-588)119866889</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119866889</subfield>
+      <subfield code="a">Weisse, Peter</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1520-1566</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040412040</subfield>
+      <subfield code="0">(DE-588)4041204-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4041204-0</subfield>
+      <subfield code="a">Nantes</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040446603</subfield>
+      <subfield code="0">(DE-588)4044660-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044660-8</subfield>
+      <subfield code="a">Paris</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Archives Biographiques Françaises I 113,130-136; IIS 11,205</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">http://de.wikipedia.org/wiki/Pierre%5FBoaistuau</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le théatre du monde ... des misères humaines</subfield>
+      <subfield code="f">1559</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le theatre du Monde ..</subfield>
+      <subfield code="f">1587</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le theatre du Monde</subfield>
+      <subfield code="f">1574</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le theatre du Monde ...</subfield>
+      <subfield code="f">1659</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le theatre du Monde</subfield>
+      <subfield code="f">1621</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Bref discours de l'excellence et dignite de l'homme</subfield>
+      <subfield code="f">1559</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: A most excellent hystorie of the institution of christian princes</subfield>
+      <subfield code="f">1571</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: The theatre of the world</subfield>
+      <subfield code="f">1663</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Le theatre du monde ...</subfield>
+      <subfield code="f">1595</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Theatrum mundi</subfield>
+      <subfield code="f">1566</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: LE THEATRE DV MONDE, OV IL EST FAICT VN AMPLE DISCOVRS des miseres Humaines, Faict en ...</subfield>
+      <subfield code="f">5802</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: LE THEATRE DV MONDE,OV IL EST FAICT VNG AMPLE DISCOVRS DES MISERES Humaines.Auec vng ...</subfield>
+      <subfield code="f">5803</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: LE THEATRE DV MONDE, OV IL EST FAICT VNG AMPLE DISCOVRS DES MISERES Humaines. Auec vng ...</subfield>
+      <subfield code="f">5804</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Boaistuau, Pierre: Theatrum mundi, das ist der Welt Schauplatz oder Spiegel der Welt</subfield>
+      <subfield code="f">2107</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Boaistuau, Pierre</subfield>
+      <subfield code="0">(DE-588a)120093308</subfield>
+    </datafield>
+  </record>

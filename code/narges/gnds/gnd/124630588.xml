@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">124630588</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20211027112808.0</controlfield>
+    <controlfield tag="008">030430n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">124630588</subfield>
+      <subfield code="0">http://d-nb.info/gnd/124630588</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)124630588</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)124630588</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)124630588</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-576</subfield>
+      <subfield code="c">DE-576</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0015</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroy &#152;d'&#156;</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroy Louis &#152;d'&#156;</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroy Louis</subfield>
+      <subfield code="c">comte d’</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroi &#152;d'&#156;</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroi</subfield>
+      <subfield code="c">comte d’</subfield>
+      <subfield code="d">1607-1686</subfield>
+      <subfield code="9">v:LCAuth</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroi Louis &#152;d'&#156;</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Godefroi-Louis</subfield>
+      <subfield code="c">comte d’</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Estrades, Gottfried &#152;von&#156;</subfield>
+      <subfield code="d">1607-1686</subfield>
+      <subfield code="9">v:-Jöcher</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Estrades</subfield>
+      <subfield code="c">comte d'</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Estrades</subfield>
+      <subfield code="c">maréchal d'</subfield>
+      <subfield code="d">1607-1686</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1607-1686</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-26.02.1686</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040554090</subfield>
+      <subfield code="0">(DE-588)4055409-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4055409-0</subfield>
+      <subfield code="a">Soldat</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040124010</subfield>
+      <subfield code="0">(DE-588)4012401-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4012401-0</subfield>
+      <subfield code="a">Diplomat</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040465179</subfield>
+      <subfield code="0">(DE-588)4046517-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4046517-2</subfield>
+      <subfield code="a">Politiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040217787</subfield>
+      <subfield code="0">(DE-588)4021778-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4021778-4</subfield>
+      <subfield code="a">Graf</subfield>
+      <subfield code="4">adel</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#titleOfNobility</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Adelstitel</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040796418</subfield>
+      <subfield code="0">(DE-588)4079641-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4079641-3</subfield>
+      <subfield code="a">Agen</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040446603</subfield>
+      <subfield code="0">(DE-588)4044660-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044660-8</subfield>
+      <subfield code="a">Paris</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">BnF Cat. général 12529371</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Von Verachtung weltlicher Hohheit</subfield>
+      <subfield code="f">1690</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Lettres et négociations</subfield>
+      <subfield code="f">1709</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Het Karakter van den Raad-Pensionaris Jan de Wit en zyne factie</subfield>
+      <subfield code="f">1757</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Marschall von Frankreich</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Estrades, Godefroy /d'</subfield>
+      <subfield code="0">(DE-588a)124630588</subfield>
+    </datafield>
+  </record>

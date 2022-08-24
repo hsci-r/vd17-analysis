@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">104330775</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220310173817.0</controlfield>
+    <controlfield tag="008">970205n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">104330775</subfield>
+      <subfield code="0">http://d-nb.info/gnd/104330775</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)104330775</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)104330775</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1090561938</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)104330775</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-PT</subfield>
+      <subfield code="c">XA-NL</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">e</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Zacutus, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lusitanus, Zacutus</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Abraham</subfield>
+      <subfield code="c">Zacutus</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacutus Lusitanus, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacuth, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tavara, Manuel Alvares &#152;de&#156;</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Alvares de Tavara, Manuel</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Abraham Zacutus</subfield>
+      <subfield code="c">Lusitanus</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Zacutus Lusitanus</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Lusitanus, Abraham Z.</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Abraham</subfield>
+      <subfield code="c">Zakut Lusitanus</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacuto, Manuel Alvares de Tavora</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tavora, Manuel A. &#152;de&#156;</subfield>
+      <subfield code="d">1575-1642</subfield>
+      <subfield code="4">nawi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#realIdentity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirklicher Name</subfield>
+      <subfield code="e">Wirklicher Name</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zākūt, Abrāhām</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sakut, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tavora, Manuel Alvares &#152;de&#156;</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacut, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Abraham Zacuto</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacuto-Lusitano, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacuto, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Zacutus Lusitanus, Abraham</subfield>
+      <subfield code="d">1575-1642</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1575-1642</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1576/75-1642</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040359190</subfield>
+      <subfield code="0">(DE-588)4035919-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4035919-0</subfield>
+      <subfield code="a">Lissabon</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040017834</subfield>
+      <subfield code="0">(DE-588)4001783-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4001783-7</subfield>
+      <subfield code="a">Amsterdam</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Red. SSG</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMm</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="b">nach Klau und NUC mit Zusatz: Lusitanus</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">NUC</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LCAuth</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">PND, PMA</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De medicorum principum historia</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pharmacopaea</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Praxis historiarum</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">In quo "De medicorum principum historia, libri sex", ubi medicinales omnes historiae, de morbis internis, quae passim apud principes medicos occurrunt, concinno ordine disponuntur, paraphrasi, &amp; commentariis illustrantur, necnon quaestionibus, dubiis, &amp; observationibus exquisitissimis exornantur</subfield>
+      <subfield code="f">1667</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">In quo "Praxis historiarum", ubi morborum omnium internorum curatio ad principum medicorum mentem explicatur, graviora dubia ventilantur ac resolvuntur, practicae denique observationes permultae suis locis insperguntur. Praemittitur "Introitus medici ad praxin", necnon "Pharmacopoea elegantissima". Accessit "Praxis medica admiranda" ..</subfield>
+      <subfield code="f">1667</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Zacvti Lvsitani ... Historiarvm medicarvm libri .... - 16XX</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De medicorum principum historia, libri sex</subfield>
+      <subfield code="f">1649</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Zacuti Lusitani, medici et philosophis praestantissimi Operum tomus .... - 16XX</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">In quo "Praxis historiarum", ubi morborum omnium internorum curatio ad principum medicorum mentem explicatur ... Acessit Praxis medica admiranda</subfield>
+      <subfield code="f">1657</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Zacuti Lusitani,... De Praxi medica admiranda libri tres</subfield>
+      <subfield code="f">1634</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Zacvti Lvsitani ... Opervm tomvs .... - 16XX</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De medicorum principum historia libri 6. - 16XX</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">In quo "De medicorum principum historia, libri sex", ubi medicinales omnes historiae, ... Editio postrema a mendis purgatissima</subfield>
+      <subfield code="f">1657</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Nicht ident. mit ASS 805187!</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Zacutus, Abraham</subfield>
+      <subfield code="0">(DE-588a)104330775</subfield>
+    </datafield>
+  </record>

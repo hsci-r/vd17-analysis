@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1214469094</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200724170638.0</controlfield>
+    <controlfield tag="008">200724n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1214469094</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1214469094</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1214469094</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1214469094</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Marchi, Jacobus &#152;di&#156;</subfield>
+      <subfield code="d">1575-1635</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1214468853</subfield>
+      <subfield code="0">(DE-588)1214468853</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1214468853</subfield>
+      <subfield code="a">Marchi, Gaspare &#152;di&#156;</subfield>
+      <subfield code="d">1527-1622</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1575-1635</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042214017</subfield>
+      <subfield code="0">(DE-588)4221401-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4221401-4</subfield>
+      <subfield code="a">Händler</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040768600</subfield>
+      <subfield code="0">(DE-588)4076860-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4076860-0</subfield>
+      <subfield code="a">Rovereto</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04011077X</subfield>
+      <subfield code="0">(DE-588)4011077-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4011077-1</subfield>
+      <subfield code="a">Darmstadt</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlage - Hessische Familienkunde, Bd. 26, Sp. 351-358</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Salvaguardia Piè Agonisantium, &amp; per Mortis vallem beatè migrantium: Das ist: Frey offner Paßzeddel, sampt einem ansehlichen Ehren-Geleyd, dessen alle Rechtgläubige und seligsterbende Christen hochbenöhtiget seynd ... Zu einer Christlichen LeichPredigt Bey begräbnuß deß weyland Ehrngeachten und wolbenambten Herrn Caspari di Marcky, gewesenen Seydenhändlers und frommen alten Fürstlichen Hof-Dieners ...Zu Darmbstatt in der Pfarrkirchen vorgetragen und uff Begeren in offenen Truck verfertiget, durch M. Hieronymum Gerhardi, Predigern und Mittarbeitern Am Wort deß H.Evangelii. Darmstadt: B. Hofmann, [1622]</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Rovereto, Seidenhändler.</subfield>
+    </datafield>
+  </record>

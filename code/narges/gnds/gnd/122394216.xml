@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">122394216</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20171207180728.0</controlfield>
+    <controlfield tag="008">001002n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">122394216</subfield>
+      <subfield code="0">http://d-nb.info/gnd/122394216</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)122394216</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)122394216</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)122394216</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-576</subfield>
+      <subfield code="c">DE-576</subfield>
+      <subfield code="9">r:DE-576</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9009</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Molan, Rudolf</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molanus, Rudolphus</subfield>
+      <subfield code="d">1632-1695</subfield>
+      <subfield code="9">v:BN, Pastoren der Landeskirchen Hannovers ...</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molanus, Rudolf</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molan, Rudolph</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molan, Rudolphus</subfield>
+      <subfield code="d">1632-1695</subfield>
+      <subfield code="9">v:Matrikel der Univ. Jena</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molanus, Rudolph</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molano, Rudolph</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Molanus, Rudolphus</subfield>
+      <subfield code="d">1632-1695</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1632-1695</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040479625</subfield>
+      <subfield code="0">(DE-588)4047962-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4047962-6</subfield>
+      <subfield code="a">Quakenbrück</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="b">BN u. Pastoren der Landeskirchen Hannovers ...: 910</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">PND</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gerhard, Johann Ernst: De personalitate spiritus Sancti disputatio academica. - 1660</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gerhard, Johann Ernst: Moderamine Viri Maxime Reverendi Amplissimi Excellentissimi Dn. Johannis Ernesti Gerhardi, Doctoris Theologi &amp; Profess. Publ. Domini, Praeceptoris &amp; Patroni summe colendi, De Maria Oriunda E Semine Davidis Dissertatiuncula. - 1661</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Möring, Johann: Carmen Propempticon, Quod Perquam Reverendi &amp; Clarissimi Viri, D. M. Rudolphi Molani, Monasterii Walkenredensis Pastoris hactenus fidelissimi abitum ad Pastoratum Primarium Quakenbrugi in Patria rite capessendum. Prosequitur M. Johannes Möringius, Lycei Walkenredensis Rector Walkenredae IV. eid. Decembris, Anno M.DC.LXVI. - 1666</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">BLC, DBI, NUC, IBI, Marti</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Dt. ev. Theologe; 1660 als Magister  an der Universität Jena imm.; bis 1666 Pfarrer des Klosters Walkenried; ab 1666 Pastor primarius in Quakenbrück, auch kurfürstl.-braunschw.-lüneburgischer  Konsistorialrat</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Theologe, Pfarrer in Quakenbrück u. Konsistorialrat  in Osnabrück</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Molanus, Rudolph</subfield>
+      <subfield code="0">(DE-588a)122394216</subfield>
+    </datafield>
+  </record>

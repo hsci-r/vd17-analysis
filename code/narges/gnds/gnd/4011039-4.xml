@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040110397</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210810193524.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4011039-4</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4011039-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">3099434</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 018 38 46</subfield>
+      <subfield code="e">E 018 38 46</subfield>
+      <subfield code="f">N 054 21 07</subfield>
+      <subfield code="g">N 054 21 07</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/3099434</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E018.646370</subfield>
+      <subfield code="e">E018.646370</subfield>
+      <subfield code="f">N054.352049</subfield>
+      <subfield code="g">N054.352049</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/3099434</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040110397</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4011039-4</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1028154-X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)1028154-X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)15739-9</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)15739-9</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4011039-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-PL</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">43822</subfield>
+      <subfield code="9">d:3</subfield>
+      <subfield code="9">t:2007-01-01</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Danzig</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Magistrat</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Magistrat</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Abteilung für Wissenschaft, Kunst und Volksbildung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Stadtverordneten-Vorsteher</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtverordneten-Vorsteher</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Stadtverordneten-Versammlung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtverordneten-Versammlung</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Urząd Miejski</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Urza̧d Miejski</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Stadtamt</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Stadtamt</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Office Municipal</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Office Municipal</subfield>
+      <subfield code="g">Danzig</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Urza̧d Miejski</subfield>
+      <subfield code="b">Wydział Promocji Miasta</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Wydział Promocji Miasta</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Abteilung Stadtpromotion</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Section de Promotion de a Ville</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Referat Promocji</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Danzig</subfield>
+      <subfield code="b">Abteilung für Förderung</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Ville Libre de Danzig</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Dantzig</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Ville Libre de Dantzig</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Freistaat Danzig</subfield>
+      <subfield code="9">v:1920-1939</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Gdańsk</subfield>
+      <subfield code="9">v:poln.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Freie Stadt Danzig</subfield>
+      <subfield code="9">v:1920-1939</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Urza̧d Miejski w Gdańsku</subfield>
+      <subfield code="4">nauv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Unveraenderte Form</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Gyddanzyc</subfield>
+      <subfield code="9">v:997</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Gedanum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Dantiscum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMi</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 20.5.2015</subfield>
+      <subfield code="u">http://www.gdansk.pl</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006 1.+2.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M 1.</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Hauptstadt der Woiwodschaft Pommern, 997 urkundl. erwähnt, 1240/63 Stadt, 10.1.1920-1.9.1939 Freistaat Freie Stadt, seit 1945 polnisch unter dem Namen Gdansk</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Danzig</subfield>
+      <subfield code="0">(DE-588c)4011039-4</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Danzig</subfield>
+      <subfield code="0">(DE-588b)15739-9</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Gdańsk</subfield>
+      <subfield code="0">(DE-588b)1028154-X</subfield>
+    </datafield>
+  </record>

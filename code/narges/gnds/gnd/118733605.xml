@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118733605</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220604112048.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118733605</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118733605</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118733605</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118733605</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118733605</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)103657258</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119761904</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4100930-7</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XU</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">4.7p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">12.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">16.5p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">n</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Michael</subfield>
+      <subfield code="d">1018-1078</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michel</subfield>
+      <subfield code="c">Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Michel</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Michael</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Mikhail</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michał</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Michał</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Michel</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psell, Michail</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psel, Mihailo</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psel, Michail</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michaēl</subfield>
+      <subfield code="c">ho Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Philosophōn Hypatos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michaēl</subfield>
+      <subfield code="c">Philosophōn Hypatos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Michael Constantinus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Michael Constantin</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Konstantinos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Constantius</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellus, Constantinus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michaēl</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psellos, Michaēl</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Mikhail</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michel</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michel Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michele</subfield>
+      <subfield code="c">Psello</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michele Psello</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Psello, Michele</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Miguel</subfield>
+      <subfield code="c">Pselo</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pselo, Miguel</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michail</subfield>
+      <subfield code="c">Psell</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Iunior</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">le Jeune</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Minor</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Philosophorum Princeps</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael Constantinus</subfield>
+      <subfield code="c">Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Constantinus</subfield>
+      <subfield code="c">Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Konstantinos</subfield>
+      <subfield code="c">Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">Philosophon Hypatos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael Psellus</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael</subfield>
+      <subfield code="c">ho Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Michael Psellos</subfield>
+      <subfield code="d">1018-1078</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Billy, Jacques &#152;de&#156;</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Caesarius</subfield>
+      <subfield code="c">aus Nazianz</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119662264</subfield>
+      <subfield code="0">(DE-588)119662264</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119662264</subfield>
+      <subfield code="a">Elias</subfield>
+      <subfield code="c">von Kreta</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)100967736</subfield>
+      <subfield code="0">(DE-588)100967736</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100967736</subfield>
+      <subfield code="a">Gregorius</subfield>
+      <subfield code="c">Caesariensis</subfield>
+      <subfield code="d">ca. 6./7. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Gregorius</subfield>
+      <subfield code="c">von Nazianz</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100188826</subfield>
+      <subfield code="0">(DE-588)100188826</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100188826</subfield>
+      <subfield code="a">Leunclavius, Johannes</subfield>
+      <subfield code="d">1533-1593</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119808064</subfield>
+      <subfield code="0">(DE-588)119808064</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119808064</subfield>
+      <subfield code="a">Roillet, Claude</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Rufinus</subfield>
+      <subfield code="c">aus Aquileia</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124394450</subfield>
+      <subfield code="0">(DE-588)124394450</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124394450</subfield>
+      <subfield code="a">Forteguerri, Scipione</subfield>
+      <subfield code="d">1466-1515</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119785064</subfield>
+      <subfield code="0">(DE-588)119785064</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119785064</subfield>
+      <subfield code="a">Petri, Heinrich Adam</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118679694</subfield>
+      <subfield code="0">(DE-588)118679694</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118679694</subfield>
+      <subfield code="a">Dionysius</subfield>
+      <subfield code="c">Areopagita</subfield>
+      <subfield code="d">ca. 5./6. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118644319</subfield>
+      <subfield code="0">(DE-588)118644319</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118644319</subfield>
+      <subfield code="a">Albinus</subfield>
+      <subfield code="c">Platonicus</subfield>
+      <subfield code="d">ca. 2. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Nilus</subfield>
+      <subfield code="c">aus Ancyra</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118641778</subfield>
+      <subfield code="0">(DE-588)118641778</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118641778</subfield>
+      <subfield code="a">Proclus</subfield>
+      <subfield code="c">Diadochus</subfield>
+      <subfield code="d">412-485</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="a">Theodoretus</subfield>
+      <subfield code="c">von Cyrus</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124555268</subfield>
+      <subfield code="0">(DE-588)124555268</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124555268</subfield>
+      <subfield code="a">Meurer, Christoph</subfield>
+      <subfield code="d">1558-1616</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119068982</subfield>
+      <subfield code="0">(DE-588)119068982</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119068982</subfield>
+      <subfield code="a">Hermes</subfield>
+      <subfield code="c">Trismegistus</subfield>
+      <subfield code="d">ca. 2./4. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)12461650X</subfield>
+      <subfield code="0">(DE-588)12461650X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/12461650X</subfield>
+      <subfield code="a">Christopherson, John</subfield>
+      <subfield code="d">-1558</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118808087</subfield>
+      <subfield code="0">(DE-588)118808087</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118808087</subfield>
+      <subfield code="a">Xenocrates</subfield>
+      <subfield code="c">Chalcedonius</subfield>
+      <subfield code="d">ca. v4. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1018-1078</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Todesjahr auch 1076</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040465179</subfield>
+      <subfield code="0">(DE-588)4046517-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4046517-2</subfield>
+      <subfield code="a">Politiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040250989</subfield>
+      <subfield code="0">(DE-588)4025098-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025098-2</subfield>
+      <subfield code="a">Historiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040736970</subfield>
+      <subfield code="0">(DE-588)4073697-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4073697-0</subfield>
+      <subfield code="a">Konstantinopel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Meyer, Bd. 19, S. 355</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Michael_Psellos</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">The letters of Psellos</subfield>
+      <subfield code="f">2017</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Aristotelus peri aretōn bibliona. - [ca. 1540]</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Ammōniu tu Hermeiu hypomnēma eis to peri hermēneias Aristotelus</subfield>
+      <subfield code="f">1503</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Eusebius &lt;Caesariensis&gt;: Eusebii, Polychronii, Pselli In Canticum Canticorum exposition*</subfield>
+      <subfield code="f">1617</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Michael &lt;Psellus&gt;: Compendium mathematicum aliique tractatus eodem pertinentes</subfield>
+      <subfield code="f">1647</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Michael &lt;Psellus&gt;: Synopsis legum versibus jambicis [et] politicis</subfield>
+      <subfield code="f">1632</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Michael &lt;Psellus&gt;: Synopsis legum versibus jambicis [et] politicis</subfield>
+      <subfield code="f">1789</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Iustinianus &lt;Imperium Byzantinum, Imperator, I.&gt;: De Iustiniani novellis libellum graece *</subfield>
+      <subfield code="f">1836</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Michael &lt;Psellus&gt;: Pselli, ... Liber de quatuor mathematicis scientiis</subfield>
+      <subfield code="f">1556</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Michael &lt;Psellus&gt;: De arithmetica</subfield>
+      <subfield code="f">1557</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">The history of Psellus</subfield>
+      <subfield code="f">1899</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gregorius &lt;von Nazianz&gt;: Vita divi Gregorii Nazianzeni theologi. 1571. (VD16 G 3023)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Aristoteles: Organon. 1597. (VD16 ZV 21421)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Ficino, Marsiglio: De mystica theologia. 1576. (VD16 ZV 5830)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Gregorius &lt;von Nazianz&gt;: Vita divi Gregorii Nazianzeni theologi. 1570. (VD16 G 3022)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">MICAELIS PSELLI ARITHMETICAE, MVSICAE ET GEOMETRIAE COMPENDIA. GVILELMO XYLANDRO ... 1591. (VD16 M 5146)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">PSELLI DE VICTVS RATIONE AD Constantinum Imperatorem libri II. Rhazae, cognomento ... 1529. (VD16 M 5147)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">PSELLI, doctiss. uiri, perspiCVVS LIBER DE quatuor Mathematicis scientijs, Arithmetica, ... 1556. (VD16 M 5144)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">PSELLI Philosophi &amp; Mathematici clarissimi ARITHMETICA Edita studio M.Christophori ... 1590. (VD16 M 5145)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">PSELLI Philosophi &amp; Mathematici clarissimi GEOMETRIA Edita studio M. Christophori ... 1589. (VD16 ZV 10945)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodoretus &lt;von Cyrus&gt;: Ecclesiastica historia. 1573. (VD16 ZV 14915)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theodoretus &lt;von Cyrus&gt;: Psalmi. 1567. (VD16 T 743)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Byzantin. Staatsmann, Philosoph, Enzyklopädist</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Michael &lt;Psellus&gt;</subfield>
+      <subfield code="0">(DE-588a)118733605</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Psellos, Michael</subfield>
+      <subfield code="0">(DE-588a)118733605</subfield>
+    </datafield>
+  </record>

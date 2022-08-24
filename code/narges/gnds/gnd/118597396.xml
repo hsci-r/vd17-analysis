@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118597396</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220309171324.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118597396</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118597396</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118597396</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118597396</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1111555370</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)108918073X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)186071590</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)186071590</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)185992935</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)185992935</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118597396</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4048090-2</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XT</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">11.2p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">p</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="377" ind1=" " ind2="7">
+      <subfield code="a">lat</subfield>
+      <subfield code="2">iso639-2b</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, Marcus Fabius</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, Marcus T.</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, Marcus F.</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilian, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilianus, M. Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilian, Marcus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Pseudo-Quintilianus, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Fabius Quintilianus, Marcus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Fabius Quintilianus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Fabius</subfield>
+      <subfield code="c">Quintilianus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quinctilainus, Marcus F.</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quinctilianus, Marcus F.</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quinctilainus, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quinctilianus, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quinctilianus, M. Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintilen, Marcus Fabius</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Quintiliano, Marco Fabio</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quinctilian</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilian</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilian</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">Calagurritanus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">Tarraconensis</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">von Calagurris</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">ex Hispania</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">von Spanien</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">Rhetorician</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilien</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilien</subfield>
+      <subfield code="c">de Calagurris</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilien</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">ex Hispania Tarraconensi</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintiliano</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintiliano</subfield>
+      <subfield code="c">de Calahorra</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintiliano</subfield>
+      <subfield code="c">Rhetor</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Quintilianus</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Pseudo-Quintiliano</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Quintilianus</subfield>
+      <subfield code="c">Pseudo-</subfield>
+      <subfield code="d">35-100</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)120707225</subfield>
+      <subfield code="0">(DE-588)120707225</subfield>
+      <subfield code="0">https://d-nb.info/gnd/120707225</subfield>
+      <subfield code="a">Velcurio, Johannes</subfield>
+      <subfield code="d">1490-1534</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)119151286</subfield>
+      <subfield code="0">(DE-588)119151286</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119151286</subfield>
+      <subfield code="a">Calpurnius</subfield>
+      <subfield code="c">Flaccus</subfield>
+      <subfield code="d">ca. 2. Jh.</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118518569</subfield>
+      <subfield code="0">(DE-588)118518569</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118518569</subfield>
+      <subfield code="a">Camerarius, Joachim</subfield>
+      <subfield code="d">1500-1574</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100163556</subfield>
+      <subfield code="0">(DE-588)100163556</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100163556</subfield>
+      <subfield code="a">Hertel, Jacob</subfield>
+      <subfield code="d">1536-1564</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)124452965</subfield>
+      <subfield code="0">(DE-588)124452965</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124452965</subfield>
+      <subfield code="a">Landsidelius, Caspar</subfield>
+      <subfield code="d">1514-1560</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)131835688</subfield>
+      <subfield code="0">(DE-588)131835688</subfield>
+      <subfield code="0">https://d-nb.info/gnd/131835688</subfield>
+      <subfield code="a">Melanchthon, Philipp</subfield>
+      <subfield code="d">1525-1605</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)12218243X</subfield>
+      <subfield code="0">(DE-588)12218243X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/12218243X</subfield>
+      <subfield code="a">Philandrier, Guillaume</subfield>
+      <subfield code="d">1505-1565</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)123590736</subfield>
+      <subfield code="0">(DE-588)123590736</subfield>
+      <subfield code="0">https://d-nb.info/gnd/123590736</subfield>
+      <subfield code="a">Reich, Stephan</subfield>
+      <subfield code="d">1512-1588</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)118765116</subfield>
+      <subfield code="0">(DE-588)118765116</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118765116</subfield>
+      <subfield code="a">Sichard, Johann</subfield>
+      <subfield code="d">1499-1552</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)104318864</subfield>
+      <subfield code="0">(DE-588)104318864</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104318864</subfield>
+      <subfield code="a">Stigel, Johann</subfield>
+      <subfield code="d">1515-1562</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">35-100</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburts- u. Todesjahr ca.</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040488950</subfield>
+      <subfield code="0">(DE-588)4048895-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4048895-0</subfield>
+      <subfield code="a">Redner</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12-PAN</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: DNB-Normdaten (Info DNB: Z: 35-100 Z: Geburts- u. Todesjahr ca. D: Röm. Rhetor)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">PAN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Thes. ling. Lat. (1990)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Lex. alte Welt</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GND</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Declamationes</subfield>
+      <subfield code="f">1556</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Declamationes 136</subfield>
+      <subfield code="f">1509</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Chrestomathia Quintiliana</subfield>
+      <subfield code="f">1782</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: M. Fabii Quintiliani Dialogus de causis corruptae eloquentiae</subfield>
+      <subfield code="f">1719</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Declamationes undeviginti</subfield>
+      <subfield code="f">1556</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Declamationes</subfield>
+      <subfield code="f">1580</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Declamationes</subfield>
+      <subfield code="f">1563</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Oratoriae institutiones</subfield>
+      <subfield code="f">1561</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Oratoriae institutiones</subfield>
+      <subfield code="f">1555</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus F.: Charakteristick der besten griechischen und römischen Schriftste*</subfield>
+      <subfield code="f">1776</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M.FABII QVINTILIANI RHETORIS CLARISsimi oratoriarum institutionum libri XII. restituti penè ... 1534. (VD16 Q 93)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M.FABII QVINTILIANI Institutionum Oratoria rum Libri duo,Primus &amp; Secundus,restituti ... 1531. (VD16 Q 92)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: Oratoriarũ institutionũ Liber primus. 1518. (VD16 Q 89)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M.FABII QVINTILIANI ORATORIS ELOQVENTISSIMI DECLAMATIONVM LIBER.. 1557. (VD16 Q 109)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: EPITOME FABII QVINTILIANI NVPER SVMMO ET INGENIO et diligentia collecta,qua possit ... 1551. (VD16 Q 105)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M.FABII QVINTILIANI RHETORIS CLARISSIMI,ORAtoriarum institutionum libri XII.Doctißimorum ... 1555. (VD16 Q 98)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: Institutiones oratoriae. 1570. (VD16 Q 102)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M. FABII QVINTILIANI RHETORIS CLARISSIMI, ORATORIARVM Institutionum libri XII. ... 1581. (VD16 Q 88)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: M. FABII QVINTILIANI RHETORIS CLARISSIMI, Oratoriarum institutionum libri XII. Doctißimorum ... 1548. (VD16 Q 96)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Quintilianus, Marcus Fabius: COMPENDIVM SEV EPITOME FABII Quintiliani nuper summo &amp; ingenio &amp; diligẽtia collecta, qua ... 1537. (VD16 Q 104)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Römischer Rhetor, Redner</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Quintilianus, Marcus Fabius</subfield>
+      <subfield code="0">(DE-588a)118597396</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Quintilianus, Marcus Fabius</subfield>
+      <subfield code="0">(DE-588a)185992935</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Quintilianus, Marcus F.</subfield>
+      <subfield code="0">(DE-588a)186071590</subfield>
+    </datafield>
+  </record>

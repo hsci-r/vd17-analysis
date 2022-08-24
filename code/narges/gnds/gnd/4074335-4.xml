@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">040743357</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220415151500.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4074335-4</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4074335-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">W 000 07 32</subfield>
+      <subfield code="e">W 000 07 32</subfield>
+      <subfield code="f">N 051 30 30</subfield>
+      <subfield code="g">N 051 30 30</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2643743</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">W000.125740</subfield>
+      <subfield code="e">W000.125740</subfield>
+      <subfield code="f">N051.508530</subfield>
+      <subfield code="g">N051.508530</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/2643743</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040743357</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4074335-4</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1073220583</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1005809-6</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)1005809-6</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4074335-4</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gndz</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-GB</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">o</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">e</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">421</subfield>
+      <subfield code="9">d:4</subfield>
+      <subfield code="9">t:2007-01-01</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">London</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">County of London</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">London</subfield>
+      <subfield code="b">County Council</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">County Council</subfield>
+      <subfield code="g">London</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">London County Council</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">LCC</subfield>
+      <subfield code="4">abku</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#abbreviatedNameForThePlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Abkuerzung</subfield>
+      <subfield code="e">Abkuerzung</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">London</subfield>
+      <subfield code="b">Intelligence Unit</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Intelligence Unit</subfield>
+      <subfield code="g">London</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Corporation of London</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Greater London Council</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">GLC</subfield>
+      <subfield code="4">abku</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#abbreviatedNameForThePlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Abkuerzung</subfield>
+      <subfield code="e">Abkuerzung</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">London</subfield>
+      <subfield code="b">Greater London Council</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Greater London</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Greater London Authority</subfield>
+      <subfield code="4">spio</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Spitzenorgan</subfield>
+      <subfield code="e">Spitzenorgan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londinium</subfield>
+      <subfield code="9">v:röm.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londyn</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Landan</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Lundun</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Augusta Trinobantum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londres</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londra</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londen</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">London</subfield>
+      <subfield code="g">Great Britain</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londinum</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Lundonia</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Westminster</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Londinium</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Bearbeitungssperre (Top500) - Änderungswünsche an DNB</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Beispiel in RSWK 4. Aufl.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006 1.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M 1.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Homepage</subfield>
+      <subfield code="b">Stand: 20.04.2022</subfield>
+      <subfield code="u">https://www.london.gov.uk</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Hauptstadt des Vereinigten Königreichs von Großbritannien und Nordirland, in Mittelsteinzeit besiedelt, 43 n. Chr. von Römern gegründet; das County of London war 1889-1965 Verwaltungsgrafschaft u. zeremonielle Grafschaft</subfield>
+    </datafield>
+    <datafield tag="751" ind1=" " ind2="7">
+      <subfield code="0">(DE-101)992102359</subfield>
+      <subfield code="0">(ZBW)30103-0</subfield>
+      <subfield code="0">https://zbw.eu/stw/descriptor/30103-0</subfield>
+      <subfield code="a">London</subfield>
+      <subfield code="4">EQ</subfield>
+      <subfield code="i">Aequivalenz</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">London</subfield>
+      <subfield code="0">(DE-588c)4074335-4</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">London</subfield>
+      <subfield code="0">(DE-588b)1005809-6</subfield>
+    </datafield>
+  </record>

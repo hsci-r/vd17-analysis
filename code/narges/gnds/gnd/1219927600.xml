@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1219927600</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201020121002.0</controlfield>
+    <controlfield tag="008">201020n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1219927600</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1219927600</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1219927600</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1219927600</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ulner, Johann Hermann</subfield>
+      <subfield code="d">1623-1680</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)136876609</subfield>
+      <subfield code="0">(DE-588)136876609</subfield>
+      <subfield code="0">https://d-nb.info/gnd/136876609</subfield>
+      <subfield code="a">Ulner, Samuel</subfield>
+      <subfield code="d">-1665</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)122993640</subfield>
+      <subfield code="0">(DE-588)122993640</subfield>
+      <subfield code="0">https://d-nb.info/gnd/122993640</subfield>
+      <subfield code="a">Ulner, Helfried Christoph</subfield>
+      <subfield code="d">1618-1658</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Bruder</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">30.07.1623-02.05.1680</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1623-1680</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04020989X</subfield>
+      <subfield code="0">(DE-588)4020989-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4020989-1</subfield>
+      <subfield code="a">Gießen</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orstfamilienbuch Gießen; Sippenbuch Marburg; Arcinsys</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">[Verfasser] Ehren-Gedichte: Als seinen Hochzeitlichen Freuden-Tag Der Edel/ Vest und Hochgelahrte/ Herr Christoph Helffrich Ulner, Beyder Rechten Doctor/ mitt der Edlen/ viel Ehrn- unnd Tugendreichen Jungfer/ Regina Ursula/ deß Wohl-Edel/ Vest unnd Hoch-Gelarthen/ Herrn Philipps Ludwigs Fabricii, Icti. Fürstlichen Hessen-Darmbstättischen Geheimen Raths und Cantzlars/ Geliebte Tochter/ Den 8. Novembris/ Anno 1653. zu Darmbstadt Feyerlich begienge. Aufgesetzet von seinem guten Freunde unnd Bruder, Gießen: Hampel</subfield>
+      <subfield code="f">1653</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Sohn von Samuel U., Verfasser eine Glückwunschsgedicht auf die Hochzeit des älteren Brüders Christoph Helfrich Ulner 1653. Laut Eintrag im Orstfamilienbuch Gießen wäre Johann Hermann U. mit 2 Jahren gestorben (30.07.1623 - 04.09.1625) ; Wohl Konfusion mit einem frühgestorbenen Brüder. Laut Marburger Sippenbuch ist er zwar am 30.07.1623 geboren aber am 02.05.1680 als Amtsverweser in Homberg (Ohm) gestorben (in Arcinsys Hessen auch nachweisbar). Heiratet selbst Juliane Margarethe geb. Ruppel den 03.11.1656.</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1204887810</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210305164935.0</controlfield>
+    <controlfield tag="008">200217n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1204887810</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1204887810</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1204887810</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1204887810</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-77</subfield>
+      <subfield code="c">DE-77</subfield>
+      <subfield code="9">r:DE-77</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-CH</subfield>
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">a</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Blum, Georg</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Bluhm, Georgius</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1136480633</subfield>
+      <subfield code="0">(DE-588)1136480633</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1136480633</subfield>
+      <subfield code="a">Universität Mainz</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1635-1661</subfield>
+      <subfield code="4">datw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#periodOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040031578</subfield>
+      <subfield code="0">(DE-588)4003157-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003157-3</subfield>
+      <subfield code="a">Arzt</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040252434</subfield>
+      <subfield code="0">(DE-588)4025243-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025243-7</subfield>
+      <subfield code="a">Hochschullehrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="a">Dr. med.</subfield>
+      <subfield code="4">akad</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#academicDegree</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Akademischer Grad</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)965821765</subfield>
+      <subfield code="0">(DE-588)4711425-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4711425-3</subfield>
+      <subfield code="a">Bennwihr</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)100962301X</subfield>
+      <subfield code="0">(DE-588)7731412-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7731412-8</subfield>
+      <subfield code="a">Hessen-Rheinfels</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Georg Blum, in: Verzeichnis der Professorinnen und Professoren der Universität Mainz</subfield>
+      <subfield code="b">Zugriff am 17.02.2020</subfield>
+      <subfield code="u">http://gutenberg-biographics.ub.uni-mainz.de/id/eb39a500-9f58-40da-9354-286e5a86b977</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wackernagel H.G., Matrikel der Universität Basel, BD. 3, S. 367 - Genth A., Der Kurort Schwalbach, S. 81</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">König Davids Und aller Frommen Christen Hertzens-Trost, höhestes Erb-Gut und grössester Reichthumb : Erkläret und beschrieben Bey Ansehnlicher, Christlicher und Volckreichen Begräbnüß Der Ehr- und Viel-Tugendsamen Frawen Margaretae Dorotheae Gebohrnen Asclepin, Des Wohl-Ehrenfesten, Vor-Achtbarn und Wolgelarten Herrn Balthasaris Horstii, Fürstl. Heßischen Zoll-Bedienten zu S. Goar und wolbestelten Apotheckern, Vielgeliebten Haußfrawen, Darmstad, Abel, 1661 [Beiträger]</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Elsass. Immatr. in der med. Fakultät Basel 1635, Promotion 1636. An der Universität Mainz Tätig 1644-1646. Leibarzt und "archiater" des Landgrafs Ernst von Hessen-Rheinfels.</subfield>
+    </datafield>
+  </record>

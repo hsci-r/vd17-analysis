@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040780635</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210830125256.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4078063-6</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4078063-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040780635</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4078063-6</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)5179033-6</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)5179033-6</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4078063-6</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0025</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-BY</subfield>
+      <subfield code="c">XA-DXDE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Sulzbach</subfield>
+      <subfield code="g">Oberpfalz</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Sulzbach (Oberpfalz)</subfield>
+      <subfield code="9">v:Ritter Geogr. 12.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Solisbacum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Sultzbacum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Zulsbacum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Zultsbakh</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Zultzbacum</subfield>
+      <subfield code="9">v:Orbis latinus</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Sultzbach</subfield>
+      <subfield code="g">Oberpfalz</subfield>
+      <subfield code="9">v:Vorlage</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-30.06.1934</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040780643</subfield>
+      <subfield code="0">(DE-588)4078064-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4078064-8</subfield>
+      <subfield code="a">Sulzbach-Rosenberg</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1003062830</subfield>
+      <subfield code="0">(DE-588)16067654-X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/16067654-X</subfield>
+      <subfield code="a">Sulzbach-Rosenberg-Sulzbach</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMi</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Orts-Mü. 5.1933</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Geo-Du.</subfield>
+      <subfield code="b">unter Sulzbach-Rosenberg</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006</subfield>
+      <subfield code="b">unter Sulzbach-Rosenberg</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M</subfield>
+      <subfield code="b">unter Sulzbach-Rosenberg</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">Stand: 5.6.2015</subfield>
+      <subfield code="u">http://www.sulzbach-rosenberg.de</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="b">Stand: 30.08.2021</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Sulzbach-Rosenberg</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Stadt im Bezirk Regensburg, Regierungsbezirk Oberpfalz,in Bayern. Im 8. Jh. besiedelt, 1253 Markt, vor 1326 Civitas (2. Hälfte 13. Jh. Stadt?), 1.7.1934 mit Rosenberg zu Sulzbach-Rosenberg zusammengeschlossen</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Sulzbach &lt;Oberpfalz&gt;</subfield>
+      <subfield code="0">(DE-588c)4078063-6</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Sulzbach &lt;Oberpfalz&gt;</subfield>
+      <subfield code="0">(DE-588b)5179033-6</subfield>
+    </datafield>
+  </record>

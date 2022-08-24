@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">95615848X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220628180220.0</controlfield>
+    <controlfield tag="008">990408n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4538657-2</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4538657-2</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)95615848X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4538657-2</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4538657-2</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE-NW</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">6.3a</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kiz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Gymnasium Montanum</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Montanum</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Montaner-Gymnasium</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1420-1798</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfEstablishmentAndTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040226484</subfield>
+      <subfield code="0">(DE-588)4022648-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022648-7</subfield>
+      <subfield code="a">Gymnasium</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040314839</subfield>
+      <subfield code="0">(DE-588)4031483-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4031483-2</subfield>
+      <subfield code="a">Köln</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040425703</subfield>
+      <subfield code="0">(DE-588)4042570-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4042570-8</subfield>
+      <subfield code="a">Nordrhein-Westfalen</subfield>
+      <subfield code="4">geow</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#spatialAreaOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsraum</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Provenienzmerkmal im Ex. der USB Köln</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Provenienzmerkmal</subfield>
+      <subfield code="b">Notiz</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlage</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">ca. 1420-1798</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">c</subfield>
+      <subfield code="a">Köln / Gymnasium Montanum</subfield>
+      <subfield code="0">(DE-588c)4538657-2</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">040021130</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210921194628.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">4002113-0</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4002113-0</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">8643037</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 013 00 18</subfield>
+      <subfield code="e">E 013 00 18</subfield>
+      <subfield code="f">N 050 34 43</subfield>
+      <subfield code="g">N 050 34 43</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/8643037</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E013.005000</subfield>
+      <subfield code="e">E013.005000</subfield>
+      <subfield code="f">N050.578611</subfield>
+      <subfield code="g">N050.578611</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/8643037</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)040021130</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)4002113-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)2045846-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)2045846-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4002113-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DXDE</subfield>
+      <subfield code="c">XA-DE-SN</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">432164</subfield>
+      <subfield code="9">t:2010-04-19</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Annaberg</subfield>
+      <subfield code="g">Erzgebirge</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Sankt Annaberg</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Sanct Annaberg</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Neustadt am Schreckenberg</subfield>
+      <subfield code="9">v:1496-1500</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Neustadt</subfield>
+      <subfield code="g">Schreckenberg</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1945</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-09.12.1948</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+      <subfield code="9">v:offiziell</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040154769</subfield>
+      <subfield code="0">(DE-588)4015476-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4015476-2</subfield>
+      <subfield code="a">Erzgebirge</subfield>
+      <subfield code="4">obpa</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermPartitive</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff partitiv</subfield>
+      <subfield code="9">X:1</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040858138</subfield>
+      <subfield code="0">(DE-588)4085813-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4085813-3</subfield>
+      <subfield code="a">Annaberg-Buchholz</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)944519970</subfield>
+      <subfield code="0">(DE-588)2147372-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2147372-9</subfield>
+      <subfield code="a">Annaberg-Buchholz-Annaberg</subfield>
+      <subfield code="4">nach</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#succeedingPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Nachfolger</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">MMi</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B 2006</subfield>
+      <subfield code="b">unter Annaberg-Buchholz</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">M</subfield>
+      <subfield code="b">unter Annaberg-Buchholz</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GeoNames</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">21.9.1496 als Neustadt am Schreckenberg gegründet, 1497 Stadtrecht, 1501 umbenannt, 1945 Zwangsvereinigung von Annaberg u. Buchholz durch die Besatzungsmacht, offizielle Vereinigung 10.12.1948</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Beide Indikatoren der späteren Namensformen korrekt, da Annaberg u. Buchholz zusammen den neuen Ort mit dem Ortsdoppelnamen bilden und Annaberg-Buchholz- Annaberg als Ortsteil der direkte Nachfolger der ehemaligen selbständigen Gemeinde Annaberg &lt;Erzgebirge&gt; ist</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Kleinräumige Geographika und Körperschaften aus dem heutigen Ortsteil werden mit dem Doppelort angesetzt, es sei denn, es handelt sich um die nach § 209,5 Abs. 3+4 und § 605,7 Satz 2 als Ausnahme formulierten Fälle. Nach der Eingemeindung verwende den Doppelort als Ausstellungs- bzw. Kongressort</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">swd</subfield>
+      <subfield code="i">g</subfield>
+      <subfield code="a">Annaberg &lt;Erzgebirge&gt;</subfield>
+      <subfield code="0">(DE-588c)4002113-0</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Annaberg &lt;Erzgebirge&gt;</subfield>
+      <subfield code="0">(DE-588b)2045846-0</subfield>
+    </datafield>
+  </record>

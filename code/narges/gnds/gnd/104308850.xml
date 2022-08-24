@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">104308850</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210422165036.0</controlfield>
+    <controlfield tag="008">961209n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">104308850</subfield>
+      <subfield code="0">http://d-nb.info/gnd/104308850</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)104308850</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)104308850</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)104308850</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Tanne, Adam Heinrich &#152;von der&#156;</subfield>
+      <subfield code="d">-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tann, Adam Heinrich &#152;von der&#156;</subfield>
+      <subfield code="d">-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Tanne, Adamus Henricus &#152;de&#156;</subfield>
+      <subfield code="d">-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Thann, Adam Heinrich &#152;von der&#156;</subfield>
+      <subfield code="d">-1689</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Thanne, Adam Heinrich &#152;von der&#156;</subfield>
+      <subfield code="d">-1689</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004100034</subfield>
+      <subfield code="0">(DE-588)1017688-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1017688-3</subfield>
+      <subfield code="a">Deutscher Orden</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1689</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-06.03.1689</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041563123</subfield>
+      <subfield code="0">(DE-588)4156312-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4156312-8</subfield>
+      <subfield code="a">Geheimer Rat</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040096572</subfield>
+      <subfield code="0">(DE-588)4009657-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4009657-9</subfield>
+      <subfield code="a">Celle</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Vorlage</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Kleinau, Hermann: Die von Werle im Raum Braunschweig-Nordharz-Halberstadt. Ein Beitrag zur Geschichte der welfischen Dienstmannschaft und zur Pfalzenforschung. Braunschweig 1971 (Quellen und Forschungen zur braunschweigischen Geschichte ; 19), S. 75</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De Semiramide, Assyriorum Quondam Regina Orationes Adversariae Duae. - 1662</subfield>
+    </datafield>
+    <datafield tag="675" ind1=" " ind2=" ">
+      <subfield code="a">Prioritätenliste</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">1660 Student in Helmstedt; braunschweig-wolfenbüttelscher Hofjunker (1665) und Legationsrat (1676), Kammerjunker (1667) und Hofmeister (1672) des Erbprinzen August Friedrich, seit 1677 cellescher Kammerrat, Hofmarschall (1680) und Geh. Kammerrat (1683); wurde 1683 in den Deutschen Orden aufgenommen und dort Komtur in Göttingen und Burow, 1687 Koadjutor der Ballei Sachsen. - Im Rittersaale in Lucklum befindet sich sein Bild, in der dortigen Kirche sind sein Grabstein und Wappenschild erhalten.</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Tanne, Adam Heinrich /von der</subfield>
+      <subfield code="0">(DE-588a)104308850</subfield>
+    </datafield>
+  </record>

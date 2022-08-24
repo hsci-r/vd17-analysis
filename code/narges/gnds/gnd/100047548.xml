@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">100047548</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220812140410.0</controlfield>
+    <controlfield tag="008">900615n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">100047548</subfield>
+      <subfield code="0">http://d-nb.info/gnd/100047548</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)100047548</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)100047548</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)100047548</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-12</subfield>
+      <subfield code="c">DE-12</subfield>
+      <subfield code="9">r:DE-12</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">8999</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-FR</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, Antoine</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, Antonius</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, Antoine &#152;von&#156;</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, Antoine &#152;de&#156;</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, A. &#152;de&#156;</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Varillas, A. &#152;de&#156;</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Sieur Varillas</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Monsieur Varillas</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Varillas</subfield>
+      <subfield code="d">1624-1696</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)1265053901</subfield>
+      <subfield code="0">(DE-588)1265053901</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1265053901</subfield>
+      <subfield code="a">Sieur de Bonair</subfield>
+      <subfield code="d">1624-1696</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1624-1696</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040250989</subfield>
+      <subfield code="0">(DE-588)4025098-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4025098-2</subfield>
+      <subfield code="a">Historiker</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="a">Guéret</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040446603</subfield>
+      <subfield code="0">(DE-588)4044660-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044660-8</subfield>
+      <subfield code="a">Paris</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040446603</subfield>
+      <subfield code="0">(DE-588)4044660-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044660-8</subfield>
+      <subfield code="a">Paris</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">Z:1644-1676</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">3</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-18</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Henri Stuart de Bonair (!1055593454!) wurde im Weller als Pseudonym von Varillas bezeichnet; dies ist unklar. Varillas hat jedenfalls wohl auch als "Le Sieur de Bonair" publiziert, wofür unter !1265053901! ein neuer Satz angelegt wurde. Ob die Werke "La Politique de la maison d'Autriche" und "Discours sur la conjoncture presente des affaires d'Allemagne" nicht vielleicht doch von Henri Stuart de Bonair stammen oder ob dieser doch nur ein Pseudonym sein könnte, war nicht endgültig zu klären, "La politique de la maison d'Autriche" hat laut BnF aber ein "épître dédicatoire" von Varillas. "Sommaire royal de l'histoire de France"stammt laut ABF ebenfalls von Varillas und trägt als Verantwortlichkeitsangabe "Bonair".</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">In "Discours sur la conjoncture présente des affaires d'Allemagne" das auch als in der Variante "La Politique De La Maison D'Avstriche Avec Un Discours ..." erscheint, also sicher vom gleichen Verfasser stammen sollte, gibt es die Formulierung "par le Sr de Bonair, historiographe du roy &amp; l'un des XXV Gentilhommes de la Garde Escossoise de son corps". Eine fast identische Formulierung findet sich im BnF-Band "Factum pour Henry de Bonair Stuart, historiographe du Roy, &amp; l'un des vingt-cinq gentilshommes de sa Garde ecossoise" - hier ist aber eindeutig der Name "Henry" genannt. Wenn das andere Werk korrekt Varillas zugeordnet ist (wie es scheint), spräche das doch dafür, dass Henri keine echte Person war.</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia (Frankreich)</subfield>
+      <subfield code="b">Stand: 10.08.2022</subfield>
+      <subfield code="u">https://fr.wikipedia.org/wiki/Antoine_Varillas</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">BN</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">NUC</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Archives Biographiques Françaises I 1013,188-227; IIS 100,375-392; III 444,409</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: Les anecdotes de Florence ou l'histoire secrète de la maison de Médicis</subfield>
+      <subfield code="f">1685</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: Histoire de Charles IX</subfield>
+      <subfield code="f">1686</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: La pratique de l'éducation des princes</subfield>
+      <subfield code="f">1686</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: The history of William de Croy</subfield>
+      <subfield code="f">1687</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: Anekdota heteruriaka</subfield>
+      <subfield code="f">1686</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: Reflexions on Dr. Gilbert Burnet's travels</subfield>
+      <subfield code="f">1688</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Varillas, Antoine: Les anecdotes de Florence</subfield>
+      <subfield code="f">1687</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Weitere Titel ggf. auch unter dem Pseudonym bzw. dem wirklichen Namen</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2021-12-08</subfield>
+      <subfield code="b">a-DE-23-bo e-xDE-601-FE</subfield>
+      <subfield code="a">Bitte prüfen: Henri Stuart de Bonair (vgl. !1055593454!) ist kein Pseudonym sondern eine andere Person. Die Zuschreibung als Pseud. geht wohl auf LCAuth (https://lccn.loc.gov/n82152359) bzw. auf BN zurück. Der Irrtum ist jetzt in BnF korrigiert (http://ark.bnf.fr/ark:/12148/cb125724668). Die - vermutlich fehlerhafte Zuschreibung des angebl. Pseudonyms - geht offensichtlich auf Weller zurück</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2022-01-19</subfield>
+      <subfield code="b">a-DE-601-FE-P-di e-xDE-12-FE</subfield>
+      <subfield code="a">Zur Prüfung weiter an DE-12</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2022-08-10</subfield>
+      <subfield code="b">a-DE-12 e-DE-23-bo e-DE-601-P-di</subfield>
+      <subfield code="a">Haben Sie für die Aussage, dass das ein Irrtum ist, eine weitere Quelle als die BnF? Auch nach eingehender Analyse der Titel ist es nicht eindeutig zu klären, ob es sich um ein Pseudonym oder eine eigene Person handelt, bzw. wem welcher Titel zugeschrieben werden kann. BnF kann ebenfalls die Titelzuordnung nicht abschließend klären und verknüpft für "Discours sur la conjoncture présente des affaires d'Allemagne" mit Varillas UND Henri Stuart de Bonair mit einer umfangreichen Notiz. Wir haben diesen Satz und den für die -möglicherweise- echte Person Henri überarbeitet sowie einen neuen, mit Varillas verknüpften, Satz für das Pseudonym "Sieur de Bonair" angelegt (!1265053901!) und die Titelsätze an den neuen Pseudonymen-Satz umverknüpft. Wir würden aber weiterhin dazu tendieren, dass Henri nicht existiert hat, sondern ein Pseudonym ist, s. die redaktionellen Bemerkungen. Was meinen Sie?</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Varillas, Antoine</subfield>
+      <subfield code="0">(DE-588a)100047548</subfield>
+    </datafield>
+  </record>

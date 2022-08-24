@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">116993693</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210125125449.0</controlfield>
+    <controlfield tag="008">960610n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">116993693</subfield>
+      <subfield code="0">http://d-nb.info/gnd/116993693</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)116993693</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)116993693</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1053440685</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)119714574</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)119714574</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)116993693</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-611</subfield>
+      <subfield code="c">DE-611</subfield>
+      <subfield code="9">r:DE-611</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0103</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">h</subfield>
+      <subfield code="q">z</subfield>
+      <subfield code="u">k</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hornburg, Johann</subfield>
+      <subfield code="d">-1571</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornburg, Johannes</subfield>
+      <subfield code="d">-1571</subfield>
+      <subfield code="9">v:(VD-16)</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornburgius, Johannes</subfield>
+      <subfield code="d">-1571</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornburgius, Joannes</subfield>
+      <subfield code="d">-1571</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Hornburg, Joannes</subfield>
+      <subfield code="d">-1571</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">-1571</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04136676X</subfield>
+      <subfield code="0">(DE-588)4136676-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4136676-1</subfield>
+      <subfield code="a">Bürgermeister</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040533093</subfield>
+      <subfield code="0">(DE-588)4053309-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4053309-8</subfield>
+      <subfield code="a">Schriftsteller</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040506983</subfield>
+      <subfield code="0">(DE-588)4050698-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4050698-8</subfield>
+      <subfield code="a">Rothenburg ob der Tauber</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://www.heraldik-wiki.de/wiki/Hornburg_(Patrizier)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Psalmi Davidici In precationum Formulas redacti</subfield>
+      <subfield code="f">1618</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Celtis, Konrad: Chonradi Celtis Prothucij Elegie̜ due̜ multo festiuissime̜ per Io: Hornburgium nuper ex ...  1520.  (VD16 C 1898)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Althamer, Andreas: SYLVA BIBLICORVM NOminum, qua uirorũ, mulierumpopulorum, ciuitatum, montium, fluuiorum ...  1530.  (VD16 A 2035)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Althamer, Andreas: SYLVA BIBLICORVM NOMINVM, QVA uirorum, mulierum, populorũ, ciuitatum, montium, fluuiorum, ...  1535.  (VD16 A 2036)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Busch, Hermann von dem: HERMANNI BVSCHII PASIPHILI POETAE CELEBERRIMI, LIPSICA, CVM PHILIPPI Noueniani ...  1521.  (VD16 B 9905)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reuchlin, Johannes: Joãnis Reuchlin Phorcensis L L. doctoris celebratissimi Sergius vel Capitis caput. ... ...  1520.  (VD16 R 1293)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reuchlin, Johannes: Joãnis Reuchlin Phorcensis LL. doctoris celebratissimi Sergius vel Capitis caput. ... ...  1521.  (VD16 ZV 13117)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Kuppelich, Georg: Trostbüchlein.  1576.  (VD16 K 2582)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Tacitus, Publius Cornelius: Germania.  1536.  (VD16 ZV 14839)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Kellner, Johannes: Judicium Joannis Cellarij De Martino Luthero. Quemadmodũ Rubus ille Quem vidit Moses ...  1520.  (VD16 K 701)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reuchlin, Johannes: Joannis Reuchlini Phorcensis LL. Doctoris celebratissimi Sergius vel Capitis caput.  1521.  (VD16 R 1294)</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Student in Ingolstadt, Leipzig und Wittenberg; Patrizier, 1537 Ratsherr und 1539 Bürgermeister in Rothenburg o.d.Tauber; führte dort 1544 endgültig die Reformation ein; nennt sich "Erythropolitanus"</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Hornburg, Johann</subfield>
+      <subfield code="0">(DE-588a)116993693</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Hornburg, Johannes</subfield>
+      <subfield code="0">(DE-588a)119714574</subfield>
+    </datafield>
+  </record>

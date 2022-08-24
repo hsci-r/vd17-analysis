@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">007542070</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20160308111211.0</controlfield>
+    <controlfield tag="008">890922n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">2106175-0</subfield>
+      <subfield code="0">http://d-nb.info/gnd/2106175-0</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)007542070</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)2106175-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)2106175-0</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9002</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kiz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">v</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Christian-Albrechts-Universität zu Kiel</subfield>
+      <subfield code="b">Theologische Fakultät</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Theologische Fakultät</subfield>
+      <subfield code="g">Kiel</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)004815270</subfield>
+      <subfield code="0">(DE-588)2024175-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2024175-6</subfield>
+      <subfield code="a">Christian-Albrechts-Universität zu Kiel</subfield>
+      <subfield code="4">adue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#hierarchicalSuperiorOfTheCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ueberordnung</subfield>
+      <subfield code="e">Ueberordnung</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040304817</subfield>
+      <subfield code="0">(DE-588)4030481-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030481-4</subfield>
+      <subfield code="a">Kiel</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">VKiel</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Universität &lt;Kiel&gt; / Theologische Fakultät</subfield>
+      <subfield code="0">(DE-588b)2106175-0</subfield>
+    </datafield>
+  </record>

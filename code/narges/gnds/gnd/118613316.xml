@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">118613316</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220323003058.0</controlfield>
+    <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">118613316</subfield>
+      <subfield code="0">http://d-nb.info/gnd/118613316</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)118613316</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)118613316</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588)1043763783</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)118613316</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588c)4054577-5</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-101</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="9">r:DE-101</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">9999</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-IT</subfield>
+      <subfield code="c">XA-DE</subfield>
+      <subfield code="c">XD-PY</subfield>
+      <subfield code="c">XD-AR</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">3.6p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="065" ind1=" " ind2=" ">
+      <subfield code="a">14.4p</subfield>
+      <subfield code="2">sswd</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="q">m</subfield>
+      <subfield code="q">l</subfield>
+      <subfield code="u">w</subfield>
+      <subfield code="u">v</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Anton Clemens</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Rechegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Rainegg und Seppenburg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+      <subfield code="9">v:Bautz</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Anton von Rainegg</subfield>
+      <subfield code="d">1655-1733</subfield>
+      <subfield code="9">v:WBIS Online</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rainegg, Anton Sepp &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Reinegg, Anton Sepp &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Seppenburg, Anton Sepp von Rainegg &#152;und&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Rechegg, Antonius</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rechegg, Anton Sepp &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp v. Seppenburg zu Salegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Seppenburg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Seppenburg zu Salegg, Anton Sepp &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Antônio Clemente</subfield>
+      <subfield code="d">1655-1733</subfield>
+      <subfield code="9">v:Rabuske, A. J. Pe. Antônio Sepp, 2003</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Alphonso</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Alfons</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Alphonsus</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Reinegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Rechegg und Seppenburg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Rainegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rechegg, Anton Sepp von Seppenburg zu Salegg &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Salegg von Rechegg, Anton Sepp von Seppenburg &#152;zu&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Seppenburg zu Salegg von Rechegg, Anton Sepp</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rainegg und Seppenburg, Anton &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Seppenburg zu Salegg von Rechegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von und zu Rechegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Reinegg, Anton S. &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Anthony</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Antonius</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp, Antonio</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Rainegg und Seppenburg, Anton Sepp &#152;von&#156;</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Sepp von Seppenburg zu Salegg, Anton</subfield>
+      <subfield code="d">1655-1733</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1043762981</subfield>
+      <subfield code="0">(DE-588)1043762981</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1043762981</subfield>
+      <subfield code="a">Sepp, Paul</subfield>
+      <subfield code="d">1649-1670</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Bruder</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1043763252</subfield>
+      <subfield code="0">(DE-588)1043763252</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1043763252</subfield>
+      <subfield code="a">Sepp, Alphons</subfield>
+      <subfield code="d">1653-1715</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Bruder</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)000800929</subfield>
+      <subfield code="0">(DE-588)80092-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/80092-2</subfield>
+      <subfield code="a">Jesuiten</subfield>
+      <subfield code="4">affi</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#affiliation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Affiliation</subfield>
+      <subfield code="e">Affiliation</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1655-1733</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">21.11.1655-13.01.1733</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040395758</subfield>
+      <subfield code="0">(DE-588)4039575-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4039575-3</subfield>
+      <subfield code="a">Missionar</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04030020X</subfield>
+      <subfield code="0">(DE-588)4030020-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4030020-1</subfield>
+      <subfield code="a">Katholischer Theologe</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041371844</subfield>
+      <subfield code="0">(DE-588)4137184-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4137184-7</subfield>
+      <subfield code="a">Geistlicher</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040457907</subfield>
+      <subfield code="0">(DE-588)4045790-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4045790-4</subfield>
+      <subfield code="a">Philosoph</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040408418</subfield>
+      <subfield code="0">(DE-588)4040841-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4040841-3</subfield>
+      <subfield code="a">Musiker</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04032009X</subfield>
+      <subfield code="0">(DE-588)4032009-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4032009-1</subfield>
+      <subfield code="a">Komponist</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040293742</subfield>
+      <subfield code="0">(DE-588)4029374-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029374-9</subfield>
+      <subfield code="a">Kaltern an der Weinstraße</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040343375</subfield>
+      <subfield code="0">(DE-588)4034337-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4034337-6</subfield>
+      <subfield code="a">Landsberg am Lech</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040269914</subfield>
+      <subfield code="0">(DE-588)4026991-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4026991-7</subfield>
+      <subfield code="a">Ingolstadt</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040036146</subfield>
+      <subfield code="0">(DE-588)4003614-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003614-5</subfield>
+      <subfield code="a">Augsburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040015440</subfield>
+      <subfield code="0">(DE-588)4001544-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4001544-0</subfield>
+      <subfield code="a">Altötting</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041199030</subfield>
+      <subfield code="0">(DE-588)4119903-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4119903-0</subfield>
+      <subfield code="a">Jesuitenstaat</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">384</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Quelle: DNB-Normdaten (Info DNB: aus Kaltern/Südtirol; Jesuit, Missionar in Südamerika)</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">OEML</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">OEML</subfield>
+      <subfield code="b">Stand: 22.03.2022</subfield>
+      <subfield code="u">http://www.musiklexikon.ac.at/ml/musik_S/Sepp_Brueder.xml</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="b">Stand: 22.03.2022</subfield>
+      <subfield code="u">https://de.wikipedia.org/w/index.php?title=Anton_Sepp&amp;oldid=196083103</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">LThK</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reiß-Beschreibung, wie dieselbe aus Hispanien in Paraquariam ...</subfield>
+      <subfield code="f">1697</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Reiß-Beschreibung, wie dieselbe aus Hispanien in Paraquariam ...</subfield>
+      <subfield code="f">1698</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Continuatio laborum apostolicorum</subfield>
+      <subfield code="f">1709</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Ab 1691 Jesuitenmissionar in der Jesuitenprovinz Paraguay, Argentinen und Brasilien. Gestorben in San José, Misiones (Argentinien).</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2="4">
+      <subfield code="a">Sepp, Antonio</subfield>
+      <subfield code="d">1655-1733</subfield>
+      <subfield code="9">v:1655-1733</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Sepp von Rechegg, Anton</subfield>
+      <subfield code="0">(DE-588a)118613316</subfield>
+    </datafield>
+  </record>

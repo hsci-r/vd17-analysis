@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">10230887X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200923161652.0</controlfield>
+    <controlfield tag="008">920624n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">10230887X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/10230887X</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)10230887X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)10230887X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)10230887X</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-7</subfield>
+      <subfield code="c">DE-7</subfield>
+      <subfield code="9">r:DE-601</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">2214</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">o</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen-Jena, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhardt</subfield>
+      <subfield code="c">Sachsen-Jülich-Cleve-Berg, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen-Jülich-Cleve-Berg, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen-Weimar, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen-Weimar-Jena, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Saxonia, Dux</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhardt</subfield>
+      <subfield code="c">Sachsen-Jena, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="b">II.</subfield>
+      <subfield code="c">Sachsen-Weimar, Herzog</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Nachfolgende, Der</subfield>
+      <subfield code="d">1638-1678</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">Der Nachfolgende</subfield>
+      <subfield code="d">1638-1678</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)102104387</subfield>
+      <subfield code="0">(DE-588)102104387</subfield>
+      <subfield code="0">https://d-nb.info/gnd/102104387</subfield>
+      <subfield code="a">Wilhelm</subfield>
+      <subfield code="b">IV.</subfield>
+      <subfield code="c">Sachsen-Weimar, Herzog</subfield>
+      <subfield code="d">1598-1662</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)124767109</subfield>
+      <subfield code="0">(DE-588)124767109</subfield>
+      <subfield code="0">https://d-nb.info/gnd/124767109</subfield>
+      <subfield code="a">Maria</subfield>
+      <subfield code="c">Sachsen-Jena, Herzogin</subfield>
+      <subfield code="d">1632-1682</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Ehefrau</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)104201517</subfield>
+      <subfield code="0">(DE-588)104201517</subfield>
+      <subfield code="0">https://d-nb.info/gnd/104201517</subfield>
+      <subfield code="a">Johann Wilhelm</subfield>
+      <subfield code="c">Sachsen-Jena, Herzog</subfield>
+      <subfield code="d">1675-1690</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)121279480</subfield>
+      <subfield code="0">(DE-588)121279480</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121279480</subfield>
+      <subfield code="a">Wilhelm</subfield>
+      <subfield code="c">Sachsen-Jena, Herzog</subfield>
+      <subfield code="d">1664-1666</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)123478049</subfield>
+      <subfield code="0">(DE-588)123478049</subfield>
+      <subfield code="0">https://d-nb.info/gnd/123478049</subfield>
+      <subfield code="a">Bernhard</subfield>
+      <subfield code="c">Sachsen-Jena, Prinz</subfield>
+      <subfield code="d">1667-1668</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)121002462</subfield>
+      <subfield code="0">(DE-588)121002462</subfield>
+      <subfield code="0">https://d-nb.info/gnd/121002462</subfield>
+      <subfield code="a">Charlotte Maria</subfield>
+      <subfield code="c">Sachsen-Weimar, Herzogin</subfield>
+      <subfield code="d">1669-1703</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Tochter</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1638-1678</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">21.02.1638-03.05.1678</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040004643</subfield>
+      <subfield code="0">(DE-588)4000464-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4000464-8</subfield>
+      <subfield code="a">Adel</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040651053</subfield>
+      <subfield code="0">(DE-588)4065105-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4065105-8</subfield>
+      <subfield code="a">Weimar</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04028557X</subfield>
+      <subfield code="0">(DE-588)4028557-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4028557-1</subfield>
+      <subfield code="a">Jena</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">7</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Isenburg; Posse: Die Wettiner, Taf. 10</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Wikipedia</subfield>
+      <subfield code="u">https://de.wikipedia.org/wiki/Bernhard_(Sachsen-Jena)</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Johann Ernst &lt;Sachsen-Weimar, Herzog, II.&gt;: Derer Herren, Johann Ernsts, Hn*. - 1664</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">regierte 1672-1678; Sohn Wilhelms von Sachsen-Weimar; Mitglied der Fruchtbringenden Gesellschaft (Der Nachfolgende)</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">5</subfield>
+      <subfield code="a">Bernhard &lt;Sachsen-Jena, Herzog&gt;</subfield>
+      <subfield code="0">(DE-588a)10230887X</subfield>
+    </datafield>
+  </record>

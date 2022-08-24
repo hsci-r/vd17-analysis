@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1050546490</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20141030180955.0</controlfield>
+    <controlfield tag="008">140430n||aznnnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1050546490</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1050546490</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1050546490</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1050546490</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-23</subfield>
+      <subfield code="c">DE-23</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1250</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kiz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Johann und Heinrich Stern</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Hans und Heinrich Stern</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)123397839</subfield>
+      <subfield code="0">(DE-588)123397839</subfield>
+      <subfield code="0">https://d-nb.info/gnd/123397839</subfield>
+      <subfield code="a">Stern, Johann &#152;von&#156;</subfield>
+      <subfield code="d">1582-1656</subfield>
+      <subfield code="4">grue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#founder</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Gruender</subfield>
+      <subfield code="e">Gruender</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)12927786X</subfield>
+      <subfield code="0">(DE-588)12927786X</subfield>
+      <subfield code="0">https://d-nb.info/gnd/12927786X</subfield>
+      <subfield code="a">Stern, Heinrich</subfield>
+      <subfield code="d">1592-1665</subfield>
+      <subfield code="4">grue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#founder</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Gruender</subfield>
+      <subfield code="e">Gruender</subfield>
+    </datafield>
+    <datafield tag="510" ind1="2" ind2=" ">
+      <subfield code="0">(DE-101)1050515021</subfield>
+      <subfield code="0">(DE-588)1050515021</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1050515021</subfield>
+      <subfield code="a">V. Stern’sche Druckerei</subfield>
+      <subfield code="4">vorg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#precedingCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Vorgaenger</subfield>
+      <subfield code="e">Vorgaenger</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1616-1656</subfield>
+      <subfield code="4">datb</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfEstablishmentAndTermination</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Zeitraum</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041333330</subfield>
+      <subfield code="0">(DE-588)4133333-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4133333-0</subfield>
+      <subfield code="a">Druckerei</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+      <subfield code="9">Z:1623-1656</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040630048</subfield>
+      <subfield code="0">(DE-588)4063004-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4063004-3</subfield>
+      <subfield code="a">Verlag</subfield>
+      <subfield code="4">obin</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermInstantial</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff instantiell</subfield>
+      <subfield code="9">Z:1616-1656</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040365123</subfield>
+      <subfield code="0">(DE-588)4036512-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4036512-8</subfield>
+      <subfield code="a">Lüneburg</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+      <subfield code="9">Z:1616-1656</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040668320</subfield>
+      <subfield code="0">(DE-588)4066832-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066832-0</subfield>
+      <subfield code="a">Wolfenbüttel</subfield>
+      <subfield code="4">orta</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBusiness</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ort</subfield>
+      <subfield code="9">Z:1648-1656</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1219765813</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20201016165247.0</controlfield>
+    <controlfield tag="008">201016n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1219765813</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1219765813</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1219765813</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1219765813</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Gerlach, Matthäus</subfield>
+      <subfield code="d">1589-1666</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Gerlach, Matthias</subfield>
+      <subfield code="d">1589-1666</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1589-1666</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsjahr zurückgerechnet</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)041325923</subfield>
+      <subfield code="0">(DE-588)4132592-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4132592-8</subfield>
+      <subfield code="a">Pfarrer</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040181189</subfield>
+      <subfield code="0">(DE-588)4018118-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4018118-2</subfield>
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040920313</subfield>
+      <subfield code="0">(DE-588)4092031-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4092031-8</subfield>
+      <subfield code="a">Königstein-Falkenstein</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)954390679</subfield>
+      <subfield code="0">(DE-588)4512486-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4512486-3</subfield>
+      <subfield code="a">Hochstätten</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)005099706</subfield>
+      <subfield code="0">(DE-588)509970-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/509970-5</subfield>
+      <subfield code="a">Udenheim</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04011077X</subfield>
+      <subfield code="0">(DE-588)4011077-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4011077-1</subfield>
+      <subfield code="a">Darmstadt</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040222349</subfield>
+      <subfield code="0">(DE-588)4022234-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4022234-2</subfield>
+      <subfield code="a">Groß-Umstadt</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Biundo G., Geistlichen Pfalz, S. 135; Diehl W., Hassia Sacra, Bd. 1, S. 181; Arcinsys</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Confidentia Asaphi in Deum: Das ist/ Das hertzliche Vertrawen Assaphs zu Gott/ Uber den seeligen Hintritt auß dieser Eytelkeit/ und bey Bestallung weyland/ deß Wol-Edelgebornen/ Gestreng/ und Vesten/ Juncker Johann Ludwigen von Seebach/ gewesenen fürstlich. Hessen-Darmstättischen wolverordneten Rahts vnd Amptmanns zu Umbstatt, Ottsberg und Habitzheim ... Von M. Matthaeo Gerlachio Moeno-Franckenfurdiense, Poetâ Lauru-Coronato Cæsareo, Fürstlichem/ Hessen-Darmstattischem Pfarrherrn zu Umstatt. Frankfurt: Kempfer</subfield>
+      <subfield code="f">1648</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Aus Frankfurt am Main, 1612-1618 Schulmeister ebenda, 1621 Diakon in Falkenstein, 1622-1631 Pfarrer in Hochstätten, 1632-1635 Pfarrer in Udenheim (abgesetzt), 1636-1640 2. Pfarrer in Darmstadt, 1640-1666 Pfarrer in Umstadt, 1665 Skandal zwischen ihm und dem Diaconus J. G. Hildebrand, † 1666 mit 77 Jahren. In der Vorlage wird er Poeta Laureatus genannt, vermutlich durch Konfusion mit Melchior Gerlach, da von ihm kein Werk bekannt ist .</subfield>
+    </datafield>
+  </record>

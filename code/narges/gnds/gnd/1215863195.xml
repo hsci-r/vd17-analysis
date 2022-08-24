@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1215863195</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210909183501.0</controlfield>
+    <controlfield tag="008">200813n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1215863195</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1215863195</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1215863195</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1215863195</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Dieterich, Daniel</subfield>
+      <subfield code="d">1560-1633</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1560-1633</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.08.1560-23.09.1633</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:Geburtsdatum in Vorlageform: " gebohren... Anno Christi 1560. Mittwochens nach Mariae Himmelfahrt im Augusto"</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040050815</subfield>
+      <subfield code="0">(DE-588)4005081-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4005081-6</subfield>
+      <subfield code="a">Beamter</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040180980</subfield>
+      <subfield code="0">(DE-588)4018098-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4018098-0</subfield>
+      <subfield code="a">Frankenberg (Eder)</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)004953193</subfield>
+      <subfield code="0">(DE-588)2040505-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2040505-4</subfield>
+      <subfield code="a">Bergen-Enkheim</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)993710417</subfield>
+      <subfield code="0">(DE-588)16006593-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/16006593-8</subfield>
+      <subfield code="a">Butzbach-Hoch-Weisel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Diehl W., Aus alten Leichenreden. Aus der Leichenpredigt auf den Hochweiseler Hospitalvogt Daniel Dieterich 1633. In: Hessische Chronik, Jg. 9, 1920, S. 24-26.</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Christliche Leichpredigt Bey dem Ansehenlichen Leichbegänguß Deß Weyland Erbarn vnd Wolgeachten Herrn Daniel Dieterichs wolverordneten Hospital Vogts zu Hohenweissel... Gehalten durch Georgium Fridericum Kirchnern, dero zeit Pfarherrn daselbsten, Frankfurt/Main: Weiß, 1634DGG</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Keller und Hospitalvogt. Sohn des Gerichtschreibers Wolff Dieterich, Pädagogium in Marburg, 1582-1595 "Beampten und... Schreiberey diensten", 1595- ca. 1620 "Kellerey Dienst zu Bergen", ca. 1620-1630 "Schreiber und Iselvogt" in Amt Hoch-Weisel, ab 1631 Hospitalvogt ebenda. Heiratet 1595 in erster Ehe Dorothea, Tochter des Schultheißen zu Dorchheim Wilhelm Bott (4 Kinder), 1606 in zweiter Ehe Margreta, Tochter des Bürgers in Friedberg Hans Runckels</subfield>
+    </datafield>
+  </record>

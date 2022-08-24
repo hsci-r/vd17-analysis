@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000nc 4500</leader>
+    <controlfield tag="001">004492129</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20210827231014.0</controlfield>
+    <controlfield tag="008">890418n||azznnaabn           | ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1214037-5</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1214037-5</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">3093524</subfield>
+      <subfield code="2">geonames</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E 016 34 29</subfield>
+      <subfield code="e">E 016 34 29</subfield>
+      <subfield code="f">N 051 50 25</subfield>
+      <subfield code="g">N 051 50 25</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/3093524</subfield>
+      <subfield code="9">A:agx</subfield>
+    </datafield>
+    <datafield tag="034" ind1=" " ind2=" ">
+      <subfield code="d">E016.574722</subfield>
+      <subfield code="e">E016.574722</subfield>
+      <subfield code="f">N051.840277</subfield>
+      <subfield code="g">N051.840277</subfield>
+      <subfield code="2">geonames</subfield>
+      <subfield code="0">https://sws.geonames.org/3093524</subfield>
+      <subfield code="9">A:dgx</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)004492129</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1214037-5</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588b)1214037-5</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-1</subfield>
+      <subfield code="c">DE-1</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd1</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-PL</subfield>
+      <subfield code="c">XA-DXDE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">g</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">gik</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">s</subfield>
+      <subfield code="u">z</subfield>
+      <subfield code="u">v</subfield>
+      <subfield code="u">w</subfield>
+    </datafield>
+    <datafield tag="083" ind1="0" ind2="4">
+      <subfield code="z">2</subfield>
+      <subfield code="a">43849</subfield>
+      <subfield code="9">d:2</subfield>
+      <subfield code="9">t:2015-08-25</subfield>
+      <subfield code="2">22/ger</subfield>
+    </datafield>
+    <datafield tag="151" ind1=" " ind2=" ">
+      <subfield code="a">Leszno</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Leszno</subfield>
+      <subfield code="g">Poznań</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Lissa</subfield>
+      <subfield code="g">Posen</subfield>
+      <subfield code="4">naaf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Alte Ansetzungsform</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Polnisch Lissa</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Lissa</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code="a">Lissen</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)940167654</subfield>
+      <subfield code="0">(DE-588)4330219-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4330219-1</subfield>
+      <subfield code="a">Lissa</subfield>
+      <subfield code="4">vorg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#precedingPlaceOrGeographicName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Vorgaenger</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)959370641</subfield>
+      <subfield code="0">(DE-588)4596764-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4596764-7</subfield>
+      <subfield code="a">Woiwodschaft Großpolen</subfield>
+      <subfield code="4">obpa</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#broaderTermPartitive</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Oberbegriff partitiv</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">1793 bis 1920 zu Preussen, Provinz Posen</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Entgegen "Druckorte des 16. bis 19. Jhs." Ansetzung nach dem heutigen Namen</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">B Wissen</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Columbia-Lippincott (2008)</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">GeoNames</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">Leszno, deutsch Lissa (früher auch Lissen und Polnisch-Lissa, nicht zu verwechseln mit Deutsch-Lissa), ist eine kreisfreie Stadt in der Woiwodschaft Großpolen in Polen. Sie ist Verwaltungssitz des Powiat Leszczyński, dem sie selbst nicht angehört.</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Für die Sacherschließung wird bei Splits nur diese (das ist die neueste/jüngste Namensform) verwendet</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">gkd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Leszno &lt;Poznań&gt;</subfield>
+      <subfield code="0">(DE-588b)1214037-5</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1203256337</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20200122153305.0</controlfield>
+    <controlfield tag="008">200122n||aznnnaabn          o| ana    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1203256337</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1203256337</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1203256337</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1203256337</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-1</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">b</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">kio</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="110" ind1="1" ind2=" ">
+      <subfield code="a">Heiliges Römisches Reich</subfield>
+      <subfield code="b">Kaiser</subfield>
+      <subfield code="g">1619-1637 : Ferdinand II.</subfield>
+    </datafield>
+    <datafield tag="410" ind1="2" ind2=" ">
+      <subfield code="a">Kaiser</subfield>
+      <subfield code="g">Heiliges Römisches Reich, 1619-1637 : Ferdinand II.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)118532510</subfield>
+      <subfield code="0">(DE-588)118532510</subfield>
+      <subfield code="0">https://d-nb.info/gnd/118532510</subfield>
+      <subfield code="a">Ferdinand</subfield>
+      <subfield code="b">II.</subfield>
+      <subfield code="c">Heiliges Römisches Reich, Kaiser</subfield>
+      <subfield code="d">1578-1637</subfield>
+      <subfield code="4">vbal</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedTerm</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Verwandter Begriff</subfield>
+      <subfield code="e">Verwandter Begriff</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)004911474</subfield>
+      <subfield code="0">(DE-588)2035457-5</subfield>
+      <subfield code="0">https://d-nb.info/gnd/2035457-5</subfield>
+      <subfield code="a">Heiliges Römisches Reich</subfield>
+      <subfield code="4">adue</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#hierarchicalSuperiorOfTheCorporateBody</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Ueberordnung</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Die Sacherschließung verwendet für Sekundärliteratur über eine Person ausschließlich den Personennormdatensatz.</subfield>
+    </datafield>
+  </record>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">129123439</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20220126122245.0</controlfield>
+    <controlfield tag="008">040622n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">129123439</subfield>
+      <subfield code="0">http://d-nb.info/gnd/129123439</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)129123439</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)129123439</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)129123439</subfield>
+      <subfield code="9">v:zg</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="z">(DE-588a)101000480</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-14</subfield>
+      <subfield code="c">DE-14</subfield>
+      <subfield code="9">r:DE-600</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">1210</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">a</subfield>
+      <subfield code="q">f</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Grabe, Joseph</subfield>
+      <subfield code="d">1541-1620</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grabius, Iosephus</subfield>
+      <subfield code="d">1541-1620</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Grabius, Josephus</subfield>
+      <subfield code="d">1541-1620</subfield>
+    </datafield>
+    <datafield tag="400" ind1="0" ind2=" ">
+      <subfield code="a">I.G.</subfield>
+      <subfield code="d">1541-1620</subfield>
+    </datafield>
+    <datafield tag="500" ind1="0" ind2=" ">
+      <subfield code="0">(DE-101)1191308863</subfield>
+      <subfield code="0">(DE-588)1191308863</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1191308863</subfield>
+      <subfield code="a">Antonius</subfield>
+      <subfield code="c">Arimathaeensis</subfield>
+      <subfield code="d">1541-1620</subfield>
+      <subfield code="4">pseu</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#pseudonym</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Pseudonym</subfield>
+      <subfield code="e">Pseudonym</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Grabe, Hermann</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Sohn</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)100295886</subfield>
+      <subfield code="0">(DE-588)100295886</subfield>
+      <subfield code="0">https://d-nb.info/gnd/100295886</subfield>
+      <subfield code="a">Hunnius, Aegidius</subfield>
+      <subfield code="d">1550-1603</subfield>
+      <subfield code="4">rela</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#relatedPerson</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Relation allgemein</subfield>
+      <subfield code="e">Relation allgemein</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119675609</subfield>
+      <subfield code="0">(DE-588)119675609</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119675609</subfield>
+      <subfield code="a">Franz, Paul</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119771950</subfield>
+      <subfield code="0">(DE-588)119771950</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119771950</subfield>
+      <subfield code="a">Nebelthau, Johannes</subfield>
+      <subfield code="d">1541-1600</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)116139374</subfield>
+      <subfield code="0">(DE-588)116139374</subfield>
+      <subfield code="0">https://d-nb.info/gnd/116139374</subfield>
+      <subfield code="a">Pezel, Christoph</subfield>
+      <subfield code="d">1539-1604</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119803879</subfield>
+      <subfield code="0">(DE-588)119803879</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119803879</subfield>
+      <subfield code="a">Rhenisch, David</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Schlick, Hieronymus &#152;von&#156;</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Henrici, Martin</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="a">Ezychius, Johannes</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119838354</subfield>
+      <subfield code="0">(DE-588)119838354</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119838354</subfield>
+      <subfield code="a">Steinberg, Melchior</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)119878283</subfield>
+      <subfield code="0">(DE-588)119878283</subfield>
+      <subfield code="0">https://d-nb.info/gnd/119878283</subfield>
+      <subfield code="a">Zimmermann, Matthias</subfield>
+      <subfield code="4">beza</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#acquaintanceshipOrFriendship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Bekanntschaft</subfield>
+      <subfield code="e">Bekanntschaft</subfield>
+      <subfield code="9">v:VD-16 Mitverf.</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1541-1620</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:abweichendes Geburtsjahr 1540</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">XX.XX.1541-01.10.1620</subfield>
+      <subfield code="4">datx</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Exakte Lebensdaten</subfield>
+      <subfield code="9">v:abweichendes Geburtsjahr 1540</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040597563</subfield>
+      <subfield code="0">(DE-588)4059756-8</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4059756-8</subfield>
+      <subfield code="a">Theologe</subfield>
+      <subfield code="4">berc</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Charakteristischer Beruf</subfield>
+    </datafield>
+    <datafield tag="550" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040443000</subfield>
+      <subfield code="0">(DE-588)4044300-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4044300-0</subfield>
+      <subfield code="a">Pädagoge</subfield>
+      <subfield code="4">beru</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#professionOrOccupation</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beruf</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1051973643</subfield>
+      <subfield code="0">(DE-588)1051973643</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1051973643</subfield>
+      <subfield code="a">Waldau</subfield>
+      <subfield code="g">Kassel</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)1051973643</subfield>
+      <subfield code="0">(DE-588)1051973643</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1051973643</subfield>
+      <subfield code="a">Waldau</subfield>
+      <subfield code="g">Kassel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040567095</subfield>
+      <subfield code="0">(DE-588)4056709-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4056709-6</subfield>
+      <subfield code="a">Stade</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040666409</subfield>
+      <subfield code="0">(DE-588)4066640-2</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4066640-2</subfield>
+      <subfield code="a">Wittenberg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)983082871</subfield>
+      <subfield code="0">(DE-588)7559293-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/7559293-9</subfield>
+      <subfield code="a">Winnen</subfield>
+      <subfield code="g">Allendorf, Lumda</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042647207</subfield>
+      <subfield code="0">(DE-588)4264720-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4264720-4</subfield>
+      <subfield code="a">Bettenhausen</subfield>
+      <subfield code="g">Kassel</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040424944</subfield>
+      <subfield code="0">(DE-588)4042494-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4042494-7</subfield>
+      <subfield code="a">Allendorf-Nordeck</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040034917</subfield>
+      <subfield code="0">(DE-588)4003491-4</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4003491-4</subfield>
+      <subfield code="a">Auerbach i. d. OPf.</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+      <subfield code="9">v:mutmaßlicher Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)042789745</subfield>
+      <subfield code="0">(DE-588)4278974-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4278974-6</subfield>
+      <subfield code="a">Auerbach/Vogtl.</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+      <subfield code="9">v:mutmaßlicher Geburtsort</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">NDSBIO</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">12</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-17</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">VD-16</subfield>
+    </datafield>
+    <datafield tag="667" ind1=" " ind2=" ">
+      <subfield code="a">Basic Heading</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">WBIS (dort vermischt mit dem würtembergischen Konsistorialrat Johann von Grabe (1583-1637))</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Album Academiae Vitebergensis: ab A. Ch. MDII usque ad A. MDCII. 2, S. 144</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">DIEHL, Wilhelm, Hrsg., 1933. Pfarrer- und Schulmeisterbuch für die acquirierten Lande und die verlorenen Gebiete. Darmstadt: Selbstverlag des Verfassers. Hassia sacra. 7, S. 359</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Stammbucheintrag Thüringer Universitäts- und Landesbibliothek Jena, Stb. 3</subfield>
+      <subfield code="u">https://nbn-resolving.org/urn:nbn:de:urmel-fd9f506a-d286-40a0-be7b-4869b34bd54e-00005776-2270</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Isagoge brevis et perspicua monstrans usum ... verae ... doctrinae de invo*</subfield>
+      <subfield code="f">1586</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Refutatio necessaria errorum et sophisticae, qua Egid. Hun D. corrumpit et*</subfield>
+      <subfield code="f">1587</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Oratio, qua ad commendanda vitae genera divinitus instituta refellitur Epicureum lathebiōsas quod &amp; ab honestis, ac necessariis vitae humanae officiis avocat</subfield>
+      <subfield code="f">1584</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Honori Nuptiarum NOBILIS IVVENIS, VIRTVTE, HVMANITATE ET ERVDITIONE cultiss. &amp; ornatissimi, Domini ERASMI MVLLERI Vratislauiensis, &amp;c. Sponsi: Et ... ANNAE, Clarissimi viri, Dn. CHRISTOPHORI GEBINHOFFERI, ciuis Vratislauiensis, iam pridem piè defuncti, filiae, Sponsae</subfield>
+      <subfield code="f">1577</subfield>
+      <subfield code="0">(vd16)ZV 6916</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">CARMEN NVPTIALE. NOBILITATE GENERIS, DOCTRINA ET VIRTVTE PRAESTANTISSIMO VIRO, DOMINO ...</subfield>
+      <subfield code="f">1577</subfield>
+      <subfield code="0">(vd16)ZV 6915</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">De persona et maiestate filii Dei et hominis</subfield>
+      <subfield code="f">1588</subfield>
+      <subfield code="0">(vd16)ZV 21160</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Elegia de philanthropia seu benevolentia Dei erga genus humanum</subfield>
+      <subfield code="f">1579</subfield>
+      <subfield code="0">(vd16)ZV 6917</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Isagoge brevis et perspicua monstrans usum ... verae ... doctrinae de invocatione Dei et filii Dei D. N. Jesu Christi</subfield>
+      <subfield code="f">1586</subfield>
+      <subfield code="0">(vd16)G 2718</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pro defensione fidei Christianae theses, De unione hypostatica duarum naturarum Christi, oppositae disputationi, quam Aegidius Hunius habuit Witebergae, VIII Cal. Julii</subfield>
+      <subfield code="f">1592</subfield>
+      <subfield code="0">(vd16)G 2720</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Josephi Grabii Refutatio necessaria errorum et sophisticae, qua Aegidius Hunius doctrinam de persona Christi ... contaminat</subfield>
+      <subfield code="f">1587</subfield>
+      <subfield code="0">(vd16)G 2721</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Theses de proaeresi</subfield>
+      <subfield code="f">1584</subfield>
+      <subfield code="0">(vd16)G 2719</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Schlick, Hieronymus von: ORATIO, DE DECALOGO, ET EIVS FVNDAMENTIS, AB ILLVSTRI ET GENEROSO DOMINO, DOMINO ...</subfield>
+      <subfield code="f">1577</subfield>
+      <subfield code="0">(vd16)S 3015</subfield>
+    </datafield>
+    <datafield tag="672" ind1=" " ind2="0">
+      <subfield code="a">Pezel, Christoph: Trostschrifft Christophori Pezelij Der heiligen Schrifft Doctorn vnd Superintendenten der ...</subfield>
+      <subfield code="f">1587</subfield>
+      <subfield code="0">(vd16)ZV 19590</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">aus Auerbach in der Oberpfalz, nach anderen Quellen aus Auerbach im Vogtland; Studium in Marburg, Rostock und Wittenberg, am 31 Mai 1568 dort als "philosophiae magister" immatrikuliert; Rektor in Stade, 1587 Professor am Gymnasium in Bremen, 1606-1609 Prediger in Winnen, 1609 dort abgesetzt, seit 1612 in Waldau und Bettenhausen bei Kassel, verstarb in Waldau; er verfasste 1586 unter dem Pseudonym Antonius Arimathaeensis eine Streitschrift gegen Aegidius Hunnius über die Person und Majestät Christi (Isagoge brevis et perspicua, monstrans usum ...)</subfield>
+    </datafield>
+    <datafield tag="680" ind1=" " ind2=" ">
+      <subfield code="a">Weitere Titel ggf. auch unter dem Pseudonym bzw. dem wirklichen Namen</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="z">2019-07-24</subfield>
+      <subfield code="b">a-DE-27FE e-pseu e-xDE-188 e-xCH-BaUGNF e-xCH-BeUB e-xCH-BaUGNS e-pseu e-xCH-001821-6 e-xCH-ZuETHB e-xCH-ZuETHN e-xCH-BaUGNH e-xCH-LnZHB</subfield>
+    </datafield>
+    <datafield tag="913" ind1=" " ind2=" ">
+      <subfield code="S">pnd</subfield>
+      <subfield code="i">a</subfield>
+      <subfield code="a">Grabe, Joseph</subfield>
+      <subfield code="0">(DE-588a)129123439</subfield>
+    </datafield>
+  </record>

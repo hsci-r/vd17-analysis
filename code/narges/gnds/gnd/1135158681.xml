@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+    <leader>00000nz  a2200000oc 4500</leader>
+    <controlfield tag="001">1135158681</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20190619120415.0</controlfield>
+    <controlfield tag="008">170612n||aznnnaabn           | aaa    |c</controlfield>
+    <datafield tag="024" ind1="7" ind2=" ">
+      <subfield code="a">1135158681</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1135158681</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-101)1135158681</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-588)1135158681</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-17</subfield>
+      <subfield code="c">DE-17</subfield>
+      <subfield code="9">r:DE-17</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">0017</subfield>
+      <subfield code="e">rda</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">gnd3</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">p</subfield>
+      <subfield code="2">gndgen</subfield>
+    </datafield>
+    <datafield tag="075" ind1=" " ind2=" ">
+      <subfield code="b">piz</subfield>
+      <subfield code="2">gndspec</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">g</subfield>
+      <subfield code="q">f</subfield>
+      <subfield code="q">h</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Geneff, Johann Christian</subfield>
+      <subfield code="d">1691-1770</subfield>
+    </datafield>
+    <datafield tag="375" ind1=" " ind2=" ">
+      <subfield code="a">1</subfield>
+      <subfield code="2">iso5218</subfield>
+    </datafield>
+    <datafield tag="400" ind1="1" ind2=" ">
+      <subfield code="a">Geneff, Johannes Christianus</subfield>
+      <subfield code="d">1691-1770</subfield>
+    </datafield>
+    <datafield tag="500" ind1="1" ind2=" ">
+      <subfield code="0">(DE-101)1188749390</subfield>
+      <subfield code="0">(DE-588)1188749390</subfield>
+      <subfield code="0">https://d-nb.info/gnd/1188749390</subfield>
+      <subfield code="a">Geneff, Georg Caspar</subfield>
+      <subfield code="d">-1739</subfield>
+      <subfield code="4">bezf</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#familialRelationship</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Beziehung familiaer</subfield>
+      <subfield code="e">Beziehung familiaer</subfield>
+      <subfield code="9">v:Vater</subfield>
+    </datafield>
+    <datafield tag="548" ind1=" " ind2=" ">
+      <subfield code="a">1691-1770</subfield>
+      <subfield code="4">datl</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Lebensdaten</subfield>
+      <subfield code="9">v:geboren um 1691</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040330850</subfield>
+      <subfield code="0">(DE-588)4033085-0</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4033085-0</subfield>
+      <subfield code="a">Bad Kreuznach</subfield>
+      <subfield code="4">ortg</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfBirth</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Geburtsort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040232018</subfield>
+      <subfield code="0">(DE-588)4023201-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023201-3</subfield>
+      <subfield code="a">Hanau</subfield>
+      <subfield code="4">orts</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfDeath</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Sterbeort</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)04057878X</subfield>
+      <subfield code="0">(DE-588)4057878-1</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4057878-1</subfield>
+      <subfield code="a">Straßburg</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Immatrikulation</subfield>
+      <subfield code="9">Z:1709</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)944846416</subfield>
+      <subfield code="0">(DE-588)4380968-6</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4380968-6</subfield>
+      <subfield code="a">Bornheim</subfield>
+      <subfield code="g">Landkreis Südliche Weinstraße</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Pfarrer</subfield>
+      <subfield code="9">Z:1712-1714</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)95293423X</subfield>
+      <subfield code="0">(DE-588)4488257-9</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4488257-9</subfield>
+      <subfield code="a">Rockenhausen- Marienthal (Pfalz)</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Pfarrer</subfield>
+      <subfield code="9">Z:1714-1722</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040292614</subfield>
+      <subfield code="0">(DE-588)4029261-7</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4029261-7</subfield>
+      <subfield code="a">Kaiserslautern</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Pfarrer</subfield>
+      <subfield code="9">Z:1722-1724</subfield>
+    </datafield>
+    <datafield tag="551" ind1=" " ind2=" ">
+      <subfield code="0">(DE-101)040232018</subfield>
+      <subfield code="0">(DE-588)4023201-3</subfield>
+      <subfield code="0">https://d-nb.info/gnd/4023201-3</subfield>
+      <subfield code="a">Hanau</subfield>
+      <subfield code="4">ortw</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#placeOfActivity</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Wirkungsort</subfield>
+      <subfield code="9">v:Pfarrer</subfield>
+      <subfield code="9">Z:1724-1766</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Provenienzmerkmal</subfield>
+      <subfield code="b">Autogramm</subfield>
+    </datafield>
+    <datafield tag="670" ind1=" " ind2=" ">
+      <subfield code="a">Pfarrergeschichte des Sprengels Hanau ("Hanauer Union") bis 1968. - 1984, S. 55</subfield>
+    </datafield>
+    <datafield tag="678" ind1=" " ind2=" ">
+      <subfield code="b">geboren in Kreuznach um 1691, Immatrikulation Straßburg 1709, 1712-1714 Pfarrer in Bornheim (Pfalz), 1714-1722 Pfarrer in Marienthal (Pfalz), 1722-1724 Pfarrer in Kaiserslautern, 1724-1727 vierter, 1727-1730 dritter, 1730-1766 zweiter luth. Pfarrer in Hanau, am 18.12.1766 in den Ruhestand versetzt, begraben in Hanau am 19.08.1770; 1. Ehefrau: Anna Maria Winterberger, 2. Ehefrau: Elisabeth Christine Müller</subfield>
+    </datafield>
+  </record>
