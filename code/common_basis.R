@@ -11,7 +11,8 @@ library(patchwork)
 library(cowplot)
 library(ggpubr)
 library(data.table)
-
+library(hash)
+library(writexl)
 unnest_cross <- function(data, cols, ...) {
   .df_out <- data
   .cols <- tidyselect::eval_select(rlang::enquo(cols), data)
