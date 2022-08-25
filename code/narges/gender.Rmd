@@ -53,7 +53,7 @@ gnd_vd17
     #if j%10000==0:
         #print(j)
     #try:
-        #result=urllib.request.urlretrieve("http://d-nb.info/"+id+"/about/marcxml", "gnds/"+id+".xml")
+        #result=urllib.request.urlretrieve("http://d-nb.info/"+id+"/about/marcxml", "data/processed/"+id+".xml")
         
     #except:
         #ids.append(id)
@@ -63,7 +63,7 @@ gnd_vd17
 ```
 
 ```{r}
-#list <- list.files(path="code/narges/gnds/gnd")
+#list <- list.files(path="data/processed/gnd")
 
 #list_gnd=as.list(all_gnd_vd17$GND)
 #for (i in list_gnd)
@@ -79,7 +79,7 @@ gnd_vd17
 
 ```{r}
 all_gnd_vd17$GND<-gsub("gnd/","",as.character(all_gnd_vd17$GND))
-gnd_authority <- read_tsv(here("code/narges/gnds/gnd/all_gnd.tsv"), lazy = TRUE)
+gnd_authority <- read_tsv(here("data/processed/all_gnd.tsv.gz"), lazy = TRUE)
 authority_gnd_list <- gnd_authority[gnd_authority$value %in% all_gnd_vd17$GND, , drop = FALSE] %>%
   distinct(value)
 gnd_authority_filter <- gnd_authority %>%
