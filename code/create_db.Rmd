@@ -1,0 +1,170 @@
+---
+title: "Create tables in database"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(keyring)
+library(DBI)
+library(RMariaDB)
+rm(con)
+while (!exists("con")) {
+  tryCatch(con <- dbConnect(
+    drv = MariaDB(),
+    host = "vm2505.kaj.pouta.csc.fi",
+    dbname = "vd17_analysis",
+    user = "hsci",
+    password = key_get("hsci", "hsci"),
+    bigint = "integer",
+    load_data_local_infile = TRUE,
+    autocommit = TRUE,
+    reconnect = TRUE
+  ), error = function(e) {
+    print(e)
+    key_set("hsci", "hsci")
+  })
+}
+source(here::here("code/common_basis.R"), local = knitr::knit_global())
+```
+
+
+# Create core downstream tables from vd17_a/c
+
+```{r create_core_downstream_tables}
+vd17_normalized_years_a <- vd17_a %>%
+  filter(field_code == "011@") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  collect() %>%
+  mutate(normalized_year = as.integer(a)) %>%
+  copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_years_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
+
+vd17_normalized_years_c <- vd17_normalized_years_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_years_c"), overwrite = TRUE)
+
+vd17_genres_a <- vd17_a %>%
+  filter(field_code == "044S", value != " ") %>%
+  pivot_wider(
+    id_cols = record_number:field_number,
+    values_from = value, names_from = subfield_code
+  ) %>%
+  mutate(genre = str_replace_all(a[!is.na(a)], ":.*", "")) %>%
+  compute_a(name = dbplyr::in_schema("vd17", "vd17_genres_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
+
+vd17_genres_c <- vd17_genres_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_genres_c"), overwrite = TRUE)
+
+vd17_normalized_locs_a <- vd17_a %>%
+  filter(field_code == "033D") %>%
+  collect() %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
+  unnest_cross(p:z, keep_empty = TRUE) %>%
+  copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_locs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
+
+vd17_normalized_locs_c <- vd17_normalized_locs_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_locs_c"), overwrite = TRUE)
+
+vd17_normalized_langs_a <- vd17_a %>%
+  filter(field_code == "010@") %>%
+  collect() %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
+  rename(publication_language = a, original_language = c, intermediary_language = b) %>%
+  unnest_cross(publication_language:intermediary_language, keep_empty = TRUE) %>%
+  copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_langs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
+
+vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_langs_c"), overwrite = TRUE)
+
+vd17_titles_a <- vd17_a %>%
+  filter(field_code == "021A") %>%
+  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  rename(title = `a`) %>%
+  compute_a(name = dbplyr::in_schema("vd17", "vd17_titles_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
+
+vd17_titles_c <- vd17_titles_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), overwrite = TRUE)
+
+vd17_wide_a <- vd17_a %>%
+  select(record_number, field_code:value) %>%
+  mutate(value = str_replace_all(value, sql("CHR(0)"), "_")) %>%
+  pivot_wider(id_cols = record_number, names_from = field_code:subfield_code, values_from = value, values_fn = ~ str_flatten(., collapse = "|")) %>%
+  compute_a(name = dbplyr::in_schema("vd17", "vd17_wide_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
+
+vd17_wide_c <- vd17_wide_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), overwrite = TRUE)
+```
+
+# Create Fruit-Bearing Society tables
+
+```{r create_fbs_tables}
+fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "FBS_master_metadata", col_types = "c") %>% relocate(Name)
+
+fbs_metadata_a <- fbs_metadata_gs %>%
+  copy_to_a(con, name = "fbs_metadata_a", temporary = FALSE, overwrite = TRUE, unique_indexes = c("GND"))
+
+fbs_metadata_c <- fbs_metadata_a %>%
+  compute_c(name = "fbs_metadata_c", overwrite = TRUE)
+
+fbs_gnds_a <- fbs_metadata_a %>%
+  select(Member_number_new, GND) %>%
+  union(
+    fbs_metadata_a %>%
+      select(Member_number_new, GND = alternate_GND)
+  ) %>%
+  filter(!is.na(GND)) %>%
+  rename(member_number = Member_number_new) %>%
+  mutate(GND = str_c("gnd/", GND)) %>%
+  compute_a(name = "fbs_gnds_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("GND", "member_number")))
+
+fbs_gnds_c <- fbs_gnds_a %>%
+  compute_c(name = "fbs_gnds_c", overwrite = TRUE)
+
+fbs_links_a <- vd17_a %>%
+  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a) %>%
+  pivot_wider(
+    id_cols = c(record_number, field_number, field_code),
+    values_from = value, names_from = subfield_code
+  ) %>%
+  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
+  compute_a(name = "fbs_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
+
+fbs_links_c <- fbs_links_a %>%
+  compute_c(name = "fbs_links_c", overwrite = TRUE)
+
+# vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
+#  copy_to(con, ., name = "vd17_044s_raw")
+```
+
+```{r}
+vd17_auth_id_a <- vd17_auth_a %>%
+  filter(field_code == "024", subfield_code == "2", value == "gnd") %>%
+  select(a_record_number, field_number) %>%
+  inner_join(vd17_auth_a %>% filter(subfield_code == "a")) %>%
+  mutate(GND = str_c("gnd/", value)) %>%
+  select(a_record_number, GND) %>%
+  collect() %>%
+  copy_to_a(con, name = "vd17_auth_id_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("a_record_number", "GND"), c("GND", "a_record_number")))
+
+vd17_auth_id_c <- vd17_auth_id_a %>%
+  compute_c(name = "vd17_auth_id_c", overwrite = TRUE)
+
+vd17_auth_gender_a <- vd17_auth_a %>%
+  filter(field_code == "375", subfield_code == "a") %>%
+  mutate(gender = case_when(
+    value == 1 ~ "male",
+    value == 2 ~ "female",
+    value == 9 ~ "not applicable",
+    value == 0 ~ NA_character_
+  )) %>%
+  select(a_record_number, gender) %>%
+  filter(!is.na(gender)) %>%
+  compute_a(name = "vd17_auth_gender_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("a_record_number", "gender")))
+
+vd17_auth_gender_c <- vd17_auth_gender_a %>%
+  compute_c(name = "vd17_auth_gender_c", overwrite = TRUE)
+```
