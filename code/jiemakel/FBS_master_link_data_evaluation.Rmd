@@ -7,30 +7,26 @@ output:
 ---
 
 ```{r setup,echo=F}
-knitr::opts_knit$set(root.dir = here::here())
-library(here)
-source(here("code/common_basis.R"), local = knitr::knit_global())
-p <- function(number) {
-  return(format(number, scientific = FALSE, big.mark = ","))
-}
-pp <- function(percentage, accuracy = 0.01) {
-  return(scales::percent(percentage, accuracy = accuracy))
-}
+source(here::here("code/common_basis.R"), local = knitr::knit_global())
 ```
 
 ```{r}
 library(googlesheets4)
+old_master <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data")
 fbs_links_a %>%
-  inner_join(fbs_gnds_a) %>%
-  inner_join(fbs_metadata_a %>% select(member_number = Member_number_new, First_name_new, Last_name_new, Society_name_new)) %>%
-  inner_join(vd17_id_a) %>%
-  inner_join(vd17_titles_a %>% select(record_number, title)) %>%
+  left_join(fbs_gnds_a) %>%
+  left_join(fbs_metadata_a %>% select(member_number = Member_number_new, First_name_new, Last_name_new, Society_name_new)) %>%
+  left_join(vd17_id_a) %>%
+  left_join(vd17_titles_a %>% select(record_number, title)) %>%
   left_join(fbs_links_of_interest_a %>%
     select(record_number, field_number, field_code) %>%
     mutate(currently_included = TRUE)) %>%
+  left_join(vd17_normalized_langs_a %>% distinct(record_number, publication_language) %>% group_by(record_number) %>% summarize(publication_language = str_flatten(publication_language, collapse = "|"))) %>%
+  left_join(vd17_genres_a %>% distinct(record_number, genre) %>% group_by(record_number) %>% summarize(genre = str_flatten(genre, collapse = "|"))) %>%
   replace_na(list(currently_included = FALSE)) %>%
   arrange(desc(currently_included), vd17_id, member_number) %>%
-  relocate(currently_included, vd17_id, title, member_number, GND, First_name_new, Last_name_new, Society_name_new, role, role2, field_code) %>%
   collect() %>%
+  left_join(old_master %>% distinct(vd17_id, manual_override, notes)) %>%
+  relocate(currently_included, manual_override, notes, vd17_id, title, publication_language, genre, member_number, GND, First_name_new, Last_name_new, Society_name_new, role, role2, field_code) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data")
 ```

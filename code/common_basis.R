@@ -34,6 +34,10 @@ unnest_cross <- function(data, cols, ...) {
   .df_out
 }
 
+is_html_output <- function() {
+  is.null(knitr::pandoc_to()) || (!str_detect(knitr::pandoc_to(), "^gfm") && knitr::is_html_output())
+}
+
 while (!exists("con")) {
   tryCatch(con <- dbConnect(
     drv = MariaDB(),
@@ -66,8 +70,8 @@ try(vd17_id_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_id_a")))
 try(vd17_normalized_langs_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_langs_a")))
 try(vd17_normalized_langs_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_langs_c")))
 
-try(vd17_normalized_locs_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locs_a")))
-try(vd17_normalized_locs_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locs_c")))
+try(vd17_normalized_locations_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locations_a")))
+try(vd17_normalized_locations_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locations_c")))
 
 try(vd17_normalized_years_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_years_a")))
 try(vd17_normalized_years_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_years_c")))

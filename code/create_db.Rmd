@@ -11,6 +11,7 @@ knitr::opts_knit$set(root.dir = here::here())
 library(keyring)
 library(DBI)
 library(RMariaDB)
+library(assertthat)
 rm(con)
 while (!exists("con")) {
   tryCatch(con <- dbConnect(
@@ -43,7 +44,7 @@ vd17_normalized_years_a <- vd17_a %>%
   copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_years_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_years_c <- vd17_normalized_years_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_years_c"), overwrite = TRUE)
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_years_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_genres_a <- vd17_a %>%
   filter(field_code == "044S", value != " ") %>%
@@ -55,17 +56,18 @@ vd17_genres_a <- vd17_a %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_genres_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_genres_c <- vd17_genres_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_genres_c"), overwrite = TRUE)
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_genres_c"), temporary = FALSE, overwrite = TRUE)
 
-vd17_normalized_locs_a <- vd17_a %>%
+vd17_normalized_locations_a <- vd17_a %>%
   filter(field_code == "033D") %>%
   collect() %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
   unnest_cross(p:z, keep_empty = TRUE) %>%
-  copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_locs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
+  rename(location = p, location_type = `4`) %>%
+  copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_locations_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
 
-vd17_normalized_locs_c <- vd17_normalized_locs_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_locs_c"), overwrite = TRUE)
+vd17_normalized_locations_c <- vd17_normalized_locations_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_locations_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_normalized_langs_a <- vd17_a %>%
   filter(field_code == "010@") %>%
@@ -76,7 +78,7 @@ vd17_normalized_langs_a <- vd17_a %>%
   copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_langs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_langs_c"), overwrite = TRUE)
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_langs_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
@@ -85,7 +87,7 @@ vd17_titles_a <- vd17_a %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_titles_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_titles_c <- vd17_titles_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), overwrite = TRUE)
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_wide_a <- vd17_a %>%
   select(record_number, field_code:value) %>%
@@ -94,7 +96,7 @@ vd17_wide_a <- vd17_a %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_wide_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
 
 vd17_wide_c <- vd17_wide_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), overwrite = TRUE)
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), temporary = FALSE, overwrite = TRUE)
 ```
 
 # Create Fruit-Bearing Society tables
@@ -106,7 +108,7 @@ fbs_metadata_a <- fbs_metadata_gs %>%
   copy_to_a(con, name = "fbs_metadata_a", temporary = FALSE, overwrite = TRUE, unique_indexes = c("GND"))
 
 fbs_metadata_c <- fbs_metadata_a %>%
-  compute_c(name = "fbs_metadata_c", overwrite = TRUE)
+  compute_c(name = "fbs_metadata_c", temporary = FALSE, overwrite = TRUE)
 
 fbs_gnds_a <- fbs_metadata_a %>%
   select(Member_number_new, GND) %>%
@@ -120,7 +122,7 @@ fbs_gnds_a <- fbs_metadata_a %>%
   compute_a(name = "fbs_gnds_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("GND", "member_number")))
 
 fbs_gnds_c <- fbs_gnds_a %>%
-  compute_c(name = "fbs_gnds_c", overwrite = TRUE)
+  compute_c(name = "fbs_gnds_c", temporary = FALSE, overwrite = TRUE)
 
 fbs_links_a <- vd17_a %>%
   inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
@@ -134,13 +136,13 @@ fbs_links_a <- vd17_a %>%
   compute_a(name = "fbs_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
 
 fbs_links_c <- fbs_links_a %>%
-  compute_c(name = "fbs_links_c", overwrite = TRUE)
+  compute_c(name = "fbs_links_c", temporary = FALSE, overwrite = TRUE)
 
 # vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
 #  copy_to(con, ., name = "vd17_044s_raw")
 ```
 
-```{r}
+```{r create_auth_tables}
 vd17_auth_id_a <- vd17_auth_a %>%
   filter(field_code == "024", subfield_code == "2", value == "gnd") %>%
   select(a_record_number, field_number) %>%
@@ -151,7 +153,7 @@ vd17_auth_id_a <- vd17_auth_a %>%
   copy_to_a(con, name = "vd17_auth_id_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("a_record_number", "GND"), c("GND", "a_record_number")))
 
 vd17_auth_id_c <- vd17_auth_id_a %>%
-  compute_c(name = "vd17_auth_id_c", overwrite = TRUE)
+  compute_c(name = "vd17_auth_id_c", temporary = FALSE, overwrite = TRUE)
 
 vd17_auth_gender_a <- vd17_auth_a %>%
   filter(field_code == "375", subfield_code == "a") %>%
@@ -166,5 +168,5 @@ vd17_auth_gender_a <- vd17_auth_a %>%
   compute_a(name = "vd17_auth_gender_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("a_record_number", "gender")))
 
 vd17_auth_gender_c <- vd17_auth_gender_a %>%
-  compute_c(name = "vd17_auth_gender_c", overwrite = TRUE)
+  compute_c(name = "vd17_auth_gender_c", temporary = FALSE, overwrite = TRUE)
 ```

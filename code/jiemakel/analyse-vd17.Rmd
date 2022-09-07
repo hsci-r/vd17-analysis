@@ -1,6 +1,9 @@
 ---
 title: "VD17 analysis"
 output:
+  md_document:
+    variant: gfm
+    toc: yes
   html_notebook:
     code_folding: hide
     toc: yes
