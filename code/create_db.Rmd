@@ -18,8 +18,8 @@ while (!exists("con")) {
     drv = MariaDB(),
     host = "vm2505.kaj.pouta.csc.fi",
     dbname = "vd17_analysis",
-    user = "hsci",
-    password = key_get("hsci", "hsci"),
+    user = "vd17-rw",
+    password = key_get("vd17_analysis", "vd17-rw"),
     bigint = "integer",
     load_data_local_infile = TRUE,
     autocommit = TRUE,
@@ -97,6 +97,16 @@ vd17_wide_a <- vd17_a %>%
 
 vd17_wide_c <- vd17_wide_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), temporary = FALSE, overwrite = TRUE)
+
+vd17_parts_of_multipart_works_a <- vd17_a %>%
+  filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
+  distinct(record_number) %>%
+  compute_a(name = "vd17_parts_of_multipart_works_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
+
+vd17_parts_of_multipart_works_c <- vd17_c %>%
+  filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
+  distinct(record_number) %>%
+  compute_c(name = "vd17_parts_of_multipart_works_c", temporary = FALSE, overwrite = TRUE)
 ```
 
 # Create Fruit-Bearing Society tables
