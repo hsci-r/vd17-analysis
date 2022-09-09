@@ -26,7 +26,7 @@ while (!exists("con")) {
     reconnect = TRUE
   ), error = function(e) {
     print(e)
-    key_set("hsci", "hsci")
+    key_set("vd17_analysis", "vd17-rw")
   })
 }
 source(here::here("code/common_basis.R"), local = knitr::knit_global())
