@@ -98,12 +98,16 @@ try(fbs_records_a <- vd17_a %>%
 try(fbs_records_c <- vd17_c %>%
   inner_join(fbs_record_numbers_c))
 
+try(vd17_parts_of_multipart_works_a <- tbl(con, "vd17_parts_of_multipart_works_a"))
+try(vd17_parts_of_multipart_works_c <- tbl(con, "vd17_parts_of_multipart_works_c"))
+
 try(fbs_links_of_interest_a <- fbs_links_a %>%
   filter(
-    field_code %in% c("028A", "028B", "028C"),
-    is.na(role) | !role %in% c("ctb", "oth", "dte"),
-    is.na(role2) | !role2 %in% c(
-      "AdressatIn",
+    field_code %in% c("028A", "028B", "028C"), # FBS GND has to appear in one of these fields
+    is.na(role) | !role %in% c("ctb", "dte"), # normed role has to be unknown or not one of these
+    is.na(role) | !(role == "oth" & field_code == "028C" & !is.na(role2) & str_detect(role2, "^Beiträger|^Mitwirkender")), # in field 028C, if role is other, role2 should not be one of these
+    is.na(role2) | !str_detect(role2, !!!str_flatten(c(
+      "^AdressatIn",
       "ErwähnteR",
       "GefeierteR",
       "Mitglied eines Ausschusses, der akademische Grade vergibt",
@@ -118,5 +122,5 @@ try(fbs_links_of_interest_a <- fbs_links_a %>%
       "WidmendeR",
       "WidmungsempfängerIn",
       "ZensorIn"
-    )
+    ), collapse = "|^"))
   ))

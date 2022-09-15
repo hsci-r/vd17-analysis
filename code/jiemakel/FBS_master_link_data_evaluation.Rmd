@@ -26,7 +26,7 @@ fbs_links_a %>%
   replace_na(list(currently_included = FALSE)) %>%
   arrange(desc(currently_included), vd17_id, member_number) %>%
   collect() %>%
-  left_join(old_master %>% distinct(vd17_id, manual_override, notes)) %>%
+  left_join(old_master %>% distinct(vd17_id, field_number, manual_override, notes)) %>%
   relocate(currently_included, manual_override, notes, vd17_id, title, publication_language, genre, member_number, GND, First_name_new, Last_name_new, Society_name_new, role, role2, field_code) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data")
 ```

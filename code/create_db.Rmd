@@ -89,15 +89,6 @@ vd17_titles_a <- vd17_a %>%
 vd17_titles_c <- vd17_titles_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), temporary = FALSE, overwrite = TRUE)
 
-vd17_wide_a <- vd17_a %>%
-  select(record_number, field_code:value) %>%
-  mutate(value = str_replace_all(value, sql("CHR(0)"), "_")) %>%
-  pivot_wider(id_cols = record_number, names_from = field_code:subfield_code, values_from = value, values_fn = ~ str_flatten(., collapse = "|")) %>%
-  compute_a(name = dbplyr::in_schema("vd17", "vd17_wide_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
-
-vd17_wide_c <- vd17_wide_a %>%
-  compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), temporary = FALSE, overwrite = TRUE)
-
 vd17_parts_of_multipart_works_a <- vd17_a %>%
   filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
   distinct(record_number) %>%
@@ -107,6 +98,15 @@ vd17_parts_of_multipart_works_c <- vd17_c %>%
   filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
   distinct(record_number) %>%
   compute_c(name = "vd17_parts_of_multipart_works_c", temporary = FALSE, overwrite = TRUE)
+
+vd17_wide_a <- vd17_a %>%
+  select(record_number, field_code:value) %>%
+  mutate(value = str_replace_all(value, sql("CHR(0)"), "_")) %>%
+  pivot_wider(id_cols = record_number, names_from = field_code:subfield_code, values_from = value, values_fn = ~ str_flatten(., collapse = "|")) %>%
+  compute_a(name = dbplyr::in_schema("vd17", "vd17_wide_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
+
+vd17_wide_c <- vd17_wide_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), temporary = FALSE, overwrite = TRUE)
 ```
 
 # Create Fruit-Bearing Society tables

@@ -60,7 +60,11 @@ vd17_n_records <- vd17_a %>%
   distinct(record_number) %>%
   count() %>%
   pull(n)
-filtered_n_records <- vd17_n_records - (vd17_a %>% filter(field_code == "002@", str_detect(value, "^A[ac]")) %>% distinct(record_number) %>% count() %>% pull(n))
+filtered_n_records <- vd17_a %>%
+  filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
+  distinct(record_number) %>%
+  count() %>%
+  pull(n)
 ```
 
 
@@ -270,3 +274,27 @@ Filtering out records with identical:
  * titles, publication years and printers would remove `r p(identical_title_and_year_and_printer_removal_removes_n)` (`r pp(identical_title_and_year_and_printer_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
  * titles, publication years, places of publication and printers would remove `r p(identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n)` (`r pp(identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
  * titles, publication years, places of publication, printers, extents and form factors would remove `r p(identical_all_removal_removes_n)` (`r pp(identical_all_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
+
+
+## Variant ground truth creation
+
+You could find lots of variants simply by looking for records with "nicht identisch" in field 037A, and then I could choose some to create ground truth groupings from. I hope we can avoid messing with the extent using this and, if necessary, the fingerprints.
+
+Should have lots of variants:
+
+* Kleopatra
+* Schach oder König-Spiel
+* New erfundenes and vollständiges Trenchir-Büchlein
+* Cornelius Nepos
+
+## Multi-volume work and variant interaction
+
+Multi-volume works that should also have variants:
+
+I can give you the few from my earlier comparison, or you could generate a more random set based on the codes for parts of multi-volume works and note contains "ident", whichever you think will work better
+
+Here they are:
+
+ * Der Grosse SchauPlatz Jämerlicher Mordgeschichte
+ * Der Römischen Keyser
+ * Der Teutsche Secretarius
