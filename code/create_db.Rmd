@@ -74,7 +74,7 @@ vd17_normalized_langs_a <- vd17_a %>%
   collect() %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
   rename(publication_language = a, original_language = c, intermediary_language = b) %>%
-  unnest_cross(publication_language:intermediary_language, keep_empty = TRUE) %>%
+  unnest_cross(c(publication_language,original_language,intermediary_language), keep_empty = TRUE) %>%
   copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_langs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
