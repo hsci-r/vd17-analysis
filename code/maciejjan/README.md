@@ -35,7 +35,7 @@ Further, the code constructs an FST (Finite State Transducer) that maps
 the names to their other spelling variants. It is possible to manually
 edit the list of rules before compiling the transducer.
 
-The code here uses parts of [morle](git+https://github.com/maciejjan/morle),
+The code here uses parts of [morle](https://github.com/maciejjan/morle),
 and is based on material from Maciej Janicki's PhD thesis (see references below).
 Originally the approach was meant for unsupervised learning of morphology, so
 it might not be entirely designed for the task here, but it's worth
