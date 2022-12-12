@@ -1,0 +1,37 @@
+read att cap.att
+invert
+load ../../data/work/maciejjan/first_names/lexicon.fsm
+load ../../data/work/maciejjan/first_names/rules.fsm
+load ../../data/work/maciejjan/first_names/lexicon.fsm
+read att cap.att
+compose
+save ../../data/work/maciejjan/first_names_transducer.fsm
+clear
+
+read att cap.att
+load ../../data/work/maciejjan/last_names_lexicon.fsm
+compose
+save ../../data/work/maciejjan/last_names_lexicon_cap.fsm
+clear
+
+load ../../data/work/maciejjan/last_names_lexicon_cap.fsm
+invert
+load ../../data/work/maciejjan/last_names/rules.fsm
+load ../../data/work/maciejjan/last_names_lexicon_cap.fsm
+compose
+minimize
+save ../../data/work/maciejjan/last_names_transducer.fsm
+clear
+
+read regex [ %_ ] ;
+load ../../data/work/maciejjan/first_names_transducer.fsm
+concatenate
+one-plus
+load ../../data/work/maciejjan/last_names_transducer.fsm
+rotate stack
+concatenate
+load ../../data/work/maciejjan/full_names_lexicon.fsm
+compose
+invert
+save ../../data/processed/maciejjan/names_to_vd17.fsm
+
