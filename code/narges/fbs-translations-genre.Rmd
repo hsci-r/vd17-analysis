@@ -105,40 +105,40 @@ translations_notes <- vd17_a %>%
 
 
 ```{r}
-genre_list1_a <- c("Lyrik","Poetry","Ballade","Elegie","Epigramm","Epikedeion","Figurengedicht","Gesangbuch","Kirchenlied","Lied","Liedersammlung","Anthologie")
-genre_list1_b <- c("Drama","Theatre","Fastnachtspiel","Komödie","Märtyrerdrama","Schauspiel","Schwank","Theaterzettel","Einblattdruck","Perioche","Tragödie")
-genre_list1_c <- c("Epik","Prose","Anekdote","Autobiographie","Tagebuch","Biographie","Heiligenvita","Epos","Erzählung","Erzählsammlung","Fabel","Märchen","Novelle","Reisebericht","Erlebnisbericht","Roman","Sage","Satire","Streitschrift","Verserzählung")
-genre_list1_d <- c("Lesebuch","Emblembuch","Erotische Literatur","Kommentar","Libretto","Schäferdichtung")
-genre_list1_e <- c("Grammatik","Schulbuch","Sprachführer","Konkordanz","Wörterbuch","Lexikon","Enzyklopädie","Wörterbuch","Poetik","Rhetorik")
-genre_list1_f <- c("Aphorismus","Sprichwortsammlung","Zitatensammlung","Anstandsliteratur","Tischzucht","Komplimentierbuch","Briefsteller","Frauenliteratur","Fürstenspiegel","Hausväterliteratur","Ratgeber","Jugendbuch","Jugendsachbuch","Moralische Wochenschrift","Zeitschrift","Spiel","Sprichwortsammlung","Aphorismus","Zitatensammlung")
-genre_list1_g <- c("Gelegenheitsschrift","Festbeschreibung","Gesellschaftschrift","Preisschrift","Rezensionszeitschrift","Gesellschaftsschrift","Funeral Sermons","Leichenpredigt","Leichenpredigtsammlung")
+genre_list1_a <- c("Lyrik","Poetry","Ballade","Elegie","Epigramm","Epikedeion","Figurengedicht","Gesangbuch","Lied","Kirchenlied","Liedersammlung")
+genre_list1_b <- c("Drama","Theatre","Fastnachtspiel","Komödie","Märtyrerdrama","Schauspiel","Schwank","Theaterzettel","Tragödie")
+genre_list1_c <- c("Epik","Prose","Anekdote","Autobiographie","Biographie","Epos","Erzählung","Erzählsammlung","Fabel","Märchen","Novelle","Reisebericht","Roman","Sage","Satire","Verserzählung")
+genre_list1_d <- c("Other Literature Related","Anthologie","Emblembuch","Erotische Literatur","Kommentar","Libretto","Schäferdichtung")
+genre_list1_e <- c("Linguistic and Language","Grammatik","Konkordanz","Lexikon","Poetik","Rhetorik","Wörterbuch")
+genre_list1_f <- c("Virtue, Civility and Ethics","Aphorismus","Anstandsliteratur","Briefsteller","Frauenliteratur","Fürstenspiegel","Hausväterliteratur","Jugendbuch","Moralische Wochenschrift","Spiel","Sprichwortsammlung","Zitatensammlung")
+genre_list1_g <- c("Other Society Related","Gelegenheitsschrift","Gesellschaftschrift","Akademieschrift","Funeral Sermons","Leichenpredigt","Leichenpredigtsammlung")
 ```
 
 ```{r}
-genre_list2_a <- c("Educational","Schul- und Hochschulschriften","Hochschulschrift","Dissertation","Dissertationensammlung","Matrikel","Universitätsprogramm","Vorlesung","Rede","Vorlesungsverzeichnis","Jugendsachbuch","Jugendbuch","Schulbuch","Rechenbuch","Mathematik","Grammatik","Wörterbuch","Fibel","Lesebuch","Anthologie","Schulprogramm")
-genre_list2_b <- c("Governmental","Amtsdruckschrift","Edikt","Gesetz","Mandat","Verordnung","Gesetzesammlung","Kapitulation","Privileg","Richtlinie","Regelsammlung","Vertrag")
+genre_list2_a <- c("Educational","Schul- und Hochschulschriften","Hochschulschrift","Dissertation","Dissertationensammlung","Matrikel","Universitätsprogramm","Vorlesung","Vorlesungsverzeichnis","Jugendsachbuch","Rechenbuch","Schulbuch","Fibel","Lesebuch","Schulprogramm")
+genre_list2_b <- c("Governmental","Amtsdruckschrift","Edikt","Gesetz","Gesetzesammlung","Kapitulation","Mandat","Privileg","Richtlinie","Verordnung","Vertrag")
 genre_list2_c <- c("Judicial","Legal","Entscheidungssammlung","Fallsammlung","Konsiliensammlung","Konsilium","Satzung")
-genre_list2_d <- c("Religious","Theological","Agende","Rituale","Beichtspiegel","Bibel","Brevier","Gebet","Katechismus","Missale","Psalter","Secretarial","Briefsteller","Formularsammlung","Schreibmeisterbuch","Musterbuch","Regesten","Urkundenbuch")
-genre_list2_e <- c("Business","Mercantile","Anzeige","Subskriptionsanzeige","Bücheranzeige","Meßrelation","Subskribentenliste","Verkaufskatalog","Katalog","Antiquariatskatalog","Auktionskatalog","Buchhandelskatalog","Meßkatalog")
-genre_list2_f <- c("Festungsbau","Kriegskunde")
-genre_list2_g <- c("Bericht","Reisebericht","Brief","Briefsammlung","Regelsammlung","Statistik","Streitschrift","Einblattdruck","Flugschrift","Kolportageliteratur","Satire")
+genre_list2_d <- c("Religious","Theological","Agende","Beichtspiegel","Bibel","Brevier","Gebet","Katechismus","Missale","Psalter","Rituale","Other Governmental and Institutional","Formularsammlung","Schreibmeisterbuch","Regesten","Urkundenbuch")
+genre_list2_e <- c("Business","Mercantile","Anzeige","Subskriptionsanzeige","Meßrelation","Subskribentenliste","Verkaufskatalog","Antiquariatskatalog","Auktionskatalog","Buchhandelskatalog","Meßkatalog")
+genre_list2_f <- c("War Related","Festungsbau","Kriegskunde")
+genre_list2_g <- c("General Works","Bericht","Brief","Briefsammlung","Regelsammlung","Statistik","Streitschrift")
 ```
 
 
 ```{r}
-genre_list3_a <- c("Archäologie","Altertumskunde","Chronik","Erlebnisbericht","Autobiographie","Reisebericht","Genealogie","Tagebuch","Wappenbuch")
-genre_list3_b <- c("Botanik","Pflanzenbuch","Gartenbau","Jagdliteratur","Landwirtschaft","Praktik","Kalender","Tierbuch","Zoologie")
-genre_list3_c <- c("Atlas","Bergbau","Geographie","Topographie","Geologie","Itinerar","Karte","Plan","Ortsverzeichnis","Mineralogie","Reiseführer","Führer")
-genre_list3_d <- c("Alchemie","Chemie","Astronomie","Astrologie","Physik","Akustik","Magnetismus","Mechanik","Optik","Geometrie","Mathematik","Rechenbuch")
-genre_list3_e <- c("Anatomie","Arzneibuch","Pharmakopöe","Chiromantie","Chirurgie","Gynäkologie","Medizin","Seuchenschrift","Physiognomie","Tiermedizin")
-genre_list3_f <- c("Musikbuch","Musiknoten")
-genre_list3_g <- c("Architektur","Ornamentstich")
-genre_list3_h <- c("Festbeschreibung","Gelegenheitsschrift","Leichenpredigt","Rede","Vorlesung","Panegyrikos","Sprachführer","Grammatik","Wörterbuch")
-genre_list3_i <- c("Pädagogik")
-genre_list3_j <- c("Kochbuch")
-genre_list3_k <- c("Ars moriendi","Erbauungsliteratur","Freimaurerliteratur","Gebetbuch","Heiligenvita","Biographie","Jesuitendrama","Jesuiten","Perioche","Ordensliteratur","Judaicum","Legende","Ordensliteratur","Perioche","Theaterzettel","Predigtsammlung","Totentanz")
-genre_list3_l <- c("Adressbuch","Almanach","Kalender","Anleitung","Ratgeber","Bibliographie","Bücheranzeige","Buchbinderanweisung","Subskriptionsanzeige","Einführung","Handbuch","Enzyklopädie","Lexikon","Führer","Ratgeber","Praktik","Volksschrifttum","Katalog","Verkaufskatalog","Bibliothekskatalog","Kommentar","Konkordanz","Musterbuch","Schreibmeisterbuch","Ornamentstich","Ratgeber","Anleitung","Briefsteller","Hausväterliteratur","Porträtwerk","Preisschrift","Akademieschrift","Regelsammlung","Rezension","Rezensionszeitschrift","Zeitschrift","Akademieschrift","Traktat","Trivialliteratur","Kolportageliteratur")
-genre_list3_m <- c("Einblattdruck","Flugschrift","Streitschrift","Volksschrifttum","Volksbuch","Theaterzettel","Flugblatt","Tabelle","Zeitung","Zeitschrift")
+genre_list3_a <- c("History, Archaeology and related","Archäologie","Altertumskunde","Chronik","Erlebnisbericht","Genealogie","Tagebuch","Wappenbuch")
+genre_list3_b <- c("Botany, Zoology, Agriculture","Botanik","Gartenbau","Jagdliteratur","Landwirtschaft","Praktik","Pflanzenbuch","Tierbuch","Zoologie")
+genre_list3_c <- c("Geography, Geology, Mineralogy, Mining","Atlas","Bergbau","Geographie","Geologie","Itinerar","Karte","Ortsverzeichnis","Plan","Mineralogie","Reiseführer","Topographie")
+genre_list3_d <- c("Mathematics, Natural Sciences, Astronomy","Alchemie","Astronomie","Astrologie","Chemie","Physik","Akustik","Magnetismus","Mechanik","Optik","Geometrie","Mathematik")
+genre_list3_e <- c("Medicine, Pharmacy","Anatomie","Arzneibuch","Chiromantie","Chirurgie","Gynäkologie","Medizin","Pharmakopöe","Physiognomie","Seuchenschrift","Tiermedizin")
+genre_list3_f <- c("Music and related","Musikbuch","Musiknoten")
+genre_list3_g <- c("Arts and related","Architektur","Ornamentstich")
+genre_list3_h <- c("Literature, language and related","Festbeschreibung","Rede","Panegyrikos","Sprachführer")
+genre_list3_i <- c("Education","Pädagogik")
+genre_list3_j <- c("Manners and customs","Kochbuch")
+genre_list3_k <- c("Religion","Theology and related","Ars moriendi","Erbauungsliteratur","Freimaurerliteratur","Gebetbuch","Heiligenvita","Jesuitendrama","Judaicum","Legende","Ordensliteratur","Perioche","Predigtsammlung","Totentanz")
+genre_list3_l <- c("General Works","Adressbuch","Almanach","Anleitung","Bibliographie","Buchbinderanweisung","Bücheranzeige","Einführung","Enzyklopädie","Führer","Handbuch","Kalender","Katalog","Bibliothekskatalog","Kommentar","Konkordanz","Musterbuch","Ratgeber","Porträtwerk","Preisschrift","Regelsammlung","Rezension","Rezensionszeitschrift","Traktat","Trivialliteratur","Kolportageliteratur","Volksschrifttum","Volksbuch")
+genre_list3_m <- c("Formats","Einblattdruck","Flugschrift","Tabelle","Zeitung","Zeitschrift")
 ```
 
 ```{r}
@@ -165,7 +165,6 @@ fbs_translation_cat1 <- fbs_links_of_interest_matches %>%
 genres_translations_fbs_cat1 <- fbs_translation_cat1%>%
   select(vd17_id,record_number,normalized_year,genre)%>%
   distinct(vd17_id,record_number,normalized_year,genre)%>%
-  na.omit(fbs_translation_cat1)%>%
   group_by(normalized_year) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -193,7 +192,6 @@ genres_translations_fbs_cat1%>%
 genres_members_translations_cat1 <- fbs_translation_cat1%>%
   select(vd17_id,record_number,normalized_year,member_number,genre)%>%
   distinct(vd17_id,record_number,normalized_year,member_number,genre)%>%
-  na.omit(fbs_translation_cat1)%>%
   group_by(normalized_year,member_number) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -232,7 +230,6 @@ fbs_translation_cat2 <- fbs_links_of_interest_matches %>%
 genres_translations_fbs_cat2 <- fbs_translation_cat2%>%
   select(vd17_id,record_number,normalized_year,genre)%>%
   distinct(vd17_id,record_number,normalized_year,genre)%>%
-  na.omit(fbs_translation_cat2)%>%
   group_by(normalized_year) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -260,7 +257,6 @@ genres_translations_fbs_cat2%>%
 genres_members_translations_cat2 <- fbs_translation_cat2%>%
   select(vd17_id,record_number,normalized_year,member_number,genre)%>%
   distinct(vd17_id,record_number,normalized_year,member_number,genre)%>%
-  na.omit(fbs_translation_cat2)%>%
   group_by(normalized_year,member_number) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -305,7 +301,6 @@ fbs_translation_cat3 <- fbs_links_of_interest_matches %>%
 genres_translations_fbs_cat3 <- fbs_translation_cat3%>%
   select(vd17_id,record_number,normalized_year,genre)%>%
   distinct(vd17_id,record_number,normalized_year,genre)%>%
-  na.omit(fbs_translation_cat3)%>%
   group_by(normalized_year) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -339,7 +334,6 @@ genres_translations_fbs_cat3%>%
 genres_members_translations_cat3 <- fbs_translation_cat3%>%
   select(vd17_id,record_number,normalized_year,member_number,genre)%>%
   distinct(vd17_id,record_number,normalized_year,member_number,genre)%>%
-  na.omit(fbs_translation_cat3)%>%
   group_by(normalized_year,member_number) %>%
   count(genre)%>%
   arrange(desc(n))%>%
@@ -363,7 +357,7 @@ genres_members_translations_cat3 <- fbs_translation_cat3%>%
 fbs_translation_cat_1 <- gs4_create(
   "genres_translations_fbs_cat1",
   sheets = fbs_translation_cat1%>%
-     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://sru.k10plus.de/vd17?version=2.0&operation=searchRetrieve&maximumRecords=10&startRecord=1&recordSchema=picaxml&query=pica.vds=',vd17_id,'","',vd17_id,'")'))))
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")'))))
 fbs_translation_cat_1
 
 genres_translations_fbs_cat_1 <- gs4_create(
@@ -382,7 +376,7 @@ genres_members_translations_cat_1
 fbs_translation_cat_2 <- gs4_create(
   "genres_translations_fbs_cat2",
   sheets = fbs_translation_cat2%>%
-     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://sru.k10plus.de/vd17?version=2.0&operation=searchRetrieve&maximumRecords=10&startRecord=1&recordSchema=picaxml&query=pica.vds=',vd17_id,'","',vd17_id,'")'))))
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")'))))
 fbs_translation_cat_2
 
 genres_translations_fbs_cat_2 <- gs4_create(
@@ -402,7 +396,7 @@ genres_members_translations_cat_2
 fbs_translation_cat_3 <- gs4_create(
   "genres_translations_fbs_cat3",
   sheets = fbs_translation_cat3%>%
-     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://sru.k10plus.de/vd17?version=2.0&operation=searchRetrieve&maximumRecords=10&startRecord=1&recordSchema=picaxml&query=pica.vds=',vd17_id,'","',vd17_id,'")'))))
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")'))))
 fbs_translation_cat_3
 
 genres_translations_fbs_cat_3 <- gs4_create(
