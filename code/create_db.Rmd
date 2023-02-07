@@ -47,7 +47,7 @@ vd17_normalized_years_c <- vd17_normalized_years_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_years_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_genres_a <- vd17_a %>%
-  filter(field_code == "044S", value != " ") %>%
+  filter(field_code %in% c("044S","013D"), value != " ") %>%
   pivot_wider(
     id_cols = record_number:field_number,
     values_from = value, names_from = subfield_code
