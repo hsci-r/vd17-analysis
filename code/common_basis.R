@@ -38,55 +38,9 @@ is_html_output <- function() {
   is.null(knitr::pandoc_to()) || (!str_detect(knitr::pandoc_to(), "^gfm") && knitr::is_html_output())
 }
 
-while (!exists("con")) {
-  tryCatch(con <- dbConnect(
-    drv = MariaDB(),
-    host = "vm2505.kaj.pouta.csc.fi",
-    dbname = "vd17_analysis",
-    user = "vd17_analysis",
-    password = key_get("vd17_analysis", "vd17_analysis"),
-    bigint = "integer",
-    load_data_local_infile = TRUE,
-    autocommit = TRUE,
-    reconnect = TRUE
-  ), error = function(e) {
-    print(e)
-    key_set("vd17_analysis", "vd17_analysis")
-  })
-}
-
-try(vd17_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_a")))
-try(vd17_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_c")))
-
-try(vd17_auth_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_auth_a")))
-try(vd17_auth_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_auth_c")))
-
-try(vd17_genres_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_genres_a")))
-try(vd17_genres_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_genres_c")))
-
-try(vd17_id_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_id_a")))
-try(vd17_id_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_id_a")))
-
-try(vd17_normalized_langs_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_langs_a")))
-try(vd17_normalized_langs_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_langs_c")))
-
-try(vd17_normalized_locations_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locations_a")))
-try(vd17_normalized_locations_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_locations_c")))
-
-try(vd17_normalized_years_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_years_a")))
-try(vd17_normalized_years_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_normalized_years_c")))
-
-try(vd17_titles_a <- tbl(con, dbplyr::in_schema("vd17", "vd17_titles_a")))
-try(vd17_titles_c <- tbl(con, dbplyr::in_schema("vd17", "vd17_titles_c")))
-
-try(fbs_gnds_a <- tbl(con, "fbs_gnds_a"))
-try(fbs_gnds_c <- tbl(con, "fbs_gnds_c"))
-
-try(fbs_links_a <- tbl(con, "fbs_links_a"))
-try(fbs_links_c <- tbl(con, "fbs_links_c"))
-
-try(fbs_metadata_a <- tbl(con, "fbs_metadata_a"))
-try(fbs_metadata_c <- tbl(con, "fbs_metadata_c"))
+con <- get_connection()
+register_tables(con, "vd17")
+register_tables(con, "vd17_analysis")
 
 try(fbs_record_numbers_a <- fbs_links_a %>%
   distinct(record_number))
@@ -97,9 +51,6 @@ try(fbs_records_a <- vd17_a %>%
   inner_join(fbs_record_numbers_a))
 try(fbs_records_c <- vd17_c %>%
   inner_join(fbs_record_numbers_c))
-
-try(vd17_parts_of_multipart_works_a <- tbl(con, "vd17_parts_of_multipart_works_a"))
-try(vd17_parts_of_multipart_works_c <- tbl(con, "vd17_parts_of_multipart_works_c"))
 
 try(fbs_links_of_interest_a <- fbs_links_a %>%
   filter(
