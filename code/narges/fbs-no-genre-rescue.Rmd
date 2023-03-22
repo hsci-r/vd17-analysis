@@ -91,7 +91,8 @@ fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
   distinct()
 
 fbs_rescue <- fbs_links_of_interest_matches %>%
-  merge(vd17_a_rescue, by=c("record_number"),all.x=TRUE)
+  merge(vd17_a_rescue, by=c("record_number"),all=TRUE)%>%
+  distinct()
 ```
 
 
@@ -138,9 +139,9 @@ vd17_corporate_authors_ppn <- vd17_a %>%
   select(record_number,corporate_subfield_code_9,ppn_corporate)%>%
   collect()
 
-vd17_corporate_name_gnd <- merge(vd17_corporate_authors_name,vd17_corporate_authors_gnd, by=c("record_number"),all.x=TRUE)%>%
+vd17_corporate_name_gnd <- merge(vd17_corporate_authors_name,vd17_corporate_authors_gnd, by=c("record_number"),all=TRUE)%>%
   distinct()
-vd17_corporate <- merge(vd17_corporate_name_gnd,vd17_corporate_authors_ppn, by=c("record_number"),all.x=TRUE)%>%
+vd17_corporate <- merge(vd17_corporate_name_gnd,vd17_corporate_authors_ppn, by=c("record_number"),all=TRUE)%>%
   distinct()
 
 vd17_genres_combined <- vd17_genres_local %>%
