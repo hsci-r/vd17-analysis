@@ -91,7 +91,7 @@ fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
   distinct()
 
 fbs_rescue <- fbs_links_of_interest_matches %>%
-  left_join(vd17_a_rescue, by=c("record_number"))
+  merge(vd17_a_rescue, by=c("record_number"),all.x=TRUE)
 ```
 
 
