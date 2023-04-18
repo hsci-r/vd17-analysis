@@ -41,6 +41,7 @@ vd17_rescue_additional_field<-vd17_a %>% filter(field_code %in% c("029A","029F",
 vd17_a_rescue <- vd17_rescue %>%
   copy_to_a(con,temporary=TRUE,overwrite=TRUE)%>%
   left_join(vd17_rescue_additional_field,by=c("record_number"))%>%
+  left_join(vd17_id_a,by=c("record_number"))%>%
   collect()%>%
   distinct()
 ```
@@ -97,7 +98,7 @@ fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
   distinct()
 
 fbs_rescue <- fbs_links_of_interest_matches %>%
-  merge(vd17_a_rescue, by=c("record_number"),all=TRUE)%>%
+  merge(vd17_a_rescue, by=c("record_number","vd17_id"),all=TRUE)%>%
   distinct()
 ```
 
