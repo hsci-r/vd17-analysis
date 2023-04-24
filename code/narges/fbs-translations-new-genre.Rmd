@@ -21,6 +21,7 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
+
 ```{r}
 list_rescue <- c("Palmen Orden","Palmen-Orden","Palmenorden","Fruchtbringend","Frucht-bringend","Frucht Bringend","Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft","Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des 17. Jahrhunderts","Palmenorden","Akademie des Siebzehnten Jahrhunderts","Akademie des 17. Jahrhunderts","Societas Fructifera","Frugtbringende Selskab","Fruitbearing Society","Sociedad Fructífera","Société des Fructifiants","Ordre du Palmier","Società dei Carpofori","Towarzystwo Owocodajne","Komunitas Fruitbearing","Плодоносное общество","丰收学会")
 
@@ -179,6 +180,21 @@ translations_notes <- vd17_a %>%
 ```
 
 ```{r}
+vd17_id_a_exception <- vd17_id_a %>%
+  filter(vd17_id %in% c("23:251993N","23:668151V","12:105826H","1:658583Y","23:292603E","32:723467F","7:685790Q","23:664520X","14:627442V","3:609604X","23:248478N","3:007042D"))%>%
+  collect()
+  
+vd17_corporate_defined <- vd17_a %>% filter(field_code=="029G",str_detect(value,"Frucht"))%>%
+mutate(field_code_corporate_exceptions=field_code)%>%
+collect()%>%
+distinct()
+
+fbs_id_corporate_defined <-vd17_id_a_exception%>% 
+  inner_join(vd17_corporate_defined,by=c("record_number"))%>% 
+  select(record_number,vd17_id,field_code_corporate_exceptions)
+```
+
+```{r}
 genre_list1_a <- c("Lyrik","Lyric Poetry","Ballade","Elegie","Epigramm","Epikedeion","Figurengedicht","Gesangbuch","Lied","Kirchenlied","Liedersammlung")
 genre_list1_b <- c("Drama","Theatre","Fastnachtspiel","Komödie","Märtyrerdrama","Schauspiel","Schwank","Tragödie")
 genre_list1_c <- c("Epik","Prose","Anekdote","Autobiographie","Biographie","Epos","Erlebnisbericht","Erzählung","Erzählsammlung","Fabel","Märchen","Novelle","Reisebericht","Roman","Sage","Satire","Tagebuch","Verserzählung")
@@ -224,6 +240,7 @@ fbs_translation_cat1 <- fbs_rescue %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
   inner_join(genre_cat1,by = c("record_number"))%>%
+  left_join(fbs_id_corporate_defined,by=c("record_number","vd17_id"))%>%
   left_join(vd17_titles_local %>% select(record_number,combined_all_titles),by = c("record_number"))%>%
   inner_join(vd17_normalized_langs_local%>%select(record_number, publication_language, intermediary_language, original_language), by = c("record_number"))%>%
   left_join(vd17_genres_combined, by=c("record_number"))%>%
@@ -510,25 +527,31 @@ gs4_auth(cache = ".secrets", email = "narges.azizifard@gmail.com")
 # Creating the google spreadsheet
 ```{r}
 
-my_data_frames_1 <- list(fbs_translation_cat1,genres_number_fbs_cat1,genres_members_fbs_cat1)
-my_data_frames_2 <- list(fbs_translation_cat2,genres_number_fbs_cat2,genres_members_fbs_cat2)
-my_data_frames_3 <- list(fbs_translation_cat3,genres_number_fbs_cat3,genres_members_fbs_cat3)
+genre_fbs_cat1_link <- fbs_translation_cat1%>%
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+my_data_frames_1 <- list(genre_fbs_cat1_link,genres_number_fbs_cat1,genres_members_fbs_cat1)
+
+genre_fbs_cat2_link <- fbs_translation_cat2%>%
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+my_data_frames_2 <- list(genre_fbs_cat2_link,genres_number_fbs_cat2,genres_members_fbs_cat2)
+
+genre_fbs_cat3_link <- fbs_translation_cat3%>%
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+my_data_frames_3 <- list(genre_fbs_cat3_link,genres_number_fbs_cat3,genres_members_fbs_cat3)
 
 fbs_translations_genre_society_related<- gs4_create(
   "fbs_translations_genre_society_related",
   sheets = my_data_frames_1)
 
+fbs_translations_genre_society_unrelated<- gs4_create(
+  "fbs_translations_genre_society_unrelated",
+  sheets = my_data_frames_2)
+
 fbs_translations_genre_neutral_NA<- gs4_create(
   "fbs_translations_genre_neutral_NA",
   sheets = my_data_frames_3)
 
-fbs_translations_society_unrelated<- gs4_create(
-  "fbs_translations_genre_society_unrelated",
-  sheets = my_data_frames_2)
-
-fbs_translations_genre_society_related
-
-fbs_translations_genre_neutral_NA
-
-fbs_translations_society_unrelated
+fbs_publications_genre_society_related
+fbs_publications_genre_society_unrelated
+fbs_publications_genre_neutral_NA
 ```
