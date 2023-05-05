@@ -23,7 +23,7 @@ pp <- function(percentage, accuracy = 0.01) {
 
 # Identifying rescue values
 ```{r}
-list_rescue <- c("Palmen Orden","Palmen-Orden","Palmenorden","Fruchtbringend","Frucht-bringend","Frucht Bringend","Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft","Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des 17. Jahrhunderts","Palmenorden","Akademie des Siebzehnten Jahrhunderts","Akademie des 17. Jahrhunderts","Societas Fructifera","Frugtbringende Selskab","Fruitbearing Society","Sociedad Fructífera","Société des Fructifiants","Ordre du Palmier","Società dei Carpofori","Towarzystwo Owocodajne","Komunitas Fruitbearing","Плодоносное общество","丰收学会")
+list_rescue <- c("Palmen Orden","Palmen-Orden","Palmenorden","Fruchtbringend","Frucht-bringend","Frucht Bringend","Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft","Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Akademie des 17. Jahrhunderts","Societas Fructifera","Frugtbringende Selskab","Fruitbearing Society","Sociedad Fructífera","Société des Fructifiants","Ordre du Palmier","Società dei Carpofori","Towarzystwo Owocodajne","Komunitas Fruitbearing","Плодоносное общество","丰收学会","palmen orden","palmen-orden","palmenorden","fruchtbringend","frucht-bringend","frucht bringend","die deutsche akademie des 17. jahrhunderts - fruchtbringende gesellschaft","akademie des 17. jahrhunderts","akademie des siebzehnten jahrhunderts","deutsche akademie des siebzehnten jahrhunderts","deutsche akademie des 17. jahrhunderts","akademie des siebzehnten jahrhunderts","akademie des 17. jahrhunderts","societas fructifera","frugtbringende selskab","fruitbearing society","sociedad fructífera","société des fructifiants","ordre du palmier","società dei carpofori","towarzystwo owocodajne","komunitas fruitbearing")
 
 vd17_rescue <- vd17_a %>%
   mutate(value = str_replace_all(value, sql("CHR(0)"), "_")) %>%
@@ -205,7 +205,7 @@ vd17_translations_defined_fbs <- vd17_translations_defined%>%
 
 ```{r}
 vd17_id_a_exception <- vd17_id_a %>%
-  filter(vd17_id %in% c("23:251993N","23:668151V","12:105826H","1:658583Y","23:292603E","32:723467F","7:685790Q","23:664520X","14:627442V","3:609604X","23:248478N","3:007042D"))%>%
+  filter(vd17_id %in% c("23:251993N","23:668151V","12:105826H","1:658583Y","23:292603E","32:723467F","7:685790Q","23:664520X","14:627442V","3:609604X","23:248478N","3:007042D","23:000392D"))%>%
   collect()
   
 vd17_corporate_defined <- vd17_a %>% filter(field_code=="029G",str_detect(value,"Frucht"))%>%
@@ -359,7 +359,8 @@ genres_fbs_cat3 <- fbs_rescue %>%
   mutate(genre_category = case_when(
     (grepl(paste(genre_list3_a, collapse="|"), genre_full)) ~ "Religion/Theology and related",
     (grepl(paste(genre_list3_b, collapse="|"), genre_full)) ~ "General works",
-    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats"))%>%
+    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats",
+    (is.na(genre_full)) ~ "No-Genre"))%>%
   distinct()
 ```
 ```{r}
@@ -372,24 +373,27 @@ genres_number_fbs_cat3 <- genres_fbs_cat3%>%
    mutate(genre_category = case_when(
     (grepl(paste(genre_list3_a, collapse="|"), genre_full)) ~ "Religion/Theology and related",
     (grepl(paste(genre_list3_b, collapse="|"), genre_full)) ~ "General works",
-    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats"))%>%
+    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats",
+    (is.na(genre_full)) ~ "No-Genre"))%>%
   distinct()
 
 
 genres_number_fbs_cat3%>%
+  filter(!(is.na(genre_full)))%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre_category))+
   geom_col(show.legend = FALSE)+
   facet_wrap(~genre_category, scales="free")+
-  xlab("Year") + ylab("FBS-Neutral/NA genres")+
+  xlab("Year") + ylab("FBS-Neutral")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   theme_hsci_discrete()+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
 genres_number_fbs_cat3%>%
+  filter(!(is.na(genre_full)))%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre_category))+
   geom_col(width=1,position='fill')+
   labs(fill=NULL)+
-  xlab("Year") + ylab("FBS-Neutral/NA genres")+
+  xlab("Year") + ylab("FBS-Neutral")+
   scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
   scale_y_continuous(labels=scales::percent_format(accuracy=1),breaks = seq(0, 1, by = 0.1)) +
   theme_hsci_discrete()+
@@ -407,7 +411,8 @@ genres_members_fbs_cat3 <- genres_fbs_cat3%>%
   mutate(genre_category = case_when(
     (grepl(paste(genre_list3_a, collapse="|"), genre_full)) ~ "Religion/Theology and related",
     (grepl(paste(genre_list3_b, collapse="|"), genre_full)) ~ "General works",
-    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats"))%>%
+    (grepl(paste(genre_list3_c, collapse="|"), genre_full)) ~ "Formats",
+    (is.na(genre_full)) ~ "No-Genre"))%>%
   distinct()
 ```
 

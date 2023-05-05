@@ -1,0 +1,65 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+```{r}
+vd17_a_role <- vd17_a %>%
+  filter(field_code %in% c("028A", "028B", "028C"),subfield_code=='4')%>%
+  mutate(role=value)%>%
+  select(record_number,role)%>%
+  collect()
+vd17_a_role2 <- vd17_a %>%
+  filter(field_code %in% c("028A", "028B", "028C"),subfield_code=='B')%>%
+  mutate(role2=value)%>%
+  select(record_number,field_code,role2)%>%
+  collect()
+vd17_roles <- vd17_a_role2 %>%
+  left_join(vd17_a_role, by=c("record_number"))%>%
+  distinct()
+
+
+vd17_roles_subset <- vd17_roles %>%
+  filter(
+    is.na(role) | role %in% c("ctb", "dte"), # normed role has to be unknown or not one of these
+    is.na(role) | (role == "oth" & field_code == "028C" & !is.na(role2) & str_detect(role2, "^Beiträger|^Mitwirkender")), # in field 028C, if role is other, role2 should not be one of these
+    is.na(role2) | !str_detect(role2, !!!str_flatten(c(
+      "^AdressatIn",
+      "ErwähnteR",
+      "GefeierteR",
+      "Mitglied eines Ausschusses, der akademische Grade vergibt",
+      "Normerlassende Gebietskörperschaft",
+      "Praeses",
+      "RespondentIn",
+      "Sonstige Person, Familie und Körperschaft",
+      "VerfasserIn eines Vorworts",
+      "VerfasserIn von ergänzendem Text",
+      "VerfasserIn von Zusatztexten",
+      "VertragspartnerIn",
+      "WidmendeR",
+      "WidmungsempfängerIn",
+      "ZensorIn"
+    ), collapse = "|^"))
+  )
+
+vd17_roles_subset <- select(vd17_roles_subset,-c('role'))
+```
+
