@@ -9,7 +9,7 @@ output:
 ```{r setup,echo=F}
 knitr::opts_knit$set(root.dir = here::here())
 library(here)
-source(here("code/common_basis.R"), local = knitr::knit_global())
+source("/Users/azizinar/Documents/GitHub/vd17-analysis/code/common_basis.R", local = knitr::knit_global())
 library(tidyverse)
 library(gghsci)
 library(gt)
@@ -97,18 +97,23 @@ fbs_links_of_interest_matches <- rbind(fbs_links_of_interest_local,all_match_sub
 
 fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
   distinct()
-
+# this is related to society-related genres
+fbs_rescue_1 <- fbs_links_of_interest_matches %>%
+  left_join(vd17_a_rescue, by=c("record_number","vd17_id"))%>%
+  distinct()
+```
+# this is related to neutral/NA genres
+```{r}
 fbs_rescue <- fbs_links_of_interest_matches %>%
   merge(vd17_a_rescue, by=c("record_number","vd17_id"),all=TRUE)%>%
   distinct()
 ```
 
-
 # Creating local tables of vd17 normalized years, genres, languages, id and title.
 ```{r}
 vd17_normalized_years_local <- vd17_normalized_years_a %>%
   collect()
-genre_list2 <- c("Educational","Schul- und Hochschulschriften","Hochschulschrift","Dissertation","Dissertation:theol.","Dissertation:med.","Dissertation:jur.","Dissertation:phil.","Dissertationensammlung","Matrikel","Universitätsprogramm","Vorlesung","Vorlesungsverzeichnis","Jugendsachbuch","Rechenbuch","Schulbuch","Fibel","Lesebuch","Schulprogramm","Governmental","Amtsdruckschrift","Edikt","Gesetz","Gesetzesammlung","Kapitulation","Mandat","Privileg","Richtlinie","Verordnung","Vertrag","Other Governmental and Institutional","Regesten","Urkundenbuch","Judicial","Legal","Entscheidungssammlung","Fallsammlung","Konsiliensammlung","Konsilium","Satzung","Religious","Theological","Agende","Beichtspiegel","Bibel","Brevier","Gebet","Katechismus","Missale","Psalter","Rituale","Business","Mercantile","Anzeige","Subskriptionsanzeige","Meßrelation","Subskribentenliste","Verkaufskatalog","Antiquariatskatalog","Auktionskatalog","Buchhandelskatalog","Meßkatalog","Military","Festungsbau","Kriegskunde","General Works","Bericht","Brief","Briefsammlung","Regelsammlung","Statistik","Streitschrift","Streitschrift:polit.","Streitschrift:jur.","Streitschrift:theol.")
+genre_list2 <- c("Educational","Schul- und Hochschulschriften","Hochschulschrift","Dissertation","Dissertation:theol.","Dissertation:med.","Dissertation:jur.","Dissertation:phil.","Dissertationensammlung","Matrikel","Universitätsprogramm","Vorlesung","Vorlesungsverzeichnis","Jugendsachbuch","Rechenbuch","Schulbuch","Fibel","Lesebuch","Schulprogramm","Governmental","Amtsdruckschrift","Edikt","Gesetz","Gesetzesammlung","Kapitulation","Mandat","Privileg","Richtlinie","Verordnung","Vertrag","Other Governmental and Institutional","Regesten","Urkundenbuch","Judicial","Legal","Entscheidungssammlung","Fallsammlung","Konsiliensammlung","Konsilium","Satzung","Religious","Theological","Agende","Beichtspiegel","Bibel","Brevier","Katechismus","Missale","Psalter","Rituale","Business","Mercantile","Anzeige","Subskriptionsanzeige","Meßrelation","Subskribentenliste","Verkaufskatalog","Antiquariatskatalog","Auktionskatalog","Buchhandelskatalog","Meßkatalog","Military","Festungsbau","Kriegskunde","General Works","Bericht","Brief","Briefsammlung","Regelsammlung","Statistik","Streitschrift","Streitschrift:polit.","Streitschrift:jur.","Streitschrift:theol.","Geldwesen")
 
 vd17_parts_of_multipart_works <- vd17_parts_of_multipart_works_a%>%
   collect()%>%
@@ -180,7 +185,7 @@ genre_list1_c <- c("Epik","Prose","Anekdote","Autobiographie","Biographie","Epos
 genre_list1_d <- c("Other Literature Related","Content Related","Schäferdichtung","Libretto","Erotische Literatur","Emblembuch","Porträtwerk","Theaterzettel","Content Neutral","Almanach","Anthologie","Kommentar:lit.","Rezension","Rezensionszeitschrift")
 genre_list1_e <- c("Linguistic and Language","Grammatik","Konkordanz","Lexikon","Poetik","Rhetorik","Sprachführer","Wörterbuch","Epistolography","Briefsteller","Formularsammlung","Schreibmeisterbuch")
 genre_list1_f <- c("Virtue, Civility and Ethics","Aphorismus","Anstandsliteratur","Enzyklopädie","Frauenliteratur","Fürstenspiegel","Hausväterliteratur","Jugendbuch","Kochbuch","Moralische Wochenschrift","Spiel","Sprichwortsammlung","Zitatensammlung")
-genre_list1_g <- c("Other Society Related","Gesellschaftschrift","Akademieschrift")
+genre_list1_g <- c("Other Society Related","Gesellschaftsschrift","Akademieschrift")
 genre_list1_h <- c("Occasional Literature","Funeral Sermons","Leichenpredigt","Leichenpredigtsammlung","Festbeschreibung","Gelegenheitsschrift")
 genre_list1_i <- c("German as a scientific language","History, Archaeology and related","Archäologie","Altertumskunde","Chronik","Genealogie","Wappenbuch","Botany, Zoology, Agriculture","Botanik","Gartenbau","Jagdliteratur","Landwirtschaft","Praktik","Pflanzenbuch","Tierbuch","Zoologie","Geography, Geology, Mineralogy, Mining","Bergbau","Geographie","Geologie","Mineralogie","Reiseführer","Topographie","Mathematics, Natural Sciences, Astronomy","Alchemie","Astronomie","Astrologie","Chemie","Physik","Akustik","Magnetismus","Mechanik","Optik","Geometrie","Mathematik","Medicine, Pharmacy","Anatomie","Arzneibuch","Chiromantie","Chirurgie","Gynäkologie","Medizin","Pharmakopöe","Physiognomie","Seuchenschrift","Tiermedizin","Architecture, Music, Arts","Musikbuch","Musiknoten","Architektur","Ornamentstich","Education","Pädagogik")
 ```
@@ -237,13 +242,13 @@ genre_cat1 <- vd17_genres_local%>%
   filter(grepl(paste(c(genre_list1_a,genre_list1_b,genre_list1_c,genre_list1_d,genre_list1_e,genre_list1_f,genre_list1_g,genre_list1_h,genre_list1_i),collapse="|"), genre_full))%>%
   select(record_number,genre_full)
 
-genres_fbs_cat1 <- fbs_rescue %>%
+genres_fbs_cat1 <- fbs_rescue_1 %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
   left_join(vd17_translations_defined_fbs,by=c("record_number"))%>%
   left_join(fbs_id_corporate_defined,by=c("record_number","vd17_id"))%>%
-  left_join(genre_cat1,by = c("record_number"))%>%
+  inner_join(genre_cat1,by = c("record_number"))%>%
   left_join(vd17_titles_local %>% select(record_number,combined_all_titles),by = c("record_number")) %>%
   left_join(vd17_normalized_langs_local%>% select(record_number, publication_language, intermediary_language,original_language), by = c("record_number"))%>%
   left_join(vd17_genres_combined, by=c("record_number"))%>%
@@ -259,8 +264,7 @@ genres_fbs_cat1 <- fbs_rescue %>%
     (grepl(paste(genre_list1_f, collapse="|"), genre_full)) ~ "Virtue, Civility and Ethics",
     (grepl(paste(genre_list1_g, collapse="|"), genre_full)) ~ "Other Society Related",
     (grepl(paste(genre_list1_h, collapse="|"), genre_full)) ~ "Occasional Literature",
-    (grepl(paste(genre_list1_i, collapse="|"), genre_full)) ~ "German as a scientific language",
-    (!(grepl(paste(c(genre_list1_a,genre_list1_b,genre_list1_c,genre_list1_d,genre_list1_e,genre_list1_f,genre_list1_g,genre_list1_h,genre_list1_i),collapse="|"), genre_full))) ~ "translation/corporate genre"
+    (grepl(paste(genre_list1_i, collapse="|"), genre_full)) ~ "German as a scientific language"
   ))%>%
   distinct()
 ```
@@ -345,11 +349,25 @@ genre_list3_c <- c("Formats","Einblattdruck","Flugschrift","Tabelle","Zeitung","
 
 #"no genre category" should be included in neutral part
 ```
+
+
+```{r}
+
+vd17_genres_combined_edited <- vd17_genres_combined%>%
+  filter(grepl(paste(c(genre_list3_a,genre_list3_b,genre_list3_c),collapse="|"), combined_all_genres))%>%
+  filter(!(grepl(paste(c(genre_list1_a,genre_list1_b,genre_list1_c,genre_list1_d,genre_list1_e,genre_list1_f,genre_list1_g,genre_list1_h,genre_list1_i),collapse="|"), combined_all_genres)))%>%
+  filter(!(grepl(paste(c(genre_list2),collapse="|"), combined_all_genres)))%>%
+  mutate(genre_full=combined_all_genres)%>%
+  select(record_number,genre_full)
+
+vd17_genres_combined_edited
+```
+
 # The below plots depicts the genre frequency of FBS publications for Neutral genres.
 ```{r}
 
-vd17_genres_local_cat3 <- vd17_genres_local%>%
-  filter(grepl(paste(c(genre_list3_a,genre_list3_b,genre_list3_c),collapse="|"), genre_full))
+#vd17_genres_local_cat3 <- vd17_genres_local%>%
+  #filter(grepl(paste(c(genre_list3_a,genre_list3_b,genre_list3_c),collapse="|"), genre_full))
 
 genres_fbs <- fbs_rescue %>%
   left_join(vd17_genres_a%>%collect()%>%
@@ -359,7 +377,7 @@ genres_fbs <- fbs_rescue %>%
 fbs_without_genre <- genres_fbs%>%
   filter(is.na(genre_full))
 
-genre_na_cat3 <- rbind(fbs_without_genre,vd17_genres_local_cat3)
+genre_na_cat3 <- rbind(fbs_without_genre,vd17_genres_combined_edited)
 
 genres_fbs_cat3 <- fbs_rescue %>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
@@ -368,10 +386,9 @@ genres_fbs_cat3 <- fbs_rescue %>%
   inner_join(genre_na_cat3,by = c("record_number"))%>%
   left_join(vd17_titles_local %>% select(record_number,combined_all_titles),by = c("record_number")) %>%
   left_join(vd17_normalized_langs_local%>% select(record_number, publication_language, original_language), by = c("record_number"))%>%
-  left_join(vd17_genres_combined, by=c("record_number"))%>%
   left_join(vd17_parts_of_multipart_works,by=c("record_number"))%>%
   left_join(vd17_corporate, by=c("record_number"))%>%
-  select(record_number,normalized_year,vd17_id,combined_all_titles,member_number,first_name,last_name,role2,field_code,original_language,publication_language,genre_full,combined_all_genres,rescue_value,rescue_field,resuce_additional_field,corporate_subfield_code_a,corporate_subfield_code_7,corporate_subfield_code_9,corporate_subfield_code_B,name_corporate,gnd_corporate,ppn_corporate,role_corporate,multipart)%>%
+  select(record_number,normalized_year,vd17_id,combined_all_titles,member_number,first_name,last_name,role2,field_code,original_language,publication_language,genre_full,rescue_value,rescue_field,resuce_additional_field,corporate_subfield_code_a,corporate_subfield_code_7,corporate_subfield_code_9,corporate_subfield_code_B,name_corporate,gnd_corporate,ppn_corporate,role_corporate,multipart)%>%
   mutate(genre_category = case_when(
     (grepl(paste(genre_list3_a, collapse="|"), genre_full)) ~ "Religion/Theology and related",
     (grepl(paste(genre_list3_b, collapse="|"), genre_full)) ~ "General works",
@@ -395,7 +412,6 @@ genres_number_fbs_cat3 <- genres_fbs_cat3%>%
 
 
 genres_number_fbs_cat3%>%
-  filter(!(is.na(genre_full)))%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre_category))+
   geom_col(show.legend = FALSE)+
   facet_wrap(~genre_category, scales="free")+
@@ -405,7 +421,6 @@ genres_number_fbs_cat3%>%
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
 genres_number_fbs_cat3%>%
-  filter(!(is.na(genre_full)))%>%
   ggplot(aes(x=normalized_year,y=n,fill=genre_category))+
   geom_col(width=1,position='fill')+
   labs(fill=NULL)+
@@ -455,27 +470,28 @@ gs4_deauth()
 
 gs4_auth(cache = ".secrets", email = "narges.azizifard@gmail.com")
 ```
-
 # Creating the google spreadsheet
 ```{r}
-
- genre_fbs_cat1_link <- genres_fbs_cat1%>%
+genre_fbs_cat1_link <- genres_fbs_cat1%>%
      mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
 my_data_frames_1 <- list(genre_fbs_cat1_link,genres_number_fbs_cat1,genres_members_fbs_cat1)
-
-genre_fbs_cat3_link <- genres_fbs_cat3%>%
-     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
-my_data_frames_2 <- list(genre_fbs_cat3_link,genres_number_fbs_cat3,genres_members_fbs_cat3)
 
 fbs_publications_genre_society_related<- gs4_create(
   "fbs_publications_genre_society_related",
   sheets = my_data_frames_1)
 
+fbs_publications_genre_society_related
+```
+
+# Creating the google spreadsheet
+```{r}
+genre_fbs_cat3_link <- genres_fbs_cat3%>%
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+my_data_frames_2 <- list(genre_fbs_cat3_link,genres_number_fbs_cat3,genres_members_fbs_cat3)
+
 fbs_publications_genre_neutral_NA<- gs4_create(
   "fbs_publications_genre_neutral_NA",
   sheets = my_data_frames_2)
-
-fbs_publications_genre_society_related
 
 fbs_publications_genre_neutral_NA
 
