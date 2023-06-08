@@ -21,7 +21,6 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
-
 # Identifying rescue values
 ```{r}
 list_rescue <- c("Palmen Orden","Palmen-Orden","Palmenorden","Fruchtbringend","Frucht-bringend","Frucht Bringend","Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft","Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des Siebzehnten Jahrhunderts","Deutsche Akademie des 17. Jahrhunderts","Akademie des Siebzehnten Jahrhunderts","Akademie des 17. Jahrhunderts","Societas Fructifera","Frugtbringende Selskab","Fruitbearing Society","Sociedad Fructífera","Société des Fructifiants","Ordre du Palmier","Società dei Carpofori","Towarzystwo Owocodajne","Komunitas Fruitbearing","Плодоносное общество","丰收学会","palmen orden","palmen-orden","palmenorden","fruchtbringend","frucht-bringend","frucht bringend","die deutsche akademie des 17. jahrhunderts - fruchtbringende gesellschaft","akademie des 17. jahrhunderts","akademie des siebzehnten jahrhunderts","deutsche akademie des siebzehnten jahrhunderts","deutsche akademie des 17. jahrhunderts","akademie des siebzehnten jahrhunderts","akademie des 17. jahrhunderts","societas fructifera","frugtbringende selskab","fruitbearing society","sociedad fructífera","société des fructifiants","ordre du palmier","società dei carpofori","towarzystwo owocodajne","komunitas fruitbearing")
@@ -35,7 +34,7 @@ vd17_rescue <- vd17_a %>%
   distinct()
 
 ```
-
+# These are rescue additional fields which Thea mentioned.
 ```{r}
 vd17_rescue_additional_field<-vd17_a %>% filter(field_code %in% c("029A","029F","029G","028G","037A"), subfield_code %in% c("a","B","P"))%>%select(record_number,resuce_additional_field=value)
 
@@ -80,7 +79,7 @@ all_match_subset <- select(all_match_subset,-c('role'))
 ```
 
 
-# Joining vd17_id with fbs_links_of_interest 
+# Joining vd17_id with fbs_links_of_interest (including all matches)
 ```{r}
 fbs_links_of_interest_local <- fbs_links_of_interest_a %>%
   inner_join(fbs_metadata_a %>% select(GND,Member_number_new,First_name_new,Last_name_new,Society_name,DOB,DOD) %>% mutate(GND = str_c("gnd/", GND))) %>%
@@ -91,25 +90,29 @@ fbs_links_of_interest_local <- fbs_links_of_interest_a %>%
 fbs_links_of_interest_local <- select (fbs_links_of_interest_local, c('record_number','vd17_id','member_number','first_name', 'last_name','role2','field_code'))
 
 ```
-
+# Creating society-subset including all-matches
 ```{r}
 fbs_links_of_interest_matches <- rbind(fbs_links_of_interest_local,all_match_subset)
 
 fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
   distinct()
-# this is related to society-related genres
+
+```
+# This is related to society-related genres (as Thea asked we remove the records which are in the spreadsheet only because of rescue words)
+```{r}
 fbs_rescue_1 <- fbs_links_of_interest_matches %>%
   left_join(vd17_a_rescue, by=c("record_number","vd17_id"))%>%
   distinct()
 ```
-# this is related to neutral/NA genres
+
+# This is related to neutral/NA genres which we have all records with rescue words
 ```{r}
 fbs_rescue <- fbs_links_of_interest_matches %>%
   merge(vd17_a_rescue, by=c("record_number","vd17_id"),all=TRUE)%>%
   distinct()
 ```
 
-# Creating local tables of vd17 normalized years, genres, languages, id and title.
+# Identifying society-unrelated genres and creating local tables including corporate bodies.
 ```{r}
 vd17_normalized_years_local <- vd17_normalized_years_a %>%
   collect()
@@ -178,6 +181,8 @@ vd17_genres_combined <- vd17_genres_a %>%
   distinct(record_number,combined_all_genres)
 ```
 
+# Identifying society-related genres
+
 ```{r}
 genre_list1_a <- c("Lyrik","Lyric Poetry","Ballade","Elegie","Epigramm","Epikedeion","Figurengedicht","Gesangbuch","Lied","Kirchenlied","Liedersammlung")
 genre_list1_b <- c("Drama","Theatre","Fastnachtspiel","Komödie","Märtyrerdrama","Schauspiel","Schwank","Tragödie")
@@ -189,6 +194,8 @@ genre_list1_g <- c("Other Society Related","Gesellschaftsschrift","Akademieschri
 genre_list1_h <- c("Occasional Literature","Funeral Sermons","Leichenpredigt","Leichenpredigtsammlung","Festbeschreibung","Gelegenheitsschrift")
 genre_list1_i <- c("German as a scientific language","History, Archaeology and related","Archäologie","Altertumskunde","Chronik","Genealogie","Wappenbuch","Botany, Zoology, Agriculture","Botanik","Gartenbau","Jagdliteratur","Landwirtschaft","Praktik","Pflanzenbuch","Tierbuch","Zoologie","Geography, Geology, Mineralogy, Mining","Bergbau","Geographie","Geologie","Mineralogie","Reiseführer","Topographie","Mathematics, Natural Sciences, Astronomy","Alchemie","Astronomie","Astrologie","Chemie","Physik","Akustik","Magnetismus","Mechanik","Optik","Geometrie","Mathematik","Medicine, Pharmacy","Anatomie","Arzneibuch","Chiromantie","Chirurgie","Gynäkologie","Medizin","Pharmakopöe","Physiognomie","Seuchenschrift","Tiermedizin","Architecture, Music, Arts","Musikbuch","Musiknoten","Architektur","Ornamentstich","Education","Pädagogik")
 ```
+
+# Translations checking for society-related and corporate bodies for vd17_ids as exceptions which is mentioned in Genres v4 doc.
 
 ```{r}
 translations_notes <- vd17_a %>% 
@@ -215,9 +222,7 @@ vd17_translations_defined_fbs <- vd17_translations_defined%>%
   left_join(vd17_genres_all,by=c("record_number"))%>%
   mutate(translations_genre=translations_or_corporate_body_genre)%>%
   select(record_number,translations_notes,translations_genre)
-```
 
-```{r}
 vd17_id_a_exception <- vd17_id_a %>%
   filter(vd17_id %in% c("23:251993N","23:668151V","12:105826H","1:658583Y","23:292603E","32:723467F","7:685790Q","23:664520X","14:627442V","3:609604X","23:248478N","3:007042D","23:000392D"))%>%
   collect()
@@ -235,7 +240,7 @@ fbs_id_corporate_defined <-vd17_id_a_exception%>%
 ```
 
 
-# The below plots depicts the genre frequency of FBS publications for Society-related genres.
+# This spreadsheet includes FBS publications with Society-related genres.
 ```{r}
 
 genre_cat1 <- vd17_genres_local%>%
@@ -268,7 +273,7 @@ genres_fbs_cat1 <- fbs_rescue_1 %>%
   ))%>%
   distinct()
 ```
-
+# These spreadsheet and plots show the frequency of society-related genres per year.
 
 ```{r}
 genres_number_fbs_cat1 <- genres_fbs_cat1%>%
@@ -338,6 +343,7 @@ genres_members_fbs_cat1 <- genres_fbs_cat1%>%
 
 ```
 
+# Identifying Neutral genres
 ```{r}
 genre_list3_a <- c("Religion","Theology and related","Ars moriendi","Erbauungsliteratur","Freimaurerliteratur","Gebetbuch","Heiligenvita","Jesuitendrama","Judaicum","Legende","Predigt","Perioche","Predigtsammlung","Totentanz","Ordensliteratur")
 
@@ -350,7 +356,7 @@ genre_list3_c <- c("Formats","Einblattdruck","Flugschrift","Tabelle","Zeitung","
 #"no genre category" should be included in neutral part
 ```
 
-
+# The table for Neutral genres
 ```{r}
 
 vd17_genres_combined_edited <- vd17_genres_combined%>%
@@ -360,10 +366,9 @@ vd17_genres_combined_edited <- vd17_genres_combined%>%
   mutate(genre_full=combined_all_genres)%>%
   select(record_number,genre_full)
 
-vd17_genres_combined_edited
 ```
 
-# The below plots depicts the genre frequency of FBS publications for Neutral genres.
+# # This spreadsheet includes FBS publications with Neutral/NA genres.
 ```{r}
 
 #vd17_genres_local_cat3 <- vd17_genres_local%>%
@@ -396,6 +401,7 @@ genres_fbs_cat3 <- fbs_rescue %>%
     (is.na(genre_full)) ~ "No-Genre"))%>%
   distinct()
 ```
+# These spreadsheet and plots show the frequency of Neutral/NA genres per year.
 ```{r}
 genres_number_fbs_cat3 <- genres_fbs_cat3%>%
   select(vd17_id,record_number,normalized_year,genre_full)%>%
@@ -431,7 +437,7 @@ genres_number_fbs_cat3%>%
   theme(legend.position = "bottom")+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
-# Genre frequency of FBS publications by year per author for Neutral genres.
+# Genre frequency of FBS publications by year per member for Neutral/NA genres.
 ```{r}
 genres_members_fbs_cat3 <- genres_fbs_cat3%>%
   filter(!(is.na(member_number)))%>%
@@ -470,7 +476,7 @@ gs4_deauth()
 
 gs4_auth(cache = ".secrets", email = "narges.azizifard@gmail.com")
 ```
-# Creating the google spreadsheet
+# Creating the google spreadsheet for society-related spreadsheets
 ```{r}
 genre_fbs_cat1_link <- genres_fbs_cat1%>%
      mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
@@ -483,7 +489,7 @@ fbs_publications_genre_society_related<- gs4_create(
 fbs_publications_genre_society_related
 ```
 
-# Creating the google spreadsheet
+# Creating the google spreadsheet for neutral/NA spreadsheets
 ```{r}
 genre_fbs_cat3_link <- genres_fbs_cat3%>%
      mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
