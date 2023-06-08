@@ -219,11 +219,13 @@ fbs_society_german%>%
   scale_fill_manual(values=group.colors)
 
 ```
-# Visualization: Comparison with VD17: Society-related genre categories
 ```{r}
 vd17_local_id <- vd17_id_a%>%
   collect()
+```
 
+# Visualization: Comparison with VD17: Society-related genre categories
+```{r}
 genres_vd17_society <- vd17_local_id %>%
   inner_join(vd17_normalized_langs_local, by=c("record_number"))%>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
@@ -257,3 +259,33 @@ genres_vd17_society%>%
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
   theme(plot.title = element_text(hjust = 0.5))
 ```
+# Visualization: Comparison with VD17: Society output in German
+```{r}
+vd17_fbs <- vd17_normalized_langs_local%>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  left_join(fbs_links_of_interest_matches,by=c('record_number')) %>%
+  select ('normalized_year','record_number','vd17_id','member_number','first_name', 'last_name','role2','field_code')%>%
+   mutate(group = case_when(
+    (is.na(member_number)) ~ "VD17",
+    (!is.na(member_number)) ~ "Society"
+  ))%>%
+  distinct()%>%
+  group_by(normalized_year) %>%
+  count(group)%>%
+  arrange(desc(n))
+
+
+vd17_fbs%>%
+  ggplot(aes(x=normalized_year,y=n,fill=group))+
+  geom_col()+
+  ggtitle("Seventeenth-Century Publications in German")+
+  xlab("") + ylab("")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 5))+
+  scale_y_continuous(breaks = seq(0, 10000, by = 500))+
+  theme_hsci_discrete()+
+  theme(plot.title = element_text(hjust = 0.5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
