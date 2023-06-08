@@ -11,7 +11,7 @@ output:
 
 ```{r setup,echo=F}
 knitr::opts_knit$set(root.dir = here::here())
-source(here::here("code/common_basis.R"), local = knitr::knit_global())
+source(here::here("code/common_basis.R"))
 ```
 
 
@@ -180,13 +180,14 @@ vd17_c %>%
     by = c("value")
   ) %>%
   select(record_number, genre) %>%
-  left_join(vd17_c %>%
-    filter(field_code == "011@", subfield_code == "a") %>%
-    select(record_number, year = value) %>%
-    mutate(year = as.integer(year)) %>%
-    filter(year >= 1600, year <= 1700) %>%
-    collect(),
-  by = c("record_number")
+  left_join(
+    vd17_c %>%
+      filter(field_code == "011@", subfield_code == "a") %>%
+      select(record_number, year = value) %>%
+      mutate(year = as.integer(year)) %>%
+      filter(year >= 1600, year <= 1700) %>%
+      collect(),
+    by = c("record_number")
   ) %>%
   mutate(genre = fct_lump_n(genre, 12)) %>%
   ggplot(aes(x = year, fill = genre)) +
@@ -204,21 +205,23 @@ vd17_c %>%
 vd17_c %>%
   filter(field_code == "044S", subfield_code == "9") %>%
   collect() %>%
-  left_join(vd17_044s_raw %>%
-    filter(field_code == "150") %>%
-    select(genre = value, value = ppn) %>%
-    collect(),
-  by = c("value")
+  left_join(
+    vd17_044s_raw %>%
+      filter(field_code == "150") %>%
+      select(genre = value, value = ppn) %>%
+      collect(),
+    by = c("value")
   ) %>%
   mutate(genre = str_replace(genre, ":.*", "")) %>%
   select(record_number, genre) %>%
-  left_join(vd17_c %>%
-    filter(field_code == "011@", subfield_code == "a") %>%
-    select(record_number, year = value) %>%
-    mutate(year = as.integer(year)) %>%
-    filter(year >= 1600, year <= 1700) %>%
-    collect(),
-  by = c("record_number")
+  left_join(
+    vd17_c %>%
+      filter(field_code == "011@", subfield_code == "a") %>%
+      select(record_number, year = value) %>%
+      mutate(year = as.integer(year)) %>%
+      filter(year >= 1600, year <= 1700) %>%
+      collect(),
+    by = c("record_number")
   ) %>%
   mutate(genre = fct_lump_n(genre, 12)) %>%
   ggplot(aes(x = year, fill = genre)) +
@@ -237,19 +240,21 @@ vd17_c %>%
 ```{r}
 fbs_a %>%
   filter(field_code == "044S", subfield_code == "9") %>%
-  left_join(vd17_044s_raw %>%
-    filter(field_code == "150") %>%
-    select(genre = value, value = ppn),
-  by = c("value")
+  left_join(
+    vd17_044s_raw %>%
+      filter(field_code == "150") %>%
+      select(genre = value, value = ppn),
+    by = c("value")
   ) %>%
   mutate(genre = str_replace_all(genre, ":.*", "")) %>%
   select(record_number, genre) %>%
-  left_join(fbs_a %>%
-    filter(field_code == "011@", subfield_code == "a") %>%
-    select(record_number, year = value) %>%
-    mutate(year = as.integer(year)) %>%
-    filter(year >= 1600, year <= 1700),
-  by = c("record_number")
+  left_join(
+    fbs_a %>%
+      filter(field_code == "011@", subfield_code == "a") %>%
+      select(record_number, year = value) %>%
+      mutate(year = as.integer(year)) %>%
+      filter(year >= 1600, year <= 1700),
+    by = c("record_number")
   ) %>%
   count(year, genre) %>%
   ungroup() %>%
@@ -272,19 +277,21 @@ fbs_a %>%
 ```{r}
 fbs_a %>%
   filter(field_code == "044S", subfield_code == "9") %>%
-  left_join(vd17_044s_raw %>%
-    filter(field_code == "150") %>%
-    select(genre = value, value = ppn),
-  by = c("value")
+  left_join(
+    vd17_044s_raw %>%
+      filter(field_code == "150") %>%
+      select(genre = value, value = ppn),
+    by = c("value")
   ) %>%
   mutate(genre = str_replace_all(genre, ":.*", "")) %>%
   select(record_number, genre) %>%
-  left_join(fbs_a %>%
-    filter(field_code == "011@", subfield_code == "a") %>%
-    select(record_number, year = value) %>%
-    mutate(year = as.integer(year)) %>%
-    filter(year >= 1600, year <= 1700),
-  by = c("record_number")
+  left_join(
+    fbs_a %>%
+      filter(field_code == "011@", subfield_code == "a") %>%
+      select(record_number, year = value) %>%
+      mutate(year = as.integer(year)) %>%
+      filter(year >= 1600, year <= 1700),
+    by = c("record_number")
   ) %>%
   count(year, genre) %>%
   ungroup() %>%

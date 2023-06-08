@@ -47,7 +47,7 @@ vd17_normalized_years_c <- vd17_normalized_years_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_years_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_genres_a <- vd17_a %>%
-  filter(field_code %in% c("044S","013D"), value != " ") %>%
+  filter(field_code %in% c("044S", "013D"), value != " ") %>%
   pivot_wider(
     id_cols = record_number:field_number,
     values_from = value, names_from = subfield_code
@@ -62,8 +62,8 @@ vd17_normalized_locations_a <- vd17_a %>%
   filter(field_code == "033D") %>%
   collect() %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
-  unnest_cross(p:z, keep_empty = TRUE) %>%
   rename(location = p, location_type = `4`) %>%
+  unnest_cross(c(-record_number, -field_number), keep_empty = TRUE) %>%
   copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_locations_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_locations_c <- vd17_normalized_locations_a %>%
@@ -74,7 +74,7 @@ vd17_normalized_langs_a <- vd17_a %>%
   collect() %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code, values_fn = list) %>%
   rename(publication_language = a, original_language = c, intermediary_language = b) %>%
-  unnest_cross(c(publication_language,original_language,intermediary_language), keep_empty = TRUE) %>%
+  unnest_cross(c(publication_language, original_language, intermediary_language), keep_empty = TRUE) %>%
   copy_to_a(con, name = dbplyr::in_schema("vd17", "vd17_normalized_langs_a"), temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number", "field_number")))
 
 vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
@@ -98,6 +98,17 @@ vd17_parts_of_multipart_works_c <- vd17_c %>%
   filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
   distinct(record_number) %>%
   compute_c(name = "vd17_parts_of_multipart_works_c", temporary = FALSE, overwrite = TRUE)
+
+vd17_person_links_a <- vd17_a %>%
+  filter(
+    field_code %in% c("028A", "028B", "028C", "028G")
+  ) %>%
+  pivot_wider(
+    id_cols = c(record_number, field_number, field_code),
+    values_from = value, names_from = subfield_code
+  ) %>%
+  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`, personal_name = `P`, family_name = `A`, first_names = `D`, count = `N`, prefix = `C`, epithet = `L`, date_of_birth = `E`, date_of_death = `M`) %>%
+  compute_a(name = "vd17_person_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")))
 
 vd17_wide_a <- vd17_a %>%
   select(record_number, field_code:value) %>%
@@ -134,19 +145,19 @@ fbs_gnds_a <- fbs_metadata_a %>%
 fbs_gnds_c <- fbs_gnds_a %>%
   compute_c(name = "fbs_gnds_c", temporary = FALSE, overwrite = TRUE)
 
-fbs_links_a <- vd17_a %>%
-  inner_join(fbs_gnds_a, by = c("value" = "GND")) %>%
+fbs_gnd_links_a <- vd17_a %>%
+  inner_join(fbs_gnds_a, join_by(value == GND)) %>%
   select(record_number, field_number) %>%
-  inner_join(vd17_a) %>%
+  inner_join(vd17_a, join_by(record_number, field_number)) %>%
   pivot_wider(
     id_cols = c(record_number, field_number, field_code),
     values_from = value, names_from = subfield_code
   ) %>%
   rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
-  compute_a(name = "fbs_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
+  compute_a(name = "fbs_gnd_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
 
-fbs_links_c <- fbs_links_a %>%
-  compute_c(name = "fbs_links_c", temporary = FALSE, overwrite = TRUE)
+fbs_gnd_links_c <- fbs_gnd_links_a %>%
+  compute_c(name = "fbs_gnd_links_c", temporary = FALSE, overwrite = TRUE)
 
 # vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
 #  copy_to(con, ., name = "vd17_044s_raw")
@@ -179,4 +190,146 @@ vd17_auth_gender_a <- vd17_auth_a %>%
 
 vd17_auth_gender_c <- vd17_auth_gender_a %>%
   compute_c(name = "vd17_auth_gender_c", temporary = FALSE, overwrite = TRUE)
+
+vd17_auth_name_a <- vd17_auth_a %>%
+  filter(field_code == "100", subfield_code != "i") %>%
+  mutate(value = case_when(
+    subfield_code %in% c("b", "c", "d") ~ str_c(", ", value),
+    subfield_code == "9" ~ str_c(" (", str_replace_all(value, "^v:", ""), ")"),
+    T ~ value
+  )) %>%
+  pivot_wider(id_cols = a_record_number, names_from = subfield_code, values_from = value) %>%
+  mutate(unified_name = str_c(a, b, c, d, g, t, `9`)) %>%
+  select(a_record_number, unified_name) %>%
+  collect() %>%
+  copy_to_a(con, name = "vd17_auth_name_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("a_record_number", "unified_name")))
+
+vd17_auth_name_c <- vd17_auth_name_a %>%
+  compute_c(name = "vd17_auth_name_c", temporary = FALSE, overwrite = TRUE)
+```
+
+```{r}
+# FBS links
+
+## Through GNDs
+
+fbs_gnd_links_a <- vd17_a %>%
+  inner_join(fbs_gnds_a, join_by(value == GND)) %>%
+  select(record_number, field_number, field_code, member_number)
+
+## Through name matching
+
+high_german_replacements_l <- c(
+  "dzsch" = "sch",
+  "dsch" = "z",
+  "schm" = "sm",
+  "aeu" = "eu",
+  "ae" = "a",
+  "au" = "eu",
+  "ai" = "ei",
+  "ay" = "ei",
+  "bf" = "f",
+  "chs" = "c",
+  "ch" = "c",
+  "ck" = "c",
+  "cs" = "c",
+  "cz" = "c",
+  "ds" = "z",
+  "dz" = "z",
+  "gh" = "c",
+  "gs" = "x",
+  "g" = "c",
+  "j" = "i",
+  "ks" = "x",
+  "k" = "c",
+  "oe" = "u",
+  "oi" = "eu",
+  "pf" = "f",
+  "ph" = "f",
+  "scl" = "sl",
+  "p" = "b",
+  "ts" = "sch",
+  "tz" = "z",
+  "t" = "d",
+  "ue" = "u",
+  "v" = "f",
+  "w" = "f",
+  "ß" = "ss",
+  "ff" = "f",
+  "y" = "i"
+)
+
+prefixes_l <- vd17_person_links_a %>%
+  filter(!is.na(prefix)) %>%
+  count(prefix = str_to_lower(prefix)) %>%
+  filter(n > 1) %>%
+  collect() %>%
+  mutate(prefix = str_c("\\b", str_escape(prefix), "\\b")) %>%
+  arrange(desc(str_length(prefix))) %>%
+  pull(prefix)
+
+vd17_match_values_a <- vd17_person_links_a %>%
+  mutate(personal_name = if_else(!is.na(count), str_c(personal_name, ", ", count), personal_name)) %>%
+  select(record_number, field_number, field_code, GND, family_name, first_names, personal_name, epithet) %>%
+  pivot_longer(family_name:epithet) %>%
+  mutate(value = str_to_lower(value)) %>%
+  filter(!is.na(value)) %>%
+  collect() %>%
+  mutate(value = str_replace_all(value, str_flatten(prefixes_l, collapse = "|"), "")) %>%
+  mutate(value = str_replace_all(value, high_german_replacements_l)) %>%
+  mutate(value = str_replace_all(value, "[^a-zß]", "")) %>%
+  filter(value != "") %>%
+  pivot_wider() %>%
+  mutate(match_key = case_when(
+    !is.na(epithet) & !is.na(personal_name) ~ str_c(personal_name, epithet),
+    !is.na(first_names) & !is.na(family_name) ~ str_c(first_names, family_name),
+    T ~ NA_character_
+  )) %>%
+  filter(!is.na(match_key)) %>%
+  copy_to_a(con, name = "vd17_match_values_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = list(c("match_key")))
+
+fbs_match_values_a <- fbs_metadata_a %>%
+  mutate(epithet = if_else(!is.na(Title_new), str_c(Last_name_new, ", ", Title_new), NA_character_), Last_name_new = if_else(!is.na(Title_new), NA_character_, Last_name_new)) %>%
+  mutate(GND = str_c("gnd/", GND)) %>%
+  select(member_number = Member_number_new, GND, First_name_new, Last_name_new, epithet) %>%
+  pivot_longer(First_name_new:epithet) %>%
+  mutate(value = str_to_lower(value)) %>%
+  filter(!is.na(value)) %>%
+  collect() %>%
+  mutate(value = str_replace_all(value, str_flatten(prefixes_l, collapse = "|"), "")) %>%
+  mutate(value = str_replace_all(value, high_german_replacements_l)) %>%
+  mutate(value = str_replace_all(value, "[^a-zß]", "")) %>%
+  filter(value != "") %>%
+  pivot_wider() %>%
+  mutate(match_key = case_when(
+    !is.na(epithet) & !is.na(First_name_new) ~ str_c(First_name_new, epithet),
+    !is.na(First_name_new) & !is.na(Last_name_new) ~ str_c(First_name_new, Last_name_new),
+    T ~ NA_character_
+  )) %>%
+  filter(!is.na(match_key)) %>%
+  copy_to_a(con, name = "fbs_match_values_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("member_number")), indexes = list(c("match_key")))
+
+fbs_match_links_a <- fbs_match_values_a %>%
+  inner_join(vd17_match_values_a, join_by(match_key)) %>%
+  filter(is.na(GND.y) | is.na(GND.x) | GND.x == GND.y) %>%
+  select(record_number, field_number, field_code, member_number, match_key) %>%
+  compute_a(name = "fbs_match_links_a", temporary = FALSE, overwrite = TRUE)
+
+fbs_links_a <- fbs_gnd_links_a %>%
+  mutate(method = "GND") %>%
+  union_all(
+    fbs_match_links_a %>%
+      select(-match_key) %>%
+      union(
+        fbs_gnd_links_a %>%
+          inner_join(vd17_match_values_a) %>%
+          distinct(member_number, match_key) %>%
+          inner_join(vd17_match_values_a) %>%
+          select(record_number, field_number, field_code, member_number)
+      ) %>%
+      mutate(method = "name matching")
+  ) %>%
+  group_by(record_number, field_number, field_code, member_number) %>%
+  summarise(method = sql("GROUP_CONCAT(method ORDER BY method SEPARATOR '&')"), .groups = "drop") %>%
+  compute_a(name = "fbs_links_a", temporary = FALSE, overwrite = TRUE)
 ```

@@ -10,7 +10,7 @@ output:
 ---
 
 ```{r setup,echo=F}
-source(here::here("code/common_basis.R"), local = knitr::knit_global())
+source(here::here("code/common_basis.R"))
 ```
 
 ## Multi-part exploration
@@ -72,6 +72,8 @@ Filtering for individual units/complete recordings (`a/c`) removes `r p(filtered
 
 ## Variant exploration
 
+### Overall
+
 ```{r}
 extents <- vd17_a %>%
   filter(field_code == "034D") %>%
@@ -86,7 +88,7 @@ form_factors <- vd17_a %>%
   filter(field_code == "034I") %>%
   distinct(record_number, form_factor = value) %>%
   group_by(record_number) %>%
-  dbplyr::window_order(extent) %>%
+  dbplyr::window_order(form_factor) %>%
   summarize(form_factors = str_flatten(form_factor, collapse = "|"), .groups = "drop") %>%
   collect() %>%
   copy_to_c(con)
@@ -103,9 +105,9 @@ places_of_distribution <- vd17_normalized_locations_a %>%
 
 unified_places_of_publication <- vd17_a %>%
   distinct(record_number) %>%
-  left_join(places_of_publication) %>%
-  left_join(places_of_production) %>%
-  left_join(places_of_distribution) %>%
+  left_join(places_of_publication, join_by(record_number)) %>%
+  left_join(places_of_production, join_by(record_number)) %>%
+  left_join(places_of_distribution, join_by(record_number)) %>%
   mutate(place_of_publication = coalesce(place_of_publication, place_of_production, place_of_distribution)) %>%
   filter(!is.na(place_of_publication)) %>%
   distinct(record_number, place_of_publication) %>%
@@ -118,7 +120,7 @@ unified_places_of_publication <- vd17_a %>%
 rda_printers <- vd17_a %>%
   filter(field_code == "029F", subfield_code == "4", value == "prt") %>%
   select(record_number, field_number) %>%
-  inner_join(vd17_a %>% filter(subfield_code == "7")) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
   select(record_number, printer_gnd = value)
 printers <- vd17_a %>%
   filter(field_code == "033J", subfield_code == "7") %>%
@@ -126,7 +128,7 @@ printers <- vd17_a %>%
 additional_printers <- vd17_a %>%
   filter(field_code == "028C", (subfield_code == "4" & value == "prt") | (subfield_code == "B" & str_detect(value, "^Drucker|^Verleger"))) %>%
   distinct(record_number, field_number) %>%
-  inner_join(vd17_a %>% filter(subfield_code == "7")) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
   select(record_number, printer_gnd = value)
 all_printers <- rda_printers %>%
   union_all(printers) %>%
@@ -140,10 +142,102 @@ all_printers <- rda_printers %>%
 ```
 
 ```{r}
-vd17_identical_titles <- vd17_titles_c %>%
+vd17_explicitly_mapped_variants <- vd17_a %>%
+  filter(field_code == "037A", str_detect(value, "nicht ident|identisch|variant")) %>%
+  collect() %>%
+  mutate(vd17_id = str_extract_all(value, "\\b[0-9]+:[0-9]+.\\b")) %>%
+  unnest(vd17_id) %>%
+  distinct(record_number, vd17_id) %>%
+  copy_to_a(con) %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
+vd17_explicitly_mapped_variants <- vd17_explicitly_mapped_variants %>%
+  union_all(vd17_explicitly_mapped_variants %>% rename(record_number.x = record_number.y, record_number.y = record_number.x)) %>%
+  filter(record_number.x < record_number.y) %>%
+  distinct(record_number.x, record_number.y) %>%
+  compute_a(name = "vd17_explicitly_mapped_variants", temporary = TRUE, unique_indexes = list(c("record_number.x", "record_number.y")))
+
+vd17_explicit_final_mapping <- tbl(con, sql("
+WITH RECURSIVE final_record_number AS (
+  SELECT `record_number.x`, `record_number.y`
+  FROM vd17_explicitly_mapped_variants
+  WHERE `record_number.x` NOT IN (
+    SELECT `record_number.y` FROM vd17_explicitly_mapped_variants
+  )
+  UNION
+  SELECT t.`record_number.x`, o.`record_number.y`
+  FROM final_record_number t, vd17_explicitly_mapped_variants o
+  WHERE t.`record_number.y`=o.`record_number.x`
+)
+SELECT * FROM final_record_number"))
+
+vd17_explicitly_mapped_variants_removes_n <-
+  vd17_explicitly_mapped_variants %>%
+  select(record_number = record_number.x) %>%
+  union_all(vd17_explicitly_mapped_variants %>% select(record_number = record_number.y)) %>%
+  distinct() %>%
+  count() %>%
+  pull() -
+  vd17_explicit_final_mapping %>%
+  distinct(record_number.x) %>%
+  count() %>%
+  pull()
+```
+
+
+```{r}
+replacements <- c(
+  "dzsch" = "sch",
+  "dsch" = "z",
+  "schm" = "sm",
+  "aeu" = "eu",
+  "ae" = "a",
+  "au" = "eu",
+  "ai" = "ei",
+  "ay" = "ei",
+  "bf" = "f",
+  "chs" = "c",
+  "ch" = "c",
+  "ck" = "c",
+  "cs" = "c",
+  "cz" = "c",
+  "ds" = "z",
+  "dz" = "z",
+  "gh" = "c",
+  "gs" = "x",
+  "g" = "c",
+  "j" = "i",
+  "ks" = "x",
+  "k" = "c",
+  "oe" = "u",
+  "oi" = "eu",
+  "pf" = "f",
+  "ph" = "f",
+  "scl" = "sl",
+  "p" = "b",
+  "ts" = "sch",
+  "tz" = "z",
+  "t" = "d",
+  "ue" = "u",
+  "v" = "f",
+  "w" = "f",
+  "ß" = "ss",
+  "y" = "i"
+)
+
+vd17_titlekeys_c <- vd17_titles_a %>%
+  mutate(title = str_replace_all(str_to_lower(title), "[^a-zß]", "")) %>%
   select(record_number, title) %>%
-  inner_join(vd17_titles_c %>% select(record_number, title), sql_on = "LHS.title=RHS.title AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x) %>%
+  collect() %>%
+  mutate(title = str_replace_all(title, replacements)) %>%
+  copy_to_c(con)
+
+vd17_identical_titles <- vd17_titlekeys_c %>%
+  select(record_number, title) %>%
+  inner_join(vd17_titlekeys_c %>% select(record_number, title), join_by(title, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title) %>%
   compute_a()
 
 identical_title_removal_removes_n <-
@@ -157,13 +251,14 @@ identical_title_removal_removes_n <-
   count() %>%
   pull(n) - (vd17_identical_titles %>% distinct(title) %>% count() %>% pull(n))
 
-t <- vd17_titles_c %>%
+t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
-  inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year))
+  inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
+  compute_c()
 
 vd17_identical_titles_and_years <- t %>%
-  inner_join(t, sql_on = "LHS.title=RHS.title AND LHS.normalized_year=RHS.normalized_year AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x, normalized_year = normalized_year.x) %>%
+  inner_join(t, join_by(title, normalized_year, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, normalized_year) %>%
   compute_a()
 
 identical_title_and_year_removal_removes_n <-
@@ -177,14 +272,15 @@ identical_title_and_year_removal_removes_n <-
   count() %>%
   pull(n) - (vd17_identical_titles_and_years %>% distinct(title, normalized_year) %>% count() %>% pull(n))
 
-t <- vd17_titles_c %>%
+t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
   inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
-  inner_join(unified_places_of_publication)
+  inner_join(unified_places_of_publication) %>%
+  compute_c()
 
 vd17_identical_titles_and_years_and_places_of_publication <- t %>%
-  inner_join(t, sql_on = "LHS.title=RHS.title AND LHS.normalized_year=RHS.normalized_year AND LHS.places_of_publication=RHS.places_of_publication AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x, normalized_year = normalized_year.x, places_of_publication = places_of_publication.x) %>%
+  inner_join(t, join_by(title, normalized_year, places_of_publication, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, normalized_year, places_of_publication) %>%
   compute_a()
 
 identical_title_and_year_and_place_of_publication_removal_removes_n <-
@@ -198,14 +294,15 @@ identical_title_and_year_and_place_of_publication_removal_removes_n <-
   count() %>%
   pull(n) - (vd17_identical_titles_and_years_and_places_of_publication %>% distinct(title, normalized_year, places_of_publication) %>% count() %>% pull(n))
 
-t <- vd17_titles_c %>%
+t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
   inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
-  inner_join(all_printers)
+  inner_join(all_printers) %>%
+  compute_c()
 
 vd17_identical_titles_and_years_and_printers <- t %>%
-  inner_join(t, sql_on = "LHS.title=RHS.title AND LHS.normalized_year=RHS.normalized_year AND LHS.printer_gnds=RHS.printer_gnds AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x, normalized_year = normalized_year.x, printer_gnds = printer_gnds.x) %>%
+  inner_join(t, join_by(title, normalized_year, printer_gnds, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, normalized_year, printer_gnds) %>%
   compute_a()
 
 identical_title_and_year_and_printer_removal_removes_n <-
@@ -219,15 +316,16 @@ identical_title_and_year_and_printer_removal_removes_n <-
   count() %>%
   pull(n) - (vd17_identical_titles_and_years_and_printers %>% distinct(title, normalized_year, printer_gnds) %>% count() %>% pull(n))
 
-t <- vd17_titles_c %>%
+t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
   inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
   inner_join(unified_places_of_publication) %>%
-  inner_join(all_printers)
+  inner_join(all_printers) %>%
+  compute_c()
 
 vd17_identical_titles_and_years_and_places_of_publication_and_printers <- t %>%
-  inner_join(t, sql_on = "LHS.title=RHS.title AND LHS.normalized_year=RHS.normalized_year AND LHS.places_of_publication=RHS.places_of_publication AND LHS.printer_gnds=RHS.printer_gnds AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x, normalized_year = normalized_year.x, places_of_publication = places_of_publication.x, printer_gnds = printer_gnds.x) %>%
+  inner_join(t, join_by(title, normalized_year, places_of_publication, printer_gnds, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, normalized_year, places_of_publication, printer_gnds) %>%
   compute_a()
 
 identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n <-
@@ -241,17 +339,18 @@ identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n 
   count() %>%
   pull(n) - (vd17_identical_titles_and_years_and_places_of_publication_and_printers %>% distinct(title, normalized_year, places_of_publication, printer_gnds) %>% count() %>% pull(n))
 
-t <- vd17_titles_c %>%
+t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
   inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
   inner_join(unified_places_of_publication) %>%
   inner_join(all_printers) %>%
   inner_join(extents) %>%
-  inner_join(form_factors)
+  inner_join(form_factors) %>%
+  compute_c()
 
 vd17_identical_all <- t %>%
-  inner_join(t, sql_on = "LHS.title=RHS.title AND LHS.normalized_year=RHS.normalized_year AND LHS.places_of_publication=RHS.places_of_publication AND LHS.printer_gnds=RHS.printer_gnds AND LHS.extents=RHS.extents AND LHS.form_factors=RHS.form_factors AND LHS.record_number<RHS.record_number") %>%
-  select(record_number.x, record_number.y, title = title.x, normalized_year = normalized_year.x, places_of_publication = places_of_publication.x, printer_gnds = printer_gnds.x, extents = extents.x, form_factors = form_factors.x) %>%
+  inner_join(t, join_by(title, normalized_year, places_of_publication, printer_gnds, extents, form_factors, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, normalized_year, places_of_publication, printer_gnds, extents, form_factors) %>%
   compute_a()
 
 identical_all_removal_removes_n <-
@@ -266,7 +365,7 @@ identical_all_removal_removes_n <-
   pull(n) - (vd17_identical_all %>% distinct(title, normalized_year, places_of_publication, printer_gnds, extents, form_factors) %>% count() %>% pull(n))
 ```
 
-Filtering out records with identical:
+Filtering out records with explicit mapping information would remove `r p(vd17_explicitly_mapped_variants_removes_n)` (`r pp(vd17_explicitly_mapped_variants_removes_n/vd17_n_records)` records out of the `r p(vd17_n_records)` original records. On the other hand, fnichiltering out records with identical:
 
  * titles would remove `r p(identical_title_removal_removes_n)` (`r pp(identical_title_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
  * titles and publication years would remove `r p(identical_title_and_year_removal_removes_n)` (`r pp(identical_title_and_year_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
@@ -275,26 +374,279 @@ Filtering out records with identical:
  * titles, publication years, places of publication and printers would remove `r p(identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n)` (`r pp(identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
  * titles, publication years, places of publication, printers, extents and form factors would remove `r p(identical_all_removal_removes_n)` (`r pp(identical_all_removal_removes_n/vd17_n_records)`) records out of the `r p(vd17_n_records)` original records.
 
+#### Evaluation set creation
 
-## Variant ground truth creation
+```{r}
+records_to_remove_by_genre <- vd17_genres_a %>%
+  filter(genre %in% c("Educational", "Schul- und Hochschulschriften", "Hochschulschrift", "Dissertation", "Dissertationensammlung", "Matrikel", "Universitätsprogramm", "Vorlesung", "Vorlesungsverzeichnis", "Jugendsachbuch", "Rechenbuch", "Schulbuch", "Fibel", "Lesebuch", "Schulprogramm", "Governmental", "Amtsdruckschrift", "Edikt", "Gesetz", "Gesetzesammlung", "Kapitulation", "Mandat", "Privileg", "Richtlinie", "Verordnung", "Vertrag", "Judicial", "Legal", "Entscheidungssammlung", "Fallsammlung", "Konsiliensammlung", "Konsilium", "Satzung", "Religious", "Theological", "Agende", "Beichtspiegel", "Bibel", "Brevier", "Gebet", "Katechismus", "Missale", "Psalter", "Rituale", "Other Governmental and Institutional", "Formularsammlung", "Schreibmeisterbuch", "Regesten", "Urkundenbuch", "Business", "Mercantile", "Anzeige", "Subskriptionsanzeige", "Meßrelation", "Subskribentenliste", "Verkaufskatalog", "Antiquariatskatalog", "Auktionskatalog", "Buchhandelskatalog", "Meßkatalog", "War Related", "Festungsbau", "Kriegskunde", "General Works", "Bericht", "Brief", "Briefsammlung", "Regelsammlung", "Statistik", "Streitschrift")) %>%
+  distinct(record_number) %>%
+  compute_a(unique_indexes = list(c("record_number")))
 
-You could find lots of variants simply by looking for records with "nicht identisch" in field 037A, and then I could choose some to create ground truth groupings from. I hope we can avoid messing with the extent using this and, if necessary, the fingerprints.
 
-Should have lots of variants:
+f <- function(ident) {
+  ident %>%
+    anti_join(vd17_explicitly_mapped_variants) %>%
+    anti_join(records_to_remove_by_genre, join_by(record_number.x == record_number)) %>%
+    anti_join(records_to_remove_by_genre, join_by(record_number.y == record_number)) %>%
+    distinct(record_number.x, record_number.y)
+}
 
-* Kleopatra
-* Schach oder König-Spiel
-* New erfundenes and vollständiges Trenchir-Büchlein
-* Cornelius Nepos
+pf <- function(f, sf, fname = str_c(f, "$", sf)) {
+  vd17_a %>%
+    filter(field_code == f, subfield_code == sf) %>%
+    select(record_number, value) %>%
+    rename_with(~ c("record_number", fname))
+}
 
-## Multi-volume work and variant interaction
+pfg <- function(f, sf, fname = str_c(f, "$", sf)) {
+  pf(f, sf, fname) %>%
+    group_by(record_number) %>%
+    summarise(!!sym(fname) := str_flatten(!!sym(fname), collapse = "|"))
+}
 
-Multi-volume works that should also have variants:
+f(vd17_identical_all) %>%
+  slice_sample(n = 20) %>%
+  union_all(
+    f(vd17_identical_titles_and_years_and_places_of_publication_and_printers) %>% slice_sample(n = 30)
+  ) %>%
+  union_all(
+    f(vd17_identical_titles_and_years_and_printers) %>% slice_sample(n = 30)
+  ) %>%
+  union_all(
+    f(vd17_identical_titles_and_years_and_places_of_publication) %>% slice_sample(n = 30)
+  ) %>%
+  union_all(
+    f(vd17_identical_titles_and_years) %>% slice_sample(n = 30)
+  ) %>%
+  union_all(
+    f(vd17_identical_titles) %>% slice_sample(n = 30)
+  ) %>%
+  inner_join(vd17_id_a %>% select(record_number.x = record_number, vd17_id.x = vd17_id)) %>%
+  inner_join(vd17_id_a %>% select(record_number.y = record_number, vd17_id.y = vd17_id)) %>%
+  select(record_number.x, vd17_id.x, record_number.y, vd17_id.y) %>%
+  left_join(vd17_titles_a %>% select(record_number.x = record_number, title.x = title)) %>%
+  left_join(vd17_titles_a %>% select(record_number.y = record_number, title.y = title)) %>%
+  left_join(
+    pf("028A", "7", "GND") %>%
+      inner_join(vd17_auth_id_a) %>%
+      inner_join(vd17_auth_name_a) %>%
+      select(record_number, unified_name) %>%
+      group_by(record_number) %>%
+      summarise(author_unified_name.x = str_flatten(unified_name, collapse = "|")),
+    join_by(record_number.x == record_number)
+  ) %>%
+  left_join(
+    pf("028A", "7", "GND") %>%
+      inner_join(vd17_auth_id_a) %>%
+      inner_join(vd17_auth_name_a) %>%
+      select(record_number, unified_name) %>%
+      group_by(record_number) %>%
+      summarise(author_unified_name.y = str_flatten(unified_name, collapse = "|")),
+    join_by(record_number.y == record_number)
+  ) %>%
+  left_join(pfg("010@", "a", "language.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("010@", "a", "language.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("034D", "a", "extent.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("034D", "a", "extent.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("034I", "a", "format/size.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("034I", "a", "format/size.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("033A", "p", "place_of_publication.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("033A", "p", "place_of_publication.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("033A", "n", "publisher.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("033A", "n", "publisher.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("011@", "a", "date_of_publication_s.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("011@", "a", "date_of_publication_s.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("011@", "n", "date_of_publication_i.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("011@", "n", "date_of_publication_i.y"), join_by(record_number.y == record_number)) %>%
+  left_join(pfg("007P", "0", "fingerprint.x"), join_by(record_number.x == record_number)) %>%
+  left_join(pfg("007P", "0", "fingerprint.y"), join_by(record_number.y == record_number)) %>%
+  select(-c(record_number.x, record_number.y)) %>%
+  collect() %>%
+  mutate(
+    vd17_id.x = gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27', vd17_id.x, '%27","', vd17_id.x, '")')),
+    vd17_id.y = gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27', vd17_id.y, '%27","', vd17_id.y, '")')),
+    status = "",
+    notes = ""
+  ) %>%
+  relocate(status, notes, .after = vd17_id.y) %>%
+  write_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 1")
 
-I can give you the few from my earlier comparison, or you could generate a more random set based on the codes for parts of multi-volume works and note contains "ident", whichever you think will work better
+# 010A $a - Language of publication
+# 034D $a - Extent
+# 034I $a - Format/Size
+# 033A $p, $n - Place of publication, Publisher, from item
+# 011@ $a, $n - Date of publication, in sorting form and from item
+# 007P $0 Fingerprint)
+```
 
-Here they are:
 
- * Der Grosse SchauPlatz Jämerlicher Mordgeschichte
- * Der Römischen Keyser
- * Der Teutsche Secretarius
+
+### Known variants
+
+```{r}
+variants <- vd17_a %>%
+  filter(field_code == "037A", str_detect(value, "nicht ident|identisch|variant")) %>%
+  distinct(record_number)
+
+variants_n <- variants %>%
+  count() %>%
+  pull()
+
+maps <- function(ident) {
+  union_all(
+    variants %>%
+      inner_join(ident, join_by(record_number == record_number.x)),
+    variants %>%
+      inner_join(ident, join_by(record_number == record_number.y))
+  ) %>%
+    distinct(record_number) %>%
+    count() %>%
+    pull()
+}
+
+identical_title_maps_variants_n <- maps(vd17_identical_titles)
+identical_titles_and_years_maps_variants_n <- maps(vd17_identical_titles_and_years)
+identical_titles_and_years_and_places_of_publication_maps_variants_n <- maps(vd17_identical_titles_and_years_and_places_of_publication)
+identical_titles_and_years_and_printers_maps_variants_n <- maps(vd17_identical_titles_and_years_and_printers)
+identical_titles_and_years_and_places_of_publication_and_printers_maps_variants_n <- maps(vd17_identical_titles_and_years_and_places_of_publication_and_printers)
+identical_all_maps_variants_n <- maps(vd17_identical_all)
+```
+
+Of titles having "nicht identisch" in field 037A, filtering out records with identical:
+
+ * titles would map `r p(identical_title_maps_variants_n)` (`r pp(identical_title_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+ * titles and publication years would map `r p(identical_titles_and_years_maps_variants_n)` (`r pp(identical_titles_and_years_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+ * titles, publication years and places of publication would map `r p(identical_titles_and_years_and_places_of_publication_maps_variants_n)` (`r pp(identical_titles_and_years_and_places_of_publication_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+ * titles, publication years and printers would map `r p(identical_titles_and_years_and_printers_maps_variants_n)` (`r pp(identical_titles_and_years_and_printers_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+ * titles, publication years, places of publication and printers would map `r p(identical_titles_and_years_and_places_of_publication_and_printers_maps_variants_n)` (`r pp(identical_titles_and_years_and_places_of_publication_and_printers_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+ * titles, publication years, places of publication, printers, extents and form factors would map `r p(identical_all_maps_variants_n)` (`r pp(identical_all_maps_variants_n/variants_n)`) records out of the `r p(variants_n)` original records.
+
+```{r}
+authors_of_interest <- c(
+  "gnd/118502883",
+  "gnd/118510665",
+  "gnd/118913859",
+  "gnd/11852321X",
+  "gnd/118542273",
+  "gnd/118546139",
+  "gnd/118641182",
+  "gnd/119365324",
+  "gnd/1067937684",
+  "gnd/118756141",
+  "gnd/118629840"
+)
+
+records_of_interest <- vd17_a %>%
+  filter(field_code == "028A", value %in% c(authors_of_interest)) %>%
+  distinct(record_number)
+
+# titles_of_interest <- tibble(set=c("gros?s?e schau platz jämm?erlicher mordgeschichte", "teutsche secretarius", "leopatra", "schach könig spiel", "erfundenes? vollständiges? trenchi?e?r büchlein", "cornelius nepos")) %>% # "römischen k[eä]ys"
+#  mutate(parts=str_split(set," "))
+#
+# isect <- function(lst) {
+#   reduce(lst,~intersect(.x, vd17_titles_a %>%
+#                           filter(str_detect(title, .y)) %>%
+#                           distinct(record_number)),
+#          .init=vd17_titles_a %>%
+#            distinct(record_number)
+#   ) %>%
+#     collect()
+# }
+#
+# records_of_interest <- titles_of_interest %>%
+#   mutate(matched_records=map(parts,isect)) %>%
+#   unnest(matched_records) %>%
+#   select(-parts) %>%
+#   copy_to_a(con)
+#
+# records_of_interest <- records_of_interest %>%
+#   union_all(records_of_interest %>% inner_join(vd17_explicit_final_mapping,join_by(record_number==record_number.x)) %>%
+#               select(set,record_number=record_number.y)) %>%
+#   union_all(records_of_interest %>% inner_join(vd17_explicit_final_mapping,join_by(record_number==record_number.y)) %>%
+#               select(set,record_number=record_number.x)) %>%
+#   distinct() %>%
+#   compute_a()
+```
+
+```{r}
+records_of_interest %>%
+  inner_join(vd17_id_a %>% select(record_number, vd17_id)) %>%
+  left_join(vd17_titles_a %>% select(record_number, title)) %>%
+  left_join(
+    pf("028A", "7", "GND") %>%
+      inner_join(vd17_auth_id_a) %>%
+      inner_join(vd17_auth_name_a) %>%
+      select(record_number, unified_name) %>%
+      group_by(record_number) %>%
+      summarise(author_unified_name = str_flatten(unified_name, collapse = "|"))
+  ) %>%
+  left_join(pfg("010@", "a", "language")) %>%
+  left_join(pfg("034D", "a", "extent")) %>%
+  left_join(pfg("034I", "a", "format/size")) %>%
+  left_join(pfg("033A", "p", "place_of_publication")) %>%
+  left_join(pfg("033A", "n", "publisher")) %>%
+  left_join(pfg("011@", "a", "date_of_publication_s")) %>%
+  left_join(pfg("011@", "n", "date_of_publication_i")) %>%
+  left_join(pfg("007P", "0", "fingerprint")) %>%
+  left_join(
+    pf("007S", "0", "bibliographic_citation") %>%
+      union(vd17_a %>%
+        filter(str_detect(value, "Dünnhaupt")) %>%
+        select(record_number, bibliographic_citation = value)) %>%
+      group_by(record_number) %>%
+      summarise(bibliographic_citation = str_flatten(bibliographic_citation, collapse = "|"))
+  ) %>%
+  select(-record_number) %>%
+  collect() %>%
+  mutate(
+    vd17_id = gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27', vd17_id, '%27","', vd17_id, '")')),
+    printing_id = "",
+    work_id = ""
+  ) %>%
+  relocate(printing_id, work_id, .after = vd17_id) %>%
+  write_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 2")
+```
+
+
+```{r}
+# records_of_interest %>%
+#  inner_join(vd17_id_a) %>%
+#  inner_join(vd17_titles_a) %>%
+#  select(set,title,vd17_id) %>%
+#  arrange(set,vd17_id) %>%
+#  collect() %>%
+#  mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')), edition_id="",work_id="") %>%
+#  write_sheet(ss="1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 2")
+```
+
+
+```{r}
+# pairs <- records_of_interest %>%
+#   inner_join(records_of_interest,join_by(set))
+#
+# j <- function(ident) {
+#   union_all(
+#     pairs %>%
+#       inner_join(ident,join_by(record_number.x==record_number.x,record_number.y==record_number.y)),
+#     pairs %>%
+#       inner_join(ident,join_by(record_number.x==record_number.y,record_number.y==record_number.x))
+#   ) %>%
+#     select(record_number.x,record_number.y)
+# }
+#
+# j(vd17_identical_titles) %>%
+#   mutate(limit="identical_titles") %>%
+#   union_all(j(vd17_identical_titles_and_years) %>%
+#   mutate(limit="identical_title_and_years")) %>%
+#   union_all(j(vd17_identical_titles_and_years_and_places_of_publication) %>%
+#   mutate(limit="identical_title_and_places_of_publication")) %>%
+#   union_all(j(vd17_identical_titles_and_years_and_printers) %>%
+#   mutate(limit="identical_title_and_printers")) %>%
+#   union_all(j(vd17_identical_titles_and_years_and_places_of_publication_and_printers) %>%
+#   mutate(limit="identical_title_and_places_of_publication_and_printers")) %>%
+#   union_all(j(vd17_identical_all) %>%
+#   mutate(limit="identical_all")) %>%
+#   collect() %>%
+#   mutate(value=TRUE) %>%
+#   pivot_wider(id_cols = c(record_number.x,record_number.y),names_from = limit, values_from = value, values_fill=FALSE)
+```

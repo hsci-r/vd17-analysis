@@ -22,6 +22,10 @@ pp <- function(percentage, accuracy = 0.01) {
   return(scales::percent(percentage, accuracy = accuracy))
 }
 
+hyperlink_vd17_id <- function(df) {
+  df %>% mutate(vd17_id = gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27', vd17_id, '%27","', vd17_id, '")')))
+}
+
 unnest_cross <- function(data, cols, ...) {
   .df_out <- data
   .cols <- tidyselect::eval_select(rlang::enquo(cols), data)
@@ -38,21 +42,71 @@ is_html_output <- function() {
   is.null(knitr::pandoc_to()) || (!str_detect(knitr::pandoc_to(), "^gfm") && knitr::is_html_output())
 }
 
-con <- get_connection()
+if (!exists("con")) con <- get_connection()
 register_tables(con, "vd17")
 register_tables(con, "vd17_analysis")
 
-try(fbs_record_numbers_a <- fbs_links_a %>%
-  distinct(record_number))
-try(fbs_record_numbers_c <- fbs_links_c %>%
-  distinct(record_number))
+local({
+  temp_tables <- list_temporary_tables(con, "vd17", "vd17_analysis")
+  if (nrow(temp_tables) > 0) warning("The following temporary tables were found in the database. Use delete_temporary_tables() to remove.\n", temp_tables)
+})
 
-try(fbs_records_a <- vd17_a %>%
-  inner_join(fbs_record_numbers_a))
-try(fbs_records_c <- vd17_c %>%
-  inner_join(fbs_record_numbers_c))
+# Analytical set definition
 
-try(fbs_links_of_interest_a <- fbs_links_a %>%
+fbs_rescue_records_a <- vd17_a %>%
+  filter(str_detect(value, !!!str_flatten(c(
+    "Palmen Orden",
+    "Palmen-Orden",
+    "Palmenorden",
+    "Fruchtbringend",
+    "Frucht-bringend",
+    "Frucht Bringend",
+    "Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft",
+    "Akademie des 17. Jahrhunderts",
+    "Akademie des Siebzehnten Jahrhunderts",
+    "Deutsche Akademie des Siebzehnten Jahrhunderts",
+    "Deutsche Akademie des 17. Jahrhunderts",
+    "Akademie des Siebzehnten Jahrhunderts",
+    "Akademie des 17. Jahrhunderts",
+    "Societas Fructifera",
+    "Frugtbringende Selskab",
+    "Fruitbearing Society",
+    "Sociedad Fructífera",
+    "Société des Fructifiants",
+    "Ordre du Palmier",
+    "Società dei Carpofori",
+    "Towarzystwo Owocodajne",
+    "Komunitas Fruitbearing",
+    "Плодоносное общество",
+    "丰收学会",
+    "palmen orden",
+    "palmen-orden",
+    "palmenorden",
+    "fruchtbringend",
+    "frucht-bringend",
+    "frucht bringend",
+    "die deutsche akademie des 17. jahrhunderts - fruchtbringende gesellschaft",
+    "akademie des 17. jahrhunderts",
+    "akademie des siebzehnten jahrhunderts",
+    "deutsche akademie des siebzehnten jahrhunderts",
+    "deutsche akademie des 17. jahrhunderts",
+    "akademie des siebzehnten jahrhunderts",
+    "akademie des 17. jahrhunderts",
+    "societas fructifera",
+    "frugtbringende selskab",
+    "fruitbearing society",
+    "sociedad fructífera",
+    "société des fructifiants",
+    "ordre du palmier",
+    "società dei carpofori",
+    "towarzystwo owocodajne",
+    "komunitas fruitbearing"
+  ), collapse = "|")))
+
+# Filtering down society subset
+
+fbs_links_of_interest_a <- fbs_links_a %>%
+  inner_join(vd17_person_links_a, join_by(record_number, field_number, field_code)) %>%
   filter(
     field_code %in% c("028A", "028B", "028C"), # FBS GND has to appear in one of these fields
     is.na(role) | !role %in% c("ctb", "dte"), # normed role has to be unknown or not one of these
@@ -74,4 +128,4 @@ try(fbs_links_of_interest_a <- fbs_links_a %>%
       "WidmungsempfängerIn",
       "ZensorIn"
     ), collapse = "|^"))
-  ))
+  )
