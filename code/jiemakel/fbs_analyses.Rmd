@@ -1,0 +1,85 @@
+---
+title: "FBS analyses"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+  md_document:
+    variant: gfm
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+source(here::here("code/common_basis.R"))
+```
+
+# Absolute output
+
+```{r}
+fbs_records_a %>%
+  distinct(set, vd17_id = unified_vd17_id) %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  anti_join(vd17_record_types_a %>% filter(record_type == "Unified multi-part publication")) %>%
+  inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  count(normalized_year, set) %>%
+  union_all(vd17_normalized_years_a %>%
+    count(normalized_year) %>%
+    mutate(set = "VD17")) %>%
+  filter(normalized_year > 1600, normalized_year < 1700) %>%
+  ggplot(aes(x = normalized_year, y = n, color = set)) +
+  geom_point() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom") +
+  facet_wrap(~ set == "VD17", scales = "free_y", ncol = 1)
+```
+
+```{r}
+fbs_metadata_a %>%
+  mutate(active_time = as.integer(Estimated_DOD) - as.integer(Estimated_admission_year)) %>%
+  filter(active_time >= 0) %>%
+  ggplot(aes(x = 1, y = active_time)) +
+  geom_quasirandom()
+```
+
+```{r}
+fbs_links_of_interest_a %>%
+  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  group_by(member_number) %>%
+  summarise(earliest_year = min(normalized_year), latest_year = max(normalized_year)) %>%
+  mutate(active_time = latest_year - earliest_year) %>%
+  ggplot(aes(x = 1, y = active_time)) +
+  geom_quasirandom()
+```
+
+```{r}
+years <- tibble(year = 1600:1700) %>%
+  copy_to_a(con)
+
+members_through_time <- seq(20, 60, by = 10) %>%
+  map(~ years %>%
+    inner_join(fbs_metadata_a %>% mutate(Estimated_admission_year = as.integer(Estimated_admission_year), latest_year = as.integer(Estimated_admission_year) + .x), join_by(year >= Estimated_admission_year, year <= latest_year)) %>%
+    count(year) %>%
+    mutate(set = .x)) %>%
+  reduce(union_all)
+members_through_time %>%
+  ggplot(aes(x = year, y = n, color = as.character(set))) +
+  geom_point() +
+  theme_hsci_discrete()
+```
+
+```{r}
+fbs_records_a %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  count(normalized_year, set) %>%
+  inner_join(members_through_time %>% rename(normalized_year = year, members = n, memberset = set)) %>%
+  filter(normalized_year > 1630, normalized_year < 1680) %>%
+  ggplot(aes(x = normalized_year, y = n / members, color = set)) +
+  geom_point(size = 0.5) +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  theme_hsci_discrete() +
+  facet_wrap(~memberset) +
+  theme(legend.position = "bottom")
+```

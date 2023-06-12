@@ -1,0 +1,237 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+genres_l <- tibble(
+  group_1 = "Society-related",
+  group_2 = "Lyric Poetry",
+  group_3 = "Lyric Poetry",
+  genre = c("Lyrik", "Ballade", "Elegie", "Epigramm", "Epikedeion", "Figurengedicht", "Gesangbuch", "Lied", "Kirchenlied", "Liedersammlung")
+) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Drama/Theatre",
+      group_3 = "Drama/Theatre",
+      genre = c("Drama", "Fastnachtspiel", "Komödie", "Märtyrerdrama", "Schauspiel", "Schwank", "Tragödie")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Epic/Prose",
+      group_3 = "Epic/Prose",
+      genre = c("Epik", "Anekdote", "Autobiographie", "Biografie", "Biographie", "Epos", "Erlebnisbericht", "Erzählung", "Erzählsammlung", "Fabel", "Märchen", "Novelle", "Reisebericht", "Roman", "Sage", "Satire", "Tagebuch", "Verserzählung")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Other Literature Related",
+      group_3 = "Content Related",
+      genre = c("Schäferdichtung", "Libretto", "Erotische Literatur", "Emblembuch", "Porträtwerk", "Theaterzettel")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Other Literature Related",
+      group_3 = "Content Neutral",
+      genre = c("Almanach", "Anthologie", "Kommentar: lit.", "Rezension", "Rezensionszeitschrift")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Linguistic and Language",
+      group_3 = "Linguistic and Language",
+      genre = c("Grammatik", "Konkordanz", "Lexikon", "Poetik", "Rhetorik", "Sprachführer", "Wörterbuch", "Epistolography", "Briefsteller", "Formularsammlung", "Schreibmeisterbuch")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Virtue, Civility and Ethics",
+      group_3 = "Virtue, Civility and Ethics",
+      genre = c("Aphorismus", "Anstandsliteratur", "Enzyklopädie", "Frauenliteratur", "Fürstenspiegel", "Hausväterliteratur", "Jugendbuch", "Kochbuch", "Moralische Wochenschrift", "Spiel", "Sprichwortsammlung", "Zitatensammlung")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Other Society Related",
+      group_3 = "Other Society Related",
+      genre = c("Gesellschaftsschrift", "Akademieschrift")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "Occasional Literature",
+      group_3 = "Occasional Literature",
+      genre = c("Gelegenheitsschrift", "Festbeschreibung")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "History, Archaeology and related",
+      genre = c("Archäologie", "Altertumskunde", "Chronik", "Genealogie", "Wappenbuch")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Botany, Zoology, Agriculture",
+      genre = c("Botanik", "Gartenbau", "Jagdliteratur", "Landwirtschaft", "Praktik", "Pflanzenbuch", "Tierbuch", "Zoologie")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Geography, Geology, Mineralogy, Mining",
+      genre = c("Bergbau", "Geographie", "Geologie", "Mineralogie", "Reiseführer", "Topographie")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Mathematics, Natural Sciences, Astronomy",
+      genre = c("Alchemie", "Astronomie", "Astrologie", "Chemie", "Physik", "Akustik", "Magnetismus", "Mechanik", "Optik", "Geometrie", "Mathematik")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Medicine, Pharmacy",
+      genre = c("Anatomie", "Arzneibuch", "Chiromantie", "Chirurgie", "Gynäkologie", "Medizin", "Pharmakopöe", "Physiognomie", "Seuchenschrift", "Tiermedizin")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Architecture, Music, Arts",
+      genre = c("Musikbuch", "Musiknoten", "Architektur", "Ornamentstich")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-related",
+      group_2 = "German as a scientific language",
+      group_3 = "Education",
+      genre = c("Pädagogik")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Neutral",
+      group_2 = "Religion/Theology and related",
+      group_3 = "Religion/Theology and related",
+      genre = c("Ars moriendi", "Erbauungsliteratur", "Freimaurerliteratur", "Leichenpredigt", "Leichenpredigtsammlung", "Gebetbuch", "Heiligenvita", "Jesuitendrama", "Judaicum", "Legende", "Ordensliteratur", "Predigt", "Perioche", "Predigtsammlung", "Totentanz")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Neutral",
+      group_2 = "General works",
+      group_3 = "General works",
+      genre = c("Adressbuch", "Anleitung", "Atlas", "Bibliographie", "Buchbinderanweisung", "Bücheranzeige", "Einführung", "Führer", "Handbuch", "Itinerar", "Kalender", "Karte", "Katalog", "Bibliothekskatalog", "Kommentar", "Konkordanz", "Musterbuch", "Plan", "Rede", "Panegyrikos", "Ratgeber", "Ortsverzeichnis", "Preisschrift", "Regelsammlung", "Traktat", "Trivialliteratur", "Kolportageliteratur", "Volksschrifttum", "Volksbuch")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Neutral",
+      group_2 = "Formats",
+      group_3 = "Formats",
+      genre = c("Einblattdruck", "Flugschrift", "Tabelle", "Zeitung", "Zeitschrift")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Educational",
+      group_3 = "Educational",
+      genre = c("Hochschulschrift", "Dissertation", "Dissertationensammlung", "Matrikel", "Universitätsprogramm", "Vorlesung", "Vorlesungsverzeichnis", "Jugendsachbuch", "Rechenbuch", "Schulbuch", "Fibel", "Lesebuch", "Schulprogramm")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Governmental",
+      group_3 = "Governmental",
+      genre = c("Amtsdruckschrift", "Edikt", "Gesetz", "Gesetzessammlung", "Kapitulation", "Mandat", "Privileg", "Richtlinie", "Verordnung", "Vertrag", "Regesten", "Urkundenbuch")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Judicial/Legal",
+      group_3 = "Judicial/Legal",
+      genre = c("Entscheidungssammlung", "Fallsammlung", "Konsiliensammlung", "Konsilium", "Satzung")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Religious/Theological",
+      group_3 = "Religious/Theological",
+      genre = c("Agende", "Beichtspiegel", "Bibel", "Brevier", "Gebet", "Katechismus", "Missale", "Psalter", "Rituale")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Business/Mercantile",
+      group_3 = "Business/Mercantile",
+      genre = c("Anzeige", "Subskriptionsanzeige", "Geldwesen", "Meßrelation", "Subskribentenliste", "Verkaufskatalog", "Antiquariatskatalog", "Auktionskatalog", "Buchhandelskatalog", "Meßkatalog")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "Military",
+      group_3 = "Military",
+      genre = c("Festungsbau", "Kriegskunde")
+    )
+  ) %>%
+  union_all(
+    tibble(
+      group_1 = "Society-unrelated",
+      group_2 = "General Works",
+      group_3 = "General Works",
+      genre = c("Bericht", "Brief", "Briefsammlung", "Regelsammlung", "Statistik", "Streitschrift")
+    )
+  )
+```
+
+```{r}
+genre_stats_l <- genres_l %>%
+  full_join(vd17_id_a %>% left_join(vd17_genres_a) %>%
+    count(genre) %>%
+    mutate(set = "VD17") %>%
+    union_all(vd17_genres_a %>% right_join(fbs_links_a, join_by(record_number)) %>%
+      count(genre) %>%
+      mutate(set = "Society-related")) %>%
+    pivot_wider(names_from = set, values_from = n) %>%
+    replace_na(list(`Society-related` = 0)) %>%
+    collect()) %>%
+  mutate(
+    group_1 = if_else(is.na(genre), "Neutral", group_1),
+    group_2 = if_else(is.na(genre), "No genre", group_2),
+    group_3 = if_else(is.na(genre), "No genre", group_3)
+  ) %>%
+  arrange(group_1, group_2, group_3, desc(`Society-related`))
+```
+
+```{r}
+genre_stats_l %>%
+  write_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations")
+```

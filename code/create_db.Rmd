@@ -52,7 +52,9 @@ vd17_genres_a <- vd17_a %>%
     id_cols = record_number:field_number,
     values_from = value, names_from = subfield_code
   ) %>%
-  mutate(genre = str_replace_all(a[!is.na(a)], ":.*", "")) %>%
+  mutate(a = a[!is.na(a)] %>% str_replace_all("^![^!]*!", "")) %>%
+  mutate(genre = a[!is.na(a)] %>% str_replace_all(":.*", "")) %>%
+  rename(full_genre = a) %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_genres_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_genres_c <- vd17_genres_a %>%
@@ -83,21 +85,25 @@ vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
 vd17_titles_a <- vd17_a %>%
   filter(field_code == "021A") %>%
   pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
-  rename(title = `a`) %>%
+  rename(title = a, additional_title = d, statement_of_responsibility = h) %>%
+  mutate(combined_title = str_c(title, additional_title, statement_of_responsibility, sep = "/")) %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_titles_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_titles_c <- vd17_titles_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), temporary = FALSE, overwrite = TRUE)
 
-vd17_parts_of_multipart_works_a <- vd17_a %>%
-  filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
-  distinct(record_number) %>%
-  compute_a(name = "vd17_parts_of_multipart_works_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
+vd17_record_types_a <- vd17_a %>%
+  filter(field_code == "002@") %>%
+  mutate(record_type = case_match(
+    value,
+    "Aau" ~ "Single-part publication",
+    "Afu" ~ "Part of multi-part publication",
+    "Acu" ~ "Unified multi-part publication"
+  )) %>%
+  compute_a(name = "vd17_record_types_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
 
-vd17_parts_of_multipart_works_c <- vd17_c %>%
-  filter(field_code == "002@", !str_detect(value, "^A[ac]")) %>%
-  distinct(record_number) %>%
-  compute_c(name = "vd17_parts_of_multipart_works_c", temporary = FALSE, overwrite = TRUE)
+vd17_record_types_c <- vd17_record_types_a %>%
+  compute_a(name = "vd17_record_types_c", temporary = FALSE, overwrite = TRUE)
 
 vd17_person_links_a <- vd17_a %>%
   filter(
@@ -108,7 +114,31 @@ vd17_person_links_a <- vd17_a %>%
     values_from = value, names_from = subfield_code
   ) %>%
   rename(GND = `7`, role = `4`, role2 = B, ppn = `9`, personal_name = `P`, family_name = `A`, first_names = `D`, count = `N`, prefix = `C`, epithet = `L`, date_of_birth = `E`, date_of_death = `M`) %>%
+  mutate(
+    combined_name =
+      if_else(is.na(prefix), "", str_c(prefix, " ")) %>%
+        str_c(str_c(family_name, first_names, if_else(is.na(personal_name) & is.na(count), NA_character_, str_c(personal_name, count, sep = " ")), epithet, sep = ", ")) %>%
+        str_c(if_else(!is.na(date_of_birth) | !is.na(date_of_death), str_c(" (", date_of_birth, "-", date_of_death, ")"), ""))
+  ) %>%
   compute_a(name = "vd17_person_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")))
+
+vd17_person_links_c <- vd17_person_links_a %>%
+  compute_c(name = "vd17_person_links_c", temporary = FALSE, overwrite = TRUE)
+
+vd17_corporate_links_a <- vd17_a %>%
+  filter(
+    field_code %in% c("029A", "029F", "029G")
+  ) %>%
+  pivot_wider(
+    id_cols = c(record_number, field_number, field_code),
+    values_from = value, names_from = subfield_code
+  ) %>%
+  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`, preferred_name = A, location = C, date = D, child_entity = F, addition = G) %>%
+  mutate(combined_name = str_c(preferred_name, child_entity, addition, location, date, sep = ", ")) %>%
+  compute_a(name = "vd17_corporate_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")))
+
+vd17_corporate_links_c <- vd17_corporate_links_a %>%
+  compute_c(name = "vd17_corporate_links_c", temporary = FALSE, overwrite = TRUE)
 
 vd17_wide_a <- vd17_a %>%
   select(record_number, field_code:value) %>%
@@ -131,33 +161,22 @@ fbs_metadata_a <- fbs_metadata_gs %>%
 fbs_metadata_c <- fbs_metadata_a %>%
   compute_c(name = "fbs_metadata_c", temporary = FALSE, overwrite = TRUE)
 
-fbs_gnds_a <- fbs_metadata_a %>%
-  select(Member_number_new, GND) %>%
-  union(
-    fbs_metadata_a %>%
-      select(Member_number_new, GND = alternate_GND)
-  ) %>%
-  filter(!is.na(GND)) %>%
-  rename(member_number = Member_number_new) %>%
-  mutate(GND = str_c("gnd/", GND)) %>%
-  compute_a(name = "fbs_gnds_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("GND", "member_number")))
+# fbs_gnds_c <- fbs_gnds_a %>%
+#  compute_c(name = "fbs_gnds_c", temporary = TRUE, overwrite = TRUE)
 
-fbs_gnds_c <- fbs_gnds_a %>%
-  compute_c(name = "fbs_gnds_c", temporary = FALSE, overwrite = TRUE)
-
-fbs_gnd_links_a <- vd17_a %>%
-  inner_join(fbs_gnds_a, join_by(value == GND)) %>%
-  select(record_number, field_number) %>%
-  inner_join(vd17_a, join_by(record_number, field_number)) %>%
-  pivot_wider(
-    id_cols = c(record_number, field_number, field_code),
-    values_from = value, names_from = subfield_code
-  ) %>%
-  rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
-  compute_a(name = "fbs_gnd_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
-
-fbs_gnd_links_c <- fbs_gnd_links_a %>%
-  compute_c(name = "fbs_gnd_links_c", temporary = FALSE, overwrite = TRUE)
+# fbs_gnd_links_a <- vd17_a %>%
+#   inner_join(fbs_gnds_a, join_by(value == GND)) %>%
+#   select(record_number, field_number) %>%
+#   inner_join(vd17_a, join_by(record_number, field_number)) %>%
+#   pivot_wider(
+#     id_cols = c(record_number, field_number, field_code),
+#     values_from = value, names_from = subfield_code
+#   ) %>%
+#   rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
+#   compute_a(name = "fbs_gnd_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
+#
+# fbs_gnd_links_c <- fbs_gnd_links_a %>%
+#   compute_c(name = "fbs_gnd_links_c", temporary = FALSE, overwrite = TRUE)
 
 # vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
 #  copy_to(con, ., name = "vd17_044s_raw")
@@ -208,10 +227,30 @@ vd17_auth_name_c <- vd17_auth_name_a %>%
   compute_c(name = "vd17_auth_name_c", temporary = FALSE, overwrite = TRUE)
 ```
 
+```{r create_db_versions_of_genre_categorisations}
+vd17_genre_categorisation_a <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations") %>%
+  select(-c(VD17:`Society-related`)) %>%
+  copy_to_a(con, name = "vd17_genre_categorisation_a", unique_indexes = list(c("genre")), temporary = FALSE, overwrite = TRUE)
+
+vd17_genre_categorisation_c <- vd17_genre_categorisation_a %>%
+  compute_c(con, name = "vd17_genre_categorisation_c", temporary = FALSE, overwrite = TRUE)
+```
+
+
 ```{r}
 # FBS links
 
 ## Through GNDs
+
+fbs_gnds_a <- fbs_metadata_a %>%
+  select(member_number, GND) %>%
+  union(
+    fbs_metadata_a %>%
+      select(member_number, GND = alternate_GND)
+  ) %>%
+  filter(!is.na(GND)) %>%
+  mutate(GND = str_c("gnd/", GND)) %>%
+  compute_a(name = "fbs_gnds_a", temporary = TRUE, overwrite = TRUE, unique_indexes = list(c("GND", "member_number")))
 
 fbs_gnd_links_a <- vd17_a %>%
   inner_join(fbs_gnds_a, join_by(value == GND)) %>%
@@ -331,5 +370,206 @@ fbs_links_a <- fbs_gnd_links_a %>%
   ) %>%
   group_by(record_number, field_number, field_code, member_number) %>%
   summarise(method = sql("GROUP_CONCAT(method ORDER BY method SEPARATOR '&')"), .groups = "drop") %>%
-  compute_a(name = "fbs_links_a", temporary = FALSE, overwrite = TRUE)
+  compute_a(name = "fbs_links_a", unique_indexes = list(c("record_number", "field_number", "member_number")), temporary = FALSE, overwrite = TRUE)
+
+fbs_links_c <- fbs_links_a %>%
+  compute_c(name = "fbs_links_c", temporary = FALSE, overwrite = TRUE)
+```
+
+```{r}
+fbs_manual_status_overrides_a <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data") %>%
+  filter(!is.na(manual_status_override)) %>%
+  select(vd17_id, manual_status_override) %>%
+  copy_to_a(con, name = "fbs_manual_status_overrides_a", unique_indexes = list(c("vd17_id")), temporary = FALSE, overwrite = TRUE)
+
+fbs_manual_status_overrides_c <- fbs_manual_status_overrides_a %>%
+  compute_c(name = "fbs_manual_status_overrides_c", temporary = FALSE, overwrite = TRUE)
+```
+
+```{r rescue_recors}
+fbs_rescue_records_a <- vd17_a %>%
+  filter(str_detect(value, !!!str_flatten(c(
+    "Palmen Orden",
+    "Palmen-Orden",
+    "Palmenorden",
+    "Fruchtbringend",
+    "Frucht-bringend",
+    "Frucht Bringend",
+    "Die deutsche Akademie des 17. Jahrhunderts - Fruchtbringende Gesellschaft",
+    "Akademie des 17. Jahrhunderts",
+    "Akademie des Siebzehnten Jahrhunderts",
+    "Deutsche Akademie des Siebzehnten Jahrhunderts",
+    "Deutsche Akademie des 17. Jahrhunderts",
+    "Akademie des Siebzehnten Jahrhunderts",
+    "Akademie des 17. Jahrhunderts",
+    "Societas Fructifera",
+    "Frugtbringende Selskab",
+    "Fruitbearing Society",
+    "Sociedad Fructífera",
+    "Société des Fructifiants",
+    "Ordre du Palmier",
+    "Società dei Carpofori",
+    "Towarzystwo Owocodajne",
+    "Komunitas Fruitbearing",
+    "Плодоносное общество",
+    "丰收学会",
+    "palmen orden",
+    "palmen-orden",
+    "palmenorden",
+    "fruchtbringend",
+    "frucht-bringend",
+    "frucht bringend",
+    "die deutsche akademie des 17. jahrhunderts - fruchtbringende gesellschaft",
+    "akademie des 17. jahrhunderts",
+    "akademie des siebzehnten jahrhunderts",
+    "deutsche akademie des siebzehnten jahrhunderts",
+    "deutsche akademie des 17. jahrhunderts",
+    "akademie des siebzehnten jahrhunderts",
+    "akademie des 17. jahrhunderts",
+    "societas fructifera",
+    "frugtbringende selskab",
+    "fruitbearing society",
+    "sociedad fructífera",
+    "société des fructifiants",
+    "ordre du palmier",
+    "società dei carpofori",
+    "towarzystwo owocodajne",
+    "komunitas fruitbearing"
+  ), collapse = "|"))) %>%
+  compute_a(name = "fbs_rescue_records_a", indexes = list(c("record_number")), temporary = FALSE, overwrite = TRUE)
+
+fbs_rescue_records_c <- fbs_rescue_records_a %>%
+  compute_c(name = "fbs_rescue_records_c", temporary = FALSE, overwrite = TRUE)
+```
+
+```{r}
+# Filtering down society subset
+
+fbs_links_of_interest_a <- fbs_links_a %>%
+  inner_join(vd17_person_links_a, join_by(record_number, field_number, field_code)) %>%
+  filter(
+    field_code %in% c("028A", "028B", "028C"), # FBS GND has to appear in one of these fields
+    is.na(role) | !role %in% c("ctb", "dte"), # normed role has to be unknown or not one of these
+    is.na(role) | !(role == "oth" & field_code == "028C" & !is.na(role2) & str_detect(role2, "^Beiträger|^Mitwirkender")), # in field 028C, if role is other, role2 should not be one of these
+    is.na(role2) | !str_detect(role2, !!!str_flatten(c(
+      "^AdressatIn",
+      "ErwähnteR",
+      "GefeierteR",
+      "Mitglied eines Ausschusses, der akademische Grade vergibt",
+      "Normerlassende Gebietskörperschaft",
+      "Praeses",
+      "RespondentIn",
+      "Sonstige Person, Familie und Körperschaft",
+      "VerfasserIn eines Vorworts",
+      "VerfasserIn von ergänzendem Text",
+      "VerfasserIn von Zusatztexten",
+      "VertragspartnerIn",
+      "WidmendeR",
+      "WidmungsempfängerIn",
+      "ZensorIn"
+    ), collapse = "|^"))
+  ) %>%
+  select(record_number, field_number, field_code, member_number, method) %>%
+  compute_a(name = "fbs_links_of_interest_a", indexes = list(c("record_number")), temporary = FALSE, overwrite = TRUE)
+
+fbs_links_of_interest_c <- fbs_links_of_interest_a %>%
+  compute_c(name = "fbs_links_of_interest_c", temporary = FALSE, overwrite = TRUE)
+```
+
+```{r variants}
+vd17_explicitly_mapped_variants <- vd17_a %>%
+  filter(field_code == "037A", str_detect(value, "nicht ident|identisch|variant")) %>%
+  collect() %>%
+  mutate(vd17_id = str_extract_all(value, "\\b[0-9]+:[0-9]+.\\b")) %>%
+  unnest(vd17_id) %>%
+  distinct(record_number, vd17_id) %>%
+  copy_to_a(con) %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
+vd17_explicitly_mapped_variants <- vd17_explicitly_mapped_variants %>%
+  union_all(vd17_explicitly_mapped_variants %>% rename(record_number.x = record_number.y, record_number.y = record_number.x)) %>%
+  filter(record_number.x < record_number.y) %>%
+  distinct(record_number.x, record_number.y) %>%
+  compute_a(name = "vd17_explicitly_mapped_variants", temporary = TRUE, overwrite = TRUE, unique_indexes = list(c("record_number.x", "record_number.y")))
+
+vd17_variant_mapping_a <- tbl(con, sql("
+WITH RECURSIVE final_record_number AS (
+  SELECT `record_number.x`, `record_number.y`
+  FROM vd17_explicitly_mapped_variants
+  WHERE `record_number.x` NOT IN (
+    SELECT `record_number.y` FROM vd17_explicitly_mapped_variants
+  )
+  UNION
+  SELECT t.`record_number.x`, o.`record_number.y`
+  FROM final_record_number t, vd17_explicitly_mapped_variants o
+  WHERE t.`record_number.y`=o.`record_number.x`
+)
+SELECT `record_number.x` AS record_number, `record_number.y` AS source_record_number FROM final_record_number")) %>%
+  group_by(source_record_number) %>%
+  filter(record_number == min(record_number)) %>%
+  ungroup() %>%
+  compute_a(name = "vd17_variant_mapping_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("source_record_number", "record_number")))
+
+vd17_variant_mapping_c <- vd17_variant_mapping_a %>%
+  compute_c(name = "vd17_variant_mapping_c", temporary = FALSE, overwrite = TRUE)
+```
+
+
+```{r}
+fbs_auto_records_a <- fbs_links_a %>%
+  select(record_number) %>%
+  left_join(fbs_links_of_interest_a %>% select(record_number) %>% mutate(method = "Society-associated contributor")) %>%
+  replace_na(list(method = "Society-associated other actor")) %>%
+  union_all(fbs_rescue_records_a %>%
+    select(record_number) %>%
+    mutate(method = "Rescue")) %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_genres_a) %>%
+  left_join(vd17_genre_categorisation_a) %>%
+  group_by(vd17_id) %>%
+  summarise(
+    auto_status = case_when(
+      any(method != "Society-associated other actor") & any(group_1 == "Society-related") ~ "Society-contributed and society-purpose related",
+      any(method != "Society-associated other actor") ~ "Society-contributed",
+      T ~ "Society-associated"
+    ),
+    method = sql("GROUP_CONCAT(method ORDER BY method SEPARATOR '&')"),
+    .groups = "drop"
+  ) %>%
+  compute_a(name = "fbs_auto_records_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("vd17_id")))
+
+fbs_auto_records_c <- fbs_auto_records_a %>%
+  compute_c(name = "fbs_auto_records_c", temporary = FALSE, overwrite = TRUE)
+
+fbs_records_a <- fbs_auto_records_a %>%
+  #  anti_join(vd17_record_types_a %>% filter(record_type=="Unified multi-part publication") %>% inner_join(vd17_id_a)) %>%
+  rename(status = auto_status) %>%
+  anti_join(fbs_manual_status_overrides_a) %>%
+  union_all(fbs_manual_status_overrides_a %>% filter(manual_status_override != "Not interesting") %>% rename(status = manual_status_override) %>% mutate(method = "Manual")) %>%
+  left_join(
+    vd17_variant_mapping_a %>%
+      inner_join(vd17_id_a, join_by(record_number)) %>%
+      inner_join(vd17_id_a %>%
+        rename(source_record_number = record_number, source_vd17_id = vd17_id), join_by(source_record_number)) %>%
+      select(unified_vd17_id = vd17_id, vd17_id = source_vd17_id)
+  ) %>%
+  mutate(unified_vd17_id = coalesce(unified_vd17_id, vd17_id)) %>%
+  #  group_by(vd17_id) %>%
+  #  summarise(status=if_else(any(status=="Society-authored and society-purpose related"),"Society-authored and society-purpose related","Society-authored"),method=sql("GROUP_CONCAT(DISTINCT method ORDER BY method SEPARATOR '&')"),.groups="drop") %>%
+  compute_a()
+
+fbs_records_a <- fbs_records_a %>%
+  union_all(fbs_records_a %>%
+    filter(status == "Society-contributed and society-purpose related") %>%
+    mutate(status = "Society-contributed")) %>%
+  union_all(fbs_records_a %>%
+    filter(status != "Society-associated") %>%
+    mutate(status = "Society-associated")) %>%
+  rename(set = status) %>%
+  compute_a(name = "fbs_records_a", temporary = FALSE, overwrite = TRUE, indexes = list(c("vd17_id"), c("unified_vd17_id")))
+
+fbs_records_c <- fbs_records_a %>%
+  compute_c(name = "fbs_records_c", temporary = FALSE, overwrite = TRUE)
 ```

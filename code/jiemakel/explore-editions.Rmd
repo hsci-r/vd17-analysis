@@ -10,6 +10,7 @@ output:
 ---
 
 ```{r setup,echo=F}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
 source(here::here("code/common_basis.R"))
 ```
 
@@ -649,4 +650,18 @@ records_of_interest %>%
 #   collect() %>%
 #   mutate(value=TRUE) %>%
 #   pivot_wider(id_cols = c(record_number.x,record_number.y),names_from = limit, values_from = value, values_fill=FALSE)
+```
+
+
+```{r}
+evaluation_1 <- read_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 1")
+```
+
+```{r}
+evaluation_1 %>%
+  select(vd17_id.x, vd17_id.y, status = `same printing (variant)`) %>%
+  copy_to_a(con) %>%
+  inner_join(vd17_id_a %>% rename(record_number = record_number, vd17_id.x = vd17_id)) %>%
+  inner_join(vd17_id_a %>% rename(source_record_number = record_number, vd17_id.y = vd17_id)) %>%
+  left_join(vd17_variant_mapping_a %>% union_all(vd17_variant_mapping_a %>% distinct(record_number) %>% mutate(source_record_number = record_number) %>% mutate(mapped = T), join_by(source_record_number)))
 ```

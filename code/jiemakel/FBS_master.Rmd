@@ -1,0 +1,134 @@
+---
+title: "VD17 master link data evaluation"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+source(here::here("code/common_basis.R"), local = knitr::knit_global())
+```
+
+```{r}
+library(googlesheets4)
+```
+
+```{r}
+summarise_people <- function(df, pdf) {
+  df %>% left_join(
+    pdf %>%
+      #      inner_join(df %>% select(record_number)) %>%
+      mutate(combined = str_c(field_code, ":", role2, ": ", combined_name)) %>%
+      select(record_number, combined) %>%
+      group_by(record_number) %>%
+      summarise(contributors = str_flatten(combined, collapse = "|")) %>%
+      compute_a(unique_indexes = list(c("record_number")))
+  )
+}
+
+add_metadata_fields <- function(df) {
+  df %>%
+    left_join(vd17_id_a) %>%
+    left_join(vd17_titles_a %>% select(record_number, combined_title) %>% group_by(record_number) %>% summarise(combined_title = str_flatten(combined_title, collapse = "|")), join_by(record_number)) %>%
+    left_join(vd17_normalized_years_a %>% group_by(record_number) %>% summarise(publication_date = str_flatten(a, collapse = "|"))) %>%
+    left_join(vd17_normalized_langs_a %>% mutate(languages = str_c(publication_language, intermediary_language, original_language, sep = "<-")) %>% group_by(record_number) %>% summarize(languages = str_flatten(languages, collapse = "|")), join_by(record_number)) %>%
+    left_join(vd17_genres_a %>% distinct(record_number, genre) %>% group_by(record_number) %>% summarize(genre = str_flatten(genre, collapse = "|")), join_by(record_number)) %>%
+    compute_a(unique_indexes = list(c("record_number"), c("vd17_id"))) %>%
+    summarise_people(vd17_person_links_a %>%
+      inner_join(fbs_links_of_interest_a %>%
+        select(record_number, field_number, member_number)) %>%
+      mutate(combined_name = str_c(combined_name, " (", member_number, ")"))) %>%
+    rename(fbs_contributors = contributors) %>%
+    summarise_people(vd17_person_links_a %>% inner_join(fbs_links_a %>% anti_join(fbs_links_of_interest_a %>% select(record_number, field_number)) %>% select(record_number, field_number, member_number)) %>% mutate(combined_name = str_c(combined_name, " (", member_number, ")"))) %>%
+    rename(fbs_associated = contributors) %>%
+    summarise_people(vd17_person_links_a %>%
+      anti_join(fbs_links_a %>% select(record_number, field_number)) %>%
+      select(record_number, field_code, role2, combined_name) %>%
+      union_all(vd17_corporate_links_a %>%
+        select(record_number, field_code, role2, combined_name))) %>%
+    rename(other_contributors = contributors)
+}
+```
+
+```{r}
+old_master_links <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data", col_types = "c")
+```
+
+```{r}
+fbs_links_eval <- fbs_links_a %>%
+  left_join(fbs_match_values_a %>% select(member_number, match_key)) %>%
+  left_join(vd17_person_links_a %>% select(-GND)) %>%
+  left_join(fbs_gnds_a) %>%
+  left_join(fbs_metadata_a %>% select(member_number = Member_number_new, First_name_new, Last_name_new, Society_name)) %>%
+  left_join(fbs_links_of_interest_a %>%
+    select(record_number, field_number, field_code, member_number) %>%
+    mutate(actor_relationship_relevant = TRUE)) %>%
+  replace_na(list(actor_relationship_relevant = FALSE)) %>%
+  compute_a(unique_indexes = list(c("record_number", "field_number", "field_code", "member_number")))
+```
+
+
+```{r}
+fbs_links_eval %>%
+  add_metadata_fields() %>%
+  collect() %>%
+  left_join(old_master_links %>% distinct(vd17_id, field_number, manual_override, notes)) %>%
+  full_join(., old_master_links %>% anti_join(., join_by(vd17_id, field_number)) %>% filter(!is.na(notes) | !is.na(manual_override))) %>%
+  arrange(desc(actor_relationship_relevant), method, vd17_id, member_number) %>%
+  relocate(actor_relationship_relevant, manual_override, notes, method, match_key, vd17_id, title, publication_language, genre, member_number, GND, First_name_new, Last_name_new, Society_name, role, role2, field_code) %>%
+  hyperlink_vd17_id() %>%
+  sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master link data")
+```
+
+```{r}
+old_master_records <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data", col_types = "c")
+```
+
+```{r}
+fbs_auto_records_a %>%
+  anti_join(fbs_manual_status_overrides_a) %>%
+  mutate(manual_status_override = NA_character_) %>%
+  union_all(fbs_auto_records_a %>% inner_join(fbs_manual_status_overrides_a) %>% mutate(method = str_c(method, "&", "Manual"))) %>%
+  union_all(fbs_manual_status_overrides_a %>% anti_join(fbs_auto_records_a) %>% mutate(auto_status = NA_character_, method = "Manual")) %>%
+  add_metadata_fields() %>%
+  left_join(to_check_for_genre) %>%
+  collect() %>%
+  select(-record_number) %>%
+  left_join(old_master_records %>% distinct(vd17_id, manual_status_override, notes)) %>%
+  full_join(anti_join(old_master_records, ., join_by(vd17_id)) %>% filter(!is.na(notes) | !is.na(manual_status_override))) %>%
+  arrange(desc(auto_status), desc(manual_status_override), flag, method, vd17_id) %>%
+  relocate(auto_status, manual_status_override, flag, notes, method, vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, genre) %>%
+  hyperlink_vd17_id() %>%
+  sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
+```
+
+```{r}
+manual_filtering_addition <- read_sheet("1Yth50qkWHMvR5S52HWUrB3Kesyx0eQ7kjsK86ef-4MM")
+manual_filtering_addition %>%
+  group_by(vd17_id) %>%
+  summarise(manual_status_override = if_else(any(society_related == "Yes"), "Society-contributed and society-purpose-related", "Society-contributed"), .groups = "drop") %>%
+  anti_join(old_master_records, join_by(vd17_id)) %>%
+  full_join(old_master_records) %>%
+  arrange(desc(auto_status), desc(manual_status_override), flag, method, vd17_id) %>%
+  relocate(auto_status, manual_status_override, flag, notes, method, vd17_id, title, publication_language, genre) %>%
+  hyperlink_vd17_id() %>%
+  sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
+```
+
+```{r}
+to_check_for_genre <- fbs_auto_records_a %>%
+  anti_join(fbs_manual_status_overrides_a) %>%
+  filter(auto_status == "Society-contributed") %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_normalized_langs_a) %>%
+  filter(is.na(publication_language) | publication_language == "ger") %>%
+  left_join(vd17_genres_a) %>%
+  left_join(vd17_genre_categorisation_a) %>%
+  replace_na(list(group_1 = "Neutral")) %>%
+  group_by(vd17_id) %>%
+  filter(all(group_1 == "Neutral"), all(is.na(genre) | !genre %in% c("Leichenpredigt", "Leichenpredigtsammlung"))) %>%
+  ungroup() %>%
+  distinct(vd17_id) %>%
+  mutate(flag = "Check for core society due to all-neutral genres")
+```
