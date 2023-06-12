@@ -21,59 +21,22 @@ pp <- function(percentage, accuracy = 0.01) {
 }
 ```
 
-
 ```{r}
-all_match <- read.csv(here("all_match.csv"))
-all_match <- select (all_match, -c('X','full_name_vd17','normalized_year','field_number'))
-all_match_subset <-  all_match%>%
-  filter(
-    field_code %in% c("028A", "028B", "028C"), # FBS GND has to appear in one of these fields
-    is.na(role) | !role %in% c("ctb", "dte"), # normed role has to be unknown or not one of these
-    is.na(role) | !(role == "oth" & field_code == "028C" & !is.na(role2) & str_detect(role2, "^Beiträger|^Mitwirkender")), # in field 028C, if role is other, role2 should not be one of these
-    is.na(role2) | !str_detect(role2, !!!str_flatten(c(
-      "^AdressatIn",
-      "ErwähnteR",
-      "GefeierteR",
-      "Mitglied eines Ausschusses, der akademische Grade vergibt",
-      "Normerlassende Gebietskörperschaft",
-      "Praeses",
-      "RespondentIn",
-      "Sonstige Person, Familie und Körperschaft",
-      "VerfasserIn eines Vorworts",
-      "VerfasserIn von ergänzendem Text",
-      "VerfasserIn von Zusatztexten",
-      "VertragspartnerIn",
-      "WidmendeR",
-      "WidmungsempfängerIn",
-      "ZensorIn"
-    ), collapse = "|^"))
-  )
+#fbs_records_a
 ```
 
 ```{r}
-all_match_subset <- select(all_match_subset,-c('role'))
+fbs_links_a <- select(fbs_links_a,-c('method'))
 ```
 
-# Joining vd17_id with fbs_links_of_interest 
 ```{r}
-fbs_links_of_interest_local <- fbs_links_of_interest_a %>%
-  inner_join(fbs_metadata_a %>% select(GND,Member_number_new,First_name_new,Last_name_new,Society_name,DOB,DOD) %>% mutate(GND = str_c("gnd/", GND))) %>%
- inner_join(vd17_id_a) %>%
-  mutate(member_number=Member_number_new,first_name=First_name_new,last_name=Last_name_new)%>%
-  collect()
-
-fbs_links_of_interest_local <- select (fbs_links_of_interest_local, c('record_number','vd17_id','member_number','first_name', 'last_name','role2','field_code'))
-
-```
-# Merging society-subset with all-matches
-```{r}
-fbs_links_of_interest_matches <- rbind(fbs_links_of_interest_local,all_match_subset)
-
-fbs_links_of_interest_matches <- fbs_links_of_interest_matches %>%
-  distinct()
+fbs_records <- fbs_records_a %>% inner_join(vd17_id_a) %>% inner_join(fbs_links_a, by=('record_number')) %>%
+  inner_join(fbs_metadata_a%>% select(GND,member_number,First_name_new,Last_name_new,Estimated_admission_year))%>%
+  mutate(first_name=First_name_new,last_name=Last_name_new,admission_year=Estimated_admission_year)%>%
+  collect()%>%
+  select('record_number','vd17_id','member_number','method','set','first_name','last_name','admission_year')
 ```
 
-# Identifying society-related genres
 ```{r}
 genre_list1_a <- c("Lyrik","Lyric Poetry","Ballade","Elegie","Epigramm","Epikedeion","Figurengedicht","Gesangbuch","Lied","Kirchenlied","Liedersammlung")
 genre_list1_b <- c("Drama","Theatre","Fastnachtspiel","Komödie","Märtyrerdrama","Schauspiel","Schwank","Tragödie")
@@ -85,10 +48,6 @@ genre_list1_g <- c("Other Society Related","Gesellschaftsschrift","Akademieschri
 genre_list1_h <- c("Occasional Literature","Funeral Sermons","Leichenpredigt","Leichenpredigtsammlung","Festbeschreibung","Gelegenheitsschrift")
 genre_list1_i <- c("German as a scientific language","History, Archaeology and related","Archäologie","Altertumskunde","Chronik","Genealogie","Wappenbuch","Botany, Zoology, Agriculture","Botanik","Gartenbau","Jagdliteratur","Landwirtschaft","Praktik","Pflanzenbuch","Tierbuch","Zoologie","Geography, Geology, Mineralogy, Mining","Bergbau","Geographie","Geologie","Mineralogie","Reiseführer","Topographie","Mathematics, Natural Sciences, Astronomy","Alchemie","Astronomie","Astrologie","Chemie","Physik","Akustik","Magnetismus","Mechanik","Optik","Geometrie","Mathematik","Medicine, Pharmacy","Anatomie","Arzneibuch","Chiromantie","Chirurgie","Gynäkologie","Medizin","Pharmakopöe","Physiognomie","Seuchenschrift","Tiermedizin","Architecture, Music, Arts","Musikbuch","Musiknoten","Architektur","Ornamentstich","Education","Pädagogik")
 ```
-# Identifying society-unrelated genres
-```{r}
-genre_list2 <- c("Educational","Schul- und Hochschulschriften","Hochschulschrift","Dissertation","Dissertation:theol.","Dissertation:med.","Dissertation:jur.","Dissertation:phil.","Dissertationensammlung","Matrikel","Universitätsprogramm","Vorlesung","Vorlesungsverzeichnis","Jugendsachbuch","Rechenbuch","Schulbuch","Fibel","Lesebuch","Schulprogramm","Governmental","Amtsdruckschrift","Edikt","Gesetz","Gesetzesammlung","Kapitulation","Mandat","Privileg","Richtlinie","Verordnung","Vertrag","Other Governmental and Institutional","Regesten","Urkundenbuch","Judicial","Legal","Entscheidungssammlung","Fallsammlung","Konsiliensammlung","Konsilium","Satzung","Religious","Theological","Agende","Beichtspiegel","Bibel","Brevier","Gebet","Katechismus","Missale","Psalter","Rituale","Business","Mercantile","Anzeige","Subskriptionsanzeige","Meßrelation","Subskribentenliste","Verkaufskatalog","Antiquariatskatalog","Auktionskatalog","Buchhandelskatalog","Meßkatalog","Military","Festungsbau","Kriegskunde","General Works","Bericht","Brief","Briefsammlung","Regelsammlung","Statistik","Streitschrift","Streitschrift:polit.","Streitschrift:jur.","Streitschrift:theol.","Geldwesen")
-```
 
 ```{r}
 vd17_normalized_years_local <- vd17_normalized_years_a %>%
@@ -99,87 +58,20 @@ vd17_normalized_years_local <- vd17_normalized_years_a %>%
 ```{r}
 vd17_genres_local <- vd17_genres_a %>%
   collect()%>%
-  filter(!(a %in% c(genre_list2)))%>%
-  mutate(genre_full=a)%>%
-  select(record_number,genre_full)
+  select(record_number,genre)
 
 genre_cat1 <- vd17_genres_local%>%
-  filter(grepl(paste(c(genre_list1_a,genre_list1_b,genre_list1_c,genre_list1_d,genre_list1_e,genre_list1_f,genre_list1_g,genre_list1_h,genre_list1_i),collapse="|"), genre_full))%>%
-  select(record_number,genre_full)
+  filter(grepl(paste(c(genre_list1_a,genre_list1_b,genre_list1_c,genre_list1_d,genre_list1_e,genre_list1_f,genre_list1_g,genre_list1_h,genre_list1_i),collapse="|"), genre))%>%
+  select(record_number,genre)
 ```
 
 ```{r}
-genres_fbs_society <- fbs_links_of_interest_matches %>%
-  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
-  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
-  filter(nchar(normalized_year)==4)%>%
-  inner_join(genre_cat1,by = c("record_number"))%>%
-  select(record_number,normalized_year,vd17_id,genre_full)%>%
-  mutate(genre_category = case_when(
-    (grepl(paste(genre_list1_a, collapse="|"), genre_full)) ~ "Lyrik/Poetry",
-    (grepl(paste(genre_list1_b, collapse="|"), genre_full)) ~ "Drama/Theatre",
-    (grepl(paste(genre_list1_c, collapse="|"), genre_full)) ~ "Epik/Prose",
-    (grepl(paste(genre_list1_d, collapse="|"), genre_full)) ~ "Other Literature Related",
-    (grepl(paste(genre_list1_e, collapse="|"), genre_full)) ~ "Linguistic and Language",
-    (grepl(paste(genre_list1_f, collapse="|"), genre_full)) ~ "Virtue, Civility and Ethics",
-    (grepl(paste(genre_list1_g, collapse="|"), genre_full)) ~ "Other Society Related",
-    (grepl(paste(genre_list1_h, collapse="|"), genre_full)) ~ "Occasional Literature",
-    (grepl(paste(genre_list1_i, collapse="|"), genre_full)) ~ "German as a scientific language"
-  ))%>%
-  distinct()
+core_society <- fbs_records %>%
+  filter(set=="Society-contributed and society-purpose related")
+society_interest <- fbs_records %>%
+  filter(set=="Society-contributed")
 ```
 
-# Visualization: Society-related genres by genre category: Numbers over time
-```{r}
-genres_fbs_society%>%
-  ggplot(aes(x=normalized_year,fill=genre_category)) +
-  geom_bar(width=1) +
-  labs(fill=NULL) +
-  ggtitle("Member Publications in Society-Related Genre Categories")+
-  ylab("")+xlab("Year")+
-  scale_x_continuous(breaks = seq(1000, 2000, by = 2)) +
-  scale_y_continuous(breaks = seq(0, 500, by = 50)) +
-  theme_hsci_discrete() +
-  theme(legend.position="bottom")+
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
-  theme(plot.title = element_text(hjust = 0.5))
-```
-# Visualization: Society-related genres by genre category: Proportion over time
-
-```{r}
-genres_fbs_society_frequency <- genres_fbs_society%>%
-  filter(!(is.na(genre_full)))%>%
-  select(vd17_id,record_number,normalized_year,genre_full)%>%
-  distinct(vd17_id,record_number,normalized_year,genre_full)%>%
-  group_by(normalized_year) %>%
-  count(genre_full)%>%
-  arrange(desc(n))%>%
-   mutate(genre_category = case_when(
-    (grepl(paste(genre_list1_a, collapse="|"), genre_full)) ~ "Lyrik/Poetry",
-    (grepl(paste(genre_list1_b, collapse="|"), genre_full)) ~ "Drama/Theatre",
-    (grepl(paste(genre_list1_c, collapse="|"), genre_full)) ~ "Epik/Prose",
-    (grepl(paste(genre_list1_d, collapse="|"), genre_full)) ~ "Other Literature Related",
-    (grepl(paste(genre_list1_e, collapse="|"), genre_full)) ~ "Linguistic and Language",
-    (grepl(paste(genre_list1_f, collapse="|"), genre_full)) ~ "Virtue, Civility and Ethics",
-    (grepl(paste(genre_list1_g, collapse="|"), genre_full)) ~ "Other Society Related",
-    (grepl(paste(genre_list1_h, collapse="|"), genre_full)) ~ "Occasional Literature",
-    (grepl(paste(genre_list1_i, collapse="|"), genre_full)) ~ "German as a scientific language"
-  ))%>%
-  distinct()
-
-genres_fbs_society_frequency%>%
-  ggplot(aes(x=normalized_year,y=n,fill=genre_category)) +
-  geom_col(width=1,position='fill')+
-  labs(fill=NULL) +
-  ggtitle("Member Publications in Society-Related Genres")+
-  ylab("")+xlab("Year")+
-  scale_x_continuous(breaks = seq(1000, 2000, by = 2))+
-  scale_y_continuous(labels=scales::percent_format(accuracy=1),breaks = seq(0, 1, by = 0.1)) +
-  theme_hsci_discrete()+
-  theme(legend.position = "bottom")+
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
-  theme(plot.title = element_text(hjust = 0.5))
-```
 ```{r}
 vd17_normalized_langs_local <- vd17_normalized_langs_a %>%
   collect()%>%
@@ -188,7 +80,7 @@ vd17_normalized_langs_local <- vd17_normalized_langs_a %>%
 
 # Visualization: Overall output of Society members in German: Numbers over time
 ```{r}
-fbs_society_german <- fbs_links_of_interest_matches %>%
+fbs_german <- fbs_records %>%
   inner_join(vd17_normalized_langs_local, by=c("record_number"))%>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
@@ -206,7 +98,7 @@ fbs_society_german <- fbs_links_of_interest_matches %>%
   distinct()
 
 group.colors <- c("< 1617" = "grey", "phase 1" = "cyan", "phase 2" ="#9633FF", "phase 3" = "pink", "> 1682" = "grey")
-fbs_society_german%>%
+fbs_german%>%
   ggplot(aes(x=normalized_year, y=records, fill = phase)) + 
   geom_col()+
   xlab("Year") + ylab("")+
@@ -219,30 +111,269 @@ fbs_society_german%>%
   scale_fill_manual(values=group.colors)
 
 ```
+
+# Visualization: Overall output of Society members in German: Average output by member over time
+# Considering 5 years prior to admission_year
 ```{r}
-vd17_local_id <- vd17_id_a%>%
-  collect()
+fbs_records_german <- fbs_records %>%
+  inner_join(vd17_normalized_langs_local, by=c("record_number"))%>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  select(record_number,normalized_year,vd17_id,member_number,admission_year)
+
+fbs_records_5 <-fbs_records_german%>%
+  filter(admission_year>=(normalized_year-5))%>%
+  with(aggregate(member_number ~ normalized_year,FUN=function(x){length(unique(x))}))%>%
+  mutate(n_active_members=member_number)%>%
+  select(n_active_members,normalized_year)
+
+fbs_records_german_5 <- fbs_records_german %>% 
+  left_join(fbs_records_5,by=c("normalized_year"))%>%
+  distinct()
+  
+number_year_5 <- fbs_records_german_5 %>%
+  group_by(normalized_year,n_active_members) %>%
+  summarize(number_pub = n_distinct(record_number), .groups = "drop")
+
+number_year_5$average_output=round(number_year_5$number_pub / number_year_5$n_active_members)
+number_year_5$number_of_years_prior_to_admission="5"
+
+number_year_5 <- number_year_5 %>%
+  distinct()
+```
+
+# Considering 10 years prior to admission_year
+```{r}
+
+fbs_records_10 <-fbs_records_german%>%
+  filter(admission_year>=(normalized_year-10))%>%
+  with(aggregate(member_number ~ normalized_year,FUN=function(x){length(unique(x))}))%>%
+  mutate(n_active_members=member_number)%>%
+  select(n_active_members,normalized_year)
+
+fbs_records_german_10 <- fbs_records_german %>% 
+  left_join(fbs_records_10,by=c("normalized_year"))%>%
+  distinct()
+  
+number_year_10 <- fbs_records_german_10 %>%
+  group_by(normalized_year,n_active_members) %>%
+  summarize(number_pub = n_distinct(record_number), .groups = "drop")
+
+number_year_10$average_output=round(number_year_10$number_pub / number_year_10$n_active_members)
+number_year_10$number_of_years_prior_to_admission="10"
+
+number_year_10 <- number_year_10 %>%
+  distinct()
+```
+
+# Considering 20 years prior to admission_year
+```{r}
+
+fbs_records_20 <-fbs_records_german%>%
+  filter(admission_year>=(normalized_year-20))%>%
+  with(aggregate(member_number ~ normalized_year,FUN=function(x){length(unique(x))}))%>%
+  mutate(n_active_members=member_number)%>%
+  select(n_active_members,normalized_year)
+
+fbs_records_german_20 <- fbs_records_german %>% 
+  left_join(fbs_records_20,by=c("normalized_year"))%>%
+  distinct()
+  
+number_year_20 <- fbs_records_german_20 %>%
+  group_by(normalized_year,n_active_members) %>%
+  summarize(number_pub = n_distinct(record_number), .groups = "drop")
+
+number_year_20$average_output=round(number_year_20$number_pub / number_year_20$n_active_members)
+number_year_20$number_of_years_prior_to_admission="20"
+
+number_year_20 <- number_year_20 %>%
+  distinct()
+```
+
+```{r}
+avg_number_per_year <- rbind(number_year_5,number_year_10,number_year_20)
+
+```
+
+```{r}
+avg_number_per_year%>%
+  ggplot(aes(x=normalized_year,y=average_output,fill=number_of_years_prior_to_admission))+
+  geom_col()+
+  ggtitle("Average Number of Member Publications in German")+
+  xlab("") + ylab("")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 2))+
+  scale_y_continuous(breaks = seq(0, 150, by = 10))+
+  theme_hsci_discrete()+
+  theme(plot.title = element_text(hjust = 0.5))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+# Visualization: Society-related genres by genre category: Numbers over time
+```{r}
+core_society_genre <- core_society %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  inner_join(genre_cat1,by = c("record_number"))%>%
+  select(record_number,normalized_year,vd17_id,genre)%>%
+  mutate(genre_category = case_when(
+    (grepl(paste(genre_list1_a, collapse="|"), genre)) ~ "Lyrik/Poetry",
+    (grepl(paste(genre_list1_b, collapse="|"), genre)) ~ "Drama/Theatre",
+    (grepl(paste(genre_list1_c, collapse="|"), genre)) ~ "Epik/Prose",
+    (grepl(paste(genre_list1_d, collapse="|"), genre)) ~ "Other Literature Related",
+    (grepl(paste(genre_list1_e, collapse="|"), genre)) ~ "Linguistic and Language",
+    (grepl(paste(genre_list1_f, collapse="|"), genre)) ~ "Virtue, Civility and Ethics",
+    (grepl(paste(genre_list1_g, collapse="|"), genre)) ~ "Other Society Related",
+    (grepl(paste(genre_list1_h, collapse="|"), genre)) ~ "Occasional Literature",
+    (grepl(paste(genre_list1_i, collapse="|"), genre)) ~ "German as a scientific language"
+  ))%>%
+  distinct()
+
+society_interest_genre <- society_interest %>%
+  left_join(vd17_normalized_years_local, by = c("record_number")) %>%
+  filter(normalized_year >= 1600, normalized_year <= 1700) %>%
+  filter(nchar(normalized_year)==4)%>%
+  inner_join(genre_cat1,by = c("record_number"))%>%
+  select(record_number,normalized_year,vd17_id,genre)%>%
+  mutate(genre_category = case_when(
+    (grepl(paste(genre_list1_a, collapse="|"), genre)) ~ "Lyrik/Poetry",
+    (grepl(paste(genre_list1_b, collapse="|"), genre)) ~ "Drama/Theatre",
+    (grepl(paste(genre_list1_c, collapse="|"), genre)) ~ "Epik/Prose",
+    (grepl(paste(genre_list1_d, collapse="|"), genre)) ~ "Other Literature Related",
+    (grepl(paste(genre_list1_e, collapse="|"), genre)) ~ "Linguistic and Language",
+    (grepl(paste(genre_list1_f, collapse="|"), genre)) ~ "Virtue, Civility and Ethics",
+    (grepl(paste(genre_list1_g, collapse="|"), genre)) ~ "Other Society Related",
+    (grepl(paste(genre_list1_h, collapse="|"), genre)) ~ "Occasional Literature",
+    (grepl(paste(genre_list1_i, collapse="|"), genre)) ~ "German as a scientific language"
+  ))%>%
+  distinct()
+```
+
+```{r}
+plot1 <-core_society_genre%>%
+  ggplot(aes(x=normalized_year,fill=genre_category)) +
+  geom_bar(width=1) +
+  labs(fill=NULL) +
+  ggtitle("Member Publications in Society-Related Genre Categories (core_society)")+
+  ylab("")+xlab("Year")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 2)) +
+  scale_y_continuous(breaks = seq(0, 500, by = 50)) +
+  theme_hsci_discrete() +
+  theme(legend.position="bottom")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(plot.title = element_text(hjust = 0.5))
+
+plot2 <-society_interest_genre%>%
+  ggplot(aes(x=normalized_year,fill=genre_category)) +
+  geom_bar(width=1) +
+  labs(fill=NULL) +
+  ggtitle("Member Publications in Society-Related Genre Categories (links_of_interest)")+
+  ylab("")+xlab("Year")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 2)) +
+  scale_y_continuous(breaks = seq(0, 500, by = 50)) +
+  theme_hsci_discrete() +
+  theme(legend.position="bottom")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggarrange(plot1,plot2,nrow = 2,ncol = 1)
+
+```
+
+# Visualization: Society-related genres by genre category: Proportion over time
+
+```{r}
+core_society_frequency <- core_society_genre%>%
+  filter(!(is.na(genre)))%>%
+  select(vd17_id,record_number,normalized_year,genre)%>%
+  distinct(vd17_id,record_number,normalized_year,genre)%>%
+  group_by(normalized_year) %>%
+  count(genre)%>%
+  arrange(desc(n))%>%
+   mutate(genre_category = case_when(
+    (grepl(paste(genre_list1_a, collapse="|"), genre)) ~ "Lyrik/Poetry",
+    (grepl(paste(genre_list1_b, collapse="|"), genre)) ~ "Drama/Theatre",
+    (grepl(paste(genre_list1_c, collapse="|"), genre)) ~ "Epik/Prose",
+    (grepl(paste(genre_list1_d, collapse="|"), genre)) ~ "Other Literature Related",
+    (grepl(paste(genre_list1_e, collapse="|"), genre)) ~ "Linguistic and Language",
+    (grepl(paste(genre_list1_f, collapse="|"), genre)) ~ "Virtue, Civility and Ethics",
+    (grepl(paste(genre_list1_g, collapse="|"), genre)) ~ "Other Society Related",
+    (grepl(paste(genre_list1_h, collapse="|"), genre)) ~ "Occasional Literature",
+    (grepl(paste(genre_list1_i, collapse="|"), genre)) ~ "German as a scientific language"
+  ))%>%
+  distinct()
+
+society_interest_frequency <- society_interest_genre%>%
+  filter(!(is.na(genre)))%>%
+  select(vd17_id,record_number,normalized_year,genre)%>%
+  distinct(vd17_id,record_number,normalized_year,genre)%>%
+  group_by(normalized_year) %>%
+  count(genre)%>%
+  arrange(desc(n))%>%
+   mutate(genre_category = case_when(
+    (grepl(paste(genre_list1_a, collapse="|"), genre)) ~ "Lyrik/Poetry",
+    (grepl(paste(genre_list1_b, collapse="|"), genre)) ~ "Drama/Theatre",
+    (grepl(paste(genre_list1_c, collapse="|"), genre)) ~ "Epik/Prose",
+    (grepl(paste(genre_list1_d, collapse="|"), genre)) ~ "Other Literature Related",
+    (grepl(paste(genre_list1_e, collapse="|"), genre)) ~ "Linguistic and Language",
+    (grepl(paste(genre_list1_f, collapse="|"), genre)) ~ "Virtue, Civility and Ethics",
+    (grepl(paste(genre_list1_g, collapse="|"), genre)) ~ "Other Society Related",
+    (grepl(paste(genre_list1_h, collapse="|"), genre)) ~ "Occasional Literature",
+    (grepl(paste(genre_list1_i, collapse="|"), genre)) ~ "German as a scientific language"
+  ))%>%
+  distinct()
+
+
+p1 <-core_society_frequency%>%
+  ggplot(aes(x=normalized_year,y=n,fill=genre_category)) +
+  geom_col(width=1,position='fill')+
+  labs(fill=NULL) +
+  ggtitle("Member Publications in Society-Related Genres (core_society)")+
+  ylab("")+xlab("Year")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 2))+
+  scale_y_continuous(labels=scales::percent_format(accuracy=1),breaks = seq(0, 1, by = 0.1)) +
+  theme_hsci_discrete()+
+  theme(legend.position = "bottom")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(plot.title = element_text(hjust = 0.5))
+
+p2 <-society_interest_frequency%>%
+  ggplot(aes(x=normalized_year,y=n,fill=genre_category)) +
+  geom_col(width=1,position='fill')+
+  labs(fill=NULL) +
+  ggtitle("Member Publications in Society-Related Genres (links_of_interest)")+
+  ylab("")+xlab("Year")+
+  scale_x_continuous(breaks = seq(1000, 2000, by = 2))+
+  scale_y_continuous(labels=scales::percent_format(accuracy=1),breaks = seq(0, 1, by = 0.1)) +
+  theme_hsci_discrete()+
+  theme(legend.position = "bottom")+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggarrange(p1,p2,nrow = 2,ncol = 1)
 ```
 
 # Visualization: Comparison with VD17: Society-related genre categories
 ```{r}
+vd17_local_id <- vd17_id_a%>%
+  collect()
 genres_vd17_society <- vd17_local_id %>%
   inner_join(vd17_normalized_langs_local, by=c("record_number"))%>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
   inner_join(genre_cat1,by = c("record_number"))%>%
-  select(record_number,normalized_year,vd17_id,genre_full)%>%
+  select(record_number,normalized_year,vd17_id,genre)%>%
   mutate(genre_category = case_when(
-    (grepl(paste(genre_list1_a, collapse="|"), genre_full)) ~ "Lyrik/Poetry",
-    (grepl(paste(genre_list1_b, collapse="|"), genre_full)) ~ "Drama/Theatre",
-    (grepl(paste(genre_list1_c, collapse="|"), genre_full)) ~ "Epik/Prose",
-    (grepl(paste(genre_list1_d, collapse="|"), genre_full)) ~ "Other Literature Related",
-    (grepl(paste(genre_list1_e, collapse="|"), genre_full)) ~ "Linguistic and Language",
-    (grepl(paste(genre_list1_f, collapse="|"), genre_full)) ~ "Virtue, Civility and Ethics",
-    (grepl(paste(genre_list1_g, collapse="|"), genre_full)) ~ "Other Society Related",
-    (grepl(paste(genre_list1_h, collapse="|"), genre_full)) ~ "Occasional Literature",
-    (grepl(paste(genre_list1_i, collapse="|"), genre_full)) ~ "German as a scientific language"
+    (grepl(paste(genre_list1_a, collapse="|"), genre)) ~ "Lyrik/Poetry",
+    (grepl(paste(genre_list1_b, collapse="|"), genre)) ~ "Drama/Theatre",
+    (grepl(paste(genre_list1_c, collapse="|"), genre)) ~ "Epik/Prose",
+    (grepl(paste(genre_list1_d, collapse="|"), genre)) ~ "Other Literature Related",
+    (grepl(paste(genre_list1_e, collapse="|"), genre)) ~ "Linguistic and Language",
+    (grepl(paste(genre_list1_f, collapse="|"), genre)) ~ "Virtue, Civility and Ethics",
+    (grepl(paste(genre_list1_g, collapse="|"), genre)) ~ "Other Society Related",
+    (grepl(paste(genre_list1_h, collapse="|"), genre)) ~ "Occasional Literature",
+    (grepl(paste(genre_list1_i, collapse="|"), genre)) ~ "German as a scientific language"
   ))%>%
   distinct()
 
@@ -265,8 +396,8 @@ vd17_fbs <- vd17_normalized_langs_local%>%
   left_join(vd17_normalized_years_local, by = c("record_number")) %>%
   filter(normalized_year >= 1600, normalized_year <= 1700) %>%
   filter(nchar(normalized_year)==4)%>%
-  left_join(fbs_links_of_interest_matches,by=c('record_number')) %>%
-  select ('normalized_year','record_number','vd17_id','member_number','first_name', 'last_name','role2','field_code')%>%
+  left_join(fbs_records,by=c('record_number')) %>%
+  select ('normalized_year','record_number','vd17_id','member_number')%>%
    mutate(group = case_when(
     (is.na(member_number)) ~ "VD17",
     (!is.na(member_number)) ~ "Society"
@@ -288,4 +419,3 @@ vd17_fbs%>%
   theme(plot.title = element_text(hjust = 0.5))+
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
-
