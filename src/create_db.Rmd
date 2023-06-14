@@ -29,7 +29,47 @@ while (!exists("con")) {
     key_set("vd17_analysis", "vd17-rw")
   })
 }
-source(here::here("code/common_basis.R"), local = knitr::knit_global())
+source(here::here("src/common_basis.R"), local = knitr::knit_global())
+
+high_german_replacements_l <- c(
+  "dzsch" = "sch",
+  "dsch" = "z",
+  "schm" = "sm",
+  "aeu" = "eu",
+  "ae" = "a",
+  "au" = "eu",
+  "ai" = "ei",
+  "ay" = "ei",
+  "bf" = "f",
+  "chs" = "c",
+  "ch" = "c",
+  "ck" = "c",
+  "cs" = "c",
+  "cz" = "c",
+  "ds" = "z",
+  "dz" = "z",
+  "gh" = "c",
+  "gs" = "x",
+  "g" = "c",
+  "j" = "i",
+  "ks" = "x",
+  "k" = "c",
+  "oe" = "u",
+  "oi" = "eu",
+  "pf" = "f",
+  "ph" = "f",
+  "scl" = "sl",
+  "p" = "b",
+  "ts" = "sch",
+  "tz" = "z",
+  "t" = "d",
+  "ue" = "u",
+  "v" = "f",
+  "w" = "f",
+  "ß" = "ss",
+  "ff" = "f",
+  "y" = "i"
+)
 ```
 
 
@@ -140,6 +180,17 @@ vd17_corporate_links_a <- vd17_a %>%
 vd17_corporate_links_c <- vd17_corporate_links_a %>%
   compute_c(name = "vd17_corporate_links_c", temporary = FALSE, overwrite = TRUE)
 
+vd17_fingerprints_a <- vd17_a %>%
+  filter(field_code == "007P", subfield_code == "0") %>%
+  mutate(value = str_replace_all(value, " +", " ")) %>%
+  collect() %>%
+  separate_wider_position(value, c(f1_1 = 2, f1_2 = 2, 1, f2_1 = 2, f2_2 = 2, 1, f3_1 = 2, f3_2 = 2, 1, f4_1 = 2, f4_2 = 2, 1, f34_source = 1, 1, year = 4, year_source = 1), too_few = "align_start", too_many = "drop") %>%
+  select(record_number, f1_1:year_source) %>%
+  copy_to_a(con, name = "vd17_fingerprints_a", temporary = FALSE, overwrite = TRUE, indexes = list(c("record_number")))
+
+vd17_fingerprints_c <- vd17_fingerprints_a %>%
+  compute_c(name = "vd17_fingerprints_c", temporary = FALSE, overwrite = TRUE)
+
 vd17_wide_a <- vd17_a %>%
   select(record_number, field_code:value) %>%
   mutate(value = str_replace_all(value, sql("CHR(0)"), "_")) %>%
@@ -150,37 +201,162 @@ vd17_wide_c <- vd17_wide_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_wide_c"), temporary = FALSE, overwrite = TRUE)
 ```
 
-# Create Fruit-Bearing Society tables
+# Variant mapping
 
-```{r create_fbs_tables}
-fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "FBS_master_metadata", col_types = "c") %>% relocate(Name)
+## Key generation
 
-fbs_metadata_a <- fbs_metadata_gs %>%
-  copy_to_a(con, name = "fbs_metadata_a", temporary = FALSE, overwrite = TRUE, unique_indexes = c("GND"))
+```{r}
+form_factors <- vd17_a %>%
+  filter(field_code == "034I") %>%
+  distinct(record_number, form_factor = value) %>%
+  group_by(record_number) %>%
+  dbplyr::window_order(form_factor) %>%
+  summarize(form_factors = str_flatten(form_factor, collapse = "|"), .groups = "drop") %>%
+  #  compute_c()
+  collect() %>%
+  copy_to_c(con)
 
-fbs_metadata_c <- fbs_metadata_a %>%
-  compute_c(name = "fbs_metadata_c", temporary = FALSE, overwrite = TRUE)
+places_of_publication <- vd17_normalized_locations_a %>%
+  filter(location_type == "pup") %>%
+  select(record_number, place_of_publication = location)
+places_of_production <- vd17_normalized_locations_a %>%
+  filter(location_type == "mfp") %>%
+  select(record_number, place_of_production = location)
+places_of_distribution <- vd17_normalized_locations_a %>%
+  filter(location_type == "dbp") %>%
+  select(record_number, place_of_distribution = location)
 
-# fbs_gnds_c <- fbs_gnds_a %>%
-#  compute_c(name = "fbs_gnds_c", temporary = TRUE, overwrite = TRUE)
+unified_places_of_publication <- vd17_a %>%
+  distinct(record_number) %>%
+  left_join(places_of_publication, join_by(record_number)) %>%
+  left_join(places_of_production, join_by(record_number)) %>%
+  left_join(places_of_distribution, join_by(record_number)) %>%
+  mutate(place_of_publication = coalesce(place_of_publication, place_of_production, place_of_distribution)) %>%
+  filter(!is.na(place_of_publication)) %>%
+  mutate(place_of_publication = str_replace_all(str_to_lower(place_of_publication), "[^a-zß]", "")) %>%
+  distinct(record_number, place_of_publication) %>%
+  group_by(record_number) %>%
+  dbplyr::window_order(place_of_publication) %>%
+  summarize(places_of_publication = str_flatten(place_of_publication, collapse = "|"), .groups = "drop") %>%
+  #  compute_c()
+  collect() %>%
+  copy_to_c(con)
 
-# fbs_gnd_links_a <- vd17_a %>%
-#   inner_join(fbs_gnds_a, join_by(value == GND)) %>%
-#   select(record_number, field_number) %>%
-#   inner_join(vd17_a, join_by(record_number, field_number)) %>%
-#   pivot_wider(
-#     id_cols = c(record_number, field_number, field_code),
-#     values_from = value, names_from = subfield_code
-#   ) %>%
-#   rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
-#   compute_a(name = "fbs_gnd_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
-#
-# fbs_gnd_links_c <- fbs_gnd_links_a %>%
-#   compute_c(name = "fbs_gnd_links_c", temporary = FALSE, overwrite = TRUE)
+rda_printers <- vd17_a %>%
+  filter(field_code == "029F", subfield_code == "4", value == "prt") %>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
 
-# vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
-#  copy_to(con, ., name = "vd17_044s_raw")
+printers <- vd17_a %>%
+  filter(field_code == "033J", subfield_code == "7") %>%
+  select(record_number, printer_gnd = value)
+
+additional_printers <- vd17_a %>%
+  filter(field_code == "028C", (subfield_code == "4" & value == "prt") | (subfield_code == "B" & str_detect(value, "^Drucker|^Verleger"))) %>%
+  distinct(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
+
+all_printers <- rda_printers %>%
+  union_all(printers) %>%
+  union_all(additional_printers) %>%
+  distinct(record_number, printer_gnd) %>%
+  group_by(record_number) %>%
+  dbplyr::window_order(printer_gnd) %>%
+  summarize(printer_gnds = str_flatten(printer_gnd, collapse = "|"), .groups = "drop") %>%
+  #  compute_c()
+  collect() %>%
+  copy_to_c(con)
+
+vd17_titlekeys_c <- vd17_titles_a %>%
+  mutate(title = str_replace_all(str_to_lower(title), "[^a-zß]", "")) %>%
+  select(record_number, title) %>%
+  collect() %>%
+  mutate(title = str_replace_all(title, high_german_replacements_l)) %>%
+  copy_to_c(con)
 ```
+
+## Variant table calculation
+
+```{r variants}
+vd17_explicitly_mapped_variants <- vd17_a %>%
+  filter(field_code == "037A", str_detect(value, "nicht ident|identisch|variant")) %>%
+  collect() %>%
+  mutate(vd17_id = str_extract_all(value, "\\b[0-9]+:[0-9]+.\\b")) %>%
+  unnest(vd17_id) %>%
+  distinct(record_number, vd17_id) %>%
+  copy_to_a(con) %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
+vd17_explicitly_mapped_variants <- vd17_explicitly_mapped_variants %>%
+  union_all(vd17_explicitly_mapped_variants %>% rename(record_number.x = record_number.y, record_number.y = record_number.x)) %>%
+  filter(record_number.x < record_number.y) %>%
+  distinct(record_number.x, record_number.y) %>%
+  compute_a()
+
+t <- vd17_titlekeys_c %>%
+  select(record_number, title) %>%
+  #  inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
+  left_join(unified_places_of_publication) %>%
+  left_join(all_printers) %>%
+  inner_join(vd17_page_counts_c %>% mutate(page_count_low = page_count - pmin(floor(page_count / 3), 3), page_count_high = page_count + pmin(floor(page_count / 3), 3))) %>%
+  #  inner_join(extents) %>%
+  left_join(form_factors) %>%
+  replace_na(list(form_factors = "[UNKNOWN]", printer_gnds = "[UNKNOWN]", places_of_publication = "[UNKNOWN]")) %>%
+  compute_c()
+
+vd17_identical_metadata <- t %>%
+  inner_join(t, join_by(title, places_of_publication, printer_gnds, page_count >= page_count_low, page_count <= page_count_high, form_factors, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, places_of_publication, printer_gnds, page_count.x, page_count.y, form_factors) %>%
+  left_join(vd17_fingerprints_c, join_by(record_number.x == record_number)) %>%
+  left_join(vd17_fingerprints_c, join_by(record_number.y == record_number)) %>%
+  collect() %>%
+  mutate(fpsame = (f1_1.x == f1_1.y & f1_2.x == f1_2.y) + (f2_1.x == f2_1.y & f2_2.x == f2_2.y) + (f3_1.x == f3_1.y & f3_2.x == f3_2.y) + (f4_1.x == f4_1.y & f4_2.x == f4_2.y)) %>%
+  filter(fpsame >= 2, year.x == year.y) %>%
+  copy_to_a(con)
+
+vd17_identical_fingerprints <- vd17_fingerprints_c %>%
+  inner_join(vd17_page_counts_c) %>%
+  inner_join(vd17_fingerprints_c %>% inner_join(vd17_page_counts_c %>% mutate(page_count_low = page_count - pmin(floor(page_count / 3), 3), page_count_high = page_count + pmin(floor(page_count / 3), 3))), join_by(f1_1, f1_2, f2_1, f2_2, f3_1, f3_2, f4_1, f4_2, f34_source, year, record_number < record_number, page_count >= page_count_low, page_count <= page_count_high)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
+vd17_variants <- vd17_explicitly_mapped_variants %>%
+  union(vd17_identical_metadata %>% select(record_number.x, record_number.y)) %>%
+  union(vd17_identical_fingerprints) %>%
+  inner_join(
+    vd17_record_types_a %>% select(record_number.x = record_number, record_type.x = record_type)
+  ) %>%
+  inner_join(
+    vd17_record_types_a %>% select(record_number.y = record_number, record_type.y = record_type)
+  ) %>%
+  filter(record_type.x == record_type.y) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a(name = "vd17_variants", unique_indexes = list(c("record_number.x", "record_number.y"), c("record_number.y", "record_number.x")), temporary = TRUE, overwrite = TRUE)
+
+vd17_variant_mapping_a <- tbl(con, sql("
+WITH RECURSIVE final_record_number AS (
+  SELECT `record_number.x`, `record_number.y`
+  FROM vd17_variants
+  UNION
+  SELECT t.`record_number.x`, o.`record_number.y`
+  FROM final_record_number t, vd17_variants o
+  WHERE t.`record_number.y`=o.`record_number.x`
+)
+SELECT `record_number.x` AS record_number, `record_number.y` AS source_record_number FROM final_record_number")) %>%
+  group_by(source_record_number) %>%
+  filter(record_number == min(record_number)) %>%
+  ungroup() %>%
+  compute_a(name = "vd17_variant_mapping_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("source_record_number", "record_number")))
+
+vd17_variant_mapping_c <- vd17_variant_mapping_a %>%
+  compute_c(name = "vd17_variant_mapping_c", temporary = FALSE, overwrite = TRUE)
+```
+
+# Authority data table creation
 
 ```{r create_auth_tables}
 vd17_auth_id_a <- vd17_auth_a %>%
@@ -227,6 +403,8 @@ vd17_auth_name_c <- vd17_auth_name_a %>%
   compute_c(name = "vd17_auth_name_c", temporary = FALSE, overwrite = TRUE)
 ```
 
+# Misc
+
 ```{r create_db_versions_of_genre_categorisations}
 vd17_genre_categorisation_a <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations") %>%
   select(-c(VD17:`Society-related`)) %>%
@@ -236,6 +414,38 @@ vd17_genre_categorisation_c <- vd17_genre_categorisation_a %>%
   compute_c(con, name = "vd17_genre_categorisation_c", temporary = FALSE, overwrite = TRUE)
 ```
 
+
+# Create Fruit-Bearing Society tables
+
+```{r create_fbs_tables}
+fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "FBS_master_metadata", col_types = "c") %>% relocate(Name)
+
+fbs_metadata_a <- fbs_metadata_gs %>%
+  copy_to_a(con, name = "fbs_metadata_a", temporary = FALSE, overwrite = TRUE, unique_indexes = c("GND"))
+
+fbs_metadata_c <- fbs_metadata_a %>%
+  compute_c(name = "fbs_metadata_c", temporary = FALSE, overwrite = TRUE)
+
+# fbs_gnds_c <- fbs_gnds_a %>%
+#  compute_c(name = "fbs_gnds_c", temporary = TRUE, overwrite = TRUE)
+
+# fbs_gnd_links_a <- vd17_a %>%
+#   inner_join(fbs_gnds_a, join_by(value == GND)) %>%
+#   select(record_number, field_number) %>%
+#   inner_join(vd17_a, join_by(record_number, field_number)) %>%
+#   pivot_wider(
+#     id_cols = c(record_number, field_number, field_code),
+#     values_from = value, names_from = subfield_code
+#   ) %>%
+#   rename(GND = `7`, role = `4`, role2 = B, ppn = `9`) %>%
+#   compute_a(name = "fbs_gnd_links_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number", "field_code")), indexes = c("field_code", "GND", "role"))
+#
+# fbs_gnd_links_c <- fbs_gnd_links_a %>%
+#   compute_c(name = "fbs_gnd_links_c", temporary = FALSE, overwrite = TRUE)
+
+# vd17_044s_raw <- read_tsv(here("data/input/044s-pica3.tsv"), lazy = TRUE) %>%
+#  copy_to(con, ., name = "vd17_044s_raw")
+```
 
 ```{r}
 # FBS links
@@ -257,46 +467,6 @@ fbs_gnd_links_a <- vd17_a %>%
   select(record_number, field_number, field_code, member_number)
 
 ## Through name matching
-
-high_german_replacements_l <- c(
-  "dzsch" = "sch",
-  "dsch" = "z",
-  "schm" = "sm",
-  "aeu" = "eu",
-  "ae" = "a",
-  "au" = "eu",
-  "ai" = "ei",
-  "ay" = "ei",
-  "bf" = "f",
-  "chs" = "c",
-  "ch" = "c",
-  "ck" = "c",
-  "cs" = "c",
-  "cz" = "c",
-  "ds" = "z",
-  "dz" = "z",
-  "gh" = "c",
-  "gs" = "x",
-  "g" = "c",
-  "j" = "i",
-  "ks" = "x",
-  "k" = "c",
-  "oe" = "u",
-  "oi" = "eu",
-  "pf" = "f",
-  "ph" = "f",
-  "scl" = "sl",
-  "p" = "b",
-  "ts" = "sch",
-  "tz" = "z",
-  "t" = "d",
-  "ue" = "u",
-  "v" = "f",
-  "w" = "f",
-  "ß" = "ss",
-  "ff" = "f",
-  "y" = "i"
-)
 
 prefixes_l <- vd17_person_links_a %>%
   filter(!is.na(prefix)) %>%
@@ -465,7 +635,7 @@ fbs_links_of_interest_a <- fbs_links_a %>%
       "VerfasserIn von Zusatztexten",
       "VertragspartnerIn",
       "WidmendeR",
-      "WidmungsempfängerIn",
+      "Widmungsempfänger",
       "ZensorIn"
     ), collapse = "|^"))
   ) %>%
@@ -476,46 +646,7 @@ fbs_links_of_interest_c <- fbs_links_of_interest_a %>%
   compute_c(name = "fbs_links_of_interest_c", temporary = FALSE, overwrite = TRUE)
 ```
 
-```{r variants}
-vd17_explicitly_mapped_variants <- vd17_a %>%
-  filter(field_code == "037A", str_detect(value, "nicht ident|identisch|variant")) %>%
-  collect() %>%
-  mutate(vd17_id = str_extract_all(value, "\\b[0-9]+:[0-9]+.\\b")) %>%
-  unnest(vd17_id) %>%
-  distinct(record_number, vd17_id) %>%
-  copy_to_a(con) %>%
-  inner_join(vd17_id_a, join_by(vd17_id)) %>%
-  select(record_number.x, record_number.y) %>%
-  compute_a()
-
-vd17_explicitly_mapped_variants <- vd17_explicitly_mapped_variants %>%
-  union_all(vd17_explicitly_mapped_variants %>% rename(record_number.x = record_number.y, record_number.y = record_number.x)) %>%
-  filter(record_number.x < record_number.y) %>%
-  distinct(record_number.x, record_number.y) %>%
-  compute_a(name = "vd17_explicitly_mapped_variants", temporary = TRUE, overwrite = TRUE, unique_indexes = list(c("record_number.x", "record_number.y")))
-
-vd17_variant_mapping_a <- tbl(con, sql("
-WITH RECURSIVE final_record_number AS (
-  SELECT `record_number.x`, `record_number.y`
-  FROM vd17_explicitly_mapped_variants
-  WHERE `record_number.x` NOT IN (
-    SELECT `record_number.y` FROM vd17_explicitly_mapped_variants
-  )
-  UNION
-  SELECT t.`record_number.x`, o.`record_number.y`
-  FROM final_record_number t, vd17_explicitly_mapped_variants o
-  WHERE t.`record_number.y`=o.`record_number.x`
-)
-SELECT `record_number.x` AS record_number, `record_number.y` AS source_record_number FROM final_record_number")) %>%
-  group_by(source_record_number) %>%
-  filter(record_number == min(record_number)) %>%
-  ungroup() %>%
-  compute_a(name = "vd17_variant_mapping_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("source_record_number", "record_number")))
-
-vd17_variant_mapping_c <- vd17_variant_mapping_a %>%
-  compute_c(name = "vd17_variant_mapping_c", temporary = FALSE, overwrite = TRUE)
-```
-
+## FBS record set generation
 
 ```{r}
 fbs_auto_records_a <- fbs_links_a %>%
@@ -543,8 +674,10 @@ fbs_auto_records_a <- fbs_links_a %>%
 fbs_auto_records_c <- fbs_auto_records_a %>%
   compute_c(name = "fbs_auto_records_c", temporary = FALSE, overwrite = TRUE)
 
-fbs_records_a <- fbs_auto_records_a %>%
-  #  anti_join(vd17_record_types_a %>% filter(record_type=="Unified multi-part publication") %>% inner_join(vd17_id_a)) %>%
+fbs_raw_records_a <- fbs_auto_records_a %>%
+  anti_join(vd17_record_types_a %>%
+    filter(record_type == "Unified multi-part publication") %>%
+    inner_join(vd17_id_a)) %>%
   rename(status = auto_status) %>%
   anti_join(fbs_manual_status_overrides_a) %>%
   union_all(fbs_manual_status_overrides_a %>% filter(manual_status_override != "Not interesting") %>% rename(status = manual_status_override) %>% mutate(method = "Manual")) %>%
@@ -556,19 +689,29 @@ fbs_records_a <- fbs_auto_records_a %>%
       select(unified_vd17_id = vd17_id, vd17_id = source_vd17_id)
   ) %>%
   mutate(unified_vd17_id = coalesce(unified_vd17_id, vd17_id)) %>%
-  #  group_by(vd17_id) %>%
-  #  summarise(status=if_else(any(status=="Society-authored and society-purpose related"),"Society-authored and society-purpose related","Society-authored"),method=sql("GROUP_CONCAT(DISTINCT method ORDER BY method SEPARATOR '&')"),.groups="drop") %>%
-  compute_a()
+  compute_a(name = "fbs_raw_records_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("vd17_id")))
+
+fbs_raw_records_c <- fbs_raw_records_a %>%
+  compute_c(name = "fbs_raw_records_c", temporary = FALSE, overwrite = TRUE)
+
+fbs_records_a <- fbs_raw_records_a %>%
+  distinct(vd17_id = unified_vd17_id, set = status, method) %>%
+  group_by(across(-c(method, set))) %>%
+  summarise(set = case_when(
+    any(set == "Society-contributed and society-purpose related") ~ "Society-contributed and society-purpose related",
+    any(set == "Society-contributed") ~ "Society-contributed",
+    T ~ "Society-associated"
+  ), method = sql("GROUP_CONCAT(method ORDER BY method SEPARATOR '&')"), .groups = "drop")
 
 fbs_records_a <- fbs_records_a %>%
   union_all(fbs_records_a %>%
-    filter(status == "Society-contributed and society-purpose related") %>%
-    mutate(status = "Society-contributed")) %>%
+    filter(set == "Society-contributed and society-purpose related") %>%
+    mutate(set = "Society-contributed")) %>%
   union_all(fbs_records_a %>%
-    filter(status != "Society-associated") %>%
-    mutate(status = "Society-associated")) %>%
-  rename(set = status) %>%
-  compute_a(name = "fbs_records_a", temporary = FALSE, overwrite = TRUE, indexes = list(c("vd17_id"), c("unified_vd17_id")))
+    filter(set != "Society-associated") %>%
+    mutate(set = "Society-associated")) %>%
+  anti_join(vd17_record_types_a %>% filter(record_type == "Unified multi-part publication") %>% inner_join(vd17_id_a)) %>%
+  compute_a(name = "fbs_records_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("vd17_id", "set")))
 
 fbs_records_c <- fbs_records_a %>%
   compute_c(name = "fbs_records_c", temporary = FALSE, overwrite = TRUE)

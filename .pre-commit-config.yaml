@@ -5,9 +5,9 @@ repos:
     rev: v4.4.0
     hooks:
       - id: trailing-whitespace
-        exclude: renv
+        exclude: ^(renv/.*|.*\.nb\.html|.*\.Rd|.*\.ipynb)$
       - id: end-of-file-fixer
-        exclude: '\.Rd'
+        exclude: ^(renv/.*|.*\.nb\.html|.*\.Rd|.*\.ipynb)$
       - id: check-yaml
       - id: check-added-large-files
         args: [--maxkb=10240]

@@ -11,7 +11,7 @@ output:
 
 ```{r setup,echo=F}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
-source(here::here("code/common_basis.R"))
+source(here::here("src/common_basis.R"))
 ```
 
 ## Multi-part exploration
@@ -76,14 +76,14 @@ Filtering for individual units/complete recordings (`a/c`) removes `r p(filtered
 ### Overall
 
 ```{r}
-extents <- vd17_a %>%
-  filter(field_code == "034D") %>%
-  distinct(record_number, extent = value) %>%
-  group_by(record_number) %>%
-  dbplyr::window_order(extent) %>%
-  summarize(extents = str_flatten(extent, collapse = "|"), .groups = "drop") %>%
-  collect() %>%
-  copy_to_c(con)
+# extents <- vd17_a %>%
+#  filter(field_code == "034D") %>%
+#  distinct(record_number, extent = value) %>%
+#  group_by(record_number) %>%
+#  dbplyr::window_order(extent) %>%
+#  summarize(extents = str_flatten(extent, collapse = "|"), .groups = "drop") %>%
+#  collect() %>%
+#  copy_to_c(con)
 
 form_factors <- vd17_a %>%
   filter(field_code == "034I") %>%
@@ -235,6 +235,12 @@ vd17_titlekeys_c <- vd17_titles_a %>%
   mutate(title = str_replace_all(title, replacements)) %>%
   copy_to_c(con)
 
+vd17_identical_fingerprints <- vd17_fingerprints_c %>%
+  inner_join(vd17_page_counts_c) %>%
+  inner_join(vd17_fingerprints_c %>% inner_join(vd17_page_counts_c %>% mutate(page_count_low = page_count - pmin(floor(page_count / 3), 3), page_count_high = page_count + pmin(floor(page_count / 3), 3))), join_by(f1_1, f1_2, f2_1, f2_2, f3_1, f3_2, f4_1, f4_2, f34_source, year, record_number < record_number, page_count >= page_count_low, page_count <= page_count_high)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
 vd17_identical_titles <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
   inner_join(vd17_titlekeys_c %>% select(record_number, title), join_by(title, record_number < record_number)) %>%
@@ -342,17 +348,24 @@ identical_title_and_year_and_place_of_publication_and_printer_removal_removes_n 
 
 t <- vd17_titlekeys_c %>%
   select(record_number, title) %>%
-  inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
-  inner_join(unified_places_of_publication) %>%
-  inner_join(all_printers) %>%
-  inner_join(extents) %>%
-  inner_join(form_factors) %>%
+  #  inner_join(vd17_normalized_years_c %>% select(record_number, normalized_year)) %>%
+  left_join(unified_places_of_publication) %>%
+  left_join(all_printers) %>%
+  inner_join(vd17_page_counts_c %>% mutate(page_count_low = page_count - pmin(floor(page_count / 3), 3), page_count_high = page_count + pmin(floor(page_count / 3), 3))) %>%
+  #  inner_join(extents) %>%
+  left_join(form_factors) %>%
+  replace_na(list(form_factors = "[UNKNOWN]", printer_gnds = "[UNKNOWN]", places_of_publication = "[UNKNOWN]")) %>%
   compute_c()
 
 vd17_identical_all <- t %>%
-  inner_join(t, join_by(title, normalized_year, places_of_publication, printer_gnds, extents, form_factors, record_number < record_number)) %>%
-  select(record_number.x, record_number.y, title, normalized_year, places_of_publication, printer_gnds, extents, form_factors) %>%
-  compute_a()
+  inner_join(t, join_by(title, places_of_publication, printer_gnds, page_count >= page_count_low, page_count <= page_count_high, form_factors, record_number < record_number)) %>%
+  select(record_number.x, record_number.y, title, places_of_publication, printer_gnds, page_count.x, page_count.y, form_factors) %>%
+  left_join(vd17_fingerprints_c, join_by(record_number.x == record_number)) %>%
+  left_join(vd17_fingerprints_c, join_by(record_number.y == record_number)) %>%
+  collect() %>%
+  mutate(fpsame = (f1_1.x == f1_1.y & f1_2.x == f1_2.y) + (f2_1.x == f2_1.y & f2_2.x == f2_2.y) + (f3_1.x == f3_1.y & f3_2.x == f3_2.y) + (f4_1.x == f4_1.y & f4_2.x == f4_2.y)) %>%
+  filter(fpsame >= 2, year.x == year.y) %>%
+  copy_to_a(con)
 
 identical_all_removal_removes_n <-
   vd17_identical_all %>%
@@ -654,14 +667,51 @@ records_of_interest %>%
 
 
 ```{r}
-evaluation_1 <- read_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 1")
+evaluation_1_a <- read_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ", sheet = "mapping evaluation 1") %>%
+  rename(status = `same printing (variant)`) %>%
+  copy_to_a(con) %>%
+  inner_join(vd17_id_a %>% rename(record_number.x = record_number, vd17_id.x = vd17_id)) %>%
+  inner_join(vd17_id_a %>% rename(record_number.y = record_number, vd17_id.y = vd17_id)) %>%
+  distinct() %>%
+  compute_a(unique_indexes = list(c("record_number.x", "record_number.y")))
 ```
 
 ```{r}
-evaluation_1 %>%
-  select(vd17_id.x, vd17_id.y, status = `same printing (variant)`) %>%
-  copy_to_a(con) %>%
-  inner_join(vd17_id_a %>% rename(record_number = record_number, vd17_id.x = vd17_id)) %>%
-  inner_join(vd17_id_a %>% rename(source_record_number = record_number, vd17_id.y = vd17_id)) %>%
-  left_join(vd17_variant_mapping_a %>% union_all(vd17_variant_mapping_a %>% distinct(record_number) %>% mutate(source_record_number = record_number) %>% mutate(mapped = T), join_by(source_record_number)))
+list(
+  fingerprints = vd17_identical_fingerprints,
+  all = vd17_identical_all,
+  all_u_fp = vd17_identical_all %>% select(record_number.x, record_number.y) %>% union(vd17_identical_fingerprints),
+  titles_and_years_and_places_of_publication_and_printers = vd17_identical_titles_and_years_and_places_of_publication_and_printers,
+  titles_and_years_and_places_of_publication = vd17_identical_titles_and_years_and_places_of_publication,
+  titles_and_years_and_printers = vd17_identical_titles_and_years_and_printers,
+  titles_and_years = vd17_identical_titles_and_years,
+  titles = vd17_identical_titles
+) %>%
+  imap(~ .x %>%
+    select(record_number.x, record_number.y) %>%
+    mutate(merged = T) %>%
+    right_join(evaluation_1_a %>% filter(!is.na(status), !str_detect(notes, "^\\?"))) %>%
+    replace_na(list(merged = F)) %>%
+    group_by(merged) %>%
+    mutate(precision = sum(status == "same printing (variant)") / n()) %>%
+    group_by(status) %>%
+    mutate(recall = sum(merged) / n()) %>%
+    ungroup() %>%
+    mutate(accuracy = sum((status == "same printing (variant)" & merged == T) | ((is.na(status) | status != "same printing (variant)") & merged == F)) / n()) %>%
+    distinct(status, merged, precision, recall, accuracy) %>%
+    filter(status == "same printing (variant)", merged == 1) %>%
+    select(-status, -merged) %>%
+    mutate(f_measure = 2 * (precision * recall) / (precision + recall), set = .y)) %>%
+  reduce(union_all) %>%
+  arrange(desc(f_measure))
+```
+
+```{r}
+vd17_identical_all %>%
+  select(record_number.x, record_number.y) %>%
+  union(vd17_identical_fingerprints) %>%
+  mutate(merged = T) %>%
+  right_join(evaluation_1_a %>% filter(!is.na(status), !str_detect(notes, "^\\?"))) %>%
+  replace_na(list(merged = F)) %>%
+  filter((merged == F & status == "same printing (variant)") | (merged == T & status != "same printing (variant)"))
 ```

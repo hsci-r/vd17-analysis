@@ -1,0 +1,80 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source(here("code/common_basis.R"), local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+```{r}
+fbs_a <- fbs_metadata_a %>%
+  select(Member_number_new, GND, First_name_new, Last_name_new, Society_name, Estimated_DOD, Estimated_admission_year)
+
+fbs_with_gnd <- fbs_a %>%
+  filter(!is.na(GND)) %>%
+  mutate(GND = str_c("gnd/", GND)) %>%
+  collect()
+
+fbs_no_gnds <- fbs_a %>%
+  filter(is.na(GND)) %>%
+  select(-c(GND)) %>%
+  collect()
+
+fbs_simplified_names <- read_sheet("https://docs.google.com/spreadsheets/d/1BGES0USUEvaUQ4aqzjMuyWQoG2k5-O8XpImGomkEynw/edit#gid=505269795")
+
+fbs_alternative_names <- read_sheet("https://docs.google.com/spreadsheets/d/1CE2Nm-DKAdGFUfqDjbasjINh1NtK6UMFSaRYYEILlNA/edit#gid=0")
+
+fbs_master_file <- read_sheet("https://docs.google.com/spreadsheets/d/1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU/edit#gid=1061899834")
+
+fbs_alternative_names <- select(fbs_alternative_names, c(
+  "Member_number_new", "PrimLastname_1", "PrimLastname_2", "PrimLastname_3", "PrimLastname_4", "PrimLastname_5", "SecLastname_1", "SecLastname_2",
+  "TertLastname_1", "FourLastname_1", "PrimFirstname_1", "PrimFirstname_2", "SecFirstname_1", "SecFirstname_2", "TertFirstname_1"
+))
+
+fbs_master_file <- select(fbs_master_file, c("Member_number_new", "DOB", "DOD", "Admission_date"))
+
+fbs_without_gnds <- fbs_no_gnds %>%
+  inner_join(fbs_simplified_names %>% select(Member_number_new, Simplified_name), by = c("Member_number_new")) %>%
+  inner_join(fbs_master_file, by = c("Member_number_new")) %>%
+  left_join(fbs_alternative_names, by = c("Member_number_new"))
+
+write.csv(fbs_without_gnds, "fbs_without_gnds.csv")
+```
+
+```{r}
+vd17_names <- vd17_a %>%
+  filter(field_code %in% c("028A", "028B", "028C", "028G"), subfield_code == "d") %>%
+  mutate(first_name = value) %>%
+  inner_join(vd17_id_a, by = c("record_number")) %>%
+  left_join(vd17_normalized_years_a %>% select(record_number, normalized_year), by = c("record_number")) %>%
+  filter(nchar(normalized_year) == 4) %>%
+  select(normalized_year, vd17_id, record_number, field_number, field_code, subfield_code, first_name) %>%
+  collect()
+
+vd17_last_names <- vd17_a %>%
+  filter(field_code %in% c("028A", "028B", "028C", "028G"), subfield_code == "a") %>%
+  mutate(last_name = value) %>%
+  inner_join(vd17_id_a, by = c("record_number")) %>%
+  left_join(vd17_normalized_years_a %>% select(record_number, normalized_year), by = c("record_number")) %>%
+  filter(nchar(normalized_year) == 4) %>%
+  select(normalized_year, vd17_id, record_number, field_number, field_code, subfield_code, last_name) %>%
+  collect()
+
+write.csv(vd17_names, "vd17_names.csv")
+write.csv(vd17_last_names, "vd17_last_names.csv")
+```

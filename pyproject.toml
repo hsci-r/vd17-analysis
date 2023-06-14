@@ -7,6 +7,13 @@ authors = ["HSCI research group <grp-hsci@helsinki.fi>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^1.4.3"
+jupyterlab = "^4.0.2"
+hereutil = "^0.1.3"
+pymysql = "^1.0.3"
+jupyter = "^1.0.0"
+keyring = "^23.13.1"
+sqlalchemy = "^2.0.16"
+roman = "^4.1"
 
 [tool.poetry.dev-dependencies]
 

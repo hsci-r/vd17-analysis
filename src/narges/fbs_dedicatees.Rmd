@@ -23,17 +23,17 @@ pp <- function(percentage, accuracy = 0.01) {
 
 ```{r}
 vd17_a_role <- vd17_a %>%
-  filter(field_code %in% c("028A", "028B", "028C"),subfield_code=='4')%>%
-  mutate(role=value)%>%
-  select(record_number,role)%>%
+  filter(field_code %in% c("028A", "028B", "028C"), subfield_code == "4") %>%
+  mutate(role = value) %>%
+  select(record_number, role) %>%
   collect()
 vd17_a_role2 <- vd17_a %>%
-  filter(field_code %in% c("028A", "028B", "028C"),subfield_code=='B')%>%
-  mutate(role2=value)%>%
-  select(record_number,field_code,role2)%>%
+  filter(field_code %in% c("028A", "028B", "028C"), subfield_code == "B") %>%
+  mutate(role2 = value) %>%
+  select(record_number, field_code, role2) %>%
   collect()
 vd17_roles <- vd17_a_role2 %>%
-  left_join(vd17_a_role, by=c("record_number"))%>%
+  left_join(vd17_a_role, by = c("record_number")) %>%
   distinct()
 
 
@@ -60,6 +60,5 @@ vd17_roles_subset <- vd17_roles %>%
     ), collapse = "|^"))
   )
 
-vd17_roles_subset <- select(vd17_roles_subset,-c('role'))
+vd17_roles_subset <- select(vd17_roles_subset, -c("role"))
 ```
-

@@ -11,16 +11,14 @@ output:
 
 ```{r setup,echo=F}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
-source(here::here("code/common_basis.R"))
+source(here::here("src/common_basis.R"))
 ```
 
 # Absolute output
 
 ```{r}
 fbs_records_a %>%
-  distinct(set, vd17_id = unified_vd17_id) %>%
   inner_join(vd17_id_a, join_by(vd17_id)) %>%
-  anti_join(vd17_record_types_a %>% filter(record_type == "Unified multi-part publication")) %>%
   inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
   count(normalized_year, set) %>%
   union_all(vd17_normalized_years_a %>%
@@ -40,7 +38,8 @@ fbs_metadata_a %>%
   mutate(active_time = as.integer(Estimated_DOD) - as.integer(Estimated_admission_year)) %>%
   filter(active_time >= 0) %>%
   ggplot(aes(x = 1, y = active_time)) +
-  geom_quasirandom()
+  geom_quasirandom() +
+  theme_hsci_discrete()
 ```
 
 ```{r}
@@ -50,7 +49,8 @@ fbs_links_of_interest_a %>%
   summarise(earliest_year = min(normalized_year), latest_year = max(normalized_year)) %>%
   mutate(active_time = latest_year - earliest_year) %>%
   ggplot(aes(x = 1, y = active_time)) +
-  geom_quasirandom()
+  geom_quasirandom() +
+  theme_hsci_discrete()
 ```
 
 ```{r}
