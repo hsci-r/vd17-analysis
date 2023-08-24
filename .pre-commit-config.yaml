@@ -36,10 +36,6 @@ repos:
     - id: readme-rmd-rendered
     - id: parsable-R
     - id: no-browser-statement
-  - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.16.4
-    hooks:
-    - id: gitleaks
 # enable only for Python projects with a dev-installed pylint
 #  - repo: local
 #    hooks:

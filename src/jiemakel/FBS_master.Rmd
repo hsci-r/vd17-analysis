@@ -7,14 +7,8 @@ output:
 ---
 
 ```{r setup,echo=F}
-source(here::here("code/common_basis.R"), local = knitr::knit_global())
-```
+source(here::here("src/common_basis.R"), local = knitr::knit_global())
 
-```{r}
-library(googlesheets4)
-```
-
-```{r}
 summarise_people <- function(df, pdf) {
   df %>% left_join(
     pdf %>%
@@ -49,6 +43,14 @@ add_metadata_fields <- function(df) {
         select(record_number, field_code, role2, combined_name))) %>%
     rename(other_contributors = contributors)
 }
+
+prepare_for_gsheets <- function(df) {
+  df %>%
+    arrange(desc(manual_status_override), desc(auto_status), flag, method, vd17_id) %>%
+    relocate(manual_status_override, auto_status, flag, notes, method, vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, genre) %>%
+    hyperlink_vd17_id()
+}
+old_master_records <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data", col_types = "c")
 ```
 
 ```{r}
@@ -82,37 +84,110 @@ fbs_links_eval %>%
 ```
 
 ```{r}
-old_master_records <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data", col_types = "c")
-```
-
-```{r}
 fbs_auto_records_a %>%
   anti_join(fbs_manual_status_overrides_a) %>%
   mutate(manual_status_override = NA_character_) %>%
   union_all(fbs_auto_records_a %>% inner_join(fbs_manual_status_overrides_a) %>% mutate(method = str_c(method, "&", "Manual"))) %>%
   union_all(fbs_manual_status_overrides_a %>% anti_join(fbs_auto_records_a) %>% mutate(auto_status = NA_character_, method = "Manual")) %>%
   add_metadata_fields() %>%
-  left_join(to_check_for_genre) %>%
   collect() %>%
   select(-record_number) %>%
   left_join(old_master_records %>% distinct(vd17_id, manual_status_override, notes)) %>%
   full_join(anti_join(old_master_records, ., join_by(vd17_id)) %>% filter(!is.na(notes) | !is.na(manual_status_override))) %>%
-  arrange(desc(auto_status), desc(manual_status_override), flag, method, vd17_id) %>%
-  relocate(auto_status, manual_status_override, flag, notes, method, vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, genre) %>%
-  hyperlink_vd17_id() %>%
+  prepare_for_gsheets() %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
 
 ```{r}
-manual_filtering_addition <- read_sheet("1Yth50qkWHMvR5S52HWUrB3Kesyx0eQ7kjsK86ef-4MM")
-manual_filtering_addition %>%
+manual_filtering_additions <-
+  read_sheet("15NmAszrO-RiQ8m1UfSOzJtmZAX-gt8d_kGNYmyUFFuw", col_types = "c") %>%
+  mutate(notes = str_c(ja_notes, tl_notes, sep = "|")) %>%
+  select(vd17_id, manual_status_override = society_related, notes) %>%
+  mutate(override_source = "Rescue words") %>%
+  union_all(
+    read_sheet("1KfRzzHQy_F1Z0IQhgfeWWm8ukDZNUlBHX0V4m96xXz4", col_types = "c") %>%
+      select(vd17_id, manual_status_override, notes) %>%
+      mutate(override_source = "Translations into German")
+  ) %>%
+  union_all(
+    read_sheet("1nQSDb2N1hdXEKK6YoCzkgI1HFKb0OsVWAYQzY-uKefU", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_override_decision, notes, override_source = source)
+  ) %>%
+  union_all(
+    read_sheet("1Fuk9seQHAhqv0XA0UrF7SnI6QzVn6JSFaXiX-k0qmRg", col_types = "c") %>%
+      mutate(notes = str_c(ja_notes, tl_notes, sep = "|")) %>%
+      select(vd17_id, manual_status_override = society_related, notes) %>%
+      mutate(override_source = "Genres double check")
+  ) %>%
+  union_all(
+    read_sheet("11JdR6XJtQjUlyCf4iHB-G5s5XTisMOlSqEMjVVHNXOg", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_override, notes) %>%
+      mutate(override_source = "No/only neutral genres")
+  ) %>%
+  union_all(
+    read_sheet("1bOySL4ukawGqGX5QdgoYm0OFPntAGCkwkHzj9fJLFLs", col_types = "c") %>%
+      select(vd17_id, manual_status_override = society_related, notes) %>%
+      mutate(override_source = "Occasional publications in German")
+  ) %>%
+  union_all(
+    read_sheet("16FtTky-GE3UOe4EzwJP8SpNaZen2_xFucOnUbPITRf8", col_types = "c") %>%
+      select(vd17_id, manual_status_override, notes) %>%
+      mutate(override_source = "Missing occasional publications")
+  ) %>%
+  union_all(
+    read_sheet("1RIse5qvOeH3fak0FyWtmAfeMjO8OEYvpEZJeDdwW1Yo", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_override, notes) %>%
+      mutate(override_source = "Publications (German) with both Society purpose related and unrelated genres")
+  )
+```
+
+```{r}
+manual_filtering_addition <- manual_filtering_additions %>%
+  mutate(manual_status_override = case_when(
+    manual_status_override %in% c("Society purpose related", "Society purpose related (not translation)", "Yes", "Society-contributed and society-purpose-related") ~ "Member substantive role and society purpose related",
+    manual_status_override %in% c("Member substantive role", "Member substanative role", "Member sustantive role", "Member substantive contributor") ~ "Member substantive role",
+    manual_status_override %in% c("Member linked", "Member linkede", "Member linkned", "Member associated", "Society-associated", "The member does not have a substantive role in the publication for our purposes, but there is a valid link to a member", "The member does not have a substantive role in the publication for our purposes, but there is a valid link to a member (mentioned by name)") ~ "Member linked",
+    manual_status_override %in% c("Not member linked", "No") ~ "Not member linked",
+    T ~ NA_character_
+  )) %>%
+  filter(!is.na(manual_status_override))
+
+manual_filtering_addition <- manual_filtering_addition %>%
   group_by(vd17_id) %>%
-  summarise(manual_status_override = if_else(any(society_related == "Yes"), "Society-contributed and society-purpose-related", "Society-contributed"), .groups = "drop") %>%
-  anti_join(old_master_records, join_by(vd17_id)) %>%
-  full_join(old_master_records) %>%
-  arrange(desc(auto_status), desc(manual_status_override), flag, method, vd17_id) %>%
-  relocate(auto_status, manual_status_override, flag, notes, method, vd17_id, title, publication_language, genre) %>%
-  hyperlink_vd17_id() %>%
+  mutate(manual_status_override = case_when(
+    any(manual_status_override == "Member substantive role and society purpose related") ~ "Member substantive role and society purpose related",
+    any(manual_status_override == "Member substantive role") ~ "Member substantive role",
+    any(manual_status_override == "Member linked") ~ "Member linked",
+    any(manual_status_override == "Not member linked") ~ "Not member linked",
+    T ~ NA_character_
+  )) %>%
+  filter(!is.na(manual_status_override)) %>%
+  ungroup() %>%
+  distinct() %>%
+  group_by(vd17_id, manual_status_override) %>%
+  summarise(notes = str_flatten(coalesce(str_c("[", override_source, "]: ", notes), str_c("[", override_source, "]")), collapse = "|"), .groups = "drop")
+```
+
+
+```{r}
+old_master_records %>%
+  select(-c(notes, manual_status_override)) %>%
+  full_join(manual_filtering_addition, join_by(vd17_id)) %>%
+  #  mutate(
+  #    notes=case_when(
+  #      is.na(notes.x) ~ notes.y,
+  #      is.na(notes.y) ~ notes.x,
+  #      notes.y == notes.x ~ notes.y,
+  #      T ~ str_c(notes.x,'|',notes.y)
+  #    ),
+  #    manual_status_override=coalesce(manual_status_override.y,manual_status_override.x)
+  #  ) %>%
+  #  select(-c(notes.x,notes.y,manual_status_override.x,manual_status_override.y)) %>%
+  #  separate_rows(notes,sep='\\|') %>%
+  #  distinct() %>%
+  #  group_by(across(-notes)) %>%
+  #  summarise(notes=str_flatten(notes,"|"), .groups="drop") %>%
+  prepare_for_gsheets() %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
 
@@ -131,4 +206,16 @@ to_check_for_genre <- fbs_auto_records_a %>%
   ungroup() %>%
   distinct(vd17_id) %>%
   mutate(flag = "Check for core society due to all-neutral genres")
+```
+
+```{r}
+vd17_person_links_a %>%
+  inner_join(fbs_links_of_interest_a) %>%
+  filter(field_code != "028A", is.na(role2)) %>%
+  inner_join(vd17_a %>% filter(field_code == "037A", subfield_code == "a") %>% select(record_number, note = value)) %>%
+  filter(
+    !str_detect(note, "auch in:"),
+    (!is.na(personal_name) & str_detect(note, personal_name)) |
+      (!is.na(family_name) & str_detect(note, family_name))
+  )
 ```

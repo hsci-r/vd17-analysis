@@ -236,6 +236,11 @@ vd17_titlekeys_c <- vd17_titles_a %>%
   copy_to_c(con)
 
 vd17_identical_fingerprints <- vd17_fingerprints_c %>%
+  inner_join(vd17_fingerprints_c, join_by(f1_1, f1_2, f2_1, f2_2, f3_1, f3_2, f4_1, f4_2, f34_source, year, record_number < record_number)) %>%
+  select(record_number.x, record_number.y) %>%
+  compute_a()
+
+vd17_identical_fingerprints_and_pagecounts <- vd17_fingerprints_c %>%
   inner_join(vd17_page_counts_c) %>%
   inner_join(vd17_fingerprints_c %>% inner_join(vd17_page_counts_c %>% mutate(page_count_low = page_count - pmin(floor(page_count / 3), 3), page_count_high = page_count + pmin(floor(page_count / 3), 3))), join_by(f1_1, f1_2, f2_1, f2_2, f3_1, f3_2, f4_1, f4_2, f34_source, year, record_number < record_number, page_count >= page_count_low, page_count <= page_count_high)) %>%
   select(record_number.x, record_number.y) %>%
@@ -679,6 +684,7 @@ evaluation_1_a <- read_sheet(ss = "1YeGLSHzLyg1KlyYdh4wgqM-R5EHYl_fH6udInEj9CQQ"
 ```{r}
 list(
   fingerprints = vd17_identical_fingerprints,
+  fingerprints_and_pages = vd17_identical_fingerprints_and_pagecounts,
   all = vd17_identical_all,
   all_u_fp = vd17_identical_all %>% select(record_number.x, record_number.y) %>% union(vd17_identical_fingerprints),
   titles_and_years_and_places_of_publication_and_printers = vd17_identical_titles_and_years_and_places_of_publication_and_printers,

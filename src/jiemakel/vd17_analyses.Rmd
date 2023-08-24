@@ -1,0 +1,199 @@
+---
+title: "VD17 analyses"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+  md_document:
+    variant: gfm
+    toc: yes
+---
+
+```{r setup}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+source(here::here("src/common_basis.R"))
+```
+
+# Overall
+
+```{r}
+vd17_normalized_years_a %>%
+  filter(normalized_year > 1600, normalized_year < 1700) %>%
+  mutate(set = "All of VD17") %>%
+  union_all(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      mutate(set = "Variant-filtered VD17")
+  ) %>%
+  union_all(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      inner_join(
+        vd17_normalized_langs_a %>%
+          filter(publication_language == "ger"),
+        join_by(record_number)
+      ) %>%
+      mutate(set = "In German")
+  ) %>%
+  union_all(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      inner_join(vd17_id_a %>% inner_join(fbs_records_a) %>% filter(str_detect(set, "^M")))
+  ) %>%
+  count(normalized_year, set) %>%
+  ggplot(aes(x = normalized_year, y = n, color = set)) +
+  geom_point(size = 0.5) +
+  theme_hsci_discrete() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  labs(color = "Set") +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  xlab("Year") +
+  ylab("Number of printings") +
+  ggtitle("Yearly counts of printings across time in subsets of the VD17")
+```
+
+
+# Places of publishing
+
+## Overall
+
+```{r}
+years <- tibble(year = 1600:1700) %>%
+  copy_to_a(con)
+
+years %>%
+  transmute(year, b = year - 2, e = year + 2) %>%
+  inner_join(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_normalized_locations_a,
+        join_by(record_number)
+      ) %>%
+      count(normalized_year, location),
+    join_by(b <= normalized_year, e >= normalized_year)
+  ) %>%
+  group_by(year, location) %>%
+  summarise(n = mean(n), .groups = "drop") %>%
+  mutate(series = "rolling mean") %>%
+  union_all(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_normalized_locations_a,
+        join_by(record_number)
+      ) %>%
+      count(year = normalized_year, location) %>%
+      mutate(series = "yearly")
+  ) %>%
+  collect() %>%
+  mutate(location_c = fct_lump_n(location, 12, w = n)) %>%
+  ggplot(aes(x = year, y = n, group = location, color = location_c)) +
+  geom_point(data = . %>% filter(series == "yearly"), size = 0.5) +
+  geom_line(data = . %>% filter(series == "rolling mean")) +
+  theme_hsci_discrete() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  labs(color = "Location") +
+  xlab("Year") +
+  ylab("Number of printings") +
+  ggtitle("Yearly counts and 5-year rolling means of printings by location and time across the VD17")
+```
+
+## By genre
+
+```{r}
+years <- tibble(year = 1600:1700) %>%
+  copy_to_a(con)
+
+years %>%
+  transmute(year, b = year - 2, e = year + 2) %>%
+  inner_join(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_normalized_locations_a,
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_genres_a,
+        join_by(record_number)
+      ) %>%
+      left_join(vd17_genre_categorisation_a, join_by(genre)) %>%
+      count(normalized_year, group_2, location),
+    join_by(b <= normalized_year, e >= normalized_year)
+  ) %>%
+  group_by(year, group_2, location) %>%
+  summarise(n = mean(n), .groups = "drop") %>%
+  mutate(series = "rolling mean") %>%
+  union_all(
+    vd17_normalized_years_a %>%
+      filter(normalized_year > 1600, normalized_year < 1700) %>%
+      anti_join(vd17_variant_mapping_a, join_by(record_number == source_record_number)) %>%
+      anti_join(
+        vd17_record_types_a %>%
+          filter(record_type == "Unified multi-part publication"),
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_normalized_locations_a,
+        join_by(record_number)
+      ) %>%
+      left_join(
+        vd17_genres_a,
+        join_by(record_number)
+      ) %>%
+      left_join(vd17_genre_categorisation_a, join_by(genre)) %>%
+      count(year = normalized_year, group_2, location),
+    mutate(series = "yearly")
+  ) %>%
+  select(year, series, group_2, location, n) %>%
+  collect() %>%
+  mutate(location_c = fct_lump_n(location, 12, w = n)) %>%
+  ggplot(aes(x = year, y = n, group = location, color = location_c)) +
+  geom_point(data = . %>% filter(series == "yearly"), size = 0.5) +
+  geom_line(data = . %>% filter(series == "rolling mean")) +
+  theme_hsci_discrete() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  labs(color = "Location") +
+  xlab("Year") +
+  ylab("Number of printings") +
+  ggtitle("Yearly counts and 5-year rolling means of printings by location and time across the VD17") +
+  facet_wrap(~group_2)
+```
