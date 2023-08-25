@@ -272,6 +272,22 @@ fbs_records_a %>%
   facet_wrap(~set, scales = "free", ncol = 1)
 ```
 
+```{r}
+fbs_records_a %>%
+  filter(set == "Member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(vd17_person_links_a %>%
+    filter(role == "dte"), join_by(record_number)) %>%
+  select(vd17_id, dedicatee = combined_name) %>%
+  add_metadata_fields() %>%
+  collect() %>%
+  prepare_for_gsheets() %>%
+  relocate(dedicatee) %>%
+  arrange(dedicatee, vd17_id) %>%
+  sheet_write(ss = "1ZpDUDTvX0x964N4wks3QvYIspRIxTZndPNIqA_-psgY", sheet = "Society purpose related dedications")
+```
+
+
 
 # Misc
 

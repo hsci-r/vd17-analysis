@@ -8,48 +8,6 @@ output:
 
 ```{r setup,echo=F}
 source(here::here("src/common_basis.R"), local = knitr::knit_global())
-
-summarise_people <- function(df, pdf) {
-  df %>% left_join(
-    pdf %>%
-      #      inner_join(df %>% select(record_number)) %>%
-      mutate(combined = str_c(field_code, ":", role2, ": ", combined_name)) %>%
-      select(record_number, combined) %>%
-      group_by(record_number) %>%
-      summarise(contributors = str_flatten(combined, collapse = "|")) %>%
-      compute_a(unique_indexes = list(c("record_number")))
-  )
-}
-
-add_metadata_fields <- function(df) {
-  df %>%
-    left_join(vd17_id_a) %>%
-    left_join(vd17_titles_a %>% select(record_number, combined_title) %>% group_by(record_number) %>% summarise(combined_title = str_flatten(combined_title, collapse = "|")), join_by(record_number)) %>%
-    left_join(vd17_normalized_years_a %>% group_by(record_number) %>% summarise(publication_date = str_flatten(a, collapse = "|"))) %>%
-    left_join(vd17_normalized_langs_a %>% mutate(languages = str_c(publication_language, intermediary_language, original_language, sep = "<-")) %>% group_by(record_number) %>% summarize(languages = str_flatten(languages, collapse = "|")), join_by(record_number)) %>%
-    left_join(vd17_genres_a %>% distinct(record_number, genre) %>% group_by(record_number) %>% summarize(genre = str_flatten(genre, collapse = "|")), join_by(record_number)) %>%
-    compute_a(unique_indexes = list(c("record_number"), c("vd17_id"))) %>%
-    summarise_people(vd17_person_links_a %>%
-      inner_join(fbs_links_of_interest_a %>%
-        select(record_number, field_number, member_number)) %>%
-      mutate(combined_name = str_c(combined_name, " (", member_number, ")"))) %>%
-    rename(fbs_contributors = contributors) %>%
-    summarise_people(vd17_person_links_a %>% inner_join(fbs_links_a %>% anti_join(fbs_links_of_interest_a %>% select(record_number, field_number)) %>% select(record_number, field_number, member_number)) %>% mutate(combined_name = str_c(combined_name, " (", member_number, ")"))) %>%
-    rename(fbs_associated = contributors) %>%
-    summarise_people(vd17_person_links_a %>%
-      anti_join(fbs_links_a %>% select(record_number, field_number)) %>%
-      select(record_number, field_code, role2, combined_name) %>%
-      union_all(vd17_corporate_links_a %>%
-        select(record_number, field_code, role2, combined_name))) %>%
-    rename(other_contributors = contributors)
-}
-
-prepare_for_gsheets <- function(df) {
-  df %>%
-    arrange(desc(manual_status_override), desc(auto_status), flag, method, vd17_id) %>%
-    relocate(manual_status_override, auto_status, flag, notes, method, vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, genre) %>%
-    hyperlink_vd17_id()
-}
 old_master_records <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data", col_types = "c")
 ```
 
@@ -95,6 +53,8 @@ fbs_auto_records_a %>%
   left_join(old_master_records %>% distinct(vd17_id, manual_status_override, notes)) %>%
   full_join(anti_join(old_master_records, ., join_by(vd17_id)) %>% filter(!is.na(notes) | !is.na(manual_status_override))) %>%
   prepare_for_gsheets() %>%
+  arrange(desc(manual_status_override), desc(auto_status), flag, method, vd17_id) %>%
+  relocate(manual_status_override, auto_status, flag, notes, method) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
 
