@@ -1,0 +1,174 @@
+---
+title: "FBS analysis"
+output:
+  html_notebook:
+    code_folding: hide
+    toc: yes
+---
+
+```{r setup,echo=F}
+knitr::opts_knit$set(root.dir = here::here())
+library(here)
+source("/Users/azizinar/Documents/GitHub/vd17-analysis/src/common_basis.R", local = knitr::knit_global())
+library(tidyverse)
+library(gghsci)
+library(gt)
+p <- function(number) {
+  return(format(number, scientific = FALSE, big.mark = ","))
+}
+pp <- function(percentage, accuracy = 0.01) {
+  return(scales::percent(percentage, accuracy = accuracy))
+}
+```
+
+
+```{r}
+rda_printers <- vd17_a %>%
+  filter(field_code == "029F", subfield_code == "4", value == "prt") %>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
+
+printers <- vd17_a %>%
+  filter(field_code == "033J", subfield_code == "7") %>%
+  select(record_number, printer_gnd = value)
+
+additional_printers <- vd17_a %>%
+  filter(field_code == "028C", (subfield_code == "4" & value == "prt") | (subfield_code == "B" & str_detect(value, "^Drucker|^Verleger"))) %>%
+  distinct(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
+
+all_printers <- rda_printers %>%
+  union_all(printers) %>%
+  union_all(additional_printers) %>%
+  distinct(record_number, printer_gnd) %>%
+  group_by(record_number) %>%
+  dbplyr::window_order(printer_gnd) %>%
+  summarize(printer_gnds = str_flatten(printer_gnd, collapse = "|"), .groups = "drop") %>%
+  #  compute_c()
+  collect() %>%
+  copy_to_c(con)
+```
+
+# RQ3 in Trello
+```{r}
+places_of_publication <- vd17_normalized_locations_a %>%
+  filter(location_type == "pup") %>%
+  select(record_number, place_of_publication = location)
+places_of_production <- vd17_normalized_locations_a %>%
+  filter(location_type == "mfp") %>%
+  select(record_number, place_of_production = location)
+places_of_distribution <- vd17_normalized_locations_a %>%
+  filter(location_type == "dbp") %>%
+  select(record_number, place_of_distribution = location)
+
+unified_places_of_publication <- vd17_a %>%
+  distinct(record_number) %>%
+  left_join(places_of_publication, join_by(record_number)) %>%
+  left_join(places_of_production, join_by(record_number)) %>%
+  left_join(places_of_distribution, join_by(record_number)) %>%
+  mutate(place_of_publication = coalesce(place_of_publication, place_of_production, place_of_distribution)) %>%
+  filter(!is.na(place_of_publication)) %>%
+  mutate(place_of_publication = str_replace_all(str_to_lower(place_of_publication), "[^a-zß]", "")) %>%
+  distinct(record_number, place_of_publication) %>%
+  group_by(record_number) %>%
+  dbplyr::window_order(place_of_publication) %>%
+  summarize(places_of_publication = str_flatten(place_of_publication, collapse = "|"), .groups = "drop") %>%
+  #  compute_c()
+  collect() %>%
+  copy_to_c(con)
+```
+
+```{r}
+unified_places_of_publications <- unified_places_of_publication %>%
+  collect()
+
+vd17_normalized_years <- vd17_normalized_years_a %>%
+  select(record_number,normalized_year)%>%
+  collect()
+
+vd17_genres <- vd17_genres_a %>%
+  collect()
+
+vd17_genre_categorisation <-vd17_genre_categorisation_a %>%
+  collect()
+```
+
+```{r}
+
+fbsgenre_place <- fbs_records_a %>%
+      filter(set=="Active member substantive role and society purpose related") %>%
+      inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  collect()%>%
+      inner_join(vd17_genres, by=c("record_number")) %>%
+      inner_join(vd17_normalized_years, by=c("record_number")) %>%    
+      left_join(vd17_genre_categorisation)%>%
+  left_join(unified_places_of_publications,by=c("record_number"))
+
+fbsgenre_place <- select(fbsgenre_place,-c('3','7'))
+```
+
+```{r}
+colour_list <- c(
+  "dodgerblue2", "#E31A1C",
+  "green4",
+  "#6A3D9A",
+  "#FF7F00", 
+  "black", "gold1",
+  "skyblue2", "#FB9A99",
+  "palegreen2",
+  "#CAB2D6", 
+  "#FDBF6F",
+  "gray70", "khaki2",
+  "maroon", "orchid1", "deeppink1"
+)
+fbsgenre_place %>%
+  count(genre, places_of_publication,group_1, group_3) %>%
+      filter(group_1=="Society-related") %>%
+  group_by(places_of_publication,group_3)%>%
+  #summarise(average=mean(n),.groups="drop") %>%
+  ggplot(aes(x=places_of_publication,y=n,color=group_3)) +
+  geom_point() +
+  theme_hsci_discrete()+
+  theme(legend.position="bottom",legend.text=element_text(size=8))+
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5),text = element_text(size = 8,face = "bold"))+
+  theme(plot.title = element_text(hjust = 0.5))+
+  scale_fill_manual(values=colour_list)
+```
+
+
+
+# Solving the Token_authontication problem
+```{r}
+options(gargle_oauth_cache = ".secrets")
+
+# Authenticate manually
+
+gs4_auth()
+
+# If successful, the previous step stores a token file.
+
+# Check that a file has been created with:
+
+list.files(".secrets/")
+
+# Check that the non-interactive authentication works by first deauthorizing:
+
+gs4_deauth()
+
+# Authenticate using token. If no browser opens, the authentication works.
+
+gs4_auth(cache = ".secrets", email = "narges.azizifard@gmail.com")
+```
+
+# Creating the google spreadsheet
+```{r}
+fbs_genre_place_link <- fbsgenre_place%>%
+     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+
+fbs_genre_place<- gs4_create(
+  "fbs_genre_place",
+  sheets = fbs_genre_place_link)
+fbs_genre_place
+```
