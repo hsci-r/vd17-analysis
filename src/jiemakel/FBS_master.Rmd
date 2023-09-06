@@ -7,7 +7,7 @@ output:
 ---
 
 ```{r setup,echo=F}
-source(here::here("src/common_basis.R"), local = knitr::knit_global())
+source(here::here("src/common_basis.R"))
 old_master_records <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data", col_types = "c")
 ```
 
@@ -60,13 +60,13 @@ fbs_auto_records_a %>%
 
 ```{r}
 manual_filtering_additions <-
-  read_sheet("15NmAszrO-RiQ8m1UfSOzJtmZAX-gt8d_kGNYmyUFFuw", col_types = "c") %>%
+  read_sheet("10jsxSQ_G8Q0BUjXR3KUZzBkXh829hiKp4A7uLWB7X5c", col_types = "c") %>%
   mutate(notes = str_c(ja_notes, tl_notes, sep = "|")) %>%
   select(vd17_id, manual_status_override = society_related, notes) %>%
   mutate(override_source = "Rescue words") %>%
   union_all(
-    read_sheet("1KfRzzHQy_F1Z0IQhgfeWWm8ukDZNUlBHX0V4m96xXz4", col_types = "c") %>%
-      select(vd17_id, manual_status_override, notes) %>%
+    read_sheet("1J0Dfw8s_f9GdAJa9gQjJ6r9JFiR9nr0jKB11DmyIgjc", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_status_override...14, notes = notes...15) %>%
       mutate(override_source = "Translations into German")
   ) %>%
   union_all(
@@ -74,29 +74,29 @@ manual_filtering_additions <-
       select(vd17_id, manual_status_override = manual_override_decision, notes, override_source = source)
   ) %>%
   union_all(
-    read_sheet("1Fuk9seQHAhqv0XA0UrF7SnI6QzVn6JSFaXiX-k0qmRg", col_types = "c") %>%
+    read_sheet("12ArIbtnDmzflZA2DEBJ1Ksc4FL6LoAyiRU5_opa4vTo", col_types = "c") %>%
       mutate(notes = str_c(ja_notes, tl_notes, sep = "|")) %>%
       select(vd17_id, manual_status_override = society_related, notes) %>%
       mutate(override_source = "Genres double check")
   ) %>%
   union_all(
-    read_sheet("11JdR6XJtQjUlyCf4iHB-G5s5XTisMOlSqEMjVVHNXOg", col_types = "c") %>%
-      select(vd17_id, manual_status_override = manual_override, notes) %>%
+    read_sheet("1LTnnKN6Qvp5sr3PheqqhPVU6SrLKUPNmk3C9vTX2C4c", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_override, notes = notes...15) %>%
       mutate(override_source = "No/only neutral genres")
   ) %>%
   union_all(
-    read_sheet("1bOySL4ukawGqGX5QdgoYm0OFPntAGCkwkHzj9fJLFLs", col_types = "c") %>%
+    read_sheet("1YOpzA-kTMJuneP9FsFjZSXlx4CcrSNv6EyLAIYzNyEs", col_types = "c") %>%
       select(vd17_id, manual_status_override = society_related, notes) %>%
       mutate(override_source = "Occasional publications in German")
   ) %>%
   union_all(
-    read_sheet("16FtTky-GE3UOe4EzwJP8SpNaZen2_xFucOnUbPITRf8", col_types = "c") %>%
-      select(vd17_id, manual_status_override, notes) %>%
+    read_sheet("1vzppY79zpys_o5aftut5KdhGqzOplInJj-An4rDVlkY", col_types = "c") %>%
+      select(vd17_id, manual_status_override, notes = notes...15) %>%
       mutate(override_source = "Missing occasional publications")
   ) %>%
   union_all(
-    read_sheet("1RIse5qvOeH3fak0FyWtmAfeMjO8OEYvpEZJeDdwW1Yo", col_types = "c") %>%
-      select(vd17_id, manual_status_override = manual_override, notes) %>%
+    read_sheet("1o709k0ZlSBYll9J78vZlVnrk1BANSHWII1yPpXe4xE4", col_types = "c") %>%
+      select(vd17_id, manual_status_override = manual_override, notes = notes...15) %>%
       mutate(override_source = "Publications (German) with both Society purpose related and unrelated genres")
   )
 ```
@@ -148,6 +148,8 @@ old_master_records %>%
   #  group_by(across(-notes)) %>%
   #  summarise(notes=str_flatten(notes,"|"), .groups="drop") %>%
   prepare_for_gsheets() %>%
+  arrange(desc(manual_status_override), desc(auto_status), method, vd17_id) %>%
+  relocate(manual_status_override, auto_status, notes, method) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
 
@@ -178,4 +180,39 @@ vd17_person_links_a %>%
     (!is.na(personal_name) & str_detect(note, personal_name)) |
       (!is.na(family_name) & str_detect(note, family_name))
   )
+```
+
+```{r}
+genre_cats <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations") %>%
+  select(-c(VD17, `Society-related`)) %>%
+  rename(full_genre = genre)
+```
+
+
+```{r}
+vd17_genres_a %>%
+  count(full_genre) %>%
+  mutate(set = "VD17") %>%
+  union_all(
+    vd17_genres_a %>%
+      inner_join(fbs_records_a %>%
+        inner_join(vd17_id_a)) %>%
+      count(full_genre, set)
+  ) %>%
+  pivot_wider(names_from = set, values_from = n) %>%
+  collect() %>%
+  full_join(genre_cats) %>%
+  relocate(group_1, group_2, group_3, full_genre) %>%
+  arrange(group_1, group_2, group_3) %>%
+  write_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations")
+```
+
+```{r}
+vd17_genre_categorisation_gs <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations")
+vd17_genre_categorisation_a <- vd17_genre_categorisation_gs %>%
+  select(group_1:definition) %>%
+  copy_to_a(con, "vd17_genre_categorisation_a", temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("full_genre")))
+
+vd17_genre_categorisation_c <- vd17_genre_categorisation_a %>%
+  compute_c("vd17_genre_categorisation_c", temporary = FALSE, overwrite = TRUE)
 ```

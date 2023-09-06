@@ -1,0 +1,68 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r setup,echo=F}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+source(here::here("src/common_basis.R"))
+```
+
+```{r}
+d <- vd17_genres_a %>%
+  inner_join(vd17_id_a) %>%
+  inner_join(fbs_records_a) %>%
+  filter(genre == "Gelegenheitsschrift") %>%
+  group_by(full_genre) %>%
+  slice_sample(n = 20) %>%
+  ungroup() %>%
+  select(record_number, full_genre) %>%
+  compute_a()
+
+d2 <- d %>%
+  inner_join(
+    vd17_person_links_a %>%
+      replace_na(list(role2 = "?")) %>%
+      mutate(combined = str_c(role2, ": ", combined_name)),
+    join_by(record_number)
+  ) %>%
+  union_all(
+    d %>%
+      inner_join(
+        vd17_corporate_links_a %>%
+          replace_na(list(role2 = "?")) %>%
+          mutate(combined = str_c(role2, ": ", combined_name)),
+        join_by(record_number)
+      )
+  ) %>%
+  group_by(full_genre, record_number, field_code) %>%
+  summarise(contributors = str_flatten(combined, collapse = "|"), .groups = "drop") %>%
+  pivot_wider(names_from = field_code, values_from = contributors) %>%
+  left_join(
+    d %>%
+      inner_join(vd17_genres_a, join_by(record_number)) %>%
+      filter(genre != "Gelegenheitsschrift") %>%
+      group_by(record_number) %>%
+      summarise(other_genres = str_flatten(full_genre.y, collapse = "|"), .groups = "drop")
+  ) %>%
+  inner_join(vd17_titles_a, join_by(record_number)) %>%
+  inner_join(vd17_id_a, join_by(record_number))
+d3 <- d2 %>%
+  select(full_genre, vd17_id, combined_title, other_genres, `028A`, `028B`, `028C`, `028G`, `029G`) %>% # ,`029A`,`029F`,`029G`) %>%
+  collect()
+d3
+```
+
+```{r}
+d3 %>%
+  hyperlink_vd17_id() %>%
+  sheet_write(ss = "1ZpDUDTvX0x964N4wks3QvYIspRIxTZndPNIqA_-psgY", sheet = "Society-associated Gelegenheitsschrifts")
+```
+
+```{r}
+vd17_genres_a %>%
+  filter(genre == "Gelegenheitsschrift") %>%
+  left_join(vd17_genres_a %>% filter(genre != "Gelegenheitsschrift"), join_by(record_number)) %>%
+  count(genre.y) %>%
+  arrange(desc(n))
+```
