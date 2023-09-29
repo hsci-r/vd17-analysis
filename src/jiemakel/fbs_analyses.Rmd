@@ -1,17 +1,20 @@
 ---
 title: "FBS analyses"
 output:
+  word_document:
+    toc: yes
+    keep_md: yes
   html_notebook:
     code_folding: hide
-    toc: yes
-  md_document:
-    variant: gfm
     toc: yes
 ---
 
 ```{r setup,echo=F}
-knitr::opts_chunk$set(message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+knitr::opts_chunk$set(cache = TRUE, cache.path = "cache/", cache.trigger = 3, message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
 source(here::here("src/common_basis.R"))
+
+years <- tibble(year = 1600:1700) %>%
+  copy_to_a(con)
 ```
 
 # RQ1
@@ -19,9 +22,6 @@ source(here::here("src/common_basis.R"))
 ## Absolute output
 
 ```{r,fig.height=8}
-years <- tibble(year = 1600:1700) %>%
-  copy_to_a(con)
-
 years %>%
   transmute(m = year, b = year - 5, e = year + 5) %>%
   left_join(fbs_metadata_a %>%
@@ -211,6 +211,27 @@ vd17_normalized_langs_a %>%
 # RQ 3
 
 ```{r}
+rda_printers <- vd17_a %>%
+  filter(field_code == "029F", subfield_code == "4", value == "prt") %>%
+  select(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
+
+printers <- vd17_a %>%
+  filter(field_code == "033J", subfield_code == "7") %>%
+  select(record_number, printer_gnd = value)
+
+additional_printers <- vd17_a %>%
+  filter(field_code == "028C", (subfield_code == "4" & value == "prt") | (subfield_code == "B" & str_detect(value, "^Drucker|^Verleger"))) %>%
+  distinct(record_number, field_number) %>%
+  inner_join(vd17_a %>% filter(subfield_code == "7"), join_by(record_number, field_number)) %>%
+  select(record_number, printer_gnd = value)
+
+all_printers <- rda_printers %>%
+  union_all(printers) %>%
+  union_all(additional_printers) %>%
+  distinct(record_number, printer_gnd)
+
 fbs_records_a %>%
   filter(set == "Active member substantive role") %>%
   inner_join(vd17_id_a) %>%
@@ -228,6 +249,26 @@ fbs_records_a %>%
 ```
 
 ```{r}
+places_of_publication <- vd17_normalized_locations_a %>%
+  filter(location_type == "pup") %>%
+  select(record_number, place_of_publication = location)
+places_of_production <- vd17_normalized_locations_a %>%
+  filter(location_type == "mfp") %>%
+  select(record_number, place_of_production = location)
+places_of_distribution <- vd17_normalized_locations_a %>%
+  filter(location_type == "dbp") %>%
+  select(record_number, place_of_distribution = location)
+
+unified_places_of_publication <- vd17_a %>%
+  distinct(record_number) %>%
+  left_join(places_of_publication, join_by(record_number)) %>%
+  left_join(places_of_production, join_by(record_number)) %>%
+  left_join(places_of_distribution, join_by(record_number)) %>%
+  mutate(place_of_publication = coalesce(place_of_publication, place_of_production, place_of_distribution)) %>%
+  filter(!is.na(place_of_publication)) %>%
+  mutate(place_of_publication = str_replace_all(str_to_lower(place_of_publication), "[^a-zß]", "")) %>%
+  distinct(record_number, place_of_publication)
+
 years %>%
   transmute(m = year, b = year - 5, e = year + 5) %>%
   left_join(
@@ -249,6 +290,46 @@ years %>%
   geom_point() +
   theme_hsci_discrete()
 ```
+
+```{r}
+fbs_records_a %>%
+  filter(set == "Member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
+  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
+  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  filter(normalized_year >= 1600, normalized_year < 1700) %>%
+  count(normalized_year, location, group_3) %>%
+  collect() %>%
+  mutate(group_3 = fct_lump_n(group_3, n = 2, w = n)) %>%
+  mutate(location = fct_lump_n(location, n = 4, w = n)) %>%
+  group_by(normalized_year, location, group_3) %>%
+  ggplot(aes(x = normalized_year, y = n, color = group_3, fill = group_3)) +
+  geom_smooth() +
+  geom_point(size = 0.5) +
+  facet_wrap(~location, scales = "free_y") +
+  theme_hsci_discrete()
+```
+
+
+```{r}
+fbs_records_a %>%
+  filter(set == "Member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
+  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
+  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  filter(normalized_year >= 1600, normalized_year < 1700) %>%
+  count(normalized_year, location, group_2) %>%
+  collect() %>%
+  mutate(location = fct_lump_n(location, n = 10, w = n)) %>%
+  ggplot(aes(x = normalized_year, y = n, color = group_2, fill = group_2)) +
+  geom_smooth() +
+  geom_point(size = 0.5) +
+  theme_hsci_discrete() +
+  facet_wrap(~location, scales = "free_y")
+```
+
 
 # RQ4
 
@@ -272,7 +353,7 @@ fbs_records_a %>%
   facet_wrap(~set, scales = "free", ncol = 1)
 ```
 
-```{r}
+```{r, eval=FALSE}
 fbs_records_a %>%
   filter(set == "Member substantive role and society purpose related") %>%
   inner_join(vd17_id_a) %>%
@@ -312,9 +393,6 @@ fbs_links_of_interest_a %>%
 ```
 
 ```{r}
-years <- tibble(year = 1600:1700) %>%
-  copy_to_a(con)
-
 members_through_time <- seq(20, 60, by = 10) %>%
   map(~ years %>%
     inner_join(fbs_metadata_a %>% mutate(Estimated_admission_year = as.integer(Estimated_admission_year), latest_year = as.integer(Estimated_admission_year) + .x), join_by(year >= Estimated_admission_year, year <= latest_year)) %>%
@@ -340,4 +418,10 @@ fbs_records_a %>%
   theme_hsci_discrete() +
   facet_wrap(~memberset) +
   theme(legend.position = "bottom")
+```
+
+
+```{r, eval=FALSE}
+library(googledrive)
+drive_put(here("src/jiemakel/fbs_analyses.docx"), path = as_id("161toNA4jUgTzMjndSDVp1kpL9yGfHkwG"), name = "fbs_analyses", type = "application/vnd.google-apps.document")
 ```
