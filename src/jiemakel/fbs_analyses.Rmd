@@ -61,6 +61,10 @@ years %>%
   facet_wrap(~graph, scales = "free_y", ncol = 2)
 ```
 
+## Output normalised by number of members active
+
+### Output normalised by number of members active overall
+
 ```{r,fig.height=5}
 years %>%
   left_join(fbs_metadata_a, join_by(year >= Estimated_admission_year, year <= Estimated_DOD)) %>%
@@ -79,6 +83,8 @@ years %>%
   theme(legend.position = "bottom")
 ```
 
+### Output normalised by number of members active in publishing
+
 ```{r,fig.height=5}
 years %>%
   left_join(fbs_metadata_a %>% inner_join(fbs_links_of_interest_a %>% distinct(member_number)), join_by(year >= Estimated_admission_year, year <= Estimated_DOD)) %>%
@@ -96,6 +102,8 @@ years %>%
   theme_hsci_discrete() +
   theme(legend.position = "bottom")
 ```
+
+### Raw graph of active members and those active in publishing
 
 ```{r}
 years %>%
@@ -115,6 +123,7 @@ years %>%
   theme(legend.position = "bottom")
 ```
 
+### Combination graph of absolute publication numbers plus member numbers used to normalise
 
 ```{r,fig.height=5}
 years %>%
@@ -132,45 +141,6 @@ years %>%
   scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
   theme_hsci_discrete() +
   theme(legend.position = "bottom")
-```
-
-```{r}
-fbs_records_a %>%
-  filter(str_detect(set, "^Active")) %>%
-  inner_join(vd17_id_a, join_by(vd17_id)) %>%
-  inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
-  left_join(vd17_genres_a, join_by(record_number)) %>%
-  left_join(vd17_genre_categorisation_a) %>%
-  count(year = normalized_year, group_1, set) %>%
-  ggplot(aes(x = year, y = n, color = group_1)) +
-  geom_point() +
-  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
-  theme_hsci_discrete() +
-  theme(legend.position = "bottom") +
-  facet_wrap(~set)
-```
-
-```{r}
-years %>%
-  transmute(m = year, b = year - 2, e = year + 2) %>%
-  inner_join(
-    fbs_records_a %>%
-      filter(set == "Active member substantive role and society purpose related") %>%
-      inner_join(vd17_id_a, join_by(vd17_id)) %>%
-      inner_join(vd17_genres_a, join_by(record_number)) %>%
-      inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
-      left_join(vd17_genre_categorisation_a) %>%
-      count(year = normalized_year, group_1, group_3, set) %>%
-      filter(group_1 == "Society-related"), join_by(b <= year, e >= year)
-  ) %>%
-  group_by(m, group_3) %>%
-  summarise(mn = mean(n), .groups = "drop") %>%
-  collect() %>%
-  mutate(group_3 = fct_lump_n(group_3, n = 8, w = mn)) %>%
-  ggplot(aes(x = m, y = mn, color = group_3)) +
-  geom_point() +
-  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
-  theme_hsci_discrete()
 ```
 
 # RQ2
@@ -192,23 +162,10 @@ vd17_normalized_langs_a %>%
 #  fmt_integer(n)
 ```
 
-```{r, fig.height=11,fig.width=8}
-vd17_normalized_langs_a %>%
-  filter(!is.na(original_language)) %>%
-  inner_join(fbs_records_a %>% inner_join(vd17_id_a)) %>%
-  left_join(vd17_genres_a %>% inner_join(vd17_genre_categorisation_a), join_by(record_number)) %>%
-  count(group_3, set) %>%
-  arrange(set, desc(n)) %>%
-  ggplot(aes(x = group_3, y = n)) +
-  geom_col() +
-  theme_hsci_discrete() +
-  coord_flip() +
-  facet_wrap(~set, scales = "free_x")
-#  gt(rowname_col="original_language", groupname_col = "set") %>%
-#  fmt_integer(n)
-```
 
 # RQ 3
+
+## Top printers
 
 ```{r}
 rda_printers <- vd17_a %>%
@@ -247,6 +204,8 @@ fbs_records_a %>%
   coord_flip() +
   facet_wrap(~set, scales = "free_x")
 ```
+
+## Top places of publication through time
 
 ```{r}
 places_of_publication <- vd17_normalized_locations_a %>%
@@ -291,47 +250,9 @@ years %>%
   theme_hsci_discrete()
 ```
 
-```{r}
-fbs_records_a %>%
-  filter(set == "Member substantive role and society purpose related") %>%
-  inner_join(vd17_id_a) %>%
-  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
-  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
-  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
-  filter(normalized_year >= 1600, normalized_year < 1700) %>%
-  count(normalized_year, location, group_3) %>%
-  collect() %>%
-  mutate(group_3 = fct_lump_n(group_3, n = 2, w = n)) %>%
-  mutate(location = fct_lump_n(location, n = 4, w = n)) %>%
-  group_by(normalized_year, location, group_3) %>%
-  ggplot(aes(x = normalized_year, y = n, color = group_3, fill = group_3)) +
-  geom_smooth() +
-  geom_point(size = 0.5) +
-  facet_wrap(~location, scales = "free_y") +
-  theme_hsci_discrete()
-```
-
-
-```{r}
-fbs_records_a %>%
-  filter(set == "Member substantive role and society purpose related") %>%
-  inner_join(vd17_id_a) %>%
-  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
-  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
-  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
-  filter(normalized_year >= 1600, normalized_year < 1700) %>%
-  count(normalized_year, location, group_2) %>%
-  collect() %>%
-  mutate(location = fct_lump_n(location, n = 10, w = n)) %>%
-  ggplot(aes(x = normalized_year, y = n, color = group_2, fill = group_2)) +
-  geom_smooth() +
-  geom_point(size = 0.5) +
-  theme_hsci_discrete() +
-  facet_wrap(~location, scales = "free_y")
-```
-
-
 # RQ4
+
+## Top dedicatees
 
 ```{r,fig.height=11,fig.width=8}
 fbs_records_a %>%
@@ -353,6 +274,8 @@ fbs_records_a %>%
   facet_wrap(~set, scales = "free", ncol = 1)
 ```
 
+The below code writes the top dedicatees to a Google sheets:
+
 ```{r, eval=FALSE}
 fbs_records_a %>%
   filter(set == "Member substantive role and society purpose related") %>%
@@ -368,9 +291,24 @@ fbs_records_a %>%
   sheet_write(ss = "1ZpDUDTvX0x964N4wks3QvYIspRIxTZndPNIqA_-psgY", sheet = "Society purpose related dedications")
 ```
 
+# Scratch space of other graphs
 
+```{r}
+fbs_records_a %>%
+  filter(str_detect(set, "^Active")) %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  left_join(vd17_genres_a, join_by(record_number)) %>%
+  left_join(vd17_genre_categorisation_a) %>%
+  count(year = normalized_year, group_1, set) %>%
+  ggplot(aes(x = year, y = n, color = group_1)) +
+  geom_point() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom") +
+  facet_wrap(~set)
+```
 
-# Misc
 
 ```{r}
 fbs_metadata_a %>%
@@ -418,6 +356,86 @@ fbs_records_a %>%
   theme_hsci_discrete() +
   facet_wrap(~memberset) +
   theme(legend.position = "bottom")
+```
+
+```{r}
+years %>%
+  transmute(m = year, b = year - 2, e = year + 2) %>%
+  inner_join(
+    fbs_records_a %>%
+      filter(set == "Active member substantive role and society purpose related") %>%
+      inner_join(vd17_id_a, join_by(vd17_id)) %>%
+      inner_join(vd17_genres_a, join_by(record_number)) %>%
+      inner_join(vd17_normalized_years_a, join_by(record_number)) %>%
+      left_join(vd17_genre_categorisation_a) %>%
+      count(year = normalized_year, group_1, group_3, set) %>%
+      filter(group_1 == "Society-related"), join_by(b <= year, e >= year)
+  ) %>%
+  group_by(m, group_3) %>%
+  summarise(mn = mean(n), .groups = "drop") %>%
+  collect() %>%
+  mutate(group_3 = fct_lump_n(group_3, n = 8, w = mn)) %>%
+  ggplot(aes(x = m, y = mn, color = group_3)) +
+  geom_point() +
+  scale_x_continuous(breaks = seq(1600, 1700, by = 10)) +
+  theme_hsci_discrete()
+```
+
+
+```{r, fig.height=11,fig.width=8}
+vd17_normalized_langs_a %>%
+  filter(!is.na(original_language)) %>%
+  inner_join(fbs_records_a %>% inner_join(vd17_id_a)) %>%
+  left_join(vd17_genres_a %>% inner_join(vd17_genre_categorisation_a), join_by(record_number)) %>%
+  count(group_3, set) %>%
+  arrange(set, desc(n)) %>%
+  ggplot(aes(x = group_3, y = n)) +
+  geom_col() +
+  theme_hsci_discrete() +
+  coord_flip() +
+  facet_wrap(~set, scales = "free_x")
+#  gt(rowname_col="original_language", groupname_col = "set") %>%
+#  fmt_integer(n)
+```
+
+
+```{r}
+fbs_records_a %>%
+  filter(set == "Member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
+  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
+  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  filter(normalized_year >= 1600, normalized_year < 1700) %>%
+  count(normalized_year, location, group_3) %>%
+  collect() %>%
+  mutate(group_3 = fct_lump_n(group_3, n = 2, w = n)) %>%
+  mutate(location = fct_lump_n(location, n = 4, w = n)) %>%
+  group_by(normalized_year, location, group_3) %>%
+  ggplot(aes(x = normalized_year, y = n, color = group_3, fill = group_3)) +
+  geom_smooth() +
+  geom_point(size = 0.5) +
+  facet_wrap(~location, scales = "free_y") +
+  theme_hsci_discrete()
+```
+
+
+```{r}
+fbs_records_a %>%
+  filter(set == "Member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a) %>%
+  left_join(vd17_normalized_locations_a %>% filter(location_type == "pup")) %>%
+  left_join(vd17_genres_a %>% left_join(vd17_genre_categorisation_a %>% mutate(group_4 = coalesce(group_4, group_3))), join_by(record_number)) %>%
+  left_join(vd17_normalized_years_a, join_by(record_number)) %>%
+  filter(normalized_year >= 1600, normalized_year < 1700) %>%
+  count(normalized_year, location, group_2) %>%
+  collect() %>%
+  mutate(location = fct_lump_n(location, n = 10, w = n)) %>%
+  ggplot(aes(x = normalized_year, y = n, color = group_2, fill = group_2)) +
+  geom_smooth() +
+  geom_point(size = 0.5) +
+  theme_hsci_discrete() +
+  facet_wrap(~location, scales = "free_y")
 ```
 
 
