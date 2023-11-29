@@ -10,12 +10,73 @@ output:
 ---
 
 ```{r setup,echo=F}
-knitr::opts_chunk$set(cache = TRUE, cache.path = "cache/", cache.trigger = 3, message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+knitr::opts_chunk$set(cache = TRUE, cache.path = here::here("cache"), cache.change_to_flush = 3, message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
 source(here::here("src/common_basis.R"))
 
 years <- tibble(year = 1600:1700) %>%
   copy_to_a(con)
 ```
+
+```{r}
+#' Utility function to generate unique table names
+#' @keywords internal
+#' @importFrom stats runif
+#' @return a unique table name
+unique_table_name <- function() {
+  # Needs to use option to unique names across reloads while testing
+  i <- getOption("tmp_table_name", floor(runif(1) * 1000) * 1000) + 1
+  options(tmp_table_name = i)
+  sprintf("tmp_%03i", i)
+}
+
+#' Utility finalizer function to remove ColumnStore temporary tables
+#' @importFrom DBI dbExecute
+#' @keywords internal
+#' @param fe finalizer environment containing connection (con) and table name (table_name)
+delete_table_finalizer <- function(fe) {
+  dbExecute(fe$con, paste0("DROP TABLE IF EXISTS ", fe$table_name))
+}
+
+
+#' Version of [dplyr::copy_to()] that creates Aria tables and has a better parameter order
+#' @param df the dataframe to copy to the SQL store
+#' @param con the connection to the SQL store
+#' @param name the name of the table to create (defaults to a new unique table name)
+#' @param temporary whether to create a temporary table
+#' @param overwrite whether to overwrite existing tables (default to TRUE for temporary tables, FALSE otherwise)
+#' @param ... Other arguments passed on to [dplyr::copy_to()],
+#' @export
+#' @importFrom dplyr copy_to
+#' @importFrom DBI dbExecute dbGetQuery
+#' @importFrom stringr str_c
+#' @return a dbplyr tbl referencing the table created
+copy_to_a <- function(df, con, name, temporary, overwrite, ...) {
+  if (missing(name)) {
+    name <- unique_table_name()
+    if (missing(temporary)) {
+      temporary <- TRUE
+    }
+  }
+  if (missing(temporary)) stop('argument "temporary" is missing, with no default')
+  if (missing(overwrite)) overwrite <- temporary
+  engine <- dbGetQuery(con, "SHOW SESSION VARIABLES LIKE 'storage_engine'")[[2]]
+  dbExecute(con, "SET SESSION storage_engine=Aria")
+  r <- copy_to(con, df, name = name, overwrite = overwrite, temporary = FALSE, ...)
+  dbExecute(con, str_c("SET SESSION storage_engine=", engine))
+  if (temporary == TRUE) {
+    fe <- new.env(parent = emptyenv())
+    fe$con <- r$src$con
+    fe$table_name <- as.character(r$lazy_query$x)
+    attr(r, "finalizer_env") <- fe
+    reg.finalizer(fe, delete_table_finalizer, onexit = TRUE)
+  }
+  r
+}
+
+years <- tibble(year = 1600:1700) %>%
+  copy_to_a(con)
+```
+
 
 # RQ1
 

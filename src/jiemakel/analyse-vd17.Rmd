@@ -1,9 +1,7 @@
 ---
 title: "VD17 analysis"
 output:
-  md_document:
-    variant: gfm
-    toc: yes
+  word_document:
   html_notebook:
     code_folding: hide
     toc: yes
@@ -11,7 +9,7 @@ output:
 
 ```{r setup,echo=F}
 knitr::opts_knit$set(root.dir = here::here())
-source(here::here("code/common_basis.R"))
+source(here::here("src/common_basis.R"))
 ```
 
 

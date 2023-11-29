@@ -47,14 +47,30 @@ fbs_auto_records_a %>%
   mutate(manual_status_override = NA_character_) %>%
   union_all(fbs_auto_records_a %>% inner_join(fbs_manual_status_overrides_a) %>% mutate(method = str_c(method, "&", "Manual"))) %>%
   union_all(fbs_manual_status_overrides_a %>% anti_join(fbs_auto_records_a) %>% mutate(auto_status = NA_character_, method = "Manual")) %>%
+  left_join(
+    fbs_records_a %>%
+      group_by(vd17_id) %>%
+      summarise(db_status = case_when(
+        any(set == "Active member substantive role and translation into German") ~ "Active member substantive role and translation into German",
+        any(set == "Active member substantive role and society purpose related") ~ "Active member substantive role and society purpose related",
+        any(set == "Active member substantive role") ~ "Active member substantive role",
+        any(set == "Active member linked") ~ "Active member linked",
+        any(set == "Member substantive role and translation into German") ~ "Non-active member substantive role and translation into German",
+        any(set == "Member substantive role and society purpose related") ~ "Non-active member substantive role and society purpose related",
+        any(set == "Member substantive role") ~ "Non-active member substantive role",
+        any(set == "Member linked") ~ "Non-active member linked"
+      )),
+    join_by(vd17_id)
+  ) %>%
+  mutate(db_status = if_else(is.na(db_status) & manual_status_override != "Not member linked", "Filtered out as variant or unified multi-part record", coalesce(db_status, manual_status_override, auto_status))) %>%
   add_metadata_fields() %>%
   collect() %>%
   select(-record_number) %>%
   left_join(old_master_records %>% distinct(vd17_id, manual_status_override, notes)) %>%
   full_join(anti_join(old_master_records, ., join_by(vd17_id)) %>% filter(!is.na(notes) | !is.na(manual_status_override))) %>%
   prepare_for_gsheets() %>%
-  arrange(desc(manual_status_override), desc(auto_status), flag, method, vd17_id) %>%
-  relocate(manual_status_override, auto_status, flag, notes, method) %>%
+  arrange(desc(manual_status_override), desc(db_status), method, vd17_id) %>%
+  relocate(manual_status_override, db_status, auto_status, notes, method) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
 
@@ -152,6 +168,16 @@ old_master_records %>%
   relocate(manual_status_override, auto_status, notes, method) %>%
   sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
 ```
+
+```{r mark_manual_decisions}
+old_master_records %>%
+  left_join(manual_filtering_addition %>% filter(is.na(manual_status_override)) %>% distinct(vd17_id) %>% mutate(checked = T)) %>%
+  replace_na(list(checked = F)) %>%
+  mutate(manual_status_override = if_else(checked, coalesce(manual_status_override, auto_status), manual_status_override)) %>%
+  select(-checked) %>%
+  sheet_write(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "VD17 <-> FBS master record data")
+```
+
 
 ```{r}
 to_check_for_genre <- fbs_auto_records_a %>%

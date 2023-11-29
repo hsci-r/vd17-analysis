@@ -123,14 +123,30 @@ vd17_normalized_langs_c <- vd17_normalized_langs_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_normalized_langs_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_titles_a <- vd17_a %>%
-  filter(field_code == "021A") %>%
-  pivot_wider(id_cols = record_number:field_number, values_from = value, names_from = subfield_code) %>%
+  filter(field_code == "036C") %>%
+  pivot_wider(id_cols = c(record_number, field_number, field_code), values_from = value, names_from = subfield_code) %>%
   rename(title = a, additional_title = d, statement_of_responsibility = h) %>%
-  mutate(combined_title = str_c(title, additional_title, statement_of_responsibility, sep = "/")) %>%
+  mutate(combined_title = str_c(title, additional_title, statement_of_responsibility, sep = "/ ")) %>%
+  union(
+    vd17_a %>%
+      filter(field_code == "021A") %>%
+      pivot_wider(id_cols = c(record_number, field_number, field_code), values_from = value, names_from = subfield_code) %>%
+      rename(title = a, additional_title = d, statement_of_responsibility = h) %>%
+      mutate(combined_title = str_c(title, additional_title, statement_of_responsibility, sep = "/ "))
+  ) %>%
   compute_a(name = dbplyr::in_schema("vd17", "vd17_titles_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number", "field_number")))
 
 vd17_titles_c <- vd17_titles_a %>%
   compute_c(name = dbplyr::in_schema("vd17", "vd17_titles_c"), temporary = FALSE, overwrite = TRUE)
+
+
+vd17_combined_titles_a <- vd17_titles_a %>%
+  group_by(record_number) %>%
+  summarise(combined_title = str_flatten(combined_title, collapse = " / "), .groups = "drop") %>%
+  compute_a(name = dbplyr::in_schema("vd17", "vd17_combined_titles_a"), temporary = FALSE, overwrite = TRUE, unique_indexes = list(c("record_number")))
+
+vd17_combined_titles_c <- vd17_combined_titles_a %>%
+  compute_c(name = dbplyr::in_schema("vd17", "vd17_combined_titles_c"), temporary = FALSE, overwrite = TRUE)
 
 vd17_record_types_a <- vd17_a %>%
   filter(field_code == "002@") %>%
@@ -407,27 +423,36 @@ vd17_auth_name_c <- vd17_auth_name_a %>%
 
 ```{r create_db_versions_of_genre_categorisations}
 vd17_genre_categorisation_a <- read_sheet(ss = "1rXnOSB7P6vhJ5kTPu33upwZM__b0vx602vzBN63FaBw", sheet = "Genre categorisations") %>%
-  select(-c(VD17:`Society-related`)) %>%
-  copy_to_a(con, name = "vd17_genre_categorisation_a", unique_indexes = list(c("genre")), temporary = FALSE, overwrite = TRUE)
+  select(group_1:definition) %>%
+  copy_to_a(con, name = "vd17_genre_categorisation_a", unique_indexes = list(c("full_genre")), temporary = FALSE, overwrite = TRUE)
 
 vd17_genre_categorisation_c <- vd17_genre_categorisation_a %>%
-  compute_c(con, name = "vd17_genre_categorisation_c", temporary = FALSE, overwrite = TRUE)
+  compute_c(name = "vd17_genre_categorisation_c", temporary = FALSE, overwrite = TRUE)
 ```
 
 
 # Create Fruit-Bearing Society tables
 
 ```{r create_fbs_tables}
+library(jsonlite)
+fbs_metadata_json <- read_json(here("data/input/fr_mitglieder.json"), simplifyVector = T) %>%
+  tibble() %>%
+  mutate(gnd = if_else(gnd == "", NA_character_, gnd)) %>%
+  rename(GND = gnd, member_number = nr, family_name = name) %>%
+  mutate(GND = str_c("gnd/", GND))
+
 fbs_metadata_gs <- read_sheet(ss = "1tYSIXhoeeHk92HsP93Wul4b1mDjlsKcavc9LOi4K6RU", sheet = "FBS_master_metadata", col_types = "c") %>%
   mutate(GND = str_c("gnd/", GND), alternate_GND = str_c("gnd/", alternate_GND), `Old GND` = str_c("gnd/", `Old GND`)) %>%
   relocate(Name)
 
-fbs_metadata_a <- fbs_metadata_gs %>%
+fbs_metadata_a <- fbs_metadata_json %>%
+  left_join(fbs_metadata_gs %>% rename(`Old GND 2` = GND), join_by(member_number)) %>%
   copy_to_a(con, name = "fbs_metadata_a", temporary = FALSE, overwrite = TRUE, unique_indexes = c("GND"))
 
 fbs_metadata_c <- fbs_metadata_a %>%
   compute_c(name = "fbs_metadata_c", temporary = FALSE, overwrite = TRUE)
 ```
+
 
 ```{r}
 # FBS links
@@ -443,6 +468,10 @@ fbs_gnds_a <- fbs_metadata_a %>%
   union(
     fbs_metadata_a %>%
       select(member_number, GND = `Old GND`)
+  ) %>%
+  union(
+    fbs_metadata_a %>%
+      select(member_number, GND = `Old GND 2`)
   ) %>%
   filter(!is.na(GND)) %>%
   compute_a(name = "fbs_gnds_a", temporary = TRUE, overwrite = TRUE, unique_indexes = list(c("GND", "member_number")))
@@ -715,9 +744,26 @@ fbs_records_a <- fbs_raw_records_a %>%
     T ~ "Member linked"
   ), method = sql("GROUP_CONCAT(method ORDER BY method SEPARATOR '&')"), .groups = "drop")
 
+translations_into_german <- vd17_normalized_langs_a %>%
+  filter(publication_language == "ger") %>%
+  distinct(record_number) %>%
+  inner_join(vd17_normalized_langs_a %>%
+    filter(!is.na(original_language) | !is.na(intermediary_language)) %>%
+    distinct(record_number)) %>%
+  inner_join(vd17_id_a, join_by(record_number))
+
+fbs_records_a <- fbs_records_a %>%
+  left_join(translations_into_german) %>%
+  mutate(set = if_else(set != "Member linked" & !is.na(record_number), "Member substantive role and translation into German", set)) %>%
+  select(-record_number) %>%
+  compute_a()
+
 fbs_records_a <- fbs_records_a %>%
   union_all(fbs_records_a %>%
-    filter(set == "Member substantive role and society purpose related") %>%
+    filter(set == "Member substantive role and translation into German") %>%
+    mutate(set = "Member substantive role and society purpose related")) %>%
+  union_all(fbs_records_a %>%
+    filter(set %in% c("Member substantive role and society purpose related", "Member substantive role and translation into German")) %>%
     mutate(set = "Member substantive role")) %>%
   union_all(fbs_records_a %>%
     filter(set != "Member linked") %>%

@@ -39,10 +39,11 @@ summarise_people_by_record <- function(pdf) {
 add_metadata_fields <- function(df) {
   df %>%
     left_join(vd17_id_a) %>%
-    left_join(vd17_titles_a %>% select(record_number, combined_title) %>% group_by(record_number) %>% summarise(combined_title = str_flatten(combined_title, collapse = "|")), join_by(record_number)) %>%
+    left_join(vd17_combined_titles_a, join_by(record_number)) %>%
+    left_join(vd17_normalized_locations_a %>% group_by(record_number) %>% summarise(locations = str_flatten(str_c(location_type, ":", location), collapse = "|"), .groups = "drop"), join_by(record_number)) %>%
     left_join(vd17_normalized_years_a %>% group_by(record_number) %>% summarise(publication_date = str_flatten(a, collapse = "|"))) %>%
     left_join(vd17_normalized_langs_a %>% mutate(languages = str_c(publication_language, intermediary_language, original_language, sep = "<-")) %>% group_by(record_number) %>% summarize(languages = str_flatten(languages, collapse = "|")), join_by(record_number)) %>%
-    left_join(vd17_genres_a %>% distinct(record_number, genre) %>% group_by(record_number) %>% summarize(genre = str_flatten(genre, collapse = "|")), join_by(record_number)) %>%
+    left_join(vd17_genres_a %>% distinct(record_number, full_genre) %>% group_by(record_number) %>% summarize(genre = str_flatten(full_genre, collapse = "|")), join_by(record_number)) %>%
     compute_a(indexes = list(c("record_number"), c("vd17_id"))) %>%
     left_join(
       summarise_people_by_record(vd17_person_links_a %>%
@@ -72,7 +73,7 @@ add_metadata_fields <- function(df) {
 
 prepare_for_gsheets <- function(df) {
   df %>%
-    relocate(vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, genre) %>%
+    relocate(vd17_id, fbs_contributors, fbs_associated, other_contributors, combined_title, languages, locations, genre) %>%
     hyperlink_vd17_id()
 }
 

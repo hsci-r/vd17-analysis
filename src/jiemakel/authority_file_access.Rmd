@@ -1,0 +1,27 @@
+---
+title: "Authority file access"
+output: html_notebook
+---
+
+```{r}
+knitr::opts_chunk$set(cache = TRUE, cache.path = "cache/", cache.trigger = 3, message = FALSE, warning = FALSE, dpi = 300, fig.retina = 2, fig.width = 8)
+source(here::here("src/common_basis.R"))
+```
+
+```{r}
+vd17_auth_name_information_l <- vd17_auth_a %>%
+  inner_join(vd17_auth_id_a) %>%
+  filter(field_code %in% c("100", "400"), !(subfield_code %in% c("t", "5", "n", "w"))) %>%
+  pivot_wider(id_cols = c(GND, field_number, field_code), names_from = subfield_code, values_from = value) %>%
+  mutate(name_type_1 = if_else(field_code == 100, "primary", "alternate")) %>%
+  rename(name_type_2 = i, name = a, numeration = b, title = c, date = d, name_type_3 = `4`, name_type_4 = e, misc = g, comment = `9`) %>%
+  mutate(name_type_2 = case_match(name_type_2, "0" ~ "Forename", "1" ~ "Surname", "3" ~ "Family name", T ~ name_type_2)) %>%
+  select(-c(field_code, field_number)) %>%
+  collect()
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
