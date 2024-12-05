@@ -85,28 +85,27 @@ unified_places_of_publications <- unified_places_of_publication %>%
   collect()
 
 vd17_normalized_years <- vd17_normalized_years_a %>%
-  select(record_number,normalized_year)%>%
+  select(record_number, normalized_year) %>%
   collect()
 
 vd17_genres <- vd17_genres_a %>%
   collect()
 
-vd17_genre_categorisation <-vd17_genre_categorisation_a %>%
+vd17_genre_categorisation <- vd17_genre_categorisation_a %>%
   collect()
 ```
 
 ```{r}
-
 fbsgenre_place <- fbs_records_a %>%
-      filter(set=="Active member substantive role and society purpose related") %>%
-      inner_join(vd17_id_a, join_by(vd17_id)) %>%
-  collect()%>%
-      inner_join(vd17_genres, by=c("record_number")) %>%
-      inner_join(vd17_normalized_years, by=c("record_number")) %>%    
-      left_join(vd17_genre_categorisation)%>%
-  left_join(unified_places_of_publications,by=c("record_number"))
+  filter(set == "Active member substantive role and society purpose related") %>%
+  inner_join(vd17_id_a, join_by(vd17_id)) %>%
+  collect() %>%
+  inner_join(vd17_genres, by = c("record_number")) %>%
+  inner_join(vd17_normalized_years, by = c("record_number")) %>%
+  left_join(vd17_genre_categorisation) %>%
+  left_join(unified_places_of_publications, by = c("record_number"))
 
-fbsgenre_place <- select(fbsgenre_place,-c('3','7'))
+fbsgenre_place <- select(fbsgenre_place, -c("3", "7"))
 ```
 
 ```{r}
@@ -114,27 +113,27 @@ colour_list <- c(
   "dodgerblue2", "#E31A1C",
   "green4",
   "#6A3D9A",
-  "#FF7F00", 
+  "#FF7F00",
   "black", "gold1",
   "skyblue2", "#FB9A99",
   "palegreen2",
-  "#CAB2D6", 
+  "#CAB2D6",
   "#FDBF6F",
   "gray70", "khaki2",
   "maroon", "orchid1", "deeppink1"
 )
 fbsgenre_place %>%
-  count(genre, places_of_publication,group_1, group_3) %>%
-      filter(group_1=="Society-related") %>%
-  group_by(places_of_publication,group_3)%>%
-  #summarise(average=mean(n),.groups="drop") %>%
-  ggplot(aes(x=places_of_publication,y=n,color=group_3)) +
+  count(genre, places_of_publication, group_1, group_3) %>%
+  filter(group_1 == "Society-related") %>%
+  group_by(places_of_publication, group_3) %>%
+  # summarise(average=mean(n),.groups="drop") %>%
+  ggplot(aes(x = places_of_publication, y = n, color = group_3)) +
   geom_point() +
-  theme_hsci_discrete()+
-  theme(legend.position="bottom",legend.text=element_text(size=8))+
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5),text = element_text(size = 8,face = "bold"))+
-  theme(plot.title = element_text(hjust = 0.5))+
-  scale_fill_manual(values=colour_list)
+  theme_hsci_discrete() +
+  theme(legend.position = "bottom", legend.text = element_text(size = 8)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5), text = element_text(size = 8, face = "bold")) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  scale_fill_manual(values = colour_list)
 ```
 
 
@@ -164,11 +163,12 @@ gs4_auth(cache = ".secrets", email = "narges.azizifard@gmail.com")
 
 # Creating the google spreadsheet
 ```{r}
-fbs_genre_place_link <- fbsgenre_place%>%
-     mutate(vd17_id=gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27',vd17_id,'%27","',vd17_id,'")')))
+fbs_genre_place_link <- fbsgenre_place %>%
+  mutate(vd17_id = gs4_formula(str_c('=HYPERLINK("https://kxp.k10plus.de/DB=1.28/CMD?ACT=SRCHA&IKT=8079&TRM=%27', vd17_id, '%27","', vd17_id, '")')))
 
-fbs_genre_place<- gs4_create(
+fbs_genre_place <- gs4_create(
   "fbs_genre_place",
-  sheets = fbs_genre_place_link)
+  sheets = fbs_genre_place_link
+)
 fbs_genre_place
 ```
